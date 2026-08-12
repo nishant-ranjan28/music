@@ -6,7 +6,7 @@ window.PLAYLIST = [
     "artist": "Nujabes",
     "year": null,
     "q": "Feather Nujabes",
-    "yt": null
+    "yt": "4yX8ZUgraOo"
   },
   {
     "title": "Aruarian Dance",
@@ -20,14 +20,14 @@ window.PLAYLIST = [
     "artist": "Nujabes",
     "year": null,
     "q": "Luv (sic) Pt. 3 Nujabes",
-    "yt": null
+    "yt": "JC2q7kRqhig"
   },
   {
     "title": "Counting Stars",
     "artist": "Nujabes",
     "year": null,
     "q": "Counting Stars Nujabes",
-    "yt": null
+    "yt": "Z-tTmSY4m4M"
   },
   {
     "title": "Snowman",

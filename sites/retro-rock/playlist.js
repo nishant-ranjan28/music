@@ -6,14 +6,14 @@ window.PLAYLIST = [
     "artist": "Eagles",
     "year": 1976,
     "q": "Hotel California Eagles",
-    "yt": null
+    "yt": "09839DpTctU"
   },
   {
     "title": "Stairway to Heaven",
     "artist": "Led Zeppelin",
     "year": 1971,
     "q": "Stairway to Heaven Led Zeppelin",
-    "yt": null
+    "yt": "QkF3oxziUI4"
   },
   {
     "title": "Whole Lotta Love",
@@ -34,21 +34,21 @@ window.PLAYLIST = [
     "artist": "Pink Floyd",
     "year": 1975,
     "q": "Wish You Were Here Pink Floyd",
-    "yt": null
+    "yt": "hjpF8ukSrvk"
   },
   {
     "title": "Bohemian Rhapsody",
     "artist": "Queen",
     "year": 1975,
     "q": "Bohemian Rhapsody Queen",
-    "yt": null
+    "yt": "fJ9rUzIMcZQ"
   },
   {
     "title": "Sweet Child O' Mine",
     "artist": "Guns N' Roses",
     "year": 1987,
     "q": "Sweet Child O' Mine Guns N' Roses",
-    "yt": null
+    "yt": "1w7OgIMMRc4"
   },
   {
     "title": "Smoke on the Water",
@@ -62,21 +62,21 @@ window.PLAYLIST = [
     "artist": "AC/DC",
     "year": 1979,
     "q": "Highway to Hell AC/DC",
-    "yt": null
+    "yt": "l482T0yNkeo"
   },
   {
     "title": "Back in Black",
     "artist": "AC/DC",
     "year": 1980,
     "q": "Back in Black AC/DC",
-    "yt": null
+    "yt": "pAgnJDJN4VA"
   },
   {
     "title": "Paint It, Black",
     "artist": "The Rolling Stones",
     "year": 1966,
     "q": "Paint It, Black The Rolling Stones",
-    "yt": null
+    "yt": "170sceOWWXc"
   },
   {
     "title": "Layla",
@@ -97,14 +97,14 @@ window.PLAYLIST = [
     "artist": "Boston",
     "year": 1976,
     "q": "More Than a Feeling Boston",
-    "yt": null
+    "yt": "oR4uKcvQbGQ"
   },
   {
     "title": "Dream On",
     "artist": "Aerosmith",
     "year": 1973,
     "q": "Dream On Aerosmith",
-    "yt": null
+    "yt": "sZfZ8uWaOFI"
   },
   {
     "title": "Free Bird",
@@ -118,7 +118,7 @@ window.PLAYLIST = [
     "artist": "Creedence Clearwater Revival",
     "year": 1969,
     "q": "Fortunate Son Creedence Clearwater Revival",
-    "yt": null
+    "yt": "ec0XKhAHR5I"
   },
   {
     "title": "Barracuda",

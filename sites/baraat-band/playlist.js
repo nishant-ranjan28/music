@@ -55,7 +55,7 @@ window.PLAYLIST = [
     "artist": "Mohammed Rafi",
     "year": 1969,
     "q": "Aaya Sawan Jhoom Ke Mohammed Rafi",
-    "yt": "Z4jqaWTsdcU"
+    "yt": null
   },
   {
     "title": "Saajanji Ghar Aaye",

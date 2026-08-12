@@ -6,7 +6,7 @@ window.PLAYLIST = [
     "artist": "Mehdi Hassan",
     "year": null,
     "q": "Ranjish Hi Sahi Mehdi Hassan",
-    "yt": null
+    "yt": "dOtqwZdhBkc"
   },
   {
     "title": "Rafta Rafta Woh Meri",
@@ -55,7 +55,7 @@ window.PLAYLIST = [
     "artist": "Jagjit Singh",
     "year": 1982,
     "q": "Tum Itna Jo Muskura Rahe Ho Jagjit Singh",
-    "yt": null
+    "yt": "In3yneec2hk"
   },
   {
     "title": "Ahista Ahista",
@@ -69,14 +69,14 @@ window.PLAYLIST = [
     "artist": "Jagjit Singh",
     "year": null,
     "q": "Woh Kagaz Ki Kashti Jagjit Singh",
-    "yt": null
+    "yt": "tB0hmrY_s0U"
   },
   {
     "title": "Baat Niklegi To Phir",
     "artist": "Jagjit Singh",
     "year": null,
     "q": "Baat Niklegi To Phir Jagjit Singh",
-    "yt": null
+    "yt": "LUIeuo2PJPA"
   },
   {
     "title": "Tere Aane Ki Jab Khabar Mehke",
@@ -90,7 +90,7 @@ window.PLAYLIST = [
     "artist": "Jagjit Singh",
     "year": 1999,
     "q": "Hoshwalon Ko Khabar Kya Jagjit Singh",
-    "yt": null
+    "yt": "hZuwe72Rtcc"
   },
   {
     "title": "Chithi Na Koi Sandesh",

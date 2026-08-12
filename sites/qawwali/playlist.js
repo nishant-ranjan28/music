@@ -6,14 +6,14 @@ window.PLAYLIST = [
     "artist": "Nusrat Fateh Ali Khan",
     "year": null,
     "q": "Dam Mast Qalandar Nusrat Fateh Ali Khan",
-    "yt": null
+    "yt": "94QB7xfOkqM"
   },
   {
     "title": "Allah Hoo",
     "artist": "Nusrat Fateh Ali Khan",
     "year": null,
     "q": "Allah Hoo Nusrat Fateh Ali Khan",
-    "yt": null
+    "yt": "lCDMR7TEFew"
   },
   {
     "title": "Tumhe Dillagi",
@@ -41,7 +41,7 @@ window.PLAYLIST = [
     "artist": "Nusrat Fateh Ali Khan",
     "year": null,
     "q": "Mera Piya Ghar Aaya Nusrat Fateh Ali Khan",
-    "yt": null
+    "yt": "ctOgc7cgay0"
   },
   {
     "title": "Yeh Jo Halka Halka Suroor",
@@ -62,7 +62,7 @@ window.PLAYLIST = [
     "artist": "Sabri Brothers",
     "year": null,
     "q": "Tajdar-e-Haram Sabri Brothers",
-    "yt": null
+    "yt": "nB-epINHDHA"
   },
   {
     "title": "Bhar Do Jholi Meri",
@@ -76,7 +76,7 @@ window.PLAYLIST = [
     "artist": "Abida Parveen",
     "year": null,
     "q": "Chaap Tilak Abida Parveen",
-    "yt": null
+    "yt": "f3dnF-GmscM"
   },
   {
     "title": "Tere Ishq Nachaya",

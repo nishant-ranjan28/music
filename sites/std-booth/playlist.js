@@ -76,7 +76,7 @@ window.PLAYLIST = [
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1997,
     "q": "Meri Mehbooba Kumar Sanu, Alka Yagnik",
-    "yt": "WkfcHsPKwds"
+    "yt": null
   },
   {
     "title": "Kuch Na Kaho",

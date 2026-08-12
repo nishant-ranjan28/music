@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mehfil — Wine-dark room, one harmonium, and a couplet that ruins you.</title>
+<meta name="description" content="Ghazal radio — Mehdi Hassan, Jagjit Singh, Ghulam Ali, Farida Khanum.">
+<meta name="theme-color" content="#120609">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/sites/ghazal/">
+<meta property="og:title" content="Mehfil">
+<meta property="og:description" content="Ghazal radio — Mehdi Hassan, Jagjit Singh, Ghulam Ali, Farida Khanum.">
+<meta property="og:image" content="https://example.com/sites/ghazal/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mehfil">
+<meta name="twitter:description" content="Ghazal radio — Mehdi Hassan, Jagjit Singh, Ghulam Ali, Farida Khanum.">
+<meta name="twitter:image" content="https://example.com/sites/ghazal/og.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="mask-icon" href="favicon.svg" color="#c9a227">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap">
+<link rel="stylesheet" href="../../shared/base.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<div class="scene"><svg class="arch" viewBox="0 0 400 520" aria-hidden="true">
+        <path d="M200 12c78 0 138 62 138 140v356H62V152C62 74 122 12 200 12z"
+              fill="none" stroke="#c9a22733" stroke-width="2"/>
+        <path d="M200 52c56 0 100 46 100 104v340H100V156c0-58 44-104 100-104z"
+              fill="none" stroke="#c9a22722" stroke-width="1.5"/>
+      </svg>
+      <div class="candle" aria-hidden="true"><span class="flame flicker"></span></div>
+      <div class="smoke" aria-hidden="true"></div></div>
+
+<main class="stage">
+  <header class="masthead">
+    <h1 class="sign">M E H F I L<small>ghazal · nazm · shair</small></h1>
+    <nav class="masthead-links">
+      <a href="../../index.html">all stations</a>
+    </nav>
+  </header>
+
+  <section class="center">
+    <div class="card">
+      <div class="art" id="art"></div>
+
+      <div class="track">
+        <h2 class="track-title" id="track-title">—</h2>
+        <p class="track-meta" id="track-meta"></p>
+      </div>
+
+      <div class="ticker"><span id="ticker-text"></span></div>
+
+      <div class="transport">
+        <button class="tbtn" id="btn-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3 6l9 6V6z"/></svg>
+        </button>
+        <button class="tbtn tbtn--main" id="btn-play" aria-label="Play">
+          <svg viewBox="0 0 24 24"><path id="icon-play" d="M8 5v14l11-7z"/></svg>
+        </button>
+        <button class="tbtn" id="btn-next" aria-label="Next">
+          <svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l9-6-9-6z"/></svg>
+        </button>
+      </div>
+
+      <div class="volume">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>
+        <input type="range" id="volume" min="0" max="100" value="65" aria-label="Volume">
+      </div>
+
+      <p class="status" id="status"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span id="count"></span>
+    <span>Wine-dark room, one harmonium, and a couplet that ruins you.</span>
+  </footer>
+</main>
+
+<div class="gate" id="gate">
+  <div class="gate-inner">
+    <h2>Irshad</h2>
+    <p>Cigarette smoke under a yellow bulb, a shawl on the shoulder, and the audience going 'wah' half a line too early.</p>
+    <button class="gate-btn" id="gate-btn">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      play
+    </button>
+  </div>
+</div>
+
+<div id="yt-host"></div>
+
+<script src="playlist.js"></script>
+<script src="../../shared/player.js"></script>
+
+</body>
+</html>

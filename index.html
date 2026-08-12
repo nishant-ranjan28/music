@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stations — nostalgia radio</title>
+<meta name="description" content="Ten single-page nostalgia radio stations. One place or genre each, one song at a time.">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&display=swap">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  body{margin:0;background:#0b0b0d;color:#f2efe9;font-family:Inter,system-ui,sans-serif;
+    padding:clamp(24px,6vw,72px);line-height:1.5}
+  h1{font-family:Anton,sans-serif;font-size:clamp(34px,8vw,68px);margin:0;letter-spacing:.02em}
+  .lede{color:#8f8a82;max-width:56ch;margin:14px 0 52px}
+  .group{font-family:Anton,sans-serif;font-weight:400;font-size:15px;letter-spacing:.28em;
+    text-transform:uppercase;color:#8f8a82;margin:52px 0 18px;display:flex;gap:14px;align-items:baseline}
+  .group small{font-family:Inter,sans-serif;letter-spacing:0;text-transform:none;font-size:12px;opacity:.7}
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(258px,1fr))}
+  .station{position:relative;display:block;text-decoration:none;color:inherit;padding:22px;
+    border:1px solid #ffffff14;border-radius:10px;overflow:hidden;
+    background:linear-gradient(160deg,color-mix(in srgb,var(--a) 12%,transparent),var(--b));
+    transition:transform .16s ease,border-color .16s ease}
+  .station:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--a) 55%,transparent)}
+  .glyph{position:absolute;right:16px;top:10px;font-size:44px;color:var(--a);opacity:.28}
+  .station strong{display:block;font-family:Anton,sans-serif;font-weight:400;font-size:23px;
+    letter-spacing:.02em;color:var(--a)}
+  .station em{display:block;font-style:normal;font-size:11px;letter-spacing:.2em;
+    text-transform:uppercase;color:#ffffff5c;margin:5px 0 12px}
+  .station p{margin:0 0 14px;font-size:14px;color:#d8d3ca;min-height:42px}
+  .station small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#ffffff45}
+  footer{margin-top:64px;font-size:12px;color:#6d6862;max-width:64ch;line-height:1.7}
+  footer code{background:#ffffff10;padding:2px 6px;border-radius:4px}
+</style>
+</head>
+<body>
+  <h1>Nostalgia radio</h1>
+  <p class="lede">Ten single-page stations. Each one is a place or a genre, one song at a time,
+     no accounts, no search, no scroll. Pick a station and leave it playing.</p>
+
+    <h2 class="group">Places<small>a specific room, at a specific time</small></h2>
+    <div class="grid">
+      <a class="station" href="sites/std-booth/index.html"
+         style="--a:#f7c948;--b:#120e07">
+        <span class="glyph">☎</span>
+        <strong>PCO</strong>
+        <em>local · national · international</em>
+        <p>The songs that played while you waited for the meter to stop.</p>
+        <small>18 tracks · place</small>
+      </a>
+      <a class="station" href="sites/auto-rickshaw/index.html"
+         style="--a:#ffd400;--b:#08120c">
+        <span class="glyph">◍</span>
+        <strong>Meter Down</strong>
+        <em>3 sawari · no ac · full volume</em>
+        <p>FM Rainbow hits at 4x volume through one blown speaker.</p>
+        <small>18 tracks · place</small>
+      </a>
+      <a class="station" href="sites/kirana-store/index.html"
+         style="--a:#e9a23b;--b:#171003">
+        <span class="glyph">⚖</span>
+        <strong>Kirana</strong>
+        <em>udhaar band hai · cash only</em>
+        <p>Vividh Bharati crackling over glass jars and hanging chip packets.</p>
+        <small>18 tracks · place</small>
+      </a>
+      <a class="station" href="sites/baraat-band/index.html"
+         style="--a:#ff8a00;--b:#170509">
+        <span class="glyph">✺</span>
+        <strong>Baraat</strong>
+        <em>brass · dhol · generator light</em>
+        <p>Nine men, brass instruments, and one film song murdered beautifully.</p>
+        <small>18 tracks · place</small>
+      </a>
+      <a class="station" href="sites/wedding-vhs/index.html"
+         style="--a:#35e0f0;--b:#04060c">
+        <span class="glyph">▣</span>
+        <strong>VHS</strong>
+        <em>cam 1 · tracking · sp mode</em>
+        <p>Slow-motion garland exchange, date stamp burned into the corner.</p>
+        <small>18 tracks · place</small>
+      </a>
+    </div>
+
+    <h2 class="group">Genres<small>the sound itself, in its own era</small></h2>
+    <div class="grid">
+      <a class="station" href="sites/ghazal/index.html"
+         style="--a:#c9a227;--b:#120609">
+        <span class="glyph">۞</span>
+        <strong>Mehfil</strong>
+        <em>ghazal · nazm · shair</em>
+        <p>Wine-dark room, one harmonium, and a couplet that ruins you.</p>
+        <small>20 tracks · genre</small>
+      </a>
+      <a class="station" href="sites/bollywood-90s/index.html"
+         style="--a:#ff2e88;--b:#0a0514">
+        <span class="glyph">▤</span>
+        <strong>Cassette</strong>
+        <em>side a · dolby · rewind with a pencil</em>
+        <p>One cassette, both sides, played until the tape stretched.</p>
+        <small>20 tracks · genre</small>
+      </a>
+      <a class="station" href="sites/retro-rock/index.html"
+         style="--a:#e8b33c;--b:#0c0b09">
+        <span class="glyph">⚡</span>
+        <strong>Valve</strong>
+        <em>tolex · tubes · vu meter</em>
+        <p>One amp, warm glass tubes, and the riffs your father still air-guitars.</p>
+        <small>20 tracks · genre</small>
+      </a>
+      <a class="station" href="sites/lofi/index.html"
+         style="--a:#b7a6e8;--b:#12111b">
+        <span class="glyph">❍</span>
+        <strong>Monsoon</strong>
+        <em>tape hiss · rain · no vocals</em>
+        <p>Rain on the window, a tape loop, and homework you never finished.</p>
+        <small>18 tracks · genre</small>
+      </a>
+      <a class="station" href="sites/qawwali/index.html"
+         style="--a:#d4af37;--b:#04120b">
+        <span class="glyph">❋</span>
+        <strong>Dargah</strong>
+        <em>harmonium · taali · chorus</em>
+        <p>Thursday night at the dargah, hands clapping on the offbeat.</p>
+        <small>18 tracks · genre</small>
+      </a>
+    </div>
+
+  <footer>
+    Audio streams through the official YouTube IFrame API — nothing is hosted here.
+    Add a station by appending an entry to <code>themes/themes.mjs</code> and running
+    <code>node build.mjs</code>.
+  </footer>
+</body>
+</html>

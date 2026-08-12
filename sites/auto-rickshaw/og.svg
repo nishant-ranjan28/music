@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#ffd400" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#08120c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="#08120c"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <text x="600" y="290" text-anchor="middle" font-family="Baloo Bhai 2, Georgia, serif"
+        font-size="96" fill="#ffd400">M E T E R  D O W N</text>
+  <text x="600" y="356" text-anchor="middle" font-family="Inter, sans-serif"
+        font-size="27" letter-spacing="7" fill="#93ab9b">3 SAWARI · NO AC · FULL VOLUME</text>
+  <text x="600" y="452" text-anchor="middle" font-family="Inter, sans-serif"
+        font-size="34" fill="#ffffff" opacity="0.9">FM Rainbow hits at 4x volume through one blown speaker.</text>
+  <text x="600" y="566" text-anchor="middle" font-family="Inter, sans-serif"
+        font-size="24" letter-spacing="10" fill="#ffd400" opacity="0.8">METER DOWN</text>
+  <rect width="1200" height="630" filter="url(#n)" opacity="0.06"/>
+</svg>

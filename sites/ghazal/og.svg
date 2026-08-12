@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#c9a227" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#120609" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="#120609"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <text x="600" y="290" text-anchor="middle" font-family="Playfair Display, Georgia, serif"
+        font-size="96" fill="#c9a227">M E H F I L</text>
+  <text x="600" y="356" text-anchor="middle" font-family="Cormorant Garamond, sans-serif"
+        font-size="27" letter-spacing="7" fill="#a98b80">GHAZAL · NAZM · SHAIR</text>
+  <text x="600" y="452" text-anchor="middle" font-family="Cormorant Garamond, sans-serif"
+        font-size="34" fill="#ffffff" opacity="0.9">Wine-dark room, one harmonium, and a couplet that ruins you.</text>
+  <text x="600" y="566" text-anchor="middle" font-family="Cormorant Garamond, sans-serif"
+        font-size="24" letter-spacing="10" fill="#c9a227" opacity="0.8">MEHFIL</text>
+  <rect width="1200" height="630" filter="url(#n)" opacity="0.06"/>
+</svg>

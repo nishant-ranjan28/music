@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Baraat — Nine men, brass instruments, and one film song murdered beautifully.</title>
+<meta name="description" content="Brass band Bollywood under marigold lights and a shamiana tent.">
+<meta name="theme-color" content="#170509">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/sites/baraat-band/">
+<meta property="og:title" content="Baraat">
+<meta property="og:description" content="Brass band Bollywood under marigold lights and a shamiana tent.">
+<meta property="og:image" content="https://example.com/sites/baraat-band/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Baraat">
+<meta name="twitter:description" content="Brass band Bollywood under marigold lights and a shamiana tent.">
+<meta name="twitter:image" content="https://example.com/sites/baraat-band/og.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="mask-icon" href="favicon.svg" color="#ff8a00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../shared/base.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<div class="scene"><div class="lights" aria-hidden="true">
+        <i style="--d:0s"></i><i style="--d:.3s"></i><i style="--d:.7s"></i><i style="--d:1.1s"></i>
+        <i style="--d:1.5s"></i><i style="--d:1.9s"></i><i style="--d:2.3s"></i><i style="--d:2.7s"></i>
+        <i style="--d:3.1s"></i><i style="--d:3.5s"></i><i style="--d:3.9s"></i><i style="--d:4.3s"></i>
+      </div>
+      <svg class="dhol" viewBox="0 0 200 120" aria-hidden="true">
+        <ellipse cx="40" cy="60" rx="22" ry="44" fill="#ffd96622" stroke="#ffd96666" stroke-width="2"/>
+        <ellipse cx="160" cy="60" rx="22" ry="44" fill="#ffd96622" stroke="#ffd96666" stroke-width="2"/>
+        <rect x="40" y="16" width="120" height="88" fill="#ff8a0018" stroke="#ffd96644"/>
+        <g stroke="#ffd96633"><path d="M46 24l108 72"/><path d="M46 96l108-72"/></g>
+      </svg></div>
+
+<main class="stage">
+  <header class="masthead">
+    <h1 class="sign">B A N D  B A A J A<small>brass · dhol · generator light</small></h1>
+    <nav class="masthead-links">
+      <a href="../../index.html">all stations</a>
+    </nav>
+  </header>
+
+  <section class="center">
+    <div class="card">
+      <div class="art" id="art"></div>
+
+      <div class="track">
+        <h2 class="track-title" id="track-title">—</h2>
+        <p class="track-meta" id="track-meta"></p>
+      </div>
+
+      <div class="ticker"><span id="ticker-text"></span></div>
+
+      <div class="transport">
+        <button class="tbtn" id="btn-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3 6l9 6V6z"/></svg>
+        </button>
+        <button class="tbtn tbtn--main" id="btn-play" aria-label="Play">
+          <svg viewBox="0 0 24 24"><path id="icon-play" d="M8 5v14l11-7z"/></svg>
+        </button>
+        <button class="tbtn" id="btn-next" aria-label="Next">
+          <svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l9-6-9-6z"/></svg>
+        </button>
+      </div>
+
+      <div class="volume">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>
+        <input type="range" id="volume" min="0" max="100" value="65" aria-label="Volume">
+      </div>
+
+      <p class="status" id="status"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span id="count"></span>
+    <span>Nine men, brass instruments, and one film song murdered beautifully.</span>
+  </footer>
+</main>
+
+<div class="gate" id="gate">
+  <div class="gate-inner">
+    <h2>Naach le</h2>
+    <p>Marigold string lights, a shamiana that smells of camphor, and a band that plays every song half a step flat.</p>
+    <button class="gate-btn" id="gate-btn">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      play
+    </button>
+  </div>
+</div>
+
+<div id="yt-host"></div>
+
+<script src="playlist.js"></script>
+<script src="../../shared/player.js"></script>
+
+</body>
+</html>

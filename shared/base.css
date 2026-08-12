@@ -1,0 +1,551 @@
+/* ============================================================
+   base.css — shared design system for every nostalgia radio site
+   Themes override the tokens in :root via their own theme.css.
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* The page background lives here, NOT on .stage — .stage sits above
+     .scene, so an opaque background there would hide every theme's art. */
+  background: var(--bg-gradient, none), var(--bg);
+  background-attachment: fixed;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+/* ---------- stage ---------------------------------------------------- */
+
+.stage {
+  position: relative;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 0;
+  padding: clamp(16px, 4vw, 40px);
+  background: transparent;
+}
+
+/* grain + vignette sit above the scene, below the content */
+.stage::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  opacity: var(--grain-opacity, 0.05);
+  background-image: var(--grain-url);
+  background-size: 180px 180px;
+  mix-blend-mode: var(--grain-blend, overlay);
+}
+
+.stage::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  /* Kept light — the vignette sits above .scene, and most themes park their
+     art at the edges, which a heavy vignette swallows. */
+  background: var(--vignette, radial-gradient(125% 105% at 50% 40%, transparent 55%, rgba(0, 0, 0, 0.42) 100%));
+}
+
+/* ---------- scene (theme-specific decoration) ------------------------ */
+
+.scene {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.scene svg {
+  display: block;
+}
+
+/* ---------- header --------------------------------------------------- */
+
+.masthead {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.sign {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 6vw, 48px);
+  line-height: 1;
+  letter-spacing: var(--sign-tracking, 0.01em);
+  color: var(--sign-ink, var(--accent));
+  text-transform: var(--sign-case, none);
+  text-shadow: var(--sign-shadow, none);
+  margin: 0;
+}
+
+.sign small {
+  display: block;
+  font-family: var(--font-body);
+  font-size: clamp(10px, 2.4vw, 13px);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin-top: 8px;
+  text-shadow: none;
+}
+
+.masthead-links {
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.masthead-links a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+}
+
+.masthead-links a:hover {
+  color: var(--accent);
+  border-bottom-color: currentColor;
+}
+
+/* ---------- now playing card ----------------------------------------- */
+
+.center {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  padding: 16px 0;
+  min-height: 0; /* let the card shrink inside the grid row instead of clipping */
+}
+
+.card {
+  width: min(420px, 100%);
+  background: var(--surface);
+  border: var(--card-border, 1px solid var(--line));
+  border-radius: var(--card-radius, 4px);
+  box-shadow: var(--card-shadow, 0 24px 60px rgba(0, 0, 0, 0.45));
+  padding: clamp(16px, 4vw, 24px);
+  backdrop-filter: var(--card-blur, none);
+  text-align: center;
+}
+
+.art {
+  position: relative;
+  aspect-ratio: 1;
+  /* Square, but capped by viewport height so the transport never gets
+     pushed below the fold on short/landscape screens. */
+  width: min(100%, 34dvh);
+  margin: 0 auto;
+  border-radius: var(--art-radius, 2px);
+  overflow: hidden;
+  background: var(--art-bg, rgba(0, 0, 0, 0.3));
+  border: var(--art-border, 1px solid var(--line));
+  display: grid;
+  place-items: center;
+}
+
+.art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: var(--art-filter, none);
+}
+
+.art-fallback {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 12vw, 72px);
+  color: var(--accent);
+  opacity: 0.4;
+}
+
+.track {
+  margin-top: 16px;
+  min-height: 56px;
+}
+
+.track-title {
+  font-family: var(--font-display);
+  font-size: clamp(19px, 4.6vw, 25px);
+  line-height: 1.2;
+  margin: 0;
+  color: var(--ink);
+}
+
+.track-meta {
+  margin: 6px 0 0;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+/* ---------- ticker ---------------------------------------------------- */
+
+.ticker {
+  margin-top: 12px;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accent-2, var(--ink-dim));
+  white-space: nowrap;
+}
+
+.ticker span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker-scroll 18s linear infinite;
+}
+
+@keyframes ticker-scroll {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ---------- transport ------------------------------------------------- */
+
+.transport {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.tbtn {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  transition: transform 0.12s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.tbtn:hover {
+  background: var(--accent);
+  color: var(--on-accent, #000);
+  border-color: transparent;
+}
+
+.tbtn:active {
+  transform: scale(0.92);
+}
+
+.tbtn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.tbtn--main {
+  width: 58px;
+  height: 58px;
+  background: var(--accent);
+  color: var(--on-accent, #000);
+  border-color: transparent;
+}
+
+.tbtn--main svg {
+  width: 24px;
+  height: 24px;
+}
+
+.tbtn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.volume {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink-dim);
+}
+
+.volume svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+  flex: none;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line);
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+/* ---------- footer ---------------------------------------------------- */
+
+.footer {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.footer a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer a:hover {
+  color: var(--accent);
+}
+
+/* ---------- tap-to-play gate ------------------------------------------ */
+
+.gate {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  background: var(--gate-bg, rgba(0, 0, 0, 0.82));
+  backdrop-filter: blur(6px);
+  text-align: center;
+  padding: 24px;
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+}
+
+.gate[hidden] {
+  display: grid;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.gate-inner {
+  max-width: 420px;
+}
+
+.gate h2 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 8vw, 46px);
+  margin: 0 0 12px;
+  color: var(--accent);
+  line-height: 1.05;
+}
+
+.gate p {
+  margin: 0 0 28px;
+  color: var(--ink-dim);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.gate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 30px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent, #000);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  animation: gate-pulse 2.4s ease-in-out infinite;
+}
+
+.gate-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+@keyframes gate-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.045);
+  }
+}
+
+/* ---------- status / missing-id notice -------------------------------- */
+
+.status {
+  margin-top: 12px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  min-height: 16px;
+}
+
+.status a {
+  color: var(--accent);
+}
+
+/* hidden YouTube iframe host */
+#yt-host {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  left: -9999px;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---------- motion helpers -------------------------------------------- */
+
+.spin {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spin 3.6s linear infinite;
+}
+
+.sway {
+  transform-box: fill-box;
+  transform-origin: top center;
+  animation: sway 4.2s ease-in-out infinite;
+}
+
+.flicker {
+  animation: flicker 5.5s steps(1, end) infinite;
+}
+
+.paused .spin,
+.paused .sway {
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+
+@keyframes flicker {
+  0%, 42%, 46%, 78%, 100% {
+    opacity: 1;
+  }
+  44%, 80% {
+    opacity: 0.35;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .ticker span {
+    padding-left: 0;
+  }
+}
+
+/* ---------- small screens --------------------------------------------- */
+
+@media (max-width: 520px) {
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .footer {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-height: 700px) {
+  .art {
+    width: min(100%, 30dvh);
+  }
+  .ticker {
+    display: none;
+  }
+}

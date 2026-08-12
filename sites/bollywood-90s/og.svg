@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#ff2e88" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#0a0514" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0514"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <text x="600" y="290" text-anchor="middle" font-family="Monoton, Georgia, serif"
+        font-size="96" fill="#ff2e88">T-SERIES  90s</text>
+  <text x="600" y="356" text-anchor="middle" font-family="Space Grotesk, sans-serif"
+        font-size="27" letter-spacing="7" fill="#9a86b8">SIDE A · DOLBY · REWIND WITH A PENCIL</text>
+  <text x="600" y="452" text-anchor="middle" font-family="Space Grotesk, sans-serif"
+        font-size="34" fill="#ffffff" opacity="0.9">One cassette, both sides, played until the tape stretched.</text>
+  <text x="600" y="566" text-anchor="middle" font-family="Space Grotesk, sans-serif"
+        font-size="24" letter-spacing="10" fill="#ff2e88" opacity="0.8">CASSETTE</text>
+  <rect width="1200" height="630" filter="url(#n)" opacity="0.06"/>
+</svg>

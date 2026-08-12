@@ -6,126 +6,126 @@ window.PLAYLIST = [
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1996,
     "q": "Pardesi Pardesi Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "Swlik5Hfu-A"
   },
   {
     "title": "Chithi Aayi Hai",
     "artist": "Pankaj Udhas",
     "year": 1986,
     "q": "Chithi Aayi Hai Pankaj Udhas",
-    "yt": null
+    "yt": "v0_IRIFYC0k"
   },
   {
     "title": "Ae Mere Humsafar",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1988,
     "q": "Ae Mere Humsafar Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "sWqjZpBtcxc"
   },
   {
     "title": "Tujhe Dekha To",
     "artist": "Kumar Sanu, Lata Mangeshkar",
     "year": 1995,
     "q": "Tujhe Dekha To Kumar Sanu, Lata Mangeshkar",
-    "yt": null
+    "yt": "cNV5hLSa9H8"
   },
   {
     "title": "Sochenge Tumhe Pyar",
     "artist": "Kumar Sanu",
     "year": 1992,
     "q": "Sochenge Tumhe Pyar Kumar Sanu",
-    "yt": null
+    "yt": "x5eYr7voNiY"
   },
   {
     "title": "Dil Hai Ke Manta Nahin",
     "artist": "Kumar Sanu, Anuradha Paudwal",
     "year": 1991,
     "q": "Dil Hai Ke Manta Nahin Kumar Sanu, Anuradha Paudwal",
-    "yt": null
+    "yt": "C9efe0rjDlE"
   },
   {
     "title": "Tumse Milne Ki Tamanna",
     "artist": "S. P. Balasubrahmanyam",
     "year": 1991,
     "q": "Tumse Milne Ki Tamanna S. P. Balasubrahmanyam",
-    "yt": null
+    "yt": "thjRNwjmAdQ"
   },
   {
     "title": "Dekha Hai Pehli Baar",
     "artist": "S. P. Balasubrahmanyam, Alka Yagnik",
     "year": 1991,
     "q": "Dekha Hai Pehli Baar S. P. Balasubrahmanyam, Alka Yagnik",
-    "yt": null
+    "yt": "bBjVLCAAM1A"
   },
   {
     "title": "Jaadu Teri Nazar",
     "artist": "Udit Narayan",
     "year": 1993,
     "q": "Jaadu Teri Nazar Udit Narayan",
-    "yt": null
+    "yt": "n_oP9Onj0r0"
   },
   {
     "title": "Chura Ke Dil Mera",
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1994,
     "q": "Chura Ke Dil Mera Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "Yqj1_V90KJo"
   },
   {
     "title": "Meri Mehbooba",
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1997,
     "q": "Meri Mehbooba Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "WkfcHsPKwds"
   },
   {
     "title": "Kuch Na Kaho",
     "artist": "Kumar Sanu",
     "year": 1994,
     "q": "Kuch Na Kaho Kumar Sanu",
-    "yt": null
+    "yt": "Kidtrrn4aUM"
   },
   {
     "title": "Jab Koi Baat Bigad Jaye",
     "artist": "Kumar Sanu, Sadhana Sargam",
     "year": 1990,
     "q": "Jab Koi Baat Bigad Jaye Kumar Sanu, Sadhana Sargam",
-    "yt": null
+    "yt": "mNSYPtzpfd4"
   },
   {
     "title": "Yeh Kahan Aa Gaye Hum",
     "artist": "Lata Mangeshkar, Amitabh Bachchan",
     "year": 1981,
     "q": "Yeh Kahan Aa Gaye Hum Lata Mangeshkar, Amitabh Bachchan",
-    "yt": null
+    "yt": "43wT0xhvfsA"
   },
   {
     "title": "Kabhi Alvida Na Kehna",
     "artist": "Kishore Kumar",
     "year": 1976,
     "q": "Kabhi Alvida Na Kehna Kishore Kumar",
-    "yt": null
+    "yt": "gRbcUA8jH2Y"
   },
   {
     "title": "Ek Ajnabee Haseena Se",
     "artist": "Kishore Kumar",
     "year": 1974,
     "q": "Ek Ajnabee Haseena Se Kishore Kumar",
-    "yt": null
+    "yt": "vS_JXshiu68"
   },
   {
     "title": "Aankhon Mein Base Ho Tum",
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1995,
     "q": "Aankhon Mein Base Ho Tum Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "0zeA_aR7TkA"
   },
   {
     "title": "Bahut Pyar Karte Hain",
     "artist": "Anuradha Paudwal",
     "year": 1991,
     "q": "Bahut Pyar Karte Hain Anuradha Paudwal",
-    "yt": null
+    "yt": "ycj1FwxiZwc"
   }
 ];
 

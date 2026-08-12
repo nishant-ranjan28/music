@@ -6,126 +6,126 @@ window.PLAYLIST = [
     "artist": "Mohammed Rafi",
     "year": 1977,
     "q": "Aaj Mere Yaar Ki Shaadi Hai Mohammed Rafi",
-    "yt": null
+    "yt": "FnxvgVlN45g"
   },
   {
     "title": "Mehndi Laga Ke Rakhna",
     "artist": "Udit Narayan, Lata Mangeshkar",
     "year": 1995,
     "q": "Mehndi Laga Ke Rakhna Udit Narayan, Lata Mangeshkar",
-    "yt": null
+    "yt": "-bNwqXvMuB8"
   },
   {
     "title": "Dulhe Ka Sehra",
     "artist": "Nusrat Fateh Ali Khan",
     "year": 2000,
     "q": "Dulhe Ka Sehra Nusrat Fateh Ali Khan",
-    "yt": null
+    "yt": "iZAv9zDeFSc"
   },
   {
     "title": "Wah Wah Ramji",
     "artist": "Lata Mangeshkar, S. P. Balasubrahmanyam",
     "year": 1994,
     "q": "Wah Wah Ramji Lata Mangeshkar, S. P. Balasubrahmanyam",
-    "yt": null
+    "yt": "o1tIvfplhHc"
   },
   {
     "title": "Joote Do Paise Lo",
     "artist": "Lata Mangeshkar, S. P. Balasubrahmanyam",
     "year": 1994,
     "q": "Joote Do Paise Lo Lata Mangeshkar, S. P. Balasubrahmanyam",
-    "yt": null
+    "yt": "cTfqLSmsxt0"
   },
   {
     "title": "Chhote Chhote Bhaiyon Ke",
     "artist": "S. P. Balasubrahmanyam, Lata Mangeshkar",
     "year": 1994,
     "q": "Chhote Chhote Bhaiyon Ke S. P. Balasubrahmanyam, Lata Mangeshkar",
-    "yt": null
+    "yt": "JtKjcyc5wh0"
   },
   {
     "title": "Le Jayenge Le Jayenge",
     "artist": "Kishore Kumar, Asha Bhosle",
     "year": 1974,
     "q": "Le Jayenge Le Jayenge Kishore Kumar, Asha Bhosle",
-    "yt": null
+    "yt": "Bx9NL1edwjs"
   },
   {
     "title": "Aaya Sawan Jhoom Ke",
     "artist": "Mohammed Rafi",
     "year": 1969,
     "q": "Aaya Sawan Jhoom Ke Mohammed Rafi",
-    "yt": null
+    "yt": "Z4jqaWTsdcU"
   },
   {
     "title": "Saajanji Ghar Aaye",
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1998,
     "q": "Saajanji Ghar Aaye Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "8XtXLVylOoU"
   },
   {
     "title": "Kajra Re",
     "artist": "Alisha Chinai, Shankar Mahadevan",
     "year": 2005,
     "q": "Kajra Re Alisha Chinai, Shankar Mahadevan",
-    "yt": null
+    "yt": "4dsFQFCvVGU"
   },
   {
     "title": "Nagada Sang Dhol",
     "artist": "Shreya Ghoshal, Osman Mir",
     "year": 2013,
     "q": "Nagada Sang Dhol Shreya Ghoshal, Osman Mir",
-    "yt": null
+    "yt": "3X7x4Ye-tqo"
   },
   {
     "title": "Gud Naal Ishq Mitha",
     "artist": "Malkit Singh",
     "year": 1998,
     "q": "Gud Naal Ishq Mitha Malkit Singh",
-    "yt": null
+    "yt": "_rGz16v3CUM"
   },
   {
     "title": "Sadi Gali",
     "artist": "Lehmber Hussainpuri",
     "year": 2011,
     "q": "Sadi Gali Lehmber Hussainpuri",
-    "yt": null
+    "yt": "w_HaezV0DqI"
   },
   {
     "title": "Mauja Hi Mauja",
     "artist": "Mika Singh",
     "year": 2007,
     "q": "Mauja Hi Mauja Mika Singh",
-    "yt": null
+    "yt": "PaDaoNnOQaM"
   },
   {
     "title": "Bole Chudiyan",
     "artist": "Sonu Nigam, Alka Yagnik",
     "year": 2001,
     "q": "Bole Chudiyan Sonu Nigam, Alka Yagnik",
-    "yt": null
+    "yt": "5NBocxJV1g4"
   },
   {
     "title": "London Thumakda",
     "artist": "Labh Janjua, Sonu Kakkar",
     "year": 2014,
     "q": "London Thumakda Labh Janjua, Sonu Kakkar",
-    "yt": null
+    "yt": "udra3Mfw2oo"
   },
   {
     "title": "Balle Balle",
     "artist": "Daler Mehndi",
     "year": 1998,
     "q": "Balle Balle Daler Mehndi",
-    "yt": null
+    "yt": "KTE6S-Pmhpw"
   },
   {
     "title": "Aaj Hai Sagai",
     "artist": "Sonu Nigam, Alka Yagnik",
     "year": 2002,
     "q": "Aaj Hai Sagai Sonu Nigam, Alka Yagnik",
-    "yt": null
+    "yt": "BsjCHGfYNwk"
   }
 ];
 

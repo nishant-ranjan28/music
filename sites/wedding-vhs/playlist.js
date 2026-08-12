@@ -6,63 +6,63 @@ window.PLAYLIST = [
     "artist": "Kumar Sanu, Lata Mangeshkar",
     "year": 1995,
     "q": "Tujhe Dekha To Kumar Sanu, Lata Mangeshkar",
-    "yt": null
+    "yt": "cNV5hLSa9H8"
   },
   {
     "title": "Pehla Nasha",
     "artist": "Udit Narayan, Sadhana Sargam",
     "year": 1992,
     "q": "Pehla Nasha Udit Narayan, Sadhana Sargam",
-    "yt": null
+    "yt": "SBfPs-PMGTA"
   },
   {
     "title": "Tum Paas Aaye",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Tum Paas Aaye Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "bKZTnnFU9HA"
   },
   {
     "title": "Kuch Kuch Hota Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Kuch Kuch Hota Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "bKZTnnFU9HA"
   },
   {
     "title": "Suraj Hua Maddham",
     "artist": "Sonu Nigam, Alka Yagnik",
     "year": 2001,
     "q": "Suraj Hua Maddham Sonu Nigam, Alka Yagnik",
-    "yt": null
+    "yt": "iqNS2Qe4pp0"
   },
   {
     "title": "Tere Liye",
     "artist": "Lata Mangeshkar, Roop Kumar Rathod",
     "year": 2004,
     "q": "Tere Liye Lata Mangeshkar, Roop Kumar Rathod",
-    "yt": null
+    "yt": "jo6iAkSoraY"
   },
   {
     "title": "Bahon Ke Darmiyan",
     "artist": "Kumar Sanu, Kavita Krishnamurthy",
     "year": 1996,
     "q": "Bahon Ke Darmiyan Kumar Sanu, Kavita Krishnamurthy",
-    "yt": null
+    "yt": "kHYYfKAQdHA"
   },
   {
     "title": "Aankhon Ki Gustakhiyan",
     "artist": "Kumar Sanu, Kavita Krishnamurthy",
     "year": 1999,
     "q": "Aankhon Ki Gustakhiyan Kumar Sanu, Kavita Krishnamurthy",
-    "yt": null
+    "yt": "xgMMfm1h_Go"
   },
   {
     "title": "Tadap Tadap",
     "artist": "K. K.",
     "year": 1999,
     "q": "Tadap Tadap K. K.",
-    "yt": null
+    "yt": "YXKVgsfU_xw"
   },
   {
     "title": "Chand Chhupa Badal Mein",
@@ -76,56 +76,56 @@ window.PLAYLIST = [
     "artist": "Abhijeet, Asha Bhosle",
     "year": 1995,
     "q": "Zara Sa Jhoom Loon Main Abhijeet, Asha Bhosle",
-    "yt": null
+    "yt": "96YVQBjrtWE"
   },
   {
     "title": "Ho Gaya Hai Tujhko",
     "artist": "Udit Narayan, Lata Mangeshkar",
     "year": 1995,
     "q": "Ho Gaya Hai Tujhko Udit Narayan, Lata Mangeshkar",
-    "yt": null
+    "yt": "hw_HpTI_Wkw"
   },
   {
     "title": "Dil To Pagal Hai",
     "artist": "Lata Mangeshkar, Udit Narayan",
     "year": 1997,
     "q": "Dil To Pagal Hai Lata Mangeshkar, Udit Narayan",
-    "yt": null
+    "yt": "-NCdeldQLFc"
   },
   {
     "title": "Are Re Are",
     "artist": "Udit Narayan, Lata Mangeshkar",
     "year": 1997,
     "q": "Are Re Are Udit Narayan, Lata Mangeshkar",
-    "yt": null
+    "yt": "_0iRYwdj2Cc"
   },
   {
     "title": "Koi Mil Gaya",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Koi Mil Gaya Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "Foh01tG09Nk"
   },
   {
     "title": "Sandese Aate Hain",
     "artist": "Sonu Nigam, Roop Kumar Rathod",
     "year": 1997,
     "q": "Sandese Aate Hain Sonu Nigam, Roop Kumar Rathod",
-    "yt": null
+    "yt": "yccGxvIydKg"
   },
   {
     "title": "Pyar Hua Chupke Se",
     "artist": "Kavita Krishnamurthy",
     "year": 1994,
     "q": "Pyar Hua Chupke Se Kavita Krishnamurthy",
-    "yt": null
+    "yt": "iQMmyhezfg4"
   },
   {
     "title": "Ae Ajnabi",
     "artist": "Udit Narayan, Mahalaxmi Iyer",
     "year": 1998,
     "q": "Ae Ajnabi Udit Narayan, Mahalaxmi Iyer",
-    "yt": null
+    "yt": "TdUu05Svkl8"
   }
 ];
 

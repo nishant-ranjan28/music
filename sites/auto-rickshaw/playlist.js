@@ -6,126 +6,126 @@ window.PLAYLIST = [
     "artist": "Vinod Rathod",
     "year": 1994,
     "q": "Ole Ole Vinod Rathod",
-    "yt": null
+    "yt": "hcCvSmjHwGY"
   },
   {
     "title": "Tu Cheez Badi Hai Mast",
     "artist": "Udit Narayan, Kavita Krishnamurthy",
     "year": 1994,
     "q": "Tu Cheez Badi Hai Mast Udit Narayan, Kavita Krishnamurthy",
-    "yt": null
+    "yt": "ZFZMPjMbvtU"
   },
   {
     "title": "Didi Tera Devar Deewana",
     "artist": "Lata Mangeshkar, S. P. Balasubrahmanyam",
     "year": 1994,
     "q": "Didi Tera Devar Deewana Lata Mangeshkar, S. P. Balasubrahmanyam",
-    "yt": null
+    "yt": "tEKi6vnPApI"
   },
   {
     "title": "Sona Kitna Sona Hai",
     "artist": "Poornima, Vinod Rathod",
     "year": 1997,
     "q": "Sona Kitna Sona Hai Poornima, Vinod Rathod",
-    "yt": null
+    "yt": "4pIV63BLA6A"
   },
   {
     "title": "Aati Kya Khandala",
     "artist": "Aamir Khan, Alka Yagnik",
     "year": 1998,
     "q": "Aati Kya Khandala Aamir Khan, Alka Yagnik",
-    "yt": null
+    "yt": "EENnVk1_suc"
   },
   {
     "title": "Chaiyya Chaiyya",
     "artist": "Sukhwinder Singh, Sapna Awasthi",
     "year": 1998,
     "q": "Chaiyya Chaiyya Sukhwinder Singh, Sapna Awasthi",
-    "yt": null
+    "yt": "AtcZ3Pu0joY"
   },
   {
     "title": "Muqabla",
     "artist": "Mano, Swarnalatha",
     "year": 1994,
     "q": "Muqabla Mano, Swarnalatha",
-    "yt": null
+    "yt": "1IuQaLxgVB0"
   },
   {
     "title": "Urvashi Urvashi",
     "artist": "A. R. Rahman, Suresh Peters",
     "year": 1994,
     "q": "Urvashi Urvashi A. R. Rahman, Suresh Peters",
-    "yt": null
+    "yt": "M7ebX_7ay6o"
   },
   {
     "title": "Rangeela Re",
     "artist": "Asha Bhosle",
     "year": 1995,
     "q": "Rangeela Re Asha Bhosle",
-    "yt": null
+    "yt": "i65HIFzIfec"
   },
   {
     "title": "Ek Do Teen",
     "artist": "Alka Yagnik",
     "year": 1988,
     "q": "Ek Do Teen Alka Yagnik",
-    "yt": null
+    "yt": "hv1-_7ZH34Q"
   },
   {
     "title": "Dhak Dhak Karne Laga",
     "artist": "Anuradha Paudwal, Udit Narayan",
     "year": 1992,
     "q": "Dhak Dhak Karne Laga Anuradha Paudwal, Udit Narayan",
-    "yt": null
+    "yt": "P7i0Z4yDKNM"
   },
   {
     "title": "Jhanjhariya",
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1996,
     "q": "Jhanjhariya Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "yRsRKYcAqcc"
   },
   {
     "title": "Oonchi Hai Building",
     "artist": "Poornima, Abhijeet",
     "year": 1997,
     "q": "Oonchi Hai Building Poornima, Abhijeet",
-    "yt": null
+    "yt": "FBUeXHfYCZw"
   },
   {
     "title": "Chunari Chunari",
     "artist": "Abhijeet, Anuradha Sriram",
     "year": 1999,
     "q": "Chunari Chunari Abhijeet, Anuradha Sriram",
-    "yt": null
+    "yt": "6z1U-kJ3xJE"
   },
   {
     "title": "Tunak Tunak Tun",
     "artist": "Daler Mehndi",
     "year": 1998,
     "q": "Tunak Tunak Tun Daler Mehndi",
-    "yt": null
+    "yt": "92ydUdqWE1g"
   },
   {
     "title": "Bolo Ta Ra Ra",
     "artist": "Daler Mehndi",
     "year": 1995,
     "q": "Bolo Ta Ra Ra Daler Mehndi",
-    "yt": null
+    "yt": "lhVceZE1lf4"
   },
   {
     "title": "Main Nikla Gaddi Leke",
     "artist": "Udit Narayan",
     "year": 2001,
     "q": "Main Nikla Gaddi Leke Udit Narayan",
-    "yt": null
+    "yt": "OovAARJxt5E"
   },
   {
     "title": "Kaho Naa Pyaar Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 2000,
     "q": "Kaho Naa Pyaar Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "-LESbtPT8uw"
   }
 ];
 

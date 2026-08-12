@@ -191,6 +191,12 @@ a {
   filter: var(--art-filter, none);
 }
 
+/* hqdefault fallback is a 4:3 frame with ~12.5% black bars baked into the top
+   and bottom. Zoom just past them so the square crop shows only picture. */
+.art img.art--letterboxed {
+  transform: scale(1.35);
+}
+
 .art-fallback {
   font-family: var(--font-display);
   font-size: clamp(40px, 12vw, 72px);

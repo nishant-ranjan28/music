@@ -88,11 +88,21 @@
     }
 
     // Album art: official YouTube thumbnail when we have a video id.
+    // maxresdefault is a clean 16:9 frame; hqdefault is 4:3 with black bars
+    // baked in, which show up as letterboxing inside the square crop. Older
+    // uploads have no maxres, so fall back on error.
     if (track.yt) {
-      el.art.innerHTML =
-        '<img alt="" src="https://i.ytimg.com/vi/' +
-        track.yt +
-        '/hqdefault.jpg" loading="lazy">';
+      var img = document.createElement("img");
+      img.alt = "";
+      img.loading = "lazy";
+      img.src = "https://i.ytimg.com/vi/" + track.yt + "/maxresdefault.jpg";
+      img.onerror = function () {
+        img.onerror = null;
+        img.classList.add("art--letterboxed");
+        img.src = "https://i.ytimg.com/vi/" + track.yt + "/hqdefault.jpg";
+      };
+      el.art.textContent = "";
+      el.art.appendChild(img);
     } else {
       el.art.innerHTML =
         '<div class="art-fallback">' + (SITE.glyph || "♫") + "</div>";

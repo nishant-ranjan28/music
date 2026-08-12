@@ -6,126 +6,126 @@ window.PLAYLIST = [
     "artist": "Kishore Kumar, Manna Dey",
     "year": 1975,
     "q": "Yeh Dosti Kishore Kumar, Manna Dey",
-    "yt": null
+    "yt": "wFAU_duK0Jc"
   },
   {
     "title": "Mere Sapno Ki Rani",
     "artist": "Kishore Kumar",
     "year": 1969,
     "q": "Mere Sapno Ki Rani Kishore Kumar",
-    "yt": null
+    "yt": "pGJr17MiaCs"
   },
   {
     "title": "Dum Maro Dum",
     "artist": "Asha Bhosle",
     "year": 1971,
     "q": "Dum Maro Dum Asha Bhosle",
-    "yt": null
+    "yt": "kOrRYDJ4AuY"
   },
   {
     "title": "Bachna Ae Haseeno",
     "artist": "Kishore Kumar",
     "year": 1977,
     "q": "Bachna Ae Haseeno Kishore Kumar",
-    "yt": null
+    "yt": "0MlndKe6Z7U"
   },
   {
     "title": "Khaike Paan Banaraswala",
     "artist": "Kishore Kumar",
     "year": 1978,
     "q": "Khaike Paan Banaraswala Kishore Kumar",
-    "yt": null
+    "yt": "C3tcvnEqN9I"
   },
   {
     "title": "Jai Jai Shiv Shankar",
     "artist": "Kishore Kumar, Lata Mangeshkar",
     "year": 1974,
     "q": "Jai Jai Shiv Shankar Kishore Kumar, Lata Mangeshkar",
-    "yt": null
+    "yt": "R54SD2EHtVc"
   },
   {
     "title": "Ek Main Aur Ek Tu",
     "artist": "Kishore Kumar, Asha Bhosle",
     "year": 1975,
     "q": "Ek Main Aur Ek Tu Kishore Kumar, Asha Bhosle",
-    "yt": null
+    "yt": "bWacAXjjCI8"
   },
   {
     "title": "Aap Jaisa Koi",
     "artist": "Nazia Hassan",
     "year": 1980,
     "q": "Aap Jaisa Koi Nazia Hassan",
-    "yt": null
+    "yt": "mBVArtrjO1E"
   },
   {
     "title": "Disco Deewane",
     "artist": "Nazia Hassan, Zoheb Hassan",
     "year": 1981,
     "q": "Disco Deewane Nazia Hassan, Zoheb Hassan",
-    "yt": null
+    "yt": "QljTHgNSmHQ"
   },
   {
     "title": "I Am A Disco Dancer",
     "artist": "Vijay Benedict",
     "year": 1982,
     "q": "I Am A Disco Dancer Vijay Benedict",
-    "yt": null
+    "yt": "7JdEZoffm-Q"
   },
   {
     "title": "Jimmy Jimmy Aaja",
     "artist": "Parvati Khan",
     "year": 1982,
     "q": "Jimmy Jimmy Aaja Parvati Khan",
-    "yt": null
+    "yt": "fRSLPx0HSvw"
   },
   {
     "title": "Yaad Aa Raha Hai",
     "artist": "Bappi Lahiri",
     "year": 1982,
     "q": "Yaad Aa Raha Hai Bappi Lahiri",
-    "yt": null
+    "yt": "v7B1_y2LAeI"
   },
   {
     "title": "Om Shanti Om",
     "artist": "Kishore Kumar",
     "year": 1980,
     "q": "Om Shanti Om Kishore Kumar",
-    "yt": null
+    "yt": "I_iIY81069o"
   },
   {
     "title": "Pag Ghungroo Baandh",
     "artist": "Kishore Kumar",
     "year": 1982,
     "q": "Pag Ghungroo Baandh Kishore Kumar",
-    "yt": null
+    "yt": "cTvUrpSr9ck"
   },
   {
     "title": "Rambha Ho",
     "artist": "Bappi Lahiri, Usha Uthup",
     "year": 1981,
     "q": "Rambha Ho Bappi Lahiri, Usha Uthup",
-    "yt": null
+    "yt": "MINo9f1hpz8"
   },
   {
     "title": "Hawa Hawa",
     "artist": "Hassan Jahangir",
     "year": 1987,
     "q": "Hawa Hawa Hassan Jahangir",
-    "yt": null
+    "yt": "X8t8axbZnH8"
   },
   {
     "title": "My Name Is Lakhan",
     "artist": "Nitin Mukesh, Mohammed Aziz",
     "year": 1989,
     "q": "My Name Is Lakhan Nitin Mukesh, Mohammed Aziz",
-    "yt": null
+    "yt": "ZCGRqbKl38U"
   },
   {
     "title": "Yeh Vaada Raha",
     "artist": "Kishore Kumar, Asha Bhosle",
     "year": 1982,
     "q": "Yeh Vaada Raha Kishore Kumar, Asha Bhosle",
-    "yt": null
+    "yt": "bLxLaVS4ZXQ"
   }
 ];
 

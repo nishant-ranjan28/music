@@ -15,7 +15,7 @@ const SITES = join(ROOT, "sites");
 
 /** Public origin, used only for absolute og:/twitter: URLs. Set this to the
  *  real domain before launch — link previews need absolute URLs. */
-const ORIGIN = process.env.SITE_ORIGIN || "https://example.com";
+const ORIGIN = process.env.SITE_ORIGIN || "https://music-eight-smoky.vercel.app";
 
 /* ---------- helpers ------------------------------------------------- */
 
@@ -294,7 +294,7 @@ ${themes.filter((t) => t.kind === kind).map(card).join("\n")}
 <body>
   <h1>Nostalgia radio</h1>
   <p class="lede">Ten single-page stations. Each one is a place or a genre, one song at a time,
-     no accounts, no search, no scroll. Pick a station and leave it playing.</p>
+     no accounts, no search. Pick a station and leave it playing.</p>
 
 ${group("place", "Places", "a specific room, at a specific time")}
 
@@ -302,8 +302,6 @@ ${group("genre", "Genres", "the sound itself, in its own era")}
 
   <footer>
     Audio streams through the official YouTube IFrame API — nothing is hosted here.
-    Add a station by appending an entry to <code>themes/themes.mjs</code> and running
-    <code>node build.mjs</code>.
   </footer>
 </body>
 </html>

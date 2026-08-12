@@ -5,7 +5,7 @@
    Run:  node build.mjs
    ============================================================ */
 
-import { mkdirSync, writeFileSync, rmSync, existsSync, readFileSync } from "node:fs";
+import { mkdirSync, writeFileSync, existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { themes, GRAIN } from "./themes/themes.mjs";
@@ -318,7 +318,8 @@ for (const theme of themes) {
   const playlist = playlistFile(theme); // read old ids BEFORE wiping
   const idCount = (playlist.match(/"yt": "/g) || []).length;
 
-  rmSync(dir, { recursive: true, force: true });
+  // Overwrite the generated files in place rather than wiping the directory —
+  // og.png and any other hand-made asset alongside them must survive a rebuild.
   mkdirSync(dir, { recursive: true });
 
   writeFileSync(join(dir, "index.html"), indexHtml(theme));

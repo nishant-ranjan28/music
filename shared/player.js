@@ -54,6 +54,9 @@
     }
   }
 
+  var reducedMotion =
+    window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   var cursor = 0;
   var player = null;
   var ready = false;
@@ -83,8 +86,19 @@
     }
 
     if (el.ticker) {
-      el.ticker.textContent =
-        "now playing — " + track.title + " — " + track.artist + "   ★   ";
+      var line = "now playing — " + track.title + " — " + track.artist + "   ★   ";
+      el.ticker.textContent = line;
+
+      // Restart the marquee on every track change, otherwise the new title
+      // inherits the outgoing one's position and appears already half
+      // scrolled off. Duration scales with the text so a long title travels
+      // at the same speed as a short one.
+      if (!reducedMotion) {
+        el.ticker.style.animation = "none";
+        void el.ticker.offsetWidth; // force reflow so the restart takes
+        el.ticker.style.animation =
+          "ticker-scroll " + (6 + line.length * 0.28).toFixed(1) + "s linear infinite";
+      }
     }
 
     // Album art: official YouTube thumbnail when we have a video id.

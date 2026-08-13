@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0b0d"/>
+  <rect x="0" y="0" width="109.0909090909091" height="630" fill="#f7c948" opacity="0.13"/>
+  <rect x="109.0909090909091" y="0" width="109.0909090909091" height="630" fill="#ffd400" opacity="0.13"/>
+  <rect x="218.1818181818182" y="0" width="109.0909090909091" height="630" fill="#ff8a00" opacity="0.13"/>
+  <rect x="327.27272727272725" y="0" width="109.0909090909091" height="630" fill="#35e0f0" opacity="0.13"/>
+  <rect x="436.3636363636364" y="0" width="109.0909090909091" height="630" fill="#c9a227" opacity="0.13"/>
+  <rect x="545.4545454545455" y="0" width="109.0909090909091" height="630" fill="#ff2e88" opacity="0.13"/>
+  <rect x="654.5454545454545" y="0" width="109.0909090909091" height="630" fill="#e8b33c" opacity="0.13"/>
+  <rect x="763.6363636363636" y="0" width="109.0909090909091" height="630" fill="#b7a6e8" opacity="0.13"/>
+  <rect x="872.7272727272727" y="0" width="109.0909090909091" height="630" fill="#d4af37" opacity="0.13"/>
+  <rect x="981.8181818181819" y="0" width="109.0909090909091" height="630" fill="#e9b44c" opacity="0.13"/>
+  <rect x="1090.909090909091" y="0" width="109.0909090909091" height="630" fill="#ffb020" opacity="0.13"/>
+  <text x="600" y="286" text-anchor="middle" font-family="Anton, Impact, sans-serif"
+        font-size="104" fill="#f2efe9">Nostalgia radio</text>
+  <text x="600" y="352" text-anchor="middle" font-family="Inter, sans-serif"
+        font-size="27" letter-spacing="6" fill="#8f8a82">11 STATIONS · ONE SONG AT A TIME</text>
+  <text x="600" y="452" text-anchor="middle" font-family="Inter, sans-serif"
+        font-size="32" fill="#ffffff" opacity="0.9">Khushi  ·  Cassette  ·  Baraat  ·  Monsoon</text>
+  <rect width="1200" height="630" filter="url(#n)" opacity="0.06"/>
+</svg>

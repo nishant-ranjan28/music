@@ -15,7 +15,7 @@ const SITES = join(ROOT, "sites");
 
 /** Public origin, used only for absolute og:/twitter: URLs. Set this to the
  *  real domain before launch — link previews need absolute URLs. */
-const ORIGIN = process.env.SITE_ORIGIN || "https://music-eight-smoky.vercel.app";
+const ORIGIN = process.env.SITE_ORIGIN || "https://nostalgia.iamnishant.in";
 
 /* ---------- helpers ------------------------------------------------- */
 
@@ -274,6 +274,16 @@ ${themes.filter((t) => t.kind === kind).map(card).join("\n")}
 <title>Stations — nostalgia radio</title>
 <meta name="description" content="Eleven single-page nostalgia radio stations. One place or genre each, one song at a time.">
 <meta name="theme-color" content="#0b0b0d">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="${ORIGIN}/">
+<meta property="og:title" content="Nostalgia radio">
+<meta property="og:description" content="Eleven single-page stations. Each one is a place or a genre, one song at a time.">
+<meta property="og:image" content="${ORIGIN}/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nostalgia radio">
+<meta name="twitter:description" content="Eleven single-page stations. Each one is a place or a genre, one song at a time.">
+<meta name="twitter:image" content="${ORIGIN}/og.png">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -407,6 +417,36 @@ writeFileSync(
       1
     ) +
     ";\n"
+);
+
+/* Hub share card. The root URL is the one that actually gets posted, so
+   it needs a card as much as any station does. */
+writeFileSync(
+  join(ROOT, "og.svg"),
+  `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0b0d"/>
+  ${themes
+    .map(
+      (t, i) =>
+        `<rect x="${i * (1200 / themes.length)}" y="0" width="${1200 / themes.length}" height="630" fill="${t.tokens["--accent"]}" opacity="0.13"/>`
+    )
+    .join("\n  ")}
+  <text x="600" y="286" text-anchor="middle" font-family="Anton, Impact, sans-serif"
+        font-size="104" fill="#f2efe9">Nostalgia radio</text>
+  <text x="600" y="352" text-anchor="middle" font-family="Inter, sans-serif"
+        font-size="27" letter-spacing="6" fill="#8f8a82">${themes.length} STATIONS · ONE SONG AT A TIME</text>
+  <text x="600" y="452" text-anchor="middle" font-family="Inter, sans-serif"
+        font-size="32" fill="#ffffff" opacity="0.9">${themes
+          .filter((t) => t.featured)
+          .sort((a, b) => a.featured - b.featured)
+          .map((t) => t.name)
+          .join("  ·  ")}</text>
+  <rect width="1200" height="630" filter="url(#n)" opacity="0.06"/>
+</svg>
+`
 );
 
 writeFileSync(join(ROOT, "index.html"), hubHtml());

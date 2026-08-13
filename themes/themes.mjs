@@ -776,23 +776,25 @@ export const themes = [
   /* =============================================================== 11 */
   {
     slug: "bhajan",
-    // Vedic Garbh sanskar — garbh sanskar mantras for pregnancy, ~59 tracks.
-    // Verified to load in the embedded player: the same channel's 40-track
-    // list is public and embeddable per the API but returns 0 items to the
-    // IFrame player, so API metadata alone is not enough to trust a playlist.
-    ytPlaylist: "PLUscsae6p7htIrRHAJ2P2upC85ExFDiol",
+    // RDC Spiritual Music — "Bhakti Sagar | Nonstop Bhajan Aarti", ~72 tracks:
+    // bhajans, aartis, chalisas and stotrams rather than one deity or occasion.
+    // Verified by loading it in a real embed. Two of the five playlists tried
+    // here report public and populated through the Data API and return zero
+    // items to the IFrame player, so API metadata alone proves nothing.
+    ytPlaylist: "PLQCEIlUXozCw",
     kind: "genre",
-    // Chants and stotrams legitimately run long here, so the compilation
-    // ceiling is generous — an hour-long Vishnu Sahasranamam is the point.
+    // Chalisas and stotrams legitimately run long, so the compilation ceiling
+    // is generous — an unbroken Hanuman Chalisa is the point, not something to
+    // skip past. Anything over an hour is still treated as a jukebox.
     maxSeconds: 3600,
     name: "Bhajan",
     sign: "B H A J A N",
-    kicker: "garbh sanskar · mantra · nine months",
-    tagline: "The mantras played for the baby, all nine months.",
-    gateTitle: "Aaram se baithiye",
+    kicker: "aarti · chalisa · dhun",
+    tagline: "Evening aarti, the Chalisa, and whatever plays after.",
+    gateTitle: "Deepak jala dijiye",
     gateCopy:
-      "A lamp lit at dusk, tulsi at the door, and the same few bhajans playing softly while the house waits.",
-    ogDesc: "Garbh sanskar listening — the stotras, mantras and Krishna bhajans played through pregnancy.",
+      "A lamp lit at dusk, an agarbatti burning down, and the same cassette of bhajans the house has played every evening for thirty years.",
+    ogDesc: "Devotional radio — bhajans, aartis, chalisas and stotrams, one after another.",
     glyph: "✿",
     fonts: {
       display: "Marcellus",
@@ -863,28 +865,30 @@ export const themes = [
         animation:fall2 16s linear infinite;animation-delay:var(--d)}
       @keyframes fall2{to{transform:translate(24px,118vh) rotate(200deg);opacity:0}}
       @media(max-width:640px){.mandala{opacity:.4}}`,
-    /* Garbh sanskar repertoire specifically: the protective stotras, the
-       conception and child mantras, the Krishna infancy bhajans, and the
-       Gita chapters traditionally recited to the womb. */
+    /* The fallback when the playlist fails, so it spans what the station
+       claims: the aartis sung at dusk, the chalisas, the big stotrams, and
+       the film bhajans that ended up in every household's rotation. */
     tracks: [
-      ["Garbh Raksha Stotram", "Traditional"],
-      ["Santan Gopal Mantra", "Traditional"],
-      ["Om Namo Bhagavate Vasudevaya", "Traditional"],
-      ["Devaki Suta Govinda", "Traditional"],
+      ["Hanuman Chalisa", "Hariharan"],
+      ["Shiv Tandav Stotram", "Traditional"],
+      ["Om Jai Jagdish Hare", "Traditional"],
+      ["Sukhkarta Dukhharta", "Traditional"],
+      ["Jai Ambe Gauri", "Traditional"],
+      ["Om Jai Shiv Omkara", "Traditional"],
+      ["Aarti Kunj Bihari Ki", "Traditional"],
+      ["Achyutam Keshavam", "Traditional"],
+      ["Shri Ram Chandra Kripalu", "Traditional (Tulsidas)"],
+      ["Raghupati Raghav Raja Ram", "Traditional"],
       ["Gayatri Mantra", "Anuradha Paudwal"],
       ["Mahamrityunjaya Mantra", "Traditional"],
       ["Vishnu Sahasranamam", "M. S. Subbulakshmi"],
       ["Ganapati Atharvashirsha", "Traditional"],
-      ["Ram Raksha Stotra", "Traditional"],
-      ["Bhagavad Gita Adhyay 15 - Purushottama Yoga", "Traditional"],
       ["Madhurashtakam", "Traditional (Vallabhacharya)"],
-      ["Achyutam Keshavam", "Traditional"],
-      ["Ya Kundendu Tushara Hara - Saraswati Vandana", "Traditional"],
-      ["Shri Suktam", "Traditional"],
-      ["Purusha Suktam", "Traditional"],
-      ["Yashomati Maiya Se", "Lata Mangeshkar, Manna Dey", 1972],
-      ["Chanda Hai Tu Mera Suraj Hai Tu", "Lata Mangeshkar", 1969],
-      ["Om Chanting 108 Times", "Traditional"]
+      ["Payoji Maine Ram Ratan Dhan Payo", "Lata Mangeshkar"],
+      ["Man Tarpat Hari Darshan Ko Aaj", "Mohammed Rafi", 1952],
+      ["Itni Shakti Hamein Dena Data", "Sushma Shreshtha, Pushpa Pagdhare", 1983],
+      ["Ae Malik Tere Bande Hum", "Vani Jairam", 1957],
+      ["Tu Pyar Ka Sagar Hai", "Manna Dey", 1959]
     ]
   }
 ];

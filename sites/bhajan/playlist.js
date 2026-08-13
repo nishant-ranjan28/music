@@ -2,31 +2,73 @@
    they are preserved on the next build. */
 window.PLAYLIST = [
   {
-    "title": "Garbh Raksha Stotram",
-    "artist": "Traditional",
+    "title": "Hanuman Chalisa",
+    "artist": "Hariharan",
     "year": null,
-    "q": "Garbh Raksha Stotram Traditional",
+    "q": "Hanuman Chalisa Hariharan",
     "yt": null
   },
   {
-    "title": "Santan Gopal Mantra",
+    "title": "Shiv Tandav Stotram",
     "artist": "Traditional",
     "year": null,
-    "q": "Santan Gopal Mantra Traditional",
+    "q": "Shiv Tandav Stotram Traditional",
     "yt": null
   },
   {
-    "title": "Om Namo Bhagavate Vasudevaya",
+    "title": "Om Jai Jagdish Hare",
     "artist": "Traditional",
     "year": null,
-    "q": "Om Namo Bhagavate Vasudevaya Traditional",
-    "yt": "2yhvCgpNJiA"
+    "q": "Om Jai Jagdish Hare Traditional",
+    "yt": null
   },
   {
-    "title": "Devaki Suta Govinda",
+    "title": "Sukhkarta Dukhharta",
     "artist": "Traditional",
     "year": null,
-    "q": "Devaki Suta Govinda Traditional",
+    "q": "Sukhkarta Dukhharta Traditional",
+    "yt": null
+  },
+  {
+    "title": "Jai Ambe Gauri",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Jai Ambe Gauri Traditional",
+    "yt": null
+  },
+  {
+    "title": "Om Jai Shiv Omkara",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Om Jai Shiv Omkara Traditional",
+    "yt": null
+  },
+  {
+    "title": "Aarti Kunj Bihari Ki",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Aarti Kunj Bihari Ki Traditional",
+    "yt": null
+  },
+  {
+    "title": "Achyutam Keshavam",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Achyutam Keshavam Traditional",
+    "yt": "3yczGKnskts"
+  },
+  {
+    "title": "Shri Ram Chandra Kripalu",
+    "artist": "Traditional (Tulsidas)",
+    "year": null,
+    "q": "Shri Ram Chandra Kripalu Traditional (Tulsidas)",
+    "yt": null
+  },
+  {
+    "title": "Raghupati Raghav Raja Ram",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Raghupati Raghav Raja Ram Traditional",
     "yt": null
   },
   {
@@ -58,20 +100,6 @@ window.PLAYLIST = [
     "yt": null
   },
   {
-    "title": "Ram Raksha Stotra",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Ram Raksha Stotra Traditional",
-    "yt": null
-  },
-  {
-    "title": "Bhagavad Gita Adhyay 15 - Purushottama Yoga",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Bhagavad Gita Adhyay 15 - Purushottama Yoga Traditional",
-    "yt": null
-  },
-  {
     "title": "Madhurashtakam",
     "artist": "Traditional (Vallabhacharya)",
     "year": null,
@@ -79,62 +107,48 @@ window.PLAYLIST = [
     "yt": null
   },
   {
-    "title": "Achyutam Keshavam",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Achyutam Keshavam Traditional",
-    "yt": "3yczGKnskts"
-  },
-  {
-    "title": "Ya Kundendu Tushara Hara - Saraswati Vandana",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Ya Kundendu Tushara Hara - Saraswati Vandana Traditional",
-    "yt": null
-  },
-  {
-    "title": "Shri Suktam",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Shri Suktam Traditional",
-    "yt": null
-  },
-  {
-    "title": "Purusha Suktam",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Purusha Suktam Traditional",
-    "yt": null
-  },
-  {
-    "title": "Yashomati Maiya Se",
-    "artist": "Lata Mangeshkar, Manna Dey",
-    "year": 1972,
-    "q": "Yashomati Maiya Se Lata Mangeshkar, Manna Dey",
-    "yt": "4KtSuGdxt1I"
-  },
-  {
-    "title": "Chanda Hai Tu Mera Suraj Hai Tu",
+    "title": "Payoji Maine Ram Ratan Dhan Payo",
     "artist": "Lata Mangeshkar",
-    "year": 1969,
-    "q": "Chanda Hai Tu Mera Suraj Hai Tu Lata Mangeshkar",
-    "yt": "MZgMO4V8kEI"
+    "year": null,
+    "q": "Payoji Maine Ram Ratan Dhan Payo Lata Mangeshkar",
+    "yt": null
   },
   {
-    "title": "Om Chanting 108 Times",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Om Chanting 108 Times Traditional",
+    "title": "Man Tarpat Hari Darshan Ko Aaj",
+    "artist": "Mohammed Rafi",
+    "year": 1952,
+    "q": "Man Tarpat Hari Darshan Ko Aaj Mohammed Rafi",
+    "yt": null
+  },
+  {
+    "title": "Itni Shakti Hamein Dena Data",
+    "artist": "Sushma Shreshtha, Pushpa Pagdhare",
+    "year": 1983,
+    "q": "Itni Shakti Hamein Dena Data Sushma Shreshtha, Pushpa Pagdhare",
+    "yt": null
+  },
+  {
+    "title": "Ae Malik Tere Bande Hum",
+    "artist": "Vani Jairam",
+    "year": 1957,
+    "q": "Ae Malik Tere Bande Hum Vani Jairam",
+    "yt": null
+  },
+  {
+    "title": "Tu Pyar Ka Sagar Hai",
+    "artist": "Manna Dey",
+    "year": 1959,
+    "q": "Tu Pyar Ka Sagar Hai Manna Dey",
     "yt": null
   }
 ];
 
 window.SITE = {
   "name": "Bhajan",
-  "tagline": "The mantras played for the baby, all nine months.",
+  "tagline": "Evening aarti, the Chalisa, and whatever plays after.",
   "glyph": "✿",
   "shuffle": true,
   "searchFallback": true,
-  "ytPlaylist": "PLUscsae6p7htIrRHAJ2P2upC85ExFDiol",
+  "ytPlaylist": "PLQCEIlUXozCw",
   "maxSeconds": 3600
 };

@@ -1396,8 +1396,8 @@ window.STATIONS = [
   "kind": "genre",
   "name": "Bhajan",
   "signHtml": "B H A J A N",
-  "kicker": "garbh sanskar · mantra · nine months",
-  "tagline": "The mantras played for the baby, all nine months.",
+  "kicker": "aarti · chalisa · dhun",
+  "tagline": "Evening aarti, the Chalisa, and whatever plays after.",
   "glyph": "✿",
   "accent": "#e9b44c",
   "bg": "#100d07",
@@ -1405,40 +1405,82 @@ window.STATIONS = [
   "scene": "<svg class=\"mandala\" viewBox=\"0 0 400 400\" aria-hidden=\"true\">\n        <g fill=\"none\" stroke=\"#e9b44c\" stroke-width=\"1\">\n          <circle cx=\"200\" cy=\"200\" r=\"150\" opacity=\".18\"/>\n          <circle cx=\"200\" cy=\"200\" r=\"120\" opacity=\".13\"/>\n          <circle cx=\"200\" cy=\"200\" r=\"92\" opacity=\".1\"/>\n        </g>\n        <g fill=\"none\" stroke=\"#e9b44c\" opacity=\".14\">\n          <path d=\"M200 50c34 42 34 108 0 150-34-42-34-108 0-150z\"/>\n          <path d=\"M200 350c34-42 34-108 0-150-34 42-34 108 0 150z\"/>\n          <path d=\"M50 200c42-34 108-34 150 0-42 34-108 34-150 0z\"/>\n          <path d=\"M350 200c-42-34-108-34-150 0 42 34 108 34 150 0z\"/>\n        </g>\n      </svg>\n      <svg class=\"diya\" viewBox=\"0 0 200 120\" aria-hidden=\"true\">\n        <path d=\"M40 62h120c0 26-27 42-60 42S40 88 40 62z\" fill=\"#5a3d18\" stroke=\"#e9b44c66\"/>\n        <path d=\"M34 60h132c0 5-6 8-12 8H46c-6 0-12-3-12-8z\" fill=\"#7a5426\"/>\n        <g class=\"flicker\">\n          <path d=\"M100 14c14 16 20 26 20 34a20 20 0 0 1-40 0c0-8 6-18 20-34z\"\n                fill=\"url(#fl)\"/>\n        </g>\n        <defs>\n          <radialGradient id=\"fl\" cx=\"50%\" cy=\"75%\" r=\"65%\">\n            <stop offset=\"0%\" stop-color=\"#fff6d0\"/>\n            <stop offset=\"55%\" stop-color=\"#ffb43c\"/>\n            <stop offset=\"100%\" stop-color=\"#ff8a00\" stop-opacity=\"0\"/>\n          </radialGradient>\n        </defs>\n      </svg>\n      <div class=\"petals\" aria-hidden=\"true\">\n        <b style=\"--x:16vw;--d:0s\"></b><b style=\"--x:41vw;--d:4.5s\"></b>\n        <b style=\"--x:68vw;--d:2.2s\"></b><b style=\"--x:88vw;--d:6.4s\"></b>\n      </div>",
   "site": {
    "name": "Bhajan",
-   "tagline": "The mantras played for the baby, all nine months.",
+   "tagline": "Evening aarti, the Chalisa, and whatever plays after.",
    "glyph": "✿",
    "shuffle": true,
    "searchFallback": true,
-   "ytPlaylist": "PLUscsae6p7htIrRHAJ2P2upC85ExFDiol",
+   "ytPlaylist": "PLQCEIlUXozCw",
    "maxSeconds": 3600
   },
   "tracks": [
    {
-    "title": "Garbh Raksha Stotram",
-    "artist": "Traditional",
+    "title": "Hanuman Chalisa",
+    "artist": "Hariharan",
     "year": null,
-    "q": "Garbh Raksha Stotram Traditional",
+    "q": "Hanuman Chalisa Hariharan",
     "yt": null
    },
    {
-    "title": "Santan Gopal Mantra",
+    "title": "Shiv Tandav Stotram",
     "artist": "Traditional",
     "year": null,
-    "q": "Santan Gopal Mantra Traditional",
+    "q": "Shiv Tandav Stotram Traditional",
     "yt": null
    },
    {
-    "title": "Om Namo Bhagavate Vasudevaya",
+    "title": "Om Jai Jagdish Hare",
     "artist": "Traditional",
     "year": null,
-    "q": "Om Namo Bhagavate Vasudevaya Traditional",
-    "yt": "2yhvCgpNJiA"
+    "q": "Om Jai Jagdish Hare Traditional",
+    "yt": null
    },
    {
-    "title": "Devaki Suta Govinda",
+    "title": "Sukhkarta Dukhharta",
     "artist": "Traditional",
     "year": null,
-    "q": "Devaki Suta Govinda Traditional",
+    "q": "Sukhkarta Dukhharta Traditional",
+    "yt": null
+   },
+   {
+    "title": "Jai Ambe Gauri",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Jai Ambe Gauri Traditional",
+    "yt": null
+   },
+   {
+    "title": "Om Jai Shiv Omkara",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Om Jai Shiv Omkara Traditional",
+    "yt": null
+   },
+   {
+    "title": "Aarti Kunj Bihari Ki",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Aarti Kunj Bihari Ki Traditional",
+    "yt": null
+   },
+   {
+    "title": "Achyutam Keshavam",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Achyutam Keshavam Traditional",
+    "yt": "3yczGKnskts"
+   },
+   {
+    "title": "Shri Ram Chandra Kripalu",
+    "artist": "Traditional (Tulsidas)",
+    "year": null,
+    "q": "Shri Ram Chandra Kripalu Traditional (Tulsidas)",
+    "yt": null
+   },
+   {
+    "title": "Raghupati Raghav Raja Ram",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Raghupati Raghav Raja Ram Traditional",
     "yt": null
    },
    {
@@ -1470,20 +1512,6 @@ window.STATIONS = [
     "yt": null
    },
    {
-    "title": "Ram Raksha Stotra",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Ram Raksha Stotra Traditional",
-    "yt": null
-   },
-   {
-    "title": "Bhagavad Gita Adhyay 15 - Purushottama Yoga",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Bhagavad Gita Adhyay 15 - Purushottama Yoga Traditional",
-    "yt": null
-   },
-   {
     "title": "Madhurashtakam",
     "artist": "Traditional (Vallabhacharya)",
     "year": null,
@@ -1491,52 +1519,38 @@ window.STATIONS = [
     "yt": null
    },
    {
-    "title": "Achyutam Keshavam",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Achyutam Keshavam Traditional",
-    "yt": "3yczGKnskts"
-   },
-   {
-    "title": "Ya Kundendu Tushara Hara - Saraswati Vandana",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Ya Kundendu Tushara Hara - Saraswati Vandana Traditional",
-    "yt": null
-   },
-   {
-    "title": "Shri Suktam",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Shri Suktam Traditional",
-    "yt": null
-   },
-   {
-    "title": "Purusha Suktam",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Purusha Suktam Traditional",
-    "yt": null
-   },
-   {
-    "title": "Yashomati Maiya Se",
-    "artist": "Lata Mangeshkar, Manna Dey",
-    "year": 1972,
-    "q": "Yashomati Maiya Se Lata Mangeshkar, Manna Dey",
-    "yt": "4KtSuGdxt1I"
-   },
-   {
-    "title": "Chanda Hai Tu Mera Suraj Hai Tu",
+    "title": "Payoji Maine Ram Ratan Dhan Payo",
     "artist": "Lata Mangeshkar",
-    "year": 1969,
-    "q": "Chanda Hai Tu Mera Suraj Hai Tu Lata Mangeshkar",
-    "yt": "MZgMO4V8kEI"
+    "year": null,
+    "q": "Payoji Maine Ram Ratan Dhan Payo Lata Mangeshkar",
+    "yt": null
    },
    {
-    "title": "Om Chanting 108 Times",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Om Chanting 108 Times Traditional",
+    "title": "Man Tarpat Hari Darshan Ko Aaj",
+    "artist": "Mohammed Rafi",
+    "year": 1952,
+    "q": "Man Tarpat Hari Darshan Ko Aaj Mohammed Rafi",
+    "yt": null
+   },
+   {
+    "title": "Itni Shakti Hamein Dena Data",
+    "artist": "Sushma Shreshtha, Pushpa Pagdhare",
+    "year": 1983,
+    "q": "Itni Shakti Hamein Dena Data Sushma Shreshtha, Pushpa Pagdhare",
+    "yt": null
+   },
+   {
+    "title": "Ae Malik Tere Bande Hum",
+    "artist": "Vani Jairam",
+    "year": 1957,
+    "q": "Ae Malik Tere Bande Hum Vani Jairam",
+    "yt": null
+   },
+   {
+    "title": "Tu Pyar Ka Sagar Hai",
+    "artist": "Manna Dey",
+    "year": 1959,
+    "q": "Tu Pyar Ka Sagar Hai Manna Dey",
     "yt": null
    }
   ]

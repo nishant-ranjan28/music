@@ -7,7 +7,7 @@ name: Sync stations
 #
 #   Monday    group A   Pardesi, Meter Down, Baraat
 #   Wednesday group B   VHS, Mehfil, Cassette
-#   Friday    group C   Valve, Monsoon, Qawwali, Bhajan
+#   Friday    group C   Valve, Monsoon, Qawwali, Bhajan, Khushi
 #
 # Each run re-checks that the station playlists still exist, drops ids that
 # have become compilations or dead videos, fills whatever is missing, and
@@ -48,7 +48,7 @@ jobs:
           case "${{ github.event.schedule }}" in
             "23 2 * * 1") STATIONS="std-booth auto-rickshaw baraat-band" ;;
             "23 2 * * 3") STATIONS="wedding-vhs ghazal bollywood-90s" ;;
-            "23 2 * * 5") STATIONS="retro-rock lofi qawwali bhajan" ;;
+            "23 2 * * 5") STATIONS="retro-rock lofi qawwali bhajan khushi" ;;
             *)            STATIONS="${{ github.event.inputs.stations }}" ;;
           esac
           echo "stations=$STATIONS" >> "$GITHUB_OUTPUT"

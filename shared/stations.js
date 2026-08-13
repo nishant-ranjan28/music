@@ -1554,5 +1554,169 @@ window.STATIONS = [
     "yt": null
    }
   ]
+ },
+ {
+  "slug": "khushi",
+  "kind": "genre",
+  "name": "Khushi",
+  "signHtml": "K H U S H I",
+  "kicker": "90s · 00s · 10s · sing-along",
+  "tagline": "The ones everybody still knows every word of.",
+  "glyph": "☀",
+  "accent": "#ffb020",
+  "bg": "#150f07",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Inter:wght@400;600&display=swap",
+  "scene": "<svg class=\"sun\" viewBox=\"0 0 300 300\" aria-hidden=\"true\">\n        <circle cx=\"150\" cy=\"150\" r=\"52\" fill=\"#ffb02033\" stroke=\"#ffb02088\" stroke-width=\"2\"/>\n        <g class=\"rays\" stroke=\"#ffb02055\" stroke-width=\"7\" stroke-linecap=\"round\">\n          <path d=\"M150 18v40\"/><path d=\"M150 242v40\"/>\n          <path d=\"M18 150h40\"/><path d=\"M242 150h40\"/>\n          <path d=\"M57 57l28 28\"/><path d=\"M215 215l28 28\"/>\n          <path d=\"M243 57l-28 28\"/><path d=\"M85 215l-28 28\"/>\n        </g>\n      </svg>\n      <div class=\"motes\" aria-hidden=\"true\">\n        <b style=\"--x:12vw;--d:0s\"></b><b style=\"--x:29vw;--d:3.4s\"></b>\n        <b style=\"--x:47vw;--d:1.7s\"></b><b style=\"--x:66vw;--d:5.1s\"></b>\n        <b style=\"--x:84vw;--d:2.6s\"></b><b style=\"--x:94vw;--d:6.2s\"></b>\n      </div>",
+  "site": {
+   "name": "Khushi",
+   "tagline": "The ones everybody still knows every word of.",
+   "glyph": "☀",
+   "shuffle": true,
+   "searchFallback": true,
+   "ytPlaylist": "PLGpLqaMxppFrVsjOt_yA45AaF9j1u6cbC",
+   "maxSeconds": null
+  },
+  "tracks": [
+   {
+    "title": "Pehla Nasha",
+    "artist": "Udit Narayan, Sadhana Sargam",
+    "year": 1992,
+    "q": "Pehla Nasha Udit Narayan, Sadhana Sargam",
+    "yt": null
+   },
+   {
+    "title": "Ole Ole",
+    "artist": "Vinod Rathod",
+    "year": 1994,
+    "q": "Ole Ole Vinod Rathod",
+    "yt": null
+   },
+   {
+    "title": "Koi Mil Gaya",
+    "artist": "Udit Narayan, Alka Yagnik",
+    "year": 1998,
+    "q": "Koi Mil Gaya Udit Narayan, Alka Yagnik",
+    "yt": null
+   },
+   {
+    "title": "Aati Kya Khandala",
+    "artist": "Aamir Khan, Alka Yagnik",
+    "year": 1998,
+    "q": "Aati Kya Khandala Aamir Khan, Alka Yagnik",
+    "yt": null
+   },
+   {
+    "title": "Kaho Naa Pyaar Hai",
+    "artist": "Udit Narayan, Alka Yagnik",
+    "year": 2000,
+    "q": "Kaho Naa Pyaar Hai Udit Narayan, Alka Yagnik",
+    "yt": null
+   },
+   {
+    "title": "Bole Chudiyan",
+    "artist": "Sonu Nigam, Alka Yagnik",
+    "year": 2001,
+    "q": "Bole Chudiyan Sonu Nigam, Alka Yagnik",
+    "yt": null
+   },
+   {
+    "title": "It's The Time To Disco",
+    "artist": "Shaan, Vasundhara Das",
+    "year": 2003,
+    "q": "It's The Time To Disco Shaan, Vasundhara Das",
+    "yt": null
+   },
+   {
+    "title": "Dhoom Machale",
+    "artist": "Sunidhi Chauhan",
+    "year": 2004,
+    "q": "Dhoom Machale Sunidhi Chauhan",
+    "yt": null
+   },
+   {
+    "title": "Kajra Re",
+    "artist": "Alisha Chinai, Shankar Mahadevan",
+    "year": 2005,
+    "q": "Kajra Re Alisha Chinai, Shankar Mahadevan",
+    "yt": null
+   },
+   {
+    "title": "Where's The Party Tonight",
+    "artist": "Shaan, Vasundhara Das",
+    "year": 2006,
+    "q": "Where's The Party Tonight Shaan, Vasundhara Das",
+    "yt": null
+   },
+   {
+    "title": "Desi Girl",
+    "artist": "Vishal Dadlani, Sunidhi Chauhan",
+    "year": 2008,
+    "q": "Desi Girl Vishal Dadlani, Sunidhi Chauhan",
+    "yt": null
+   },
+   {
+    "title": "Twist",
+    "artist": "Neeraj Shridhar",
+    "year": 2008,
+    "q": "Twist Neeraj Shridhar",
+    "yt": null
+   },
+   {
+    "title": "Ainvayi Ainvayi",
+    "artist": "Salim Merchant, Sunidhi Chauhan",
+    "year": 2010,
+    "q": "Ainvayi Ainvayi Salim Merchant, Sunidhi Chauhan",
+    "yt": null
+   },
+   {
+    "title": "Senorita",
+    "artist": "Farhan Akhtar, Hrithik Roshan, Abhay Deol",
+    "year": 2011,
+    "q": "Senorita Farhan Akhtar, Hrithik Roshan, Abhay Deol",
+    "yt": null
+   },
+   {
+    "title": "Ilahi",
+    "artist": "Arijit Singh",
+    "year": 2013,
+    "q": "Ilahi Arijit Singh",
+    "yt": null
+   },
+   {
+    "title": "Balam Pichkari",
+    "artist": "Vishal Dadlani, Shalmali Kholgade",
+    "year": 2013,
+    "q": "Balam Pichkari Vishal Dadlani, Shalmali Kholgade",
+    "yt": null
+   },
+   {
+    "title": "Badtameez Dil",
+    "artist": "Benny Dayal",
+    "year": 2013,
+    "q": "Badtameez Dil Benny Dayal",
+    "yt": null
+   },
+   {
+    "title": "Gallan Goodiyaan",
+    "artist": "Various Artists",
+    "year": 2015,
+    "q": "Gallan Goodiyaan Various Artists",
+    "yt": null
+   },
+   {
+    "title": "Sooraj Dooba Hain",
+    "artist": "Arijit Singh, Aditi Singh Sharma",
+    "year": 2015,
+    "q": "Sooraj Dooba Hain Arijit Singh, Aditi Singh Sharma",
+    "yt": null
+   },
+   {
+    "title": "Kar Gayi Chull",
+    "artist": "Badshah, Fazilpuria, Neha Kakkar",
+    "year": 2016,
+    "q": "Kar Gayi Chull Badshah, Fazilpuria, Neha Kakkar",
+    "yt": null
+   }
+  ]
  }
 ];

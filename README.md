@@ -1,20 +1,24 @@
-# Nostalgia radio — ten stations
+# Nostalgia radio — eleven stations
 
-Single-page ambient radio sites in the `saloon.wtf` format. Ten stations share one
+Single-page ambient radio sites in the `saloon.wtf` format. Every station shares one
 design system and one player; each has its own palette, typography, scene and playlist.
 
 | Station | Slug | Kind | Sound |
 |---|---|---|---|
-| pco.wtf | `std-booth` | place | Yellow-board PCO booth, 90s Bollywood longing |
-| meterdown.wtf | `auto-rickshaw` | place | FM Rainbow-era hits at blown-speaker volume |
-| kirana.wtf | `kirana-store` | place | Vividh Bharati over glass jars, 70s–80s |
-| baraat.wtf | `baraat-band` | place | Brass band Bollywood, dhol, marigold lights |
-| vhs.wtf | `wedding-vhs` | place | Wedding-video slow-mo love songs, scan lines |
-| mehfil.wtf | `ghazal` | genre | Mehdi Hassan, Jagjit Singh, Ghulam Ali |
-| cassette.wtf | `bollywood-90s` | genre | Kumar Sanu / Alka Yagnik cassette era |
-| valve.wtf | `retro-rock` | genre | Classic rock through a valve amp |
-| monsoon.wtf | `lofi` | genre | Lo-fi, rain, tape hiss |
-| dargah.wtf | `qawwali` | genre | Nusrat, Sabri Brothers, Abida Parveen |
+| Pardesi | `std-booth` | place | Yellow-board PCO booth, 90s Bollywood longing |
+| Meter Down | `auto-rickshaw` | place | FM Rainbow-era hits at blown-speaker volume |
+| Baraat | `baraat-band` | place | Brass band Bollywood, dhol, marigold lights |
+| VHS | `wedding-vhs` | place | Wedding-video slow-mo love songs, scan lines |
+| Mehfil | `ghazal` | genre | Mehdi Hassan, Jagjit Singh, Ghulam Ali |
+| Cassette | `bollywood-90s` | genre | Kumar Sanu / Alka Yagnik cassette era |
+| Valve | `retro-rock` | genre | Classic rock through a valve amp |
+| Monsoon | `lofi` | genre | Lo-fi, rain, tape hiss |
+| Qawwali | `qawwali` | genre | Nusrat, Sabri Brothers, Abida Parveen |
+| Bhajan | `bhajan` | genre | Bhajans, aartis, chalisas, stotrams |
+| Khushi | `khushi` | genre | Feel-good Hindi hits, 90s through 2010s |
+
+Every station streams a public YouTube playlist and keeps a curated track list as a
+fallback for when that playlist breaks.
 
 ## Run it
 
@@ -97,11 +101,10 @@ Everything else in `base.css` has a fallback. Useful optional ones: `--bg-gradie
 API in a hidden iframe, which is the licensed path. Do not swap in self-hosted MP3s
 of copyrighted songs.
 
-Each track has a `yt` field holding an 11-character video id. **They are all `null`
-right now** — the playlists are curated (real songs, real artists) but unresolved.
-Until an id is filled in, the player falls back to the IFrame API's search list, and
-if that fails it shows an "open on YouTube" link and advances after a few seconds.
-That fallback is unreliable, so fill the ids before launching:
+Each track has a `yt` field holding an 11-character video id. These are the fallback
+the player uses when a station's playlist fails to load, and they also supply the
+display title and artist for any track the playlist happens to contain. Fill missing
+ones with:
 
 ```bash
 YT_API_KEY=xxxx node scripts/fill-ids.mjs            # every station
@@ -156,7 +159,7 @@ covering part of the catalogue:
 |---|---|
 | Monday | Pardesi, Meter Down, Baraat |
 | Wednesday | VHS, Mehfil, Cassette |
-| Friday | Valve, Monsoon, Qawwali, Bhajan |
+| Friday | Valve, Monsoon, Qawwali, Bhajan, Khushi |
 
 Each run checks the playlists still resolve, fills missing ids, audits what it
 filled, rebuilds, and commits if anything changed. Splitting into three keeps

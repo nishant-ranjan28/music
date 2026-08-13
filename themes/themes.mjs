@@ -890,5 +890,101 @@ export const themes = [
       ["Ae Malik Tere Bande Hum", "Vani Jairam", 1957],
       ["Tu Pyar Ka Sagar Hai", "Manna Dey", 1959]
     ]
+  },
+
+  /* =============================================================== 11 */
+  {
+    slug: "khushi",
+    kind: "genre",
+    /* Psquared — "Bollywood in the '00s", ~341 tracks, 200 once the embed
+       caps it. Verified by loading it in a real embed. It is the honest
+       compromise: nothing public spans the 90s, 2000s and 2010s in one
+       list, and this is the decade the other two lean into. The curated
+       fallback below covers all three properly. */
+    ytPlaylist: "PLGpLqaMxppFrVsjOt_yA45AaF9j1u6cbC",
+    name: "Khushi",
+    sign: "K H U S H I",
+    kicker: "90s · 00s · 10s · sing-along",
+    tagline: "The ones everybody still knows every word of.",
+    gateTitle: "Awaaz thodi tez",
+    gateCopy:
+      "Birthday car rides, hostel corridors, the wedding after-party at 1am — the songs that were always already playing when you walked in.",
+    ogDesc:
+      "Feel-good Hindi hits across the 90s, 2000s and 2010s — the ones everyone still knows every word of.",
+    glyph: "☀",
+    fonts: {
+      display: "Fredoka",
+      body: "Inter",
+      href: "https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Inter:wght@400;600&display=swap"
+    },
+    tokens: {
+      "--bg": "#150f07",
+      "--bg-gradient":
+        "radial-gradient(70% 55% at 78% 8%, rgba(255,176,32,0.22), transparent 62%), radial-gradient(65% 50% at 12% 100%, rgba(55,194,196,0.14), transparent 65%)",
+      "--surface": "rgba(34,24,12,0.78)",
+      "--ink": "#fff3e2",
+      "--ink-dim": "#b8a184",
+      "--accent": "#ffb020",
+      "--accent-2": "#37c2c4",
+      "--on-accent": "#1a1004",
+      "--line": "rgba(255,176,32,0.24)",
+      "--sign-ink": "#ffb020",
+      "--sign-tracking": "0.06em",
+      "--sign-shadow": "0 0 34px rgba(255,176,32,0.4)",
+      "--card-radius": "16px",
+      "--art-radius": "10px",
+      "--grain-opacity": "0.05",
+      "--vignette":
+        "radial-gradient(125% 105% at 50% 45%, transparent 58%, rgba(0,0,0,0.38) 100%)"
+    },
+    scene: `
+      <svg class="sun" viewBox="0 0 300 300" aria-hidden="true">
+        <circle cx="150" cy="150" r="52" fill="#ffb02033" stroke="#ffb02088" stroke-width="2"/>
+        <g class="rays" stroke="#ffb02055" stroke-width="7" stroke-linecap="round">
+          <path d="M150 18v40"/><path d="M150 242v40"/>
+          <path d="M18 150h40"/><path d="M242 150h40"/>
+          <path d="M57 57l28 28"/><path d="M215 215l28 28"/>
+          <path d="M243 57l-28 28"/><path d="M85 215l-28 28"/>
+        </g>
+      </svg>
+      <div class="motes" aria-hidden="true">
+        <b style="--x:12vw;--d:0s"></b><b style="--x:29vw;--d:3.4s"></b>
+        <b style="--x:47vw;--d:1.7s"></b><b style="--x:66vw;--d:5.1s"></b>
+        <b style="--x:84vw;--d:2.6s"></b><b style="--x:94vw;--d:6.2s"></b>
+      </div>`,
+    css: `
+      .sun{position:absolute;right:-4vw;top:-4vh;width:min(420px,52vw);opacity:.5}
+      .rays{transform-box:fill-box;transform-origin:center;
+        animation:turn 60s linear infinite}
+      @keyframes turn{to{transform:rotate(360deg)}}
+      .motes b{position:absolute;bottom:-4vh;left:var(--x);width:7px;height:7px;
+        border-radius:50%;background:#ffb02055;
+        animation:rise 14s linear infinite;animation-delay:var(--d)}
+      @keyframes rise{to{transform:translate(-18px,-116vh);opacity:0}}
+      @media(max-width:640px){.sun{opacity:.3}}`,
+    /* The fallback, and the only place all three decades are represented
+       evenly — the playlist itself leans 2000s. */
+    tracks: [
+      ["Pehla Nasha", "Udit Narayan, Sadhana Sargam", 1992],
+      ["Ole Ole", "Vinod Rathod", 1994],
+      ["Koi Mil Gaya", "Udit Narayan, Alka Yagnik", 1998],
+      ["Aati Kya Khandala", "Aamir Khan, Alka Yagnik", 1998],
+      ["Kaho Naa Pyaar Hai", "Udit Narayan, Alka Yagnik", 2000],
+      ["Bole Chudiyan", "Sonu Nigam, Alka Yagnik", 2001],
+      ["It's The Time To Disco", "Shaan, Vasundhara Das", 2003],
+      ["Dhoom Machale", "Sunidhi Chauhan", 2004],
+      ["Kajra Re", "Alisha Chinai, Shankar Mahadevan", 2005],
+      ["Where's The Party Tonight", "Shaan, Vasundhara Das", 2006],
+      ["Desi Girl", "Vishal Dadlani, Sunidhi Chauhan", 2008],
+      ["Twist", "Neeraj Shridhar", 2008],
+      ["Ainvayi Ainvayi", "Salim Merchant, Sunidhi Chauhan", 2010],
+      ["Senorita", "Farhan Akhtar, Hrithik Roshan, Abhay Deol", 2011],
+      ["Ilahi", "Arijit Singh", 2013],
+      ["Balam Pichkari", "Vishal Dadlani, Shalmali Kholgade", 2013],
+      ["Badtameez Dil", "Benny Dayal", 2013],
+      ["Gallan Goodiyaan", "Various Artists", 2015],
+      ["Sooraj Dooba Hain", "Arijit Singh, Aditi Singh Sharma", 2015],
+      ["Kar Gayi Chull", "Badshah, Fazilpuria, Neha Kakkar", 2016]
+    ]
   }
 ];

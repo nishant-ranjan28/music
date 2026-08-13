@@ -291,6 +291,19 @@ ${themes.filter((t) => t.kind === kind).map(card).join("\n")}
   .station p{margin:0 0 14px;font-size:14px;color:#d8d3ca;min-height:42px}
   .station small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#ffffff45}
   footer{margin-top:64px;font-size:12px;color:#6d6862;max-width:64ch;line-height:1.7}
+  @media (max-width:760px){
+    body{padding:22px 16px calc(28px + env(safe-area-inset-bottom))}
+    h1{font-size:clamp(30px,10vw,44px)}
+    .lede{margin:10px 0 30px;font-size:14px}
+    .group{margin:30px 0 12px;font-size:12px;letter-spacing:.2em;
+      flex-direction:column;gap:2px;align-items:flex-start}
+    .grid{grid-template-columns:1fr;gap:8px}
+    .station{padding:16px;min-height:74px}
+    .station p{display:none}
+    .station em{margin:4px 0 0}
+    .glyph{font-size:32px;top:14px}
+    footer{margin-top:38px;font-size:11px}
+  }
   footer code{background:#ffffff10;padding:2px 6px;border-radius:4px}
 </style>
 </head>

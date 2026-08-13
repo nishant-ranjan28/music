@@ -48,6 +48,11 @@ a {
   position: relative;
   min-height: 100dvh;
   display: grid;
+  /* minmax(0,1fr), not the default auto: the ticker sets padding-left:100% to
+     start its marquee off-screen, which inflates the grid column intrinsic
+     width and stretched the whole stage past the viewport once a real title
+     loaded. overflow:hidden clips it visually but does not stop it sizing. */
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto 1fr auto;
   gap: 0;
   padding: clamp(16px, 4vw, 40px);
@@ -106,7 +111,10 @@ a {
 
 .sign {
   font-family: var(--font-display);
-  font-size: clamp(26px, 6vw, 48px);
+  /* 6vw overflowed the masthead between the mobile breakpoint and desktop —
+     at 768px the sign pushed "all stations" clean off the right edge. */
+  font-size: clamp(22px, 4.4vw, 46px);
+  min-width: 0;
   line-height: 1;
   letter-spacing: var(--sign-tracking, 0.01em);
   color: var(--sign-ink, var(--accent));
@@ -128,6 +136,7 @@ a {
 
 .masthead-links {
   display: flex;
+  flex: none;
   gap: 14px;
   font-size: 12px;
   letter-spacing: 0.16em;
@@ -152,6 +161,7 @@ a {
   position: relative;
   z-index: 4;
   display: grid;
+  grid-template-columns: minmax(0, auto);
   place-items: center;
   padding: 16px 0;
   min-height: 0; /* let the card shrink inside the grid row instead of clipping */
@@ -756,21 +766,240 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-/* ---------- small screens --------------------------------------------- */
+/* ======================================================================
+   MOBILE
+   Not the desktop layout squeezed. On a phone the artwork is the screen,
+   the controls sit where a thumb reaches, and the card stops pretending
+   to be a card — it is the whole viewport.
+   ====================================================================== */
 
-@media (max-width: 520px) {
+@media (max-width: 760px) {
+  .stage {
+    padding: 14px 16px calc(14px + env(safe-area-inset-bottom));
+    grid-template-rows: auto 1fr auto;
+  }
+
+  /* The scene art was drawn for a wide canvas; at phone width its lights,
+     trinkets and meters land on top of the masthead. Push it back. */
+  .scene {
+    opacity: 0.45;
+  }
+
+  /* --- masthead: one compact row, never wrapping -------------------- */
   .masthead {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  /* Scenes hang their lights, trinkets and meters near the top edge, which on
+     a narrow screen is exactly where the sign sits. Fade the scene out behind
+     the masthead instead of moving every theme's art. */
+  .masthead::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 132px;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(180deg, var(--bg) 30%, transparent);
+  }
+
+  .sign {
+    font-size: clamp(19px, 5.4vw, 26px);
+    /* per-theme tracking is generous for a wide sign; it overflows here */
+    letter-spacing: 0.02em;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .sign small {
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* "all stations" becomes a tappable chip rather than an underlined word */
+  .masthead-links {
+    flex: none;
+  }
+
+  .masthead-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 0 14px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+  }
+
+  /* --- the card dissolves into the page ----------------------------- */
+  .center {
+    padding: 8px 0 0;
+  }
+
+  .card {
+    width: 100%;
+    background: none;
+    border: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    padding: 0;
+  }
+
+  /* artwork is the hero: as wide as the screen allows, still square */
+  .art {
+    width: min(100%, 52dvh);
+    border-radius: 14px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+  }
+
+  .track {
+    margin-top: 20px;
+    min-height: 0;
+  }
+
+  .track-title {
+    font-size: clamp(21px, 6vw, 27px);
+  }
+
+  .track-meta {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    /* long credit lists wrap to three lines and shove the transport down */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .ticker {
+    display: none;
+  }
+
+  /* --- transport sits in thumb reach -------------------------------- */
+  .transport {
+    margin-top: 22px;
+    gap: 26px;
+  }
+
+  .tbtn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .tbtn svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .tbtn--main {
+    width: 68px;
+    height: 68px;
+  }
+
+  .tbtn--main svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* phones have hardware volume keys — the slider is just clutter */
+  .volume {
+    display: none;
+  }
+
+  .footer {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    justify-content: space-between;
     gap: 8px;
   }
-  .footer {
-    justify-content: center;
-    text-align: center;
+
+  /* the tagline is the joke, but not worth three wrapped lines here */
+  .footer span:last-child {
+    display: none;
+  }
+
+  /* --- gate --------------------------------------------------------- */
+  .gate-inner {
+    max-width: 320px;
+  }
+
+  .gate p {
+    font-size: 13px;
+  }
+
+  .gate-btn {
+    min-height: 52px;
+    padding: 0 34px;
+  }
+
+  /* --- switcher becomes a full-height sheet ------------------------- */
+  .switcher {
+    padding: 0;
+    align-items: stretch;
+  }
+
+  .switcher-inner {
+    width: 100%;
+    padding: calc(18px + env(safe-area-inset-top)) 16px
+      calc(96px + env(safe-area-inset-bottom));
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .switcher-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .st {
+    min-height: 62px;
+    padding: 12px 14px;
+  }
+
+  .st span {
+    /* kickers are three words; one line each keeps the list scannable */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .now-bar {
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
   }
 }
 
-@media (max-height: 700px) {
+/* Landscape phones: almost no height, so the artwork has to give way. */
+@media (max-height: 520px) and (orientation: landscape) {
+  .art {
+    width: min(100%, 40dvh);
+  }
+  .track {
+    margin-top: 10px;
+  }
+  .transport {
+    margin-top: 10px;
+  }
+  .sign small,
+  .ticker,
+  .footer {
+    display: none;
+  }
+}
+
+/* Short desktop windows keep the old squeeze. */
+@media (min-width: 761px) and (max-height: 700px) {
   .art {
     width: min(100%, 30dvh);
   }

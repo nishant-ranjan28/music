@@ -134,5 +134,6 @@ window.SITE = {
   "tagline": "FM Rainbow hits at 4x volume through one blown speaker.",
   "glyph": "◍",
   "shuffle": true,
-  "searchFallback": true
+  "searchFallback": true,
+  "ytPlaylist": null
 };

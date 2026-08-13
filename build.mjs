@@ -65,7 +65,10 @@ window.SITE = ${JSON.stringify(
       tagline: theme.tagline,
       glyph: theme.glyph,
       shuffle: true,
-      searchFallback: true
+      searchFallback: true,
+      // When set, the station streams this YouTube playlist instead of the
+      // curated array; curated entries then act as display overrides.
+      ytPlaylist: theme.ytPlaylist || null
     },
     null,
     2

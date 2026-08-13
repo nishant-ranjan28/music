@@ -134,5 +134,6 @@ window.SITE = {
   "tagline": "Thursday night at the dargah, hands clapping on the offbeat.",
   "glyph": "❋",
   "shuffle": true,
-  "searchFallback": true
+  "searchFallback": true,
+  "ytPlaylist": null
 };

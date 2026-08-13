@@ -134,5 +134,6 @@ window.SITE = {
   "tagline": "Nine men, brass instruments, and one film song murdered beautifully.",
   "glyph": "✺",
   "shuffle": true,
-  "searchFallback": true
+  "searchFallback": true,
+  "ytPlaylist": null
 };

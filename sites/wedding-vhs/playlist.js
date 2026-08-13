@@ -134,5 +134,6 @@ window.SITE = {
   "tagline": "Slow-motion garland exchange, date stamp burned into the corner.",
   "glyph": "▣",
   "shuffle": true,
-  "searchFallback": true
+  "searchFallback": true,
+  "ytPlaylist": null
 };

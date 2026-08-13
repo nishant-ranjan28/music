@@ -134,5 +134,6 @@ window.SITE = {
   "tagline": "Vividh Bharati crackling over glass jars and hanging chip packets.",
   "glyph": "⚖",
   "shuffle": true,
-  "searchFallback": true
+  "searchFallback": true,
+  "ytPlaylist": null
 };

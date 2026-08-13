@@ -148,5 +148,6 @@ window.SITE = {
   "tagline": "One cassette, both sides, played until the tape stretched.",
   "glyph": "▤",
   "shuffle": true,
-  "searchFallback": true
+  "searchFallback": true,
+  "ytPlaylist": "PLinVjP-aRmlukMwFfIb5u0xA-M_Be3nC5"
 };

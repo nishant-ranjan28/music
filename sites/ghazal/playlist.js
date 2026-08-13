@@ -148,5 +148,6 @@ window.SITE = {
   "tagline": "Wine-dark room, one harmonium, and a couplet that ruins you.",
   "glyph": "۞",
   "shuffle": true,
-  "searchFallback": true
+  "searchFallback": true,
+  "ytPlaylist": null
 };

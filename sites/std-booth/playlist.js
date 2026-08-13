@@ -134,5 +134,6 @@ window.SITE = {
   "tagline": "The songs that played while you waited for the meter to stop.",
   "glyph": "☎",
   "shuffle": true,
-  "searchFallback": true
+  "searchFallback": true,
+  "ytPlaylist": null
 };

@@ -504,6 +504,8 @@ export const themes = [
   {
     slug: "bollywood-90s",
     kind: "genre",
+    // Tips Official — "90s Golden Hits", ~2250 tracks, label-maintained
+    ytPlaylist: "PLinVjP-aRmlukMwFfIb5u0xA-M_Be3nC5",
     name: "Cassette",
     sign: "T-SERIES  90s",
     kicker: "side a · dolby · rewind with a pencil",

@@ -148,5 +148,6 @@ window.SITE = {
   "tagline": "One amp, warm glass tubes, and the riffs your father still air-guitars.",
   "glyph": "⚡",
   "shuffle": true,
-  "searchFallback": true
+  "searchFallback": true,
+  "ytPlaylist": null
 };

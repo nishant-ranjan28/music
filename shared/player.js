@@ -13,7 +13,26 @@
   var PLAYLIST = (window.PLAYLIST || []).slice();
   var SITE = window.SITE || {};
 
-  if (!PLAYLIST.length) {
+  /* Two sources of truth:
+
+     - playlist mode (SITE.ytPlaylist): the station streams a real YouTube
+       playlist. Unlimited length, updates when the playlist does, and needs
+       no API key at runtime — the IFrame API takes a playlist id directly.
+       Track metadata comes from the player via getVideoData().
+
+     - static mode: the curated PLAYLIST array with hand-resolved video ids.
+
+     In playlist mode any curated entry with a matching id still supplies the
+     display title and artist, so the songs we bothered to name render exactly
+     as designed and the rest fall back to a cleaned-up YouTube title. */
+  var LIST_MODE = !!SITE.ytPlaylist;
+
+  var OVERRIDES = {};
+  PLAYLIST.forEach(function (t) {
+    if (t.yt) OVERRIDES[t.yt] = t;
+  });
+
+  if (!LIST_MODE && !PLAYLIST.length) {
     console.warn("[player] empty playlist");
     return;
   }
@@ -65,7 +84,59 @@
   var skipTimer = null;
   var misses = 0; // consecutive tracks with no playable source
 
+  /* YouTube titles are written by uploaders, not designers:
+       "Ole Ole Full Song | Yeh Dillagi | Saif Ali Khan, Kajol | Abhijeet"
+     The song name is almost always the first pipe-separated segment; what
+     follows is film, cast and singers, which makes a decent subtitle. */
+  var TITLE_NOISE =
+    /\b(full\s+)?(video\s+)?song\b|\bfull\s+video\b|\blyrical\b|\bwith\s+lyrics\b|\blyrics\b|\bofficial\s+(music\s+)?video\b|\bofficial\s+audio\b|\baudio\b|\bhd\b|\b4k\b|\bremastered\b|\bhq\b/gi;
+
+  function tidy(s) {
+    return (s || "")
+      .replace(/\([^)]*\)|\[[^\]]*\]/g, " ") // "(Official Video)", "[HD]"
+      .replace(TITLE_NOISE, " ")
+      .replace(/\s*[-–—:]\s*$/, "")
+      .replace(/\s{2,}/g, " ")
+      .trim();
+  }
+
+  function fromVideoData() {
+    var d = (player && player.getVideoData && player.getVideoData()) || {};
+    if (!d.video_id) return null;
+
+    var override = OVERRIDES[d.video_id];
+    if (override) {
+      return {
+        title: override.title,
+        artist: override.artist,
+        year: override.year,
+        yt: d.video_id
+      };
+    }
+
+    var parts = String(d.title || "")
+      .split(/\s*[|·•]\s*/)
+      .map(tidy)
+      .filter(Boolean);
+
+    return {
+      title: parts.shift() || d.title || "—",
+      artist: parts.slice(0, 2).join("  ·  ") || d.author || "",
+      year: null,
+      yt: d.video_id
+    };
+  }
+
+  var lastShown = null;
+
   function current() {
+    if (LIST_MODE) {
+      // getVideoData() is briefly empty between videos — keep the outgoing
+      // card up rather than flashing a placeholder.
+      var d = fromVideoData();
+      if (d) lastShown = d;
+      return lastShown || { title: "…", artist: "", yt: null };
+    }
     return PLAYLIST[order[cursor]];
   }
 
@@ -82,7 +153,13 @@
     el.meta.textContent = [track.artist, track.year].filter(Boolean).join("  ·  ");
 
     if (el.count) {
-      el.count.textContent = cursor + 1 + " / " + order.length;
+      if (LIST_MODE) {
+        var n = player && player.getPlaylist && player.getPlaylist();
+        var i = player && player.getPlaylistIndex && player.getPlaylistIndex();
+        el.count.textContent = n && n.length ? i + 1 + " / " + n.length : "";
+      } else {
+        el.count.textContent = cursor + 1 + " / " + order.length;
+      }
     }
 
     if (el.ticker) {
@@ -144,6 +221,9 @@
     renderTrack();
     setStatus("");
 
+    // In playlist mode the player owns the queue; nothing to load by hand.
+    if (LIST_MODE) return;
+
     if (!ready) {
       pendingPlay = true;
       return;
@@ -199,11 +279,19 @@
   }
 
   function next() {
+    if (LIST_MODE) {
+      if (ready) player.nextVideo();
+      return;
+    }
     cursor = (cursor + 1) % order.length;
     loadCurrent();
   }
 
   function prev() {
+    if (LIST_MODE) {
+      if (ready) player.previousVideo();
+      return;
+    }
     cursor = (cursor - 1 + order.length) % order.length;
     loadCurrent();
   }
@@ -244,6 +332,13 @@
     var vol = isFinite(stored) && stored > 0 ? stored : 65;
     el.volume.value = vol;
     player.setVolume(vol);
+    if (LIST_MODE) {
+      player.loadPlaylist({ listType: "playlist", list: SITE.ytPlaylist });
+      player.setShuffle(true);
+      player.setLoop(true);
+      return;
+    }
+
     if (pendingPlay) {
       pendingPlay = false;
       loadCurrent();
@@ -251,7 +346,34 @@
     }
   }
 
+  /* Public playlists are padded with hour-long "Video Jukebox" compilations
+     and lofi/bass-boosted remixes. Both break the one-song-at-a-time premise,
+     so skip them the moment we can see what loaded. */
+  var JUNK = /jukebox|non ?stop|nonstop|mashup|medley|all songs|full album|lofi|lo-fi|slowed|reverb|bass boosted|remix|mix\b/i;
+
+  function isJunk() {
+    var d = (player.getVideoData && player.getVideoData()) || {};
+    if (d.title && JUNK.test(d.title)) return true;
+    var secs = player.getDuration && player.getDuration();
+    return !!secs && secs > 900;
+  }
+
   function onStateChange(e) {
+    if (LIST_MODE) {
+      if (
+        (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.BUFFERING) &&
+        isJunk()
+      ) {
+        player.nextVideo();
+        return;
+      }
+      // CUED/BUFFERING/PLAYING all mean the current video changed
+      renderTrack();
+      playing = e.data === YT.PlayerState.PLAYING;
+      renderPlayState();
+      return;
+    }
+
     if (e.data === YT.PlayerState.ENDED) {
       next();
       return;
@@ -266,6 +388,11 @@
   }
 
   function onError() {
+    if (LIST_MODE) {
+      // YouTube advances past its own dead entries; just move on.
+      if (ready) player.nextVideo();
+      return;
+    }
     // 2 / 5 / 100 / 101 / 150 — unplayable or embed-blocked.
     noSource(current(), "unavailable here");
   }

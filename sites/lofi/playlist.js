@@ -134,5 +134,6 @@ window.SITE = {
   "tagline": "Rain on the window, a tape loop, and homework you never finished.",
   "glyph": "❍",
   "shuffle": true,
-  "searchFallback": true
+  "searchFallback": true,
+  "ytPlaylist": null
 };

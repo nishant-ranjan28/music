@@ -15,7 +15,7 @@ export const themes = [
     kind: "place",
     // Ishtar Music — 90s Bollywood sad/romantic, ~73 tracks
     ytPlaylist: "PLO6WOx_nE9ULl-FgE0NPR4c6BSu-1-CPJ",
-    name: "PCO",
+    name: "Pardesi",
     sign: "S T D · I S D · P C O",
     kicker: "local · national · international",
     tagline: "The songs that played while you waited for the meter to stop.",

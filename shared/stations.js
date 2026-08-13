@@ -2,7 +2,7 @@ window.STATIONS = [
  {
   "slug": "std-booth",
   "kind": "place",
-  "name": "PCO",
+  "name": "Pardesi",
   "signHtml": "S T D · I S D · P C O",
   "kicker": "local · national · international",
   "tagline": "The songs that played while you waited for the meter to stop.",
@@ -12,7 +12,7 @@ window.STATIONS = [
   "fontsHref": "https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap",
   "scene": "<div class=\"meter\" aria-hidden=\"true\">\n        <em>PULSE</em><b id=\"pulse\">0 0 7</b>\n      </div>\n      <svg class=\"phone\" viewBox=\"0 0 200 140\" aria-hidden=\"true\">\n        <rect x=\"26\" y=\"66\" width=\"148\" height=\"58\" rx=\"9\" fill=\"#33260f\" stroke=\"#f7c94877\"/>\n        <g fill=\"#f7c94855\">\n          <circle cx=\"60\" cy=\"86\" r=\"7\"/><circle cx=\"84\" cy=\"86\" r=\"7\"/><circle cx=\"108\" cy=\"86\" r=\"7\"/>\n          <circle cx=\"60\" cy=\"106\" r=\"7\"/><circle cx=\"84\" cy=\"106\" r=\"7\"/><circle cx=\"108\" cy=\"106\" r=\"7\"/>\n        </g>\n        <rect x=\"132\" y=\"78\" width=\"30\" height=\"36\" rx=\"4\" fill=\"#f7c94840\"/>\n        <path d=\"M34 44h132a14 14 0 0 1 14 14v6H20v-6a14 14 0 0 1 14-14z\" fill=\"#4a3517\" stroke=\"#f7c94877\"/>\n      </svg>",
   "site": {
-   "name": "PCO",
+   "name": "Pardesi",
    "tagline": "The songs that played while you waited for the meter to stop.",
    "glyph": "☎",
    "shuffle": true,

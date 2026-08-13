@@ -130,7 +130,7 @@ window.PLAYLIST = [
 ];
 
 window.SITE = {
-  "name": "PCO",
+  "name": "Pardesi",
   "tagline": "The songs that played while you waited for the meter to stop.",
   "glyph": "☎",
   "shuffle": true,

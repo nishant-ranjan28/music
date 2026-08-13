@@ -184,11 +184,14 @@ compilations. Nothing here notices on its own.
 `.github/workflows/sync-stations.yml` runs three schedules two days apart, each
 covering part of the catalogue:
 
-| Day | Stations |
-|---|---|
-| Monday | Pardesi, Meter Down, Baraat |
-| Wednesday | VHS, Mehfil, Cassette |
-| Friday | Valve, Monsoon, Qawwali, Bhajan, Khushi |
+Membership is not listed anywhere — `scripts/sync-group.mjs` deals the
+stations in `sites/` round-robin across Monday, Wednesday and Friday. A new
+station therefore joins the rota automatically, and the groups stay balanced
+as the catalogue grows. To see the current split:
+
+```bash
+node scripts/sync-group.mjs --report
+```
 
 Each run checks the playlists still resolve, fills missing ids, audits what it
 filled, rebuilds, and commits if anything changed. Splitting into three keeps

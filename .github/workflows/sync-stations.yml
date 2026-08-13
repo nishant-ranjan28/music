@@ -5,9 +5,10 @@ name: Sync stations
 # 10,000 units/day allowance — a search costs 100 of those, so refilling
 # every station at once is what exhausted the quota by hand.
 #
-#   Monday    group A   Pardesi, Meter Down, Baraat
-#   Wednesday group B   VHS, Mehfil, Cassette
-#   Friday    group C   Valve, Monsoon, Qawwali, Bhajan, Khushi
+# Membership is derived from sites/ by scripts/sync-group.mjs rather than
+# listed here, so a new station cannot be left out of the rota by omission,
+# and the groups rebalance themselves as the catalogue grows.
+# Run `node scripts/sync-group.mjs --report` to see the current split.
 #
 # Each run re-checks that the station playlists still exist, drops ids that
 # have become compilations or dead videos, fills whatever is missing, and
@@ -46,13 +47,14 @@ jobs:
         id: group
         run: |
           case "${{ github.event.schedule }}" in
-            "23 2 * * 1") STATIONS="std-booth auto-rickshaw baraat-band" ;;
-            "23 2 * * 3") STATIONS="wedding-vhs ghazal bollywood-90s" ;;
-            "23 2 * * 5") STATIONS="retro-rock lofi qawwali bhajan khushi" ;;
+            "23 2 * * 1") STATIONS=$(node scripts/sync-group.mjs 0) ;;
+            "23 2 * * 3") STATIONS=$(node scripts/sync-group.mjs 1) ;;
+            "23 2 * * 5") STATIONS=$(node scripts/sync-group.mjs 2) ;;
             *)            STATIONS="${{ github.event.inputs.stations }}" ;;
           esac
           echo "stations=$STATIONS" >> "$GITHUB_OUTPUT"
           echo "Syncing: ${STATIONS:-all stations}"
+          node scripts/sync-group.mjs --report
 
       # Playlists belong to other people and can vanish. Report but do not
       # fail the run — the ids filled below are the fallback for exactly that.

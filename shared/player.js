@@ -193,8 +193,13 @@
   function renderTrack() {
     var track = current();
 
+    var meta = [track.artist, track.year].filter(Boolean).join("  ·  ");
+
     el.title.textContent = track.title;
-    el.meta.textContent = [track.artist, track.year].filter(Boolean).join("  ·  ");
+    el.meta.textContent = meta;
+
+    if (el.swTitle) el.swTitle.textContent = track.title;
+    if (el.swMeta) el.swMeta.textContent = meta;
 
     if (el.count) {
       if (LIST_MODE) {
@@ -255,6 +260,7 @@
 
   function renderPlayState() {
     if (el.playIcon) el.playIcon.setAttribute("d", playing ? ICON_PAUSE : ICON_PLAY);
+    if (el.swIcon) el.swIcon.setAttribute("d", playing ? ICON_PAUSE : ICON_PLAY);
     if (el.play) el.play.setAttribute("aria-label", playing ? "Pause" : "Play");
     document.body.classList.toggle("paused", !playing);
   }
@@ -547,8 +553,35 @@
     });
 
     html += '<button class="switcher-close">close</button></div>';
+
+    /* The transport sits behind the overlay, so browsing meant losing the
+       ability to skip or pause. Mirror it along the bottom. */
+    html +=
+      '<div class="now-bar">' +
+      '<span class="now-dot"></span>' +
+      '<div class="now-text"><b id="sw-title">—</b><span id="sw-meta"></span></div>' +
+      '<button class="tbtn" id="sw-play" aria-label="Play">' +
+      '<svg viewBox="0 0 24 24"><path id="sw-icon" d="' + ICON_PLAY + '"/></svg></button>' +
+      '<button class="tbtn" id="sw-next" aria-label="Next">' +
+      '<svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l9-6-9-6z"/></svg></button>' +
+      "</div>";
+
     sw.innerHTML = html;
     document.body.appendChild(sw);
+
+    el.swTitle = sw.querySelector("#sw-title");
+    el.swMeta = sw.querySelector("#sw-meta");
+    el.swIcon = sw.querySelector("#sw-icon");
+
+    sw.querySelector("#sw-play").addEventListener("click", function (e) {
+      e.stopPropagation();
+      toggle();
+    });
+    sw.querySelector("#sw-next").addEventListener("click", function (e) {
+      e.stopPropagation();
+      misses = 0;
+      next();
+    });
 
     sw.addEventListener("click", function (e) {
       if (e.target === sw || e.target.className === "switcher-close") {

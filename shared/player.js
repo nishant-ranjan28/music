@@ -384,8 +384,10 @@
     player.setVolume(vol);
     if (LIST_MODE) {
       player.loadPlaylist({ listType: "playlist", list: SITE.ytPlaylist });
-      player.setShuffle(true);
       player.setLoop(true);
+      // setShuffle here does nothing — the list has not loaded yet. Defer it
+      // to the first PLAYING, same as a station switch does.
+      pendingShuffle = SITE.shuffle !== false;
       return;
     }
 
@@ -427,6 +429,13 @@
         if (pendingShuffle) {
           pendingShuffle = false;
           player.setShuffle(true);
+          /* setShuffle reorders what comes next but leaves the current video
+             alone, so every visit still opened on the same track. Jump to a
+             random entry as well, so a station feels different each time. */
+          var list = player.getPlaylist && player.getPlaylist();
+          if (list && list.length > 1) {
+            player.playVideoAt(Math.floor(Math.random() * list.length));
+          }
         }
       }
       // CUED/BUFFERING/PLAYING all mean the current video changed

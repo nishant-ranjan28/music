@@ -83,6 +83,7 @@
 
   <footer class="footer">
     <span id="count"></span>
+    <span id="counter" class="counter"></span>
     <span>The songs that played while you waited for the meter to stop.</span>
   </footer>
 </main>
@@ -103,6 +104,7 @@
 <script src="../../shared/stations.js"></script>
 <script src="playlist.js"></script>
 <script src="../../shared/player.js"></script>
+<script src="../../shared/counter.js" defer></script>
 <script>var p=document.getElementById('pulse');
       if(p){var n=7;setInterval(function(){n++;p.textContent=String(n).padStart(3,'0').split('').join(' ');},4000);}</script>
 </body>

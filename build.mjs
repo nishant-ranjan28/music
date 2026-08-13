@@ -167,6 +167,7 @@ function indexHtml(theme) {
 
   <footer class="footer">
     <span id="count"></span>
+    <span id="counter" class="counter"></span>
     <span>${esc(theme.tagline)}</span>
   </footer>
 </main>
@@ -187,6 +188,7 @@ function indexHtml(theme) {
 <script src="../../shared/stations.js"></script>
 <script src="playlist.js"></script>
 <script src="../../shared/player.js"></script>
+<script src="../../shared/counter.js" defer></script>
 ${theme.js ? `<script>${theme.js.trim()}</script>` : ""}
 </body>
 </html>
@@ -291,6 +293,15 @@ ${themes.filter((t) => t.kind === kind).map(card).join("\n")}
   .station p{margin:0 0 14px;font-size:14px;color:#d8d3ca;min-height:42px}
   .station small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#ffffff45}
   footer{margin-top:64px;font-size:12px;color:#6d6862;max-width:64ch;line-height:1.7}
+  .counter{display:block;margin-top:10px;color:#8f8a82;letter-spacing:.1em;
+    text-transform:uppercase;font-size:11px}
+  .counter:empty{display:none}
+  .counter-dot{display:inline-block;width:6px;height:6px;border-radius:50%;
+    background:#5bd08a;margin-right:8px;vertical-align:middle;
+    animation:pulse 2s ease-out infinite}
+  .counter-sep{margin:0 8px;opacity:.5}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(91,208,138,.6)}
+    70%{box-shadow:0 0 0 7px transparent}100%{box-shadow:0 0 0 0 transparent}}
   @media (max-width:760px){
     body{padding:22px 16px calc(28px + env(safe-area-inset-bottom))}
     h1{font-size:clamp(30px,10vw,44px)}
@@ -318,7 +329,9 @@ ${group("genre", "Genres", "the sound itself, in its own era")}
 
   <footer>
     Audio streams through the official YouTube IFrame API — nothing is hosted here.
+    <span id="counter" class="counter"></span>
   </footer>
+  <script src="shared/counter.js" defer></script>
 </body>
 </html>
 `;

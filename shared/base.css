@@ -386,6 +386,34 @@ input[type="range"]::-moz-range-thumb {
   color: var(--accent);
 }
 
+/* ---------- visitor counter -------------------------------------------
+   Empty until /api/hit answers, and hidden while empty — with no storage
+   configured the site shows nothing rather than a pair of zeroes. */
+
+.counter:empty {
+  display: none;
+}
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.counter-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-2, var(--accent));
+  margin-right: 7px;
+  animation: onair 2s ease-out infinite;
+}
+
+.counter-sep {
+  margin: 0 7px;
+  opacity: 0.5;
+}
+
 /* ---------- station switcher ------------------------------------------
    Stations swap in place rather than navigating: a page load would tear
    down the iframe and stop the audio mid-song. */

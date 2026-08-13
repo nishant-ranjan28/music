@@ -146,6 +146,35 @@ convert:
 for d in sites/*/; do rsvg-convert -w 180 -h 180 "$d/favicon.svg" -o "$d/apple-touch-icon.png"; done
 ```
 
+## Visitor counters
+
+The footer shows how many people are listening right now and how many visits there
+have been in total. `api/hit.mjs` is a Vercel serverless function; `shared/counter.js`
+calls it on load and then every 20 seconds.
+
+"Live" is a presence set, not a counter: each visitor writes its id with a timestamp
+on every heartbeat, entries older than 50 seconds are dropped, and what remains is
+who is here. Incrementing on load and decrementing on unload drifts upward forever,
+because browsers are closed without firing unload all the time.
+
+Visits count once per browser session, so refreshing does not inflate them. The
+visitor id lives in `localStorage`, so one person is one listener rather than one
+per tab.
+
+**Storage setup.** In the Vercel dashboard: *Storage → Create → Upstash for Redis →
+connect to this project*. The env vars are injected automatically, and the function
+accepts either the Vercel KV or Upstash naming:
+
+```
+KV_REST_API_URL / KV_REST_API_TOKEN
+UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN
+```
+
+**With no storage configured the counters simply do not appear.** The endpoint
+reports `enabled: false`, the element stays empty and `.counter:empty` hides it —
+the site is static-first and has to work with no backend at all, which is also what
+happens when you run it locally with `python3 -m http.server`.
+
 ## Keeping stations alive
 
 Playlists belong to other people. Videos get deleted, region-blocked or made

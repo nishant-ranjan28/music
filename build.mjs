@@ -190,6 +190,10 @@ function indexHtml(theme) {
 <script src="../../shared/player.js"></script>
 <script src="../../shared/counter.js" defer></script>
 ${theme.js ? `<script>${theme.js.trim()}</script>` : ""}
+<script type="module">
+  import { inject } from '../../node_modules/@vercel/analytics/dist/index.js';
+  inject();
+</script>
 </body>
 </html>
 `;
@@ -344,6 +348,10 @@ ${group("genre", "Genres", "the sound itself, in its own era")}
     <span id="counter" class="counter"></span>
   </footer>
   <script src="shared/counter.js" defer></script>
+  <script type="module">
+    import { inject } from './node_modules/@vercel/analytics/dist/index.js';
+    inject();
+  </script>
 </body>
 </html>
 `;

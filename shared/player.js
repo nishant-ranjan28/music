@@ -569,10 +569,20 @@
       '<div class="switcher-inner"><h2>All stations</h2>' +
       '<p class="switcher-note">the current station keeps playing while you browse</p>';
 
-    [["place", "Places"], ["genre", "Genres"]].forEach(function (g) {
-      var list = STATIONS.filter(function (st) {
-        return st.kind === g[0];
-      });
+    // Recommended first, then the full catalogue — same order as the hub.
+    var featured = STATIONS.filter(function (st) {
+      return st.featured;
+    }).sort(function (a, b) {
+      return a.featured - b.featured;
+    });
+
+    [["featured", "Recommended"], ["place", "Places"], ["genre", "Genres"]].forEach(function (g) {
+      var list =
+        g[0] === "featured"
+          ? featured
+          : STATIONS.filter(function (st) {
+              return st.kind === g[0];
+            });
       if (!list.length) return;
 
       html += '<p class="switcher-note">' + g[1] + '</p><div class="switcher-grid">';

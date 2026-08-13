@@ -21,6 +21,7 @@
     text-transform:uppercase;color:#8f8a82;margin:52px 0 18px;display:flex;gap:14px;align-items:baseline}
   .group small{font-family:Inter,sans-serif;letter-spacing:0;text-transform:none;font-size:12px;opacity:.7}
   .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(258px,1fr))}
+  @media (min-width:1040px){.grid--featured{grid-template-columns:repeat(4,1fr)}}
   .station{position:relative;display:block;text-decoration:none;color:inherit;padding:22px;
     border:1px solid #ffffff14;border-radius:10px;overflow:hidden;
     background:linear-gradient(160deg,color-mix(in srgb,var(--a) 12%,transparent),var(--b));
@@ -61,8 +62,44 @@
 </head>
 <body>
   <h1>Nostalgia radio</h1>
-  <p class="lede">Ten single-page stations. Each one is a place or a genre, one song at a time,
+  <p class="lede">Eleven single-page stations. Each one is a place or a genre, one song at a time,
      no accounts, no search. Pick a station and leave it playing.</p>
+
+    <h2 class="group">Recommended<small>if you are not sure where to start</small></h2>
+    <div class="grid grid--featured">
+      <a class="station" href="sites/khushi/index.html"
+         style="--a:#ffb020;--b:#150f07">
+        <span class="glyph">☀</span>
+        <strong>Khushi</strong>
+        <em>90s · 00s · 10s · sing-along</em>
+        <p>The ones everybody still knows every word of.</p>
+        <small>20 tracks · genre</small>
+      </a>
+      <a class="station" href="sites/bollywood-90s/index.html"
+         style="--a:#ff2e88;--b:#0a0514">
+        <span class="glyph">▤</span>
+        <strong>Cassette</strong>
+        <em>side a · dolby · rewind with a pencil</em>
+        <p>One cassette, both sides, played until the tape stretched.</p>
+        <small>20 tracks · genre</small>
+      </a>
+      <a class="station" href="sites/baraat-band/index.html"
+         style="--a:#ff8a00;--b:#170509">
+        <span class="glyph">✺</span>
+        <strong>Baraat</strong>
+        <em>brass · dhol · generator light</em>
+        <p>Nine men, brass instruments, and one film song murdered beautifully.</p>
+        <small>18 tracks · place</small>
+      </a>
+      <a class="station" href="sites/lofi/index.html"
+         style="--a:#b7a6e8;--b:#12111b">
+        <span class="glyph">❍</span>
+        <strong>Monsoon</strong>
+        <em>tape hiss · rain · no vocals</em>
+        <p>Rain on the window, a tape loop, and homework you never finished.</p>
+        <small>18 tracks · genre</small>
+      </a>
+    </div>
 
     <h2 class="group">Places<small>a specific room, at a specific time</small></h2>
     <div class="grid">

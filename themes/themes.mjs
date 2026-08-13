@@ -183,6 +183,7 @@ export const themes = [
   /* ================================================================ 4 */
   {
     slug: "baraat-band",
+    featured: 3, // shown in the Recommended row
     kind: "place",
     // Bollywood wedding songs, ~117 tracks
     ytPlaylist: "PLYmK3JHhP4fdCl2NVP30MFIAQMFXVeBCG",
@@ -431,6 +432,7 @@ export const themes = [
   /* ================================================================ 7 */
   {
     slug: "bollywood-90s",
+    featured: 2, // shown in the Recommended row
     kind: "genre",
     // Tips Official — "90s Golden Hits", ~2250 tracks, label-maintained
     ytPlaylist: "PLinVjP-aRmlukMwFfIb5u0xA-M_Be3nC5",
@@ -602,6 +604,7 @@ export const themes = [
   /* ================================================================ 9 */
   {
     slug: "lofi",
+    featured: 4, // shown in the Recommended row
     kind: "genre",
     // Lofi Fruits Music — ~321 tracks
     ytPlaylist: "PL6fhs6TSspZv0F0YgsG-p7Mn189CU2XKS",
@@ -895,6 +898,7 @@ export const themes = [
   /* =============================================================== 11 */
   {
     slug: "khushi",
+    featured: 1, // shown in the Recommended row
     kind: "genre",
     /* Psquared — "Bollywood in the '00s", ~341 tracks, 200 once the embed
        caps it. Verified by loading it in a real embed. It is the honest

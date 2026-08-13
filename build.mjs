@@ -252,6 +252,15 @@ function hubHtml() {
         <small>${t.tracks.length} tracks · ${t.kind}</small>
       </a>`;
 
+  const rows = (list, title, note) => `    <h2 class="group">${title}<small>${note}</small></h2>
+    <div class="grid grid--featured">
+${list.map(card).join("\n")}
+    </div>`;
+
+  const featured = themes
+    .filter((t) => t.featured)
+    .sort((a, b) => a.featured - b.featured);
+
   const group = (kind, title, note) => `    <h2 class="group">${title}<small>${note}</small></h2>
     <div class="grid">
 ${themes.filter((t) => t.kind === kind).map(card).join("\n")}
@@ -280,6 +289,7 @@ ${themes.filter((t) => t.kind === kind).map(card).join("\n")}
     text-transform:uppercase;color:#8f8a82;margin:52px 0 18px;display:flex;gap:14px;align-items:baseline}
   .group small{font-family:Inter,sans-serif;letter-spacing:0;text-transform:none;font-size:12px;opacity:.7}
   .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(258px,1fr))}
+  @media (min-width:1040px){.grid--featured{grid-template-columns:repeat(4,1fr)}}
   .station{position:relative;display:block;text-decoration:none;color:inherit;padding:22px;
     border:1px solid #ffffff14;border-radius:10px;overflow:hidden;
     background:linear-gradient(160deg,color-mix(in srgb,var(--a) 12%,transparent),var(--b));
@@ -320,8 +330,10 @@ ${themes.filter((t) => t.kind === kind).map(card).join("\n")}
 </head>
 <body>
   <h1>Nostalgia radio</h1>
-  <p class="lede">Ten single-page stations. Each one is a place or a genre, one song at a time,
+  <p class="lede">Eleven single-page stations. Each one is a place or a genre, one song at a time,
      no accounts, no search. Pick a station and leave it playing.</p>
+
+${rows(featured, "Recommended", "if you are not sure where to start")}
 
 ${group("place", "Places", "a specific room, at a specific time")}
 
@@ -378,6 +390,7 @@ writeFileSync(
       themes.map((t) => ({
         slug: t.slug,
         kind: t.kind,
+        featured: t.featured || null,
         name: t.name,
         signHtml: esc(t.sign).replace(/ {2}/g, "&nbsp;&nbsp;"),
         kicker: t.kicker,

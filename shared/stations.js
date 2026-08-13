@@ -2,6 +2,7 @@ window.STATIONS = [
  {
   "slug": "std-booth",
   "kind": "place",
+  "featured": null,
   "name": "Pardesi",
   "signHtml": "S T D · I S D · P C O",
   "kicker": "local · national · international",
@@ -152,6 +153,7 @@ window.STATIONS = [
  {
   "slug": "auto-rickshaw",
   "kind": "place",
+  "featured": null,
   "name": "Meter Down",
   "signHtml": "M E T E R&nbsp;&nbsp;D O W N",
   "kicker": "3 sawari · no ac · full volume",
@@ -302,6 +304,7 @@ window.STATIONS = [
  {
   "slug": "baraat-band",
   "kind": "place",
+  "featured": 3,
   "name": "Baraat",
   "signHtml": "B A N D&nbsp;&nbsp;B A A J A",
   "kicker": "brass · dhol · generator light",
@@ -452,6 +455,7 @@ window.STATIONS = [
  {
   "slug": "wedding-vhs",
   "kind": "place",
+  "featured": null,
   "name": "VHS",
   "signHtml": "▶ PLAY&nbsp;&nbsp;SP",
   "kicker": "cam 1 · tracking · sp mode",
@@ -602,6 +606,7 @@ window.STATIONS = [
  {
   "slug": "ghazal",
   "kind": "genre",
+  "featured": null,
   "name": "Mehfil",
   "signHtml": "M E H F I L",
   "kicker": "ghazal · nazm · shair",
@@ -766,6 +771,7 @@ window.STATIONS = [
  {
   "slug": "bollywood-90s",
   "kind": "genre",
+  "featured": 2,
   "name": "Cassette",
   "signHtml": "T-SERIES&nbsp;&nbsp;90s",
   "kicker": "side a · dolby · rewind with a pencil",
@@ -930,6 +936,7 @@ window.STATIONS = [
  {
   "slug": "retro-rock",
   "kind": "genre",
+  "featured": null,
   "name": "Valve",
   "signHtml": "VALVE&nbsp;&nbsp;RADIO",
   "kicker": "tolex · tubes · vu meter",
@@ -1094,6 +1101,7 @@ window.STATIONS = [
  {
   "slug": "lofi",
   "kind": "genre",
+  "featured": 4,
   "name": "Monsoon",
   "signHtml": "l o f i&nbsp;&nbsp; r a i n",
   "kicker": "tape hiss · rain · no vocals",
@@ -1244,6 +1252,7 @@ window.STATIONS = [
  {
   "slug": "qawwali",
   "kind": "genre",
+  "featured": null,
   "name": "Qawwali",
   "signHtml": "Q A W W A L I",
   "kicker": "harmonium · taali · chorus",
@@ -1394,6 +1403,7 @@ window.STATIONS = [
  {
   "slug": "bhajan",
   "kind": "genre",
+  "featured": null,
   "name": "Bhajan",
   "signHtml": "B H A J A N",
   "kicker": "aarti · chalisa · dhun",
@@ -1558,6 +1568,7 @@ window.STATIONS = [
  {
   "slug": "khushi",
   "kind": "genre",
+  "featured": 1,
   "name": "Khushi",
   "signHtml": "K H U S H I",
   "kicker": "90s · 00s · 10s · sing-along",

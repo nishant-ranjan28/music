@@ -376,6 +376,135 @@ input[type="range"]::-moz-range-thumb {
   color: var(--accent);
 }
 
+/* ---------- station switcher ------------------------------------------
+   Stations swap in place rather than navigating: a page load would tear
+   down the iframe and stop the audio mid-song. */
+
+.switcher {
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 4vw, 40px);
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(10px);
+  transition: opacity 0.28s ease, visibility 0.28s ease;
+}
+
+.switcher[hidden] {
+  display: grid;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.switcher-inner {
+  width: min(940px, 100%);
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.switcher h2 {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 4vw, 30px);
+  color: var(--accent);
+  margin: 0 0 4px;
+}
+
+.switcher-note {
+  margin: 0 0 20px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.switcher-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+.st {
+  position: relative;
+  text-align: left;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(155deg, color-mix(in srgb, var(--a) 16%, transparent), var(--b));
+  color: #fff;
+  overflow: hidden;
+  transition: transform 0.14s ease, border-color 0.14s ease;
+}
+
+.st:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--a) 60%, transparent);
+}
+
+.st b {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--a);
+}
+
+.st span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 4px;
+}
+
+.st i {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font-style: normal;
+  font-size: 26px;
+  color: var(--a);
+  opacity: 0.3;
+}
+
+.st[aria-current="true"] {
+  border-color: var(--a);
+}
+
+.st[aria-current="true"]::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--a);
+  box-shadow: 0 0 0 0 var(--a);
+  animation: onair 1.8s ease-out infinite;
+}
+
+@keyframes onair {
+  70% {
+    box-shadow: 0 0 0 9px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.switcher-close {
+  margin-top: 20px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  border-bottom: 1px solid var(--line);
+}
+
 /* ---------- tap-to-play gate ------------------------------------------ */
 
 .gate {

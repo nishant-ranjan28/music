@@ -26,6 +26,25 @@ python3 -m http.server 4321
 # then open http://localhost:4321/index.html
 ```
 
+## Switching stations without stopping the music
+
+"All stations" on a station page opens an in-page overlay rather than navigating
+to the hub. Picking a station swaps the theme stylesheet, the scene markup and the
+station state in place and pushes the new URL with `history.pushState`.
+
+This is the only way the audio can survive the change: the player lives in a hidden
+iframe, and any real navigation destroys it mid-song. The hub at `/` is still a
+normal page — it is the entry point, so nothing is playing yet when you are there.
+
+`build.mjs` generates `shared/stations.js`, a manifest of every station (metadata,
+scene markup, playlist id, tracks) that each page loads so the switcher has
+everything it needs without fetching.
+
+Two YouTube IFrame API quirks are worth knowing if you touch this:
+`loadPlaylist` is ignored while a playlist is mid-playback, so the switch calls
+`stopVideo()` first; and `setShuffle` has no effect until the new list reports
+`PLAYING`, so it is deferred to the state change.
+
 ## Layout
 
 ```

@@ -10,32 +10,18 @@
 (function () {
   "use strict";
 
-  var PLAYLIST = (window.PLAYLIST || []).slice();
-  var SITE = window.SITE || {};
-
-  /* Two sources of truth:
-
-     - playlist mode (SITE.ytPlaylist): the station streams a real YouTube
-       playlist. Unlimited length, updates when the playlist does, and needs
-       no API key at runtime — the IFrame API takes a playlist id directly.
-       Track metadata comes from the player via getVideoData().
-
-     - static mode: the curated PLAYLIST array with hand-resolved video ids.
-
-     In playlist mode any curated entry with a matching id still supplies the
-     display title and artist, so the songs we bothered to name render exactly
-     as designed and the rest fall back to a cleaned-up YouTube title. */
-  var LIST_MODE = !!SITE.ytPlaylist;
-
+  /* Station state is swappable: the switcher changes stations in place
+     rather than navigating, because a page load would tear down the iframe
+     and stop the audio. adoptStation() is the only thing that writes it. */
+  var PLAYLIST = [];
+  var SITE = {};
+  var LIST_MODE = false;
   var OVERRIDES = {};
-  PLAYLIST.forEach(function (t) {
-    if (t.yt) OVERRIDES[t.yt] = t;
-  });
-
-  if (!LIST_MODE && !PLAYLIST.length) {
-    console.warn("[player] empty playlist");
-    return;
-  }
+  var order = [];
+  var cursor = 0;
+  var MAX_SECONDS = 900;
+  var lastShown = null;
+  var skips = 0;
 
   // ---------- dom ----------------------------------------------------
   var $ = function (sel) {
@@ -59,30 +45,51 @@
     count: $("#count")
   };
 
-  // ---------- order --------------------------------------------------
-  var order = PLAYLIST.map(function (_, i) {
-    return i;
-  });
-
-  if (SITE.shuffle !== false) {
-    for (var i = order.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = order[i];
-      order[i] = order[j];
-      order[j] = t;
-    }
-  }
-
   var reducedMotion =
     window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  var cursor = 0;
   var player = null;
   var ready = false;
   var playing = false;
   var pendingPlay = false;
   var skipTimer = null;
   var misses = 0; // consecutive tracks with no playable source
+  var pendingShuffle = false;
+
+  function adoptStation(site, tracks) {
+    SITE = site || {};
+    PLAYLIST = (tracks || []).slice();
+
+    /* playlist mode (SITE.ytPlaylist): stream a real YouTube playlist. Needs
+       no API key at runtime and follows the playlist as it changes; metadata
+       comes from getVideoData(). Otherwise play the curated array of
+       hand-resolved ids. Curated entries still override the display in
+       playlist mode, keyed by video id. */
+    LIST_MODE = !!SITE.ytPlaylist;
+    MAX_SECONDS = SITE.maxSeconds || 900;
+
+    OVERRIDES = {};
+    PLAYLIST.forEach(function (t) {
+      if (t.yt) OVERRIDES[t.yt] = t;
+    });
+
+    order = PLAYLIST.map(function (_, i) {
+      return i;
+    });
+    if (SITE.shuffle !== false) {
+      for (var i = order.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = order[i];
+        order[i] = order[j];
+        order[j] = t;
+      }
+    }
+
+    cursor = 0;
+    lastShown = null;
+    misses = 0;
+    skips = 0;
+  }
 
   /* YouTube titles are written by uploaders, not designers:
        "Ole Ole Full Song | Yeh Dillagi | Saif Ali Khan, Kajol | Abhijeet"
@@ -165,8 +172,6 @@
       yt: d.video_id
     };
   }
-
-  var lastShown = null;
 
   function current() {
     if (LIST_MODE) {
@@ -390,15 +395,13 @@
      so skip them the moment we can see what loaded. */
   var JUNK = /jukebox|non ?stop|nonstop|mashup|medley|all songs|full album|lofi|lo-fi|slowed|reverb|bass boosted|remix|mix\b/i;
 
-  // Ghazal and qawwali recordings genuinely run long, so the ceiling is per
-  // station rather than a flat 15 minutes.
-  var MAX_SECONDS = SITE.maxSeconds || 900;
-  var skips = 0;
 
   function isJunk() {
     var d = (player.getVideoData && player.getVideoData()) || {};
     if (d.title && JUNK.test(d.title)) return true;
     var secs = player.getDuration && player.getDuration();
+    // Ceiling is per station: an hour-long stotram is the point on bhajan,
+    // a compilation anywhere else.
     return !!secs && secs > MAX_SECONDS;
   }
 
@@ -413,7 +416,13 @@
         player.nextVideo();
         return;
       }
-      if (e.data === YT.PlayerState.PLAYING) skips = 0;
+      if (e.data === YT.PlayerState.PLAYING) {
+        skips = 0;
+        if (pendingShuffle) {
+          pendingShuffle = false;
+          player.setShuffle(true);
+        }
+      }
       // CUED/BUFFERING/PLAYING all mean the current video changed
       renderTrack();
       playing = e.data === YT.PlayerState.PLAYING;
@@ -498,7 +507,147 @@
     }
   });
 
+  // ---------- station switcher --------------------------------------------
+  /* Switching swaps the theme stylesheet, the scene markup and the station
+     state in place. The iframe is never recreated, so the outgoing station
+     keeps playing while the overlay is open — navigating to the hub instead
+     would tear the audio down mid-song. */
+
+  var STATIONS = window.STATIONS || [];
+  var here = (location.pathname.match(/sites\/([^/]+)/) || [])[1] || "";
+  var sw = null;
+
+  function buildSwitcher() {
+    if (!STATIONS.length) return;
+
+    sw = document.createElement("div");
+    sw.className = "switcher";
+    sw.hidden = true;
+
+    var html =
+      '<div class="switcher-inner"><h2>All stations</h2>' +
+      '<p class="switcher-note">the current station keeps playing while you browse</p>';
+
+    [["place", "Places"], ["genre", "Genres"]].forEach(function (g) {
+      var list = STATIONS.filter(function (st) {
+        return st.kind === g[0];
+      });
+      if (!list.length) return;
+
+      html += '<p class="switcher-note">' + g[1] + '</p><div class="switcher-grid">';
+      list.forEach(function (st) {
+        html +=
+          '<button class="st" data-slug="' + st.slug + '"' +
+          ' style="--a:' + st.accent + ';--b:' + st.bg + '"' +
+          ' aria-current="' + (st.slug === here) + '">' +
+          "<i>" + st.glyph + "</i><b>" + st.name + "</b>" +
+          "<span>" + st.kicker + "</span></button>";
+      });
+      html += "</div>";
+    });
+
+    html += '<button class="switcher-close">close</button></div>';
+    sw.innerHTML = html;
+    document.body.appendChild(sw);
+
+    sw.addEventListener("click", function (e) {
+      if (e.target === sw || e.target.className === "switcher-close") {
+        sw.hidden = true;
+        return;
+      }
+      var btn = e.target.closest && e.target.closest(".st");
+      if (btn) switchStation(btn.getAttribute("data-slug"));
+    });
+  }
+
+  function switchStation(slug) {
+    var st = STATIONS.filter(function (x) {
+      return x.slug === slug;
+    })[0];
+    if (!st || !sw) return;
+
+    if (slug !== here) {
+      here = slug;
+
+      var css = document.getElementById("theme-css");
+      if (css) css.href = "../" + slug + "/theme.css";
+
+      // the display face differs per station and may not be loaded yet
+      var fonts = document.getElementById("theme-fonts");
+      if (fonts) fonts.href = st.fontsHref;
+
+      var scene = document.querySelector(".scene");
+      if (scene) scene.innerHTML = st.scene;
+
+      var sign = document.querySelector(".sign");
+      if (sign) sign.innerHTML = st.signHtml + "<small>" + st.kicker + "</small>";
+
+      var tag = document.querySelector(".footer span:last-child");
+      if (tag) tag.textContent = st.tagline;
+
+      var themeColor = document.querySelector('meta[name="theme-color"]');
+      if (themeColor) themeColor.setAttribute("content", st.bg);
+
+      var icon = document.querySelector('link[rel="icon"]');
+      if (icon) icon.href = "../" + slug + "/favicon.svg";
+
+      // keep the URL shareable without reloading
+      try {
+        history.pushState({ slug: slug }, "", "../" + slug + "/");
+      } catch (err) {
+        /* file:// forbids pushState — harmless */
+      }
+
+      Array.prototype.forEach.call(sw.querySelectorAll(".st"), function (b) {
+        b.setAttribute("aria-current", String(b.getAttribute("data-slug") === slug));
+      });
+    }
+
+    sw.hidden = true;
+    adoptStation(st.site, st.tracks);
+
+    if (!ready) {
+      pendingPlay = true;
+      renderTrack();
+      return;
+    }
+
+    if (LIST_MODE) {
+      // loadPlaylist is ignored while a playlist is mid-playback, so stop
+      // first. Shuffle is applied once the new list reports PLAYING —
+      // setting it before the load lands has no effect either.
+      player.stopVideo();
+      player.loadPlaylist({ listType: "playlist", list: SITE.ytPlaylist });
+      player.setLoop(true);
+      pendingShuffle = true;
+    } else {
+      loadCurrent();
+      player.playVideo();
+    }
+    renderTrack();
+  }
+
+  window.addEventListener("popstate", function (e) {
+    if (e.state && e.state.slug) switchStation(e.state.slug);
+  });
+
   // ---------- init -------------------------------------------------------
+  adoptStation(window.SITE, window.PLAYLIST);
+  buildSwitcher();
+
+  // "all stations" opens the overlay rather than navigating away
+  var allLink = document.querySelector(".masthead-links a");
+  if (allLink && STATIONS.length) {
+    allLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      sw.hidden = false;
+    });
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && sw && !sw.hidden) sw.hidden = true;
+  });
+
   renderTrack();
   renderPlayState();
 })();

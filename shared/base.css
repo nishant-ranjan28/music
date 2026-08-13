@@ -560,13 +560,43 @@ input[type="range"]::-moz-range-thumb {
   padding-bottom: 84px;
 }
 
-.switcher-close {
+.switcher-close,
+.switcher-home {
+  display: inline-block;
   margin-top: 20px;
   font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--ink-dim);
   border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.switcher-home {
+  margin-left: 22px;
+  border-bottom: 0;
+  vertical-align: top;
+}
+
+/* underline only the label, so the caption below does not read as link text */
+.switcher-home span {
+  border-bottom: 1px solid var(--line);
+}
+
+.switcher-close:hover,
+.switcher-home:hover {
+  color: var(--accent);
+}
+
+/* the hub is a real navigation, so it stops the audio — say so rather than
+   letting it surprise people mid-song */
+.switcher-home em {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  font-style: normal;
+  opacity: 0.6;
+  margin-top: 3px;
 }
 
 /* ---------- tap-to-play gate ------------------------------------------ */

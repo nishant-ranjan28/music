@@ -552,7 +552,13 @@
       html += "</div>";
     });
 
-    html += '<button class="switcher-close">close</button></div>';
+    /* "all stations" is now an overlay, which left no way back to the hub.
+       Offer it explicitly, and say what it costs — the hub is a real page
+       load, so it stops the music. */
+    html +=
+      '<button class="switcher-close">close</button>' +
+      '<a class="switcher-home" href="../../index.html"><span>homepage &#8599;</span>' +
+      '<em>stops playback</em></a></div>';
 
     /* The transport sits behind the overlay, so browsing meant losing the
        ability to skip or pause. Mirror it along the bottom. */

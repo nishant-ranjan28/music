@@ -27,14 +27,14 @@ window.PLAYLIST = [
     "artist": "Nusrat Fateh Ali Khan",
     "year": 1996,
     "q": "Afreen Afreen Nusrat Fateh Ali Khan",
-    "yt": null
+    "yt": "2F7G9bOIwlk"
   },
   {
     "title": "Sanson Ki Mala",
     "artist": "Nusrat Fateh Ali Khan",
     "year": null,
     "q": "Sanson Ki Mala Nusrat Fateh Ali Khan",
-    "yt": null
+    "yt": "eYSaHXXFIBU"
   },
   {
     "title": "Mera Piya Ghar Aaya",
@@ -55,7 +55,7 @@ window.PLAYLIST = [
     "artist": "Nusrat Fateh Ali Khan",
     "year": null,
     "q": "Kinna Sohna Nusrat Fateh Ali Khan",
-    "yt": null
+    "yt": "L5bD5pGhk6E"
   },
   {
     "title": "Tajdar-e-Haram",
@@ -83,14 +83,14 @@ window.PLAYLIST = [
     "artist": "Abida Parveen",
     "year": null,
     "q": "Tere Ishq Nachaya Abida Parveen",
-    "yt": null
+    "yt": "pGaWRdyZQNE"
   },
   {
     "title": "Damadam Mast Qalandar",
     "artist": "Abida Parveen",
     "year": null,
     "q": "Damadam Mast Qalandar Abida Parveen",
-    "yt": null
+    "yt": "-tyvWdq2pyc"
   },
   {
     "title": "Aaj Rang Hai",
@@ -104,28 +104,28 @@ window.PLAYLIST = [
     "artist": "A. R. Rahman",
     "year": 2008,
     "q": "Khwaja Mere Khwaja A. R. Rahman",
-    "yt": null
+    "yt": "4YbAaRFk70o"
   },
   {
     "title": "Kun Faya Kun",
     "artist": "A. R. Rahman, Javed Ali, Mohit Chauhan",
     "year": 2011,
     "q": "Kun Faya Kun A. R. Rahman, Javed Ali, Mohit Chauhan",
-    "yt": null
+    "yt": "T94PHkuydcw"
   },
   {
     "title": "Arziyan",
     "artist": "Javed Ali, Kailash Kher",
     "year": 2009,
     "q": "Arziyan Javed Ali, Kailash Kher",
-    "yt": null
+    "yt": "dXdD1_AGBZg"
   },
   {
     "title": "Piya Haji Ali",
     "artist": "A. R. Rahman, Srinivas",
     "year": 2000,
     "q": "Piya Haji Ali A. R. Rahman, Srinivas",
-    "yt": null
+    "yt": "c4uYjMpE1l8"
   }
 ];
 

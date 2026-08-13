@@ -123,8 +123,10 @@
 
     // Uploaders separate with pipes ("Song | Film | Singers") or with spaced
     // hyphens ("The Police - Every Breath You Take"). Handle both.
+    // A lone lowercase "l" between spaces is a stand-in for a pipe on a lot
+    // of Indian uploads ("Vishnu mantra l Garbh sanskar music l 108 times").
     var parts = String(d.title || "")
-      .split(/\s*[|·•]\s*|\s+[-–—]\s+/)
+      .split(/\s*[|·•]\s*|\s+[-–—]\s+|\s+l\s+/)
       .map(tidy)
       .filter(Boolean);
 
@@ -376,6 +378,34 @@
     });
   };
 
+  /* Some public playlists load fine through the Data API but come back empty
+     in the embedded player — the garbh sanskar list did exactly that, leaving
+     the station silent with no error. Fall back to the curated ids when that
+     happens rather than showing a dead page. */
+  function startPlaylist() {
+    player.loadPlaylist({ listType: "playlist", list: SITE.ytPlaylist });
+    player.setLoop(true);
+    pendingShuffle = SITE.shuffle !== false;
+
+    var wanted = SITE.ytPlaylist;
+    setTimeout(function () {
+      if (!LIST_MODE || SITE.ytPlaylist !== wanted) return;
+      var pl = player.getPlaylist && player.getPlaylist();
+      if (pl && pl.length) return;
+
+      var playable = PLAYLIST.filter(function (t) {
+        return t.yt;
+      }).length;
+      console.warn("[player] playlist " + wanted + " loaded empty");
+      if (!playable) return;
+
+      LIST_MODE = false;
+      lastShown = null;
+      loadCurrent();
+      player.playVideo();
+    }, 7000);
+  }
+
   function onReady() {
     ready = true;
     var stored = Number(localStorage.getItem("radio-volume"));
@@ -383,11 +413,7 @@
     el.volume.value = vol;
     player.setVolume(vol);
     if (LIST_MODE) {
-      player.loadPlaylist({ listType: "playlist", list: SITE.ytPlaylist });
-      player.setLoop(true);
-      // setShuffle here does nothing — the list has not loaded yet. Defer it
-      // to the first PLAYING, same as a station switch does.
-      pendingShuffle = SITE.shuffle !== false;
+      startPlaylist();
       return;
     }
 
@@ -665,9 +691,7 @@
       // first. Shuffle is applied once the new list reports PLAYING —
       // setting it before the load lands has no effect either.
       player.stopVideo();
-      player.loadPlaylist({ listType: "playlist", list: SITE.ytPlaylist });
-      player.setLoop(true);
-      pendingShuffle = true;
+      startPlaylist();
     } else {
       loadCurrent();
       player.playVideo();

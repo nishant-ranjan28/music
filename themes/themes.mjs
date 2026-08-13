@@ -776,6 +776,11 @@ export const themes = [
   /* =============================================================== 11 */
   {
     slug: "bhajan",
+    // Vedic Garbh sanskar — garbh sanskar mantras for pregnancy, ~59 tracks.
+    // Verified to load in the embedded player: the same channel's 40-track
+    // list is public and embeddable per the API but returns 0 items to the
+    // IFrame player, so API metadata alone is not enough to trust a playlist.
+    ytPlaylist: "PLUscsae6p7htIrRHAJ2P2upC85ExFDiol",
     kind: "genre",
     // Chants and stotrams legitimately run long here, so the compilation
     // ceiling is generous — an hour-long Vishnu Sahasranamam is the point.

@@ -20,14 +20,14 @@ window.PLAYLIST = [
     "artist": "Led Zeppelin",
     "year": 1969,
     "q": "Whole Lotta Love Led Zeppelin",
-    "yt": null
+    "yt": "HQmmM_qwG4k"
   },
   {
     "title": "Comfortably Numb",
     "artist": "Pink Floyd",
     "year": 1979,
     "q": "Comfortably Numb Pink Floyd",
-    "yt": null
+    "yt": "_FrOQC-zEog"
   },
   {
     "title": "Wish You Were Here",
@@ -55,7 +55,7 @@ window.PLAYLIST = [
     "artist": "Deep Purple",
     "year": 1972,
     "q": "Smoke on the Water Deep Purple",
-    "yt": null
+    "yt": "Q2FzZSBD5LE"
   },
   {
     "title": "Highway to Hell",
@@ -83,14 +83,14 @@ window.PLAYLIST = [
     "artist": "Derek and the Dominos",
     "year": 1970,
     "q": "Layla Derek and the Dominos",
-    "yt": null
+    "yt": "TngViNw2pOo"
   },
   {
     "title": "Born to Be Wild",
     "artist": "Steppenwolf",
     "year": 1968,
     "q": "Born to Be Wild Steppenwolf",
-    "yt": null
+    "yt": "igvP806798U"
   },
   {
     "title": "More Than a Feeling",
@@ -111,7 +111,7 @@ window.PLAYLIST = [
     "artist": "Lynyrd Skynyrd",
     "year": 1973,
     "q": "Free Bird Lynyrd Skynyrd",
-    "yt": null
+    "yt": "MQNRKX8GwPo"
   },
   {
     "title": "Fortunate Son",
@@ -125,21 +125,21 @@ window.PLAYLIST = [
     "artist": "Heart",
     "year": 1977,
     "q": "Barracuda Heart",
-    "yt": null
+    "yt": "VdOkQ6THDVw"
   },
   {
     "title": "Rock You Like a Hurricane",
     "artist": "Scorpions",
     "year": 1984,
     "q": "Rock You Like a Hurricane Scorpions",
-    "yt": null
+    "yt": "6yP1tcy9a10"
   },
   {
     "title": "Summer of '69",
     "artist": "Bryan Adams",
     "year": 1984,
     "q": "Summer of '69 Bryan Adams",
-    "yt": null
+    "yt": "9f06QZCVUHg"
   }
 ];
 

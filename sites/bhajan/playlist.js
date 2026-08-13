@@ -20,7 +20,7 @@ window.PLAYLIST = [
     "artist": "Traditional",
     "year": null,
     "q": "Om Namo Bhagavate Vasudevaya Traditional",
-    "yt": null
+    "yt": "2yhvCgpNJiA"
   },
   {
     "title": "Devaki Suta Govinda",
@@ -83,7 +83,7 @@ window.PLAYLIST = [
     "artist": "Traditional",
     "year": null,
     "q": "Achyutam Keshavam Traditional",
-    "yt": null
+    "yt": "3yczGKnskts"
   },
   {
     "title": "Ya Kundendu Tushara Hara - Saraswati Vandana",
@@ -111,14 +111,14 @@ window.PLAYLIST = [
     "artist": "Lata Mangeshkar, Manna Dey",
     "year": 1972,
     "q": "Yashomati Maiya Se Lata Mangeshkar, Manna Dey",
-    "yt": null
+    "yt": "4KtSuGdxt1I"
   },
   {
     "title": "Chanda Hai Tu Mera Suraj Hai Tu",
     "artist": "Lata Mangeshkar",
     "year": 1969,
     "q": "Chanda Hai Tu Mera Suraj Hai Tu Lata Mangeshkar",
-    "yt": null
+    "yt": "MZgMO4V8kEI"
   },
   {
     "title": "Om Chanting 108 Times",
@@ -135,6 +135,6 @@ window.SITE = {
   "glyph": "✿",
   "shuffle": true,
   "searchFallback": true,
-  "ytPlaylist": null,
+  "ytPlaylist": "PLUscsae6p7htIrRHAJ2P2upC85ExFDiol",
   "maxSeconds": 3600
 };

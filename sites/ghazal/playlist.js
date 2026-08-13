@@ -13,14 +13,14 @@ window.PLAYLIST = [
     "artist": "Mehdi Hassan",
     "year": null,
     "q": "Rafta Rafta Woh Meri Mehdi Hassan",
-    "yt": null
+    "yt": "Y01l7QTtIoE"
   },
   {
     "title": "Mujhe Tum Nazar Se",
     "artist": "Mehdi Hassan",
     "year": null,
     "q": "Mujhe Tum Nazar Se Mehdi Hassan",
-    "yt": null
+    "yt": "6sMEV_Hvv-g"
   },
   {
     "title": "Ab Ke Hum Bichhde",
@@ -34,21 +34,21 @@ window.PLAYLIST = [
     "artist": "Ghulam Ali",
     "year": null,
     "q": "Chupke Chupke Raat Din Ghulam Ali",
-    "yt": null
+    "yt": "MWjaK_nW72E"
   },
   {
     "title": "Hungama Hai Kyon Barpa",
     "artist": "Ghulam Ali",
     "year": null,
     "q": "Hungama Hai Kyon Barpa Ghulam Ali",
-    "yt": null
+    "yt": "xQsMn1kmJs4"
   },
   {
     "title": "Aawargi",
     "artist": "Ghulam Ali",
     "year": null,
     "q": "Aawargi Ghulam Ali",
-    "yt": null
+    "yt": "pZWqn3BC17Q"
   },
   {
     "title": "Tum Itna Jo Muskura Rahe Ho",
@@ -62,7 +62,7 @@ window.PLAYLIST = [
     "artist": "Jagjit Singh",
     "year": null,
     "q": "Ahista Ahista Jagjit Singh",
-    "yt": null
+    "yt": "vukyvBndFR8"
   },
   {
     "title": "Woh Kagaz Ki Kashti",
@@ -83,7 +83,7 @@ window.PLAYLIST = [
     "artist": "Jagjit Singh",
     "year": null,
     "q": "Tere Aane Ki Jab Khabar Mehke Jagjit Singh",
-    "yt": null
+    "yt": "-G_Xi_x4g1s"
   },
   {
     "title": "Hoshwalon Ko Khabar Kya",
@@ -97,35 +97,35 @@ window.PLAYLIST = [
     "artist": "Jagjit Singh",
     "year": 1998,
     "q": "Chithi Na Koi Sandesh Jagjit Singh",
-    "yt": null
+    "yt": "sBBzwoSngGg"
   },
   {
     "title": "Aaj Jaane Ki Zid Na Karo",
     "artist": "Farida Khanum",
     "year": null,
     "q": "Aaj Jaane Ki Zid Na Karo Farida Khanum",
-    "yt": null
+    "yt": "CfUDuYAasjE"
   },
   {
     "title": "Dil Cheez Kya Hai",
     "artist": "Asha Bhosle",
     "year": 1981,
     "q": "Dil Cheez Kya Hai Asha Bhosle",
-    "yt": null
+    "yt": "eFcs3p1moMA"
   },
   {
     "title": "In Aankhon Ki Masti",
     "artist": "Asha Bhosle",
     "year": 1981,
     "q": "In Aankhon Ki Masti Asha Bhosle",
-    "yt": null
+    "yt": "yjYE41bYnUM"
   },
   {
     "title": "Chandi Jaisa Rang",
     "artist": "Pankaj Udhas",
     "year": null,
     "q": "Chandi Jaisa Rang Pankaj Udhas",
-    "yt": null
+    "yt": "G4NAKKy5k0g"
   },
   {
     "title": "Kabhi Kisi Ko Muqammal",
@@ -139,7 +139,7 @@ window.PLAYLIST = [
     "artist": "Jagjit Singh",
     "year": null,
     "q": "Yeh Dhuan Sa Kahan Se Uthta Hai Jagjit Singh",
-    "yt": null
+    "yt": "thOylhHN-Bc"
   }
 ];
 

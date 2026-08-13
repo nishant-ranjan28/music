@@ -13,7 +13,7 @@ window.PLAYLIST = [
     "artist": "Nujabes",
     "year": null,
     "q": "Aruarian Dance Nujabes",
-    "yt": null
+    "yt": "qYcoJpqCha4"
   },
   {
     "title": "Luv (sic) Pt. 3",
@@ -41,28 +41,28 @@ window.PLAYLIST = [
     "artist": "Jinsang",
     "year": null,
     "q": "Affection Jinsang",
-    "yt": null
+    "yt": "6jGPypPNEg4"
   },
   {
     "title": "Summer's Day",
     "artist": "Jinsang",
     "year": null,
     "q": "Summer's Day Jinsang",
-    "yt": null
+    "yt": "vNZA0RQ54p4"
   },
   {
     "title": "Controlla",
     "artist": "Idealism",
     "year": null,
     "q": "Controlla Idealism",
-    "yt": null
+    "yt": "LkhPi6J5Xg0"
   },
   {
     "title": "Both of Us",
     "artist": "Idealism",
     "year": null,
     "q": "Both of Us Idealism",
-    "yt": null
+    "yt": "Djz-AXDO27Q"
   },
   {
     "title": "Harbor",
@@ -76,49 +76,49 @@ window.PLAYLIST = [
     "artist": "Kupla",
     "year": null,
     "q": "Owls of the Night Kupla",
-    "yt": null
+    "yt": "bmxt4B_5_K8"
   },
   {
     "title": "Staying There",
     "artist": "L'indécis",
     "year": null,
     "q": "Staying There L'indécis",
-    "yt": null
+    "yt": "buqsSywAlmA"
   },
   {
     "title": "Soulful",
     "artist": "L'indécis",
     "year": null,
     "q": "Soulful L'indécis",
-    "yt": null
+    "yt": "7ZguAEoNpZw"
   },
   {
     "title": "just friends",
     "artist": "potsu",
     "year": null,
     "q": "just friends potsu",
-    "yt": null
+    "yt": "qOif_ni_9zc"
   },
   {
     "title": "Seasons",
     "artist": "Aso",
     "year": null,
     "q": "Seasons Aso",
-    "yt": null
+    "yt": "Xo3ez6LThQ4"
   },
   {
     "title": "Pathway",
     "artist": "eevee",
     "year": null,
     "q": "Pathway eevee",
-    "yt": null
+    "yt": "YWN2aaE6OP0"
   },
   {
     "title": "Lucid",
     "artist": "Philanthrope",
     "year": null,
     "q": "Lucid Philanthrope",
-    "yt": null
+    "yt": "FhylZiUAJwo"
   },
   {
     "title": "Under Water",

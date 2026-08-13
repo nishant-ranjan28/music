@@ -6,126 +6,126 @@ window.PLAYLIST = [
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1988,
     "q": "Ae Mere Humsafar Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "sWqjZpBtcxc"
   },
   {
     "title": "Papa Kehte Hain",
     "artist": "Udit Narayan",
     "year": 1988,
     "q": "Papa Kehte Hain Udit Narayan",
-    "yt": null
+    "yt": "FEvBiayarlc"
   },
   {
     "title": "Tumse Milne Ki Tamanna",
     "artist": "S. P. Balasubrahmanyam",
     "year": 1991,
     "q": "Tumse Milne Ki Tamanna S. P. Balasubrahmanyam",
-    "yt": null
+    "yt": "thjRNwjmAdQ"
   },
   {
     "title": "Bahut Pyar Karte Hain",
     "artist": "Anuradha Paudwal",
     "year": 1991,
     "q": "Bahut Pyar Karte Hain Anuradha Paudwal",
-    "yt": null
+    "yt": "ycj1FwxiZwc"
   },
   {
     "title": "Jaadu Teri Nazar",
     "artist": "Udit Narayan",
     "year": 1993,
     "q": "Jaadu Teri Nazar Udit Narayan",
-    "yt": null
+    "yt": "n_oP9Onj0r0"
   },
   {
     "title": "Tu Mere Samne",
     "artist": "Lata Mangeshkar, Udit Narayan",
     "year": 1993,
     "q": "Tu Mere Samne Lata Mangeshkar, Udit Narayan",
-    "yt": null
+    "yt": "0-7RHSbyZGw"
   },
   {
     "title": "Baazigar O Baazigar",
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1993,
     "q": "Baazigar O Baazigar Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "PUO7_Gi6ipg"
   },
   {
     "title": "Yeh Kaali Kaali Aankhen",
     "artist": "Kumar Sanu, Anu Malik",
     "year": 1993,
     "q": "Yeh Kaali Kaali Aankhen Kumar Sanu, Anu Malik",
-    "yt": null
+    "yt": "KC-DuX51NY0"
   },
   {
     "title": "Chura Ke Dil Mera",
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1994,
     "q": "Chura Ke Dil Mera Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "Yqj1_V90KJo"
   },
   {
     "title": "Aisi Deewangi",
     "artist": "Kumar Sanu, Vinod Rathod",
     "year": 1992,
     "q": "Aisi Deewangi Kumar Sanu, Vinod Rathod",
-    "yt": null
+    "yt": "GwpqME_Cmpc"
   },
   {
     "title": "Sochenge Tumhe Pyar",
     "artist": "Kumar Sanu",
     "year": 1992,
     "q": "Sochenge Tumhe Pyar Kumar Sanu",
-    "yt": null
+    "yt": "lFdSi01tpYM"
   },
   {
     "title": "Dil Hai Ke Manta Nahin",
     "artist": "Kumar Sanu, Anuradha Paudwal",
     "year": 1991,
     "q": "Dil Hai Ke Manta Nahin Kumar Sanu, Anuradha Paudwal",
-    "yt": null
+    "yt": "C9efe0rjDlE"
   },
   {
     "title": "Pehla Nasha",
     "artist": "Udit Narayan, Sadhana Sargam",
     "year": 1992,
     "q": "Pehla Nasha Udit Narayan, Sadhana Sargam",
-    "yt": null
+    "yt": "SBfPs-PMGTA"
   },
   {
     "title": "Tujhe Dekha To",
     "artist": "Kumar Sanu, Lata Mangeshkar",
     "year": 1995,
     "q": "Tujhe Dekha To Kumar Sanu, Lata Mangeshkar",
-    "yt": null
+    "yt": "cNV5hLSa9H8"
   },
   {
     "title": "Rangeela Re",
     "artist": "Asha Bhosle",
     "year": 1995,
     "q": "Rangeela Re Asha Bhosle",
-    "yt": null
+    "yt": "i65HIFzIfec"
   },
   {
     "title": "Pardesi Pardesi",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1996,
     "q": "Pardesi Pardesi Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "Swlik5Hfu-A"
   },
   {
     "title": "Kuch Kuch Hota Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Kuch Kuch Hota Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "bKZTnnFU9HA"
   },
   {
     "title": "Akele Hain To Kya Gham Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1988,
     "q": "Akele Hain To Kya Gham Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "QxpPkGSmCqY"
   },
   {
     "title": "Meri Mehbooba",
@@ -139,7 +139,7 @@ window.PLAYLIST = [
     "artist": "Kumar Sanu",
     "year": 1994,
     "q": "Kuch Na Kaho Kumar Sanu",
-    "yt": null
+    "yt": "Kidtrrn4aUM"
   }
 ];
 

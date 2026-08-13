@@ -633,14 +633,14 @@ window.STATIONS = [
     "artist": "Mehdi Hassan",
     "year": null,
     "q": "Rafta Rafta Woh Meri Mehdi Hassan",
-    "yt": null
+    "yt": "Y01l7QTtIoE"
    },
    {
     "title": "Mujhe Tum Nazar Se",
     "artist": "Mehdi Hassan",
     "year": null,
     "q": "Mujhe Tum Nazar Se Mehdi Hassan",
-    "yt": null
+    "yt": "6sMEV_Hvv-g"
    },
    {
     "title": "Ab Ke Hum Bichhde",
@@ -654,21 +654,21 @@ window.STATIONS = [
     "artist": "Ghulam Ali",
     "year": null,
     "q": "Chupke Chupke Raat Din Ghulam Ali",
-    "yt": null
+    "yt": "MWjaK_nW72E"
    },
    {
     "title": "Hungama Hai Kyon Barpa",
     "artist": "Ghulam Ali",
     "year": null,
     "q": "Hungama Hai Kyon Barpa Ghulam Ali",
-    "yt": null
+    "yt": "xQsMn1kmJs4"
    },
    {
     "title": "Aawargi",
     "artist": "Ghulam Ali",
     "year": null,
     "q": "Aawargi Ghulam Ali",
-    "yt": null
+    "yt": "pZWqn3BC17Q"
    },
    {
     "title": "Tum Itna Jo Muskura Rahe Ho",
@@ -682,7 +682,7 @@ window.STATIONS = [
     "artist": "Jagjit Singh",
     "year": null,
     "q": "Ahista Ahista Jagjit Singh",
-    "yt": null
+    "yt": "vukyvBndFR8"
    },
    {
     "title": "Woh Kagaz Ki Kashti",
@@ -703,7 +703,7 @@ window.STATIONS = [
     "artist": "Jagjit Singh",
     "year": null,
     "q": "Tere Aane Ki Jab Khabar Mehke Jagjit Singh",
-    "yt": null
+    "yt": "-G_Xi_x4g1s"
    },
    {
     "title": "Hoshwalon Ko Khabar Kya",
@@ -717,35 +717,35 @@ window.STATIONS = [
     "artist": "Jagjit Singh",
     "year": 1998,
     "q": "Chithi Na Koi Sandesh Jagjit Singh",
-    "yt": null
+    "yt": "sBBzwoSngGg"
    },
    {
     "title": "Aaj Jaane Ki Zid Na Karo",
     "artist": "Farida Khanum",
     "year": null,
     "q": "Aaj Jaane Ki Zid Na Karo Farida Khanum",
-    "yt": null
+    "yt": "CfUDuYAasjE"
    },
    {
     "title": "Dil Cheez Kya Hai",
     "artist": "Asha Bhosle",
     "year": 1981,
     "q": "Dil Cheez Kya Hai Asha Bhosle",
-    "yt": null
+    "yt": "eFcs3p1moMA"
    },
    {
     "title": "In Aankhon Ki Masti",
     "artist": "Asha Bhosle",
     "year": 1981,
     "q": "In Aankhon Ki Masti Asha Bhosle",
-    "yt": null
+    "yt": "yjYE41bYnUM"
    },
    {
     "title": "Chandi Jaisa Rang",
     "artist": "Pankaj Udhas",
     "year": null,
     "q": "Chandi Jaisa Rang Pankaj Udhas",
-    "yt": null
+    "yt": "G4NAKKy5k0g"
    },
    {
     "title": "Kabhi Kisi Ko Muqammal",
@@ -759,7 +759,7 @@ window.STATIONS = [
     "artist": "Jagjit Singh",
     "year": null,
     "q": "Yeh Dhuan Sa Kahan Se Uthta Hai Jagjit Singh",
-    "yt": null
+    "yt": "thOylhHN-Bc"
    }
   ]
  },
@@ -790,126 +790,126 @@ window.STATIONS = [
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1988,
     "q": "Ae Mere Humsafar Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "sWqjZpBtcxc"
    },
    {
     "title": "Papa Kehte Hain",
     "artist": "Udit Narayan",
     "year": 1988,
     "q": "Papa Kehte Hain Udit Narayan",
-    "yt": null
+    "yt": "FEvBiayarlc"
    },
    {
     "title": "Tumse Milne Ki Tamanna",
     "artist": "S. P. Balasubrahmanyam",
     "year": 1991,
     "q": "Tumse Milne Ki Tamanna S. P. Balasubrahmanyam",
-    "yt": null
+    "yt": "thjRNwjmAdQ"
    },
    {
     "title": "Bahut Pyar Karte Hain",
     "artist": "Anuradha Paudwal",
     "year": 1991,
     "q": "Bahut Pyar Karte Hain Anuradha Paudwal",
-    "yt": null
+    "yt": "ycj1FwxiZwc"
    },
    {
     "title": "Jaadu Teri Nazar",
     "artist": "Udit Narayan",
     "year": 1993,
     "q": "Jaadu Teri Nazar Udit Narayan",
-    "yt": null
+    "yt": "n_oP9Onj0r0"
    },
    {
     "title": "Tu Mere Samne",
     "artist": "Lata Mangeshkar, Udit Narayan",
     "year": 1993,
     "q": "Tu Mere Samne Lata Mangeshkar, Udit Narayan",
-    "yt": null
+    "yt": "0-7RHSbyZGw"
    },
    {
     "title": "Baazigar O Baazigar",
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1993,
     "q": "Baazigar O Baazigar Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "PUO7_Gi6ipg"
    },
    {
     "title": "Yeh Kaali Kaali Aankhen",
     "artist": "Kumar Sanu, Anu Malik",
     "year": 1993,
     "q": "Yeh Kaali Kaali Aankhen Kumar Sanu, Anu Malik",
-    "yt": null
+    "yt": "KC-DuX51NY0"
    },
    {
     "title": "Chura Ke Dil Mera",
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1994,
     "q": "Chura Ke Dil Mera Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "Yqj1_V90KJo"
    },
    {
     "title": "Aisi Deewangi",
     "artist": "Kumar Sanu, Vinod Rathod",
     "year": 1992,
     "q": "Aisi Deewangi Kumar Sanu, Vinod Rathod",
-    "yt": null
+    "yt": "GwpqME_Cmpc"
    },
    {
     "title": "Sochenge Tumhe Pyar",
     "artist": "Kumar Sanu",
     "year": 1992,
     "q": "Sochenge Tumhe Pyar Kumar Sanu",
-    "yt": null
+    "yt": "lFdSi01tpYM"
    },
    {
     "title": "Dil Hai Ke Manta Nahin",
     "artist": "Kumar Sanu, Anuradha Paudwal",
     "year": 1991,
     "q": "Dil Hai Ke Manta Nahin Kumar Sanu, Anuradha Paudwal",
-    "yt": null
+    "yt": "C9efe0rjDlE"
    },
    {
     "title": "Pehla Nasha",
     "artist": "Udit Narayan, Sadhana Sargam",
     "year": 1992,
     "q": "Pehla Nasha Udit Narayan, Sadhana Sargam",
-    "yt": null
+    "yt": "SBfPs-PMGTA"
    },
    {
     "title": "Tujhe Dekha To",
     "artist": "Kumar Sanu, Lata Mangeshkar",
     "year": 1995,
     "q": "Tujhe Dekha To Kumar Sanu, Lata Mangeshkar",
-    "yt": null
+    "yt": "cNV5hLSa9H8"
    },
    {
     "title": "Rangeela Re",
     "artist": "Asha Bhosle",
     "year": 1995,
     "q": "Rangeela Re Asha Bhosle",
-    "yt": null
+    "yt": "i65HIFzIfec"
    },
    {
     "title": "Pardesi Pardesi",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1996,
     "q": "Pardesi Pardesi Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "Swlik5Hfu-A"
    },
    {
     "title": "Kuch Kuch Hota Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Kuch Kuch Hota Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "bKZTnnFU9HA"
    },
    {
     "title": "Akele Hain To Kya Gham Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1988,
     "q": "Akele Hain To Kya Gham Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "QxpPkGSmCqY"
    },
    {
     "title": "Meri Mehbooba",
@@ -923,7 +923,7 @@ window.STATIONS = [
     "artist": "Kumar Sanu",
     "year": 1994,
     "q": "Kuch Na Kaho Kumar Sanu",
-    "yt": null
+    "yt": "Kidtrrn4aUM"
    }
   ]
  },
@@ -968,14 +968,14 @@ window.STATIONS = [
     "artist": "Led Zeppelin",
     "year": 1969,
     "q": "Whole Lotta Love Led Zeppelin",
-    "yt": null
+    "yt": "HQmmM_qwG4k"
    },
    {
     "title": "Comfortably Numb",
     "artist": "Pink Floyd",
     "year": 1979,
     "q": "Comfortably Numb Pink Floyd",
-    "yt": null
+    "yt": "_FrOQC-zEog"
    },
    {
     "title": "Wish You Were Here",
@@ -1003,7 +1003,7 @@ window.STATIONS = [
     "artist": "Deep Purple",
     "year": 1972,
     "q": "Smoke on the Water Deep Purple",
-    "yt": null
+    "yt": "Q2FzZSBD5LE"
    },
    {
     "title": "Highway to Hell",
@@ -1031,14 +1031,14 @@ window.STATIONS = [
     "artist": "Derek and the Dominos",
     "year": 1970,
     "q": "Layla Derek and the Dominos",
-    "yt": null
+    "yt": "TngViNw2pOo"
    },
    {
     "title": "Born to Be Wild",
     "artist": "Steppenwolf",
     "year": 1968,
     "q": "Born to Be Wild Steppenwolf",
-    "yt": null
+    "yt": "igvP806798U"
    },
    {
     "title": "More Than a Feeling",
@@ -1059,7 +1059,7 @@ window.STATIONS = [
     "artist": "Lynyrd Skynyrd",
     "year": 1973,
     "q": "Free Bird Lynyrd Skynyrd",
-    "yt": null
+    "yt": "MQNRKX8GwPo"
    },
    {
     "title": "Fortunate Son",
@@ -1073,21 +1073,21 @@ window.STATIONS = [
     "artist": "Heart",
     "year": 1977,
     "q": "Barracuda Heart",
-    "yt": null
+    "yt": "VdOkQ6THDVw"
    },
    {
     "title": "Rock You Like a Hurricane",
     "artist": "Scorpions",
     "year": 1984,
     "q": "Rock You Like a Hurricane Scorpions",
-    "yt": null
+    "yt": "6yP1tcy9a10"
    },
    {
     "title": "Summer of '69",
     "artist": "Bryan Adams",
     "year": 1984,
     "q": "Summer of '69 Bryan Adams",
-    "yt": null
+    "yt": "9f06QZCVUHg"
    }
   ]
  },
@@ -1125,7 +1125,7 @@ window.STATIONS = [
     "artist": "Nujabes",
     "year": null,
     "q": "Aruarian Dance Nujabes",
-    "yt": null
+    "yt": "qYcoJpqCha4"
    },
    {
     "title": "Luv (sic) Pt. 3",
@@ -1153,28 +1153,28 @@ window.STATIONS = [
     "artist": "Jinsang",
     "year": null,
     "q": "Affection Jinsang",
-    "yt": null
+    "yt": "6jGPypPNEg4"
    },
    {
     "title": "Summer's Day",
     "artist": "Jinsang",
     "year": null,
     "q": "Summer's Day Jinsang",
-    "yt": null
+    "yt": "vNZA0RQ54p4"
    },
    {
     "title": "Controlla",
     "artist": "Idealism",
     "year": null,
     "q": "Controlla Idealism",
-    "yt": null
+    "yt": "LkhPi6J5Xg0"
    },
    {
     "title": "Both of Us",
     "artist": "Idealism",
     "year": null,
     "q": "Both of Us Idealism",
-    "yt": null
+    "yt": "Djz-AXDO27Q"
    },
    {
     "title": "Harbor",
@@ -1188,49 +1188,49 @@ window.STATIONS = [
     "artist": "Kupla",
     "year": null,
     "q": "Owls of the Night Kupla",
-    "yt": null
+    "yt": "bmxt4B_5_K8"
    },
    {
     "title": "Staying There",
     "artist": "L'indécis",
     "year": null,
     "q": "Staying There L'indécis",
-    "yt": null
+    "yt": "buqsSywAlmA"
    },
    {
     "title": "Soulful",
     "artist": "L'indécis",
     "year": null,
     "q": "Soulful L'indécis",
-    "yt": null
+    "yt": "7ZguAEoNpZw"
    },
    {
     "title": "just friends",
     "artist": "potsu",
     "year": null,
     "q": "just friends potsu",
-    "yt": null
+    "yt": "qOif_ni_9zc"
    },
    {
     "title": "Seasons",
     "artist": "Aso",
     "year": null,
     "q": "Seasons Aso",
-    "yt": null
+    "yt": "Xo3ez6LThQ4"
    },
    {
     "title": "Pathway",
     "artist": "eevee",
     "year": null,
     "q": "Pathway eevee",
-    "yt": null
+    "yt": "YWN2aaE6OP0"
    },
    {
     "title": "Lucid",
     "artist": "Philanthrope",
     "year": null,
     "q": "Lucid Philanthrope",
-    "yt": null
+    "yt": "FhylZiUAJwo"
    },
    {
     "title": "Under Water",
@@ -1289,14 +1289,14 @@ window.STATIONS = [
     "artist": "Nusrat Fateh Ali Khan",
     "year": 1996,
     "q": "Afreen Afreen Nusrat Fateh Ali Khan",
-    "yt": null
+    "yt": "2F7G9bOIwlk"
    },
    {
     "title": "Sanson Ki Mala",
     "artist": "Nusrat Fateh Ali Khan",
     "year": null,
     "q": "Sanson Ki Mala Nusrat Fateh Ali Khan",
-    "yt": null
+    "yt": "eYSaHXXFIBU"
    },
    {
     "title": "Mera Piya Ghar Aaya",
@@ -1317,7 +1317,7 @@ window.STATIONS = [
     "artist": "Nusrat Fateh Ali Khan",
     "year": null,
     "q": "Kinna Sohna Nusrat Fateh Ali Khan",
-    "yt": null
+    "yt": "L5bD5pGhk6E"
    },
    {
     "title": "Tajdar-e-Haram",
@@ -1345,14 +1345,14 @@ window.STATIONS = [
     "artist": "Abida Parveen",
     "year": null,
     "q": "Tere Ishq Nachaya Abida Parveen",
-    "yt": null
+    "yt": "pGaWRdyZQNE"
    },
    {
     "title": "Damadam Mast Qalandar",
     "artist": "Abida Parveen",
     "year": null,
     "q": "Damadam Mast Qalandar Abida Parveen",
-    "yt": null
+    "yt": "-tyvWdq2pyc"
    },
    {
     "title": "Aaj Rang Hai",
@@ -1366,28 +1366,28 @@ window.STATIONS = [
     "artist": "A. R. Rahman",
     "year": 2008,
     "q": "Khwaja Mere Khwaja A. R. Rahman",
-    "yt": null
+    "yt": "4YbAaRFk70o"
    },
    {
     "title": "Kun Faya Kun",
     "artist": "A. R. Rahman, Javed Ali, Mohit Chauhan",
     "year": 2011,
     "q": "Kun Faya Kun A. R. Rahman, Javed Ali, Mohit Chauhan",
-    "yt": null
+    "yt": "T94PHkuydcw"
    },
    {
     "title": "Arziyan",
     "artist": "Javed Ali, Kailash Kher",
     "year": 2009,
     "q": "Arziyan Javed Ali, Kailash Kher",
-    "yt": null
+    "yt": "dXdD1_AGBZg"
    },
    {
     "title": "Piya Haji Ali",
     "artist": "A. R. Rahman, Srinivas",
     "year": 2000,
     "q": "Piya Haji Ali A. R. Rahman, Srinivas",
-    "yt": null
+    "yt": "c4uYjMpE1l8"
    }
   ]
  },
@@ -1409,7 +1409,7 @@ window.STATIONS = [
    "glyph": "✿",
    "shuffle": true,
    "searchFallback": true,
-   "ytPlaylist": null,
+   "ytPlaylist": "PLUscsae6p7htIrRHAJ2P2upC85ExFDiol",
    "maxSeconds": 3600
   },
   "tracks": [
@@ -1432,7 +1432,7 @@ window.STATIONS = [
     "artist": "Traditional",
     "year": null,
     "q": "Om Namo Bhagavate Vasudevaya Traditional",
-    "yt": null
+    "yt": "2yhvCgpNJiA"
    },
    {
     "title": "Devaki Suta Govinda",
@@ -1495,7 +1495,7 @@ window.STATIONS = [
     "artist": "Traditional",
     "year": null,
     "q": "Achyutam Keshavam Traditional",
-    "yt": null
+    "yt": "3yczGKnskts"
    },
    {
     "title": "Ya Kundendu Tushara Hara - Saraswati Vandana",
@@ -1523,14 +1523,14 @@ window.STATIONS = [
     "artist": "Lata Mangeshkar, Manna Dey",
     "year": 1972,
     "q": "Yashomati Maiya Se Lata Mangeshkar, Manna Dey",
-    "yt": null
+    "yt": "4KtSuGdxt1I"
    },
    {
     "title": "Chanda Hai Tu Mera Suraj Hai Tu",
     "artist": "Lata Mangeshkar",
     "year": 1969,
     "q": "Chanda Hai Tu Mera Suraj Hai Tu Lata Mangeshkar",
-    "yt": null
+    "yt": "MZgMO4V8kEI"
    },
    {
     "title": "Om Chanting 108 Times",

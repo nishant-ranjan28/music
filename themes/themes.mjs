@@ -179,89 +179,6 @@ export const themes = [
     ]
   },
 
-  /* ================================================================ 3 */
-  {
-    slug: "kirana-store",
-    kind: "place",
-    name: "Kirana",
-    sign: "K I R A N A",
-    kicker: "udhaar band hai · cash only",
-    tagline: "Vividh Bharati crackling over glass jars and hanging chip packets.",
-    gateTitle: "Ek Parle-G dena",
-    gateCopy:
-      "The transistor on the top shelf never turned off. Jingles, film songs, and the sound of a weighing scale settling.",
-    ogDesc: "Glass jars, a brass weighing scale, and a transistor stuck on Vividh Bharati.",
-    glyph: "⚖",
-    fonts: {
-      display: "Alfa Slab One",
-      body: "Inter",
-      href: "https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;600&display=swap"
-    },
-    tokens: {
-      "--bg": "#171003",
-      "--bg-gradient":
-        "radial-gradient(70% 50% at 50% -5%, rgba(233,162,59,0.24), transparent 65%)",
-      "--surface": "rgba(35,25,10,0.8)",
-      "--ink": "#f6ead5",
-      "--ink-dim": "#a99274",
-      "--accent": "#e9a23b",
-      "--accent-2": "#5b8c7e",
-      "--on-accent": "#211603",
-      "--line": "rgba(233,162,59,0.2)",
-      "--sign-ink": "#e9a23b",
-      "--sign-tracking": "0.08em",
-      "--sign-shadow": "0 3px 0 rgba(0,0,0,0.5)",
-      "--card-radius": "2px",
-      "--grain-opacity": "0.09"
-    },
-    scene: `
-      <div class="bulb flicker" aria-hidden="true"></div>
-      <div class="packets" aria-hidden="true">
-        <i class="sway" style="--d:0s"></i><i class="sway" style="--d:.4s"></i>
-        <i class="sway" style="--d:.9s"></i><i class="sway" style="--d:1.3s"></i>
-        <i class="sway" style="--d:1.8s"></i><i class="sway" style="--d:2.2s"></i>
-      </div>
-      <svg class="scale" viewBox="0 0 220 160" aria-hidden="true">
-        <path d="M110 20v70" stroke="#e9a23b66" stroke-width="3"/>
-        <path d="M40 90h140" stroke="#e9a23b66" stroke-width="3"/>
-        <path d="M40 90l-16 26h32z" fill="#e9a23b22" stroke="#e9a23b55"/>
-        <path d="M180 90l-16 26h32z" fill="#e9a23b22" stroke="#e9a23b55"/>
-        <rect x="94" y="120" width="32" height="26" fill="#e9a23b1a" stroke="#e9a23b44"/>
-      </svg>`,
-    css: `
-      .bulb{position:absolute;top:0;left:50%;width:2px;height:14vh;background:#e9a23b44}
-      .bulb::after{content:"";position:absolute;left:50%;bottom:-13px;transform:translateX(-50%);
-        width:26px;height:26px;border-radius:50%;background:#ffd88a;
-        box-shadow:0 0 60px 26px rgba(233,162,59,.35)}
-      .packets{position:absolute;top:0;left:38vw;right:0;display:flex;justify-content:space-around;
-        padding:0 3vw;opacity:.9}
-      .packets i{width:34px;height:74px;border-radius:0 0 5px 5px;animation-delay:var(--d);
-        background:linear-gradient(180deg,#5b8c7e,#5b8c7e 40%,#e9a23b 40%,#c0392b);
-        clip-path:polygon(0 0,100% 0,88% 100%,12% 100%)}
-      .packets i:nth-child(even){background:linear-gradient(180deg,#c0392b,#c0392b 45%,#e9a23b)}
-      .scale{position:absolute;right:3vw;bottom:4vh;width:min(240px,30vw);opacity:.35}
-      @media(max-width:640px){.scale{opacity:.15}.packets i{width:22px;height:52px}}`,
-    tracks: [
-      ["Yeh Dosti", "Kishore Kumar, Manna Dey", 1975],
-      ["Mere Sapno Ki Rani", "Kishore Kumar", 1969],
-      ["Dum Maro Dum", "Asha Bhosle", 1971],
-      ["Bachna Ae Haseeno", "Kishore Kumar", 1977],
-      ["Khaike Paan Banaraswala", "Kishore Kumar", 1978],
-      ["Jai Jai Shiv Shankar", "Kishore Kumar, Lata Mangeshkar", 1974],
-      ["Ek Main Aur Ek Tu", "Kishore Kumar, Asha Bhosle", 1975],
-      ["Aap Jaisa Koi", "Nazia Hassan", 1980],
-      ["Disco Deewane", "Nazia Hassan, Zoheb Hassan", 1981],
-      ["I Am A Disco Dancer", "Vijay Benedict", 1982],
-      ["Jimmy Jimmy Aaja", "Parvati Khan", 1982],
-      ["Yaad Aa Raha Hai", "Bappi Lahiri", 1982],
-      ["Om Shanti Om", "Kishore Kumar", 1980],
-      ["Pag Ghungroo Baandh", "Kishore Kumar", 1982],
-      ["Rambha Ho", "Bappi Lahiri, Usha Uthup", 1981],
-      ["Hawa Hawa", "Hassan Jahangir", 1987],
-      ["My Name Is Lakhan", "Nitin Mukesh, Mohammed Aziz", 1989],
-      ["Yeh Vaada Raha", "Kishore Kumar, Asha Bhosle", 1982]
-    ]
-  },
 
   /* ================================================================ 4 */
   {
@@ -858,19 +775,19 @@ export const themes = [
 
   /* =============================================================== 11 */
   {
-    slug: "garbh-sanskar",
+    slug: "bhajan",
     kind: "genre",
     // Chants and stotrams legitimately run long here, so the compilation
     // ceiling is generous — an hour-long Vishnu Sahasranamam is the point.
     maxSeconds: 3600,
-    name: "Garbh Sanskar",
-    sign: "G A R B H  S A N S K A R",
-    kicker: "bhajan · mantra · nine months",
-    tagline: "Bhajans for the nine months of waiting.",
+    name: "Bhajan",
+    sign: "B H A J A N",
+    kicker: "garbh sanskar · mantra · nine months",
+    tagline: "The mantras played for the baby, all nine months.",
     gateTitle: "Aaram se baithiye",
     gateCopy:
       "A lamp lit at dusk, tulsi at the door, and the same few bhajans playing softly while the house waits.",
-    ogDesc: "Calm bhajans and mantras for pregnancy — garbh sanskar listening.",
+    ogDesc: "Garbh sanskar listening — the stotras, mantras and Krishna bhajans played through pregnancy.",
     glyph: "✿",
     fonts: {
       display: "Marcellus",
@@ -941,25 +858,28 @@ export const themes = [
         animation:fall2 16s linear infinite;animation-delay:var(--d)}
       @keyframes fall2{to{transform:translate(24px,118vh) rotate(200deg);opacity:0}}
       @media(max-width:640px){.mandala{opacity:.4}}`,
+    /* Garbh sanskar repertoire specifically: the protective stotras, the
+       conception and child mantras, the Krishna infancy bhajans, and the
+       Gita chapters traditionally recited to the womb. */
     tracks: [
-      ["Gayatri Mantra", "Anuradha Paudwal"],
-      ["Vishnu Sahasranamam", "M. S. Subbulakshmi"],
-      ["Om Namah Shivaya Dhun", "Traditional"],
-      ["Achyutam Keshavam", "Traditional"],
-      ["Madhurashtakam", "Traditional (Vallabhacharya)"],
-      ["Hare Krishna Hare Rama Dhun", "Traditional"],
+      ["Garbh Raksha Stotram", "Traditional"],
       ["Santan Gopal Mantra", "Traditional"],
-      ["Ganesh Atharvashirsha", "Traditional"],
-      ["Shri Ram Chandra Kripalu", "Traditional (Tulsidas)"],
-      ["Bhagyada Lakshmi Baramma", "M. S. Subbulakshmi"],
-      ["Om Jai Jagdish Hare", "Traditional"],
-      ["Raghupati Raghav Raja Ram", "Traditional"],
-      ["Payoji Maine Ram Ratan Dhan Payo", "Lata Mangeshkar"],
-      ["Itni Shakti Hamein Dena Data", "Sushma Shreshtha, Pushpa Pagdhare", 1983],
-      ["Ae Malik Tere Bande Hum", "Vani Jairam", 1957],
-      ["Tu Pyar Ka Sagar Hai", "Manna Dey", 1959],
-      ["Sri Suktam", "Traditional"],
-      ["Vakratunda Mahakaya", "Traditional"]
+      ["Om Namo Bhagavate Vasudevaya", "Traditional"],
+      ["Devaki Suta Govinda", "Traditional"],
+      ["Gayatri Mantra", "Anuradha Paudwal"],
+      ["Mahamrityunjaya Mantra", "Traditional"],
+      ["Vishnu Sahasranamam", "M. S. Subbulakshmi"],
+      ["Ganapati Atharvashirsha", "Traditional"],
+      ["Ram Raksha Stotra", "Traditional"],
+      ["Bhagavad Gita Adhyay 15 - Purushottama Yoga", "Traditional"],
+      ["Madhurashtakam", "Traditional (Vallabhacharya)"],
+      ["Achyutam Keshavam", "Traditional"],
+      ["Ya Kundendu Tushara Hara - Saraswati Vandana", "Traditional"],
+      ["Shri Suktam", "Traditional"],
+      ["Purusha Suktam", "Traditional"],
+      ["Yashomati Maiya Se", "Lata Mangeshkar, Manna Dey", 1972],
+      ["Chanda Hai Tu Mera Suraj Hai Tu", "Lata Mangeshkar", 1969],
+      ["Om Chanting 108 Times", "Traditional"]
     ]
   }
 ];

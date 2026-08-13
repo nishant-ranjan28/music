@@ -16,9 +16,13 @@ name: Sync stations
 
 on:
   schedule:
-    - cron: "23 2 * * 1" # Mon 02:23 UTC — group A
-    - cron: "23 2 * * 3" # Wed 02:23 UTC — group B
-    - cron: "23 2 * * 5" # Fri 02:23 UTC — group C
+    # 08:37 UTC is 01:37 PT year-round (00:37 in winter), so each run starts
+    # just after the YouTube quota resets at midnight Pacific. The previous
+    # 02:23 UTC landed at 19:23 PT — the end of a Pacific day, when the day
+    # quota is most likely already spent.
+    - cron: "37 8 * * 1" # group A
+    - cron: "37 8 * * 3" # group B
+    - cron: "37 8 * * 5" # group C
   workflow_dispatch:
     inputs:
       stations:
@@ -47,9 +51,9 @@ jobs:
         id: group
         run: |
           case "${{ github.event.schedule }}" in
-            "23 2 * * 1") STATIONS=$(node scripts/sync-group.mjs 0) ;;
-            "23 2 * * 3") STATIONS=$(node scripts/sync-group.mjs 1) ;;
-            "23 2 * * 5") STATIONS=$(node scripts/sync-group.mjs 2) ;;
+            "37 8 * * 1") STATIONS=$(node scripts/sync-group.mjs 0) ;;
+            "37 8 * * 3") STATIONS=$(node scripts/sync-group.mjs 1) ;;
+            "37 8 * * 5") STATIONS=$(node scripts/sync-group.mjs 2) ;;
             *)            STATIONS="${{ github.event.inputs.stations }}" ;;
           esac
           echo "stations=$STATIONS" >> "$GITHUB_OUTPUT"

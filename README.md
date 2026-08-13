@@ -196,7 +196,10 @@ node scripts/sync-group.mjs --report
 ```
 
 Each run checks the playlists still resolve, fills missing ids, audits what it
-filled, rebuilds, and commits if anything changed. Splitting into three keeps
+filled, rebuilds, and commits if anything changed. They fire at 08:37 UTC,
+which is just after the YouTube quota resets at midnight US Pacific — the
+earlier 02:23 UTC slot landed at 19:23 PT, near the end of a Pacific day when
+the quota is most likely spent. Splitting into three keeps
 every run well under the 10,000 units/day allowance — one search costs 100 of
 them, which is what made a single full pass impossible by hand.
 

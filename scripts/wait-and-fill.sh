@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
-# Poll until the YouTube Data API quota window reopens, then fill unresolved
-# ids for the given stations (all of them if none are named).
+# Wait for the YouTube Data API quota to reset, then fill unresolved ids for
+# the given stations (all of them if none are named).
 #
-# The quota resets at 00:00 US Pacific. Searching before then returns
-# rateLimitExceeded, so this waits rather than burning attempts.
+# The quota resets at midnight US Pacific, so this waits for the Pacific date
+# to roll over rather than polling the API. Polling cost 100 units per probe —
+# the waiter was spending the very quota it was waiting for, roughly 3,600
+# units over a three hour wait.
 #
-#   ./scripts/wait-and-fill.sh [slugs...]
+#   ./scripts/wait-and-fill.sh khushi bhajan
+#   ./scripts/wait-and-fill.sh                  # every station
 
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
-MAX_MIN=180
 SLUGS="$*"
-DEADLINE=$(( $(date +%s) + MAX_MIN * 60 ))
 
 if [ ! -f .env.local ]; then
-  echo "missing .env.local" >&2
+  echo "missing .env.local with YT_API_KEY=..." >&2
   exit 1
 fi
 set -a
@@ -23,26 +24,25 @@ set -a
 . ./.env.local
 set +a
 
-probe() {
-  curl -s -o /dev/null -w '%{http_code}' \
-    "https://www.googleapis.com/youtube/v3/search?part=snippet&type=playlist&maxResults=1&q=test&key=${YT_API_KEY}"
-}
+pacific_day() { TZ=America/Los_Angeles date +%Y-%j; }
 
-echo "waiting for quota window (up to ${MAX_MIN} min)..."
-while [ "$(date +%s)" -lt "$DEADLINE" ]; do
-  code=$(probe)
-  if [ "$code" = "200" ]; then
-    echo "quota open at $(date '+%H:%M %Z')"
-    break
+START_DAY="$(pacific_day)"
+echo "waiting for the Pacific date to roll over (now $(TZ=America/Los_Angeles date '+%a %H:%M %Z'))"
+
+# 26h ceiling: one rollover always falls inside that, so a hang means
+# something else is wrong and the run should stop rather than sit forever.
+DEADLINE=$(( $(date +%s) + 26 * 3600 ))
+
+while [ "$(pacific_day)" = "$START_DAY" ]; do
+  if [ "$(date +%s)" -ge "$DEADLINE" ]; then
+    echo "no rollover within 26h — giving up" >&2
+    exit 1
   fi
-  echo "  $(date '+%H:%M') — HTTP $code, sleeping 5 min"
-  sleep 300
+  sleep 600
 done
 
-if [ "$(probe)" != "200" ]; then
-  echo "quota still closed after ${MAX_MIN} min — giving up" >&2
-  exit 1
-fi
+echo "quota window open at $(TZ=America/Los_Angeles date '+%a %H:%M %Z')"
+sleep 120 # let the reset settle before the first search
 
 echo
 echo "== filling unresolved ids =="
@@ -55,3 +55,6 @@ node scripts/verify-ids.mjs --fix $SLUGS
 echo
 echo "== rebuilding =="
 node build.mjs
+
+echo
+echo "Done. Review and commit if the ids changed."

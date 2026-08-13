@@ -29,7 +29,7 @@
 
   var counted = false;
   try {
-    counted = sessionStorage.getItem("radio-counted") === "1";
+    counted = sessionStorage.getItem("radio-counted-v2") === "1";
   } catch (err) {
     /* ignore */
   }
@@ -49,10 +49,10 @@
     el.innerHTML =
       '<i class="counter-dot"></i>' +
       format(d.live) +
-      (d.live === 1 ? " listening" : " listening") +
+      " listening" +
       '<span class="counter-sep">·</span>' +
       format(d.total) +
-      " visits";
+      (d.total === 1 ? " visit" : " visits");
   }
 
   function beat() {
@@ -64,10 +64,14 @@
         return r.json();
       })
       .then(function (d) {
-        if (fresh) {
+        /* Only remember the visit once the server confirms it counted it.
+           Marking the session on any response meant a load that happened
+           while storage was unconfigured burned the visit permanently: the
+           next beat sent no "new" flag, so the total sat at zero. */
+        if (fresh && d && d.enabled) {
           counted = true;
           try {
-            sessionStorage.setItem("radio-counted", "1");
+            sessionStorage.setItem("radio-counted-v2", "1");
           } catch (err) {
             /* ignore */
           }

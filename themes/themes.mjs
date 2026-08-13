@@ -422,6 +422,9 @@ export const themes = [
   {
     slug: "ghazal",
     kind: "genre",
+    maxSeconds: 1800, // long-form recordings are normal here
+    // Saregama Ghazal — Jagjit Singh & Chitra Singh, ~265 tracks
+    ytPlaylist: "PLJeNQvgQ4Sl-WJX41V39pPd3oQxKNc7EA",
     name: "Mehfil",
     sign: "M E H F I L",
     kicker: "ghazal · nazm · shair",
@@ -591,6 +594,8 @@ export const themes = [
   {
     slug: "retro-rock",
     kind: "genre",
+    // Redlist — Classic Rock Greatest Hits 60s/70s/80s, ~170 tracks
+    ytPlaylist: "PL9xheEG-eSrSzt05VVCLfNRBjnNmRZtbx",
     name: "Valve",
     sign: "VALVE  RADIO",
     kicker: "tolex · tubes · vu meter",
@@ -753,6 +758,9 @@ export const themes = [
   {
     slug: "qawwali",
     kind: "genre",
+    maxSeconds: 1800, // long-form recordings are normal here
+    // Nupur Audio — Best of Nusrat Fateh Ali Khan, ~90 tracks
+    ytPlaylist: "PLeHcbwsMVRm4RVm8cm9gbgCuivb_HKcar",
     name: "Dargah",
     sign: "Q A W W A L I",
     kicker: "harmonium · taali · chorus",

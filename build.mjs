@@ -68,7 +68,9 @@ window.SITE = ${JSON.stringify(
       searchFallback: true,
       // When set, the station streams this YouTube playlist instead of the
       // curated array; curated entries then act as display overrides.
-      ytPlaylist: theme.ytPlaylist || null
+      ytPlaylist: theme.ytPlaylist || null,
+      // Longest a track may run before it is treated as a compilation.
+      maxSeconds: theme.maxSeconds || null
     },
     null,
     2

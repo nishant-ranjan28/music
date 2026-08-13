@@ -114,14 +114,53 @@
       };
     }
 
+    // Uploaders separate with pipes ("Song | Film | Singers") or with spaced
+    // hyphens ("The Police - Every Breath You Take"). Handle both.
     var parts = String(d.title || "")
-      .split(/\s*[|·•]\s*/)
+      .split(/\s*[|·•]\s*|\s+[-–—]\s+/)
       .map(tidy)
       .filter(Boolean);
 
+    // Drop segments that just repeat the channel ("...- Nupur Audio") and
+    // any duplicates.
+    var flat = function (x) {
+      return String(x).toLowerCase().replace(/[^a-z0-9]/g, "");
+    };
+    // "ThePoliceVEVO" and "Eagles - Topic" both name the artist, and Western
+    // uploads put it first: "The Police - Every Breath You Take". Dropping the
+    // segment that matches the channel leaves the actual song title.
+    var author = flat((d.author || "").replace(/vevo$|\s*-\s*topic$/i, ""));
+    var seen = {};
+    parts = parts.filter(function (s) {
+      var k = flat(s);
+      if (!k || seen[k]) return false;
+      seen[k] = 1;
+      return !(author && k.length > 3 && (k === author || author.indexOf(k) === 0));
+    });
+
+    // Prefer a Latin-script segment for the headline: the display faces carry
+    // no Devanagari or Nastaliq, so those fall back to a system font and break
+    // the type. The native-script version stays available in the subtitle.
+    var latin = parts.filter(function (s) {
+      return /[a-z]/i.test(s);
+    });
+    var title = (latin[0] || parts[0] || d.title || "—").slice(0, 64);
+
+    var rest = parts.filter(function (s) {
+      return s !== title;
+    });
+
+    // Channel names are a last resort for the subtitle, so tidy the branding
+    // off them: "ThePoliceVEVO" reads as a YouTube artefact, "The Police" does not.
+    var channel = String(d.author || "")
+      .replace(/\s*-\s*topic$/i, "")
+      .replace(/vevo$/i, "")
+      .replace(/([a-z])([A-Z])/g, "$1 $2")
+      .trim();
+
     return {
-      title: parts.shift() || d.title || "—",
-      artist: parts.slice(0, 2).join("  ·  ") || d.author || "",
+      title: title,
+      artist: rest.slice(0, 2).join("  ·  ") || channel,
       year: null,
       yt: d.video_id
     };
@@ -351,22 +390,30 @@
      so skip them the moment we can see what loaded. */
   var JUNK = /jukebox|non ?stop|nonstop|mashup|medley|all songs|full album|lofi|lo-fi|slowed|reverb|bass boosted|remix|mix\b/i;
 
+  // Ghazal and qawwali recordings genuinely run long, so the ceiling is per
+  // station rather than a flat 15 minutes.
+  var MAX_SECONDS = SITE.maxSeconds || 900;
+  var skips = 0;
+
   function isJunk() {
     var d = (player.getVideoData && player.getVideoData()) || {};
     if (d.title && JUNK.test(d.title)) return true;
     var secs = player.getDuration && player.getDuration();
-    return !!secs && secs > 900;
+    return !!secs && secs > MAX_SECONDS;
   }
 
   function onStateChange(e) {
     if (LIST_MODE) {
       if (
         (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.BUFFERING) &&
+        skips < 8 &&
         isJunk()
       ) {
+        skips++;
         player.nextVideo();
         return;
       }
+      if (e.data === YT.PlayerState.PLAYING) skips = 0;
       // CUED/BUFFERING/PLAYING all mean the current video changed
       renderTrack();
       playing = e.data === YT.PlayerState.PLAYING;

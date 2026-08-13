@@ -149,5 +149,6 @@ window.SITE = {
   "glyph": "▤",
   "shuffle": true,
   "searchFallback": true,
-  "ytPlaylist": "PLinVjP-aRmlukMwFfIb5u0xA-M_Be3nC5"
+  "ytPlaylist": "PLinVjP-aRmlukMwFfIb5u0xA-M_Be3nC5",
+  "maxSeconds": null
 };

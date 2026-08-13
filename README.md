@@ -143,6 +143,48 @@ convert:
 for d in sites/*/; do rsvg-convert -w 180 -h 180 "$d/favicon.svg" -o "$d/apple-touch-icon.png"; done
 ```
 
+## Keeping stations alive
+
+Playlists belong to other people. Videos get deleted, region-blocked or made
+private, playlists get emptied, and uploaders replace single songs with hour-long
+compilations. Nothing here notices on its own.
+
+`.github/workflows/sync-stations.yml` runs three schedules two days apart, each
+covering part of the catalogue:
+
+| Day | Stations |
+|---|---|
+| Monday | Pardesi, Meter Down, Baraat |
+| Wednesday | VHS, Mehfil, Cassette |
+| Friday | Valve, Monsoon, Qawwali, Bhajan |
+
+Each run checks the playlists still resolve, fills missing ids, audits what it
+filled, rebuilds, and commits if anything changed. Splitting into three keeps
+every run well under the 10,000 units/day allowance — one search costs 100 of
+them, which is what made a single full pass impossible by hand.
+
+**It needs one secret.** Add your key under *Settings → Secrets and variables →
+Actions* as `YT_API_KEY`, or:
+
+```bash
+gh secret set YT_API_KEY --repo <owner>/<repo>
+```
+
+Run a group by hand from the Actions tab (*Run workflow*), optionally passing
+specific slugs.
+
+### What the sync cannot catch
+
+`check-playlists.mjs` asks the Data API whether a playlist is public and
+populated. That is not sufficient: the first garbh sanskar playlist reported
+public with 40 embeddable videos and returned **zero items** to the embedded
+player, leaving the station silent with nothing in the console. Only loading a
+playlist in a real embed proves it works.
+
+The player covers the rest at runtime — if a playlist arrives empty it falls
+back to that station's curated ids, which is why the ids are still worth
+filling even though every station now streams a playlist.
+
 ## OG images
 
 `sites/<slug>/og.svg` is generated. X, WhatsApp and iMessage will not render an SVG

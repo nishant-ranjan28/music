@@ -1,0 +1,92 @@
+name: Sync stations
+
+# Three schedules, two days apart, each covering a slice of the catalogue.
+# Splitting them keeps any one run small and keeps API use far under the
+# 10,000 units/day allowance — a search costs 100 of those, so refilling
+# every station at once is what exhausted the quota by hand.
+#
+#   Monday    group A   Pardesi, Meter Down, Baraat
+#   Wednesday group B   VHS, Mehfil, Cassette
+#   Friday    group C   Valve, Monsoon, Qawwali, Bhajan
+#
+# Each run re-checks that the station playlists still exist, drops ids that
+# have become compilations or dead videos, fills whatever is missing, and
+# commits the result.
+
+on:
+  schedule:
+    - cron: "23 2 * * 1" # Mon 02:23 UTC — group A
+    - cron: "23 2 * * 3" # Wed 02:23 UTC — group B
+    - cron: "23 2 * * 5" # Fri 02:23 UTC — group C
+  workflow_dispatch:
+    inputs:
+      stations:
+        description: "Space-separated slugs (blank = all)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-stations
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Pick the group for this schedule
+        id: group
+        run: |
+          case "${{ github.event.schedule }}" in
+            "23 2 * * 1") STATIONS="std-booth auto-rickshaw baraat-band" ;;
+            "23 2 * * 3") STATIONS="wedding-vhs ghazal bollywood-90s" ;;
+            "23 2 * * 5") STATIONS="retro-rock lofi qawwali bhajan" ;;
+            *)            STATIONS="${{ github.event.inputs.stations }}" ;;
+          esac
+          echo "stations=$STATIONS" >> "$GITHUB_OUTPUT"
+          echo "Syncing: ${STATIONS:-all stations}"
+
+      # Playlists belong to other people and can vanish. Report but do not
+      # fail the run — the ids filled below are the fallback for exactly that.
+      - name: Check playlists still resolve
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: node scripts/check-playlists.mjs ${{ steps.group.outputs.stations }} || true
+
+      - name: Fill missing ids
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: node scripts/fill-ids.mjs ${{ steps.group.outputs.stations }}
+
+      # Always after filling: search picks compilations and wrong artists,
+      # and this is what clears them back out.
+      - name: Audit ids
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: node scripts/verify-ids.mjs --fix ${{ steps.group.outputs.stations }}
+
+      - name: Rebuild
+        run: node build.mjs
+
+      - name: Commit if anything changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Sync stations: ${{ steps.group.outputs.stations }}
+
+          Automated run — refilled missing YouTube ids and cleared any that
+          had become compilations, wrong-artist matches or dead videos."
+          git push

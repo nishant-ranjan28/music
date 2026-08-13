@@ -688,7 +688,7 @@ export const themes = [
     maxSeconds: 1800, // long-form recordings are normal here
     // Nupur Audio — Best of Nusrat Fateh Ali Khan, ~90 tracks
     ytPlaylist: "PLeHcbwsMVRm4RVm8cm9gbgCuivb_HKcar",
-    name: "Dargah",
+    name: "Qawwali",
     sign: "Q A W W A L I",
     kicker: "harmonium · taali · chorus",
     tagline: "Thursday night at the dargah, hands clapping on the offbeat.",

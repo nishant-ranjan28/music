@@ -130,7 +130,7 @@ window.PLAYLIST = [
 ];
 
 window.SITE = {
-  "name": "Dargah",
+  "name": "Qawwali",
   "tagline": "Thursday night at the dargah, hands clapping on the offbeat.",
   "glyph": "❋",
   "shuffle": true,

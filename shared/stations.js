@@ -1244,7 +1244,7 @@ window.STATIONS = [
  {
   "slug": "qawwali",
   "kind": "genre",
-  "name": "Dargah",
+  "name": "Qawwali",
   "signHtml": "Q A W W A L I",
   "kicker": "harmonium · taali · chorus",
   "tagline": "Thursday night at the dargah, hands clapping on the offbeat.",
@@ -1254,7 +1254,7 @@ window.STATIONS = [
   "fontsHref": "https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,400&family=Cormorant+Garamond:wght@400;600&display=swap",
   "scene": "<svg class=\"jali\" viewBox=\"0 0 420 420\" aria-hidden=\"true\">\n        <defs>\n          <pattern id=\"j\" width=\"60\" height=\"60\" patternUnits=\"userSpaceOnUse\">\n            <path d=\"M30 2 58 30 30 58 2 30z\" fill=\"none\" stroke=\"#d4af3733\"/>\n            <circle cx=\"30\" cy=\"30\" r=\"9\" fill=\"none\" stroke=\"#d4af3722\"/>\n          </pattern>\n        </defs>\n        <rect width=\"420\" height=\"420\" fill=\"url(#j)\"/>\n      </svg>\n      <div class=\"chandelier\" aria-hidden=\"true\">\n        <i style=\"--d:0s\"></i><i style=\"--d:.5s\"></i><i style=\"--d:1s\"></i>\n        <i style=\"--d:1.5s\"></i><i style=\"--d:2s\"></i>\n      </div>\n      <div class=\"petals\" aria-hidden=\"true\">\n        <b style=\"--x:14vw;--d:0s\"></b><b style=\"--x:37vw;--d:2.6s\"></b>\n        <b style=\"--x:62vw;--d:1.3s\"></b><b style=\"--x:86vw;--d:3.9s\"></b>\n      </div>",
   "site": {
-   "name": "Dargah",
+   "name": "Qawwali",
    "tagline": "Thursday night at the dargah, hands clapping on the offbeat.",
    "glyph": "❋",
    "shuffle": true,

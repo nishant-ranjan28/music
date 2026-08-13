@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
-# Poll until the YouTube Data API quota window reopens, then find a playlist
-# for the bhajan station and fill every unresolved id.
+# Poll until the YouTube Data API quota window reopens, then fill unresolved
+# ids for the given stations (all of them if none are named).
 #
 # The quota resets at 00:00 US Pacific. Searching before then returns
 # rateLimitExceeded, so this waits rather than burning attempts.
 #
-#   ./scripts/wait-and-refill.sh [max_minutes]      default 90
+#   ./scripts/wait-and-fill.sh [slugs...]
 
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
-MAX_MIN="${1:-90}"
+MAX_MIN=180
+SLUGS="$*"
 DEADLINE=$(( $(date +%s) + MAX_MIN * 60 ))
 
 if [ ! -f .env.local ]; then
@@ -44,16 +45,12 @@ if [ "$(probe)" != "200" ]; then
 fi
 
 echo
-echo "== finding a playlist for the bhajan station =="
-node scripts/find-playlist.mjs bhajan "garbh sanskar mantra bhajan pregnancy"
-
-echo
 echo "== filling unresolved ids =="
-node scripts/fill-ids.mjs
+node scripts/fill-ids.mjs $SLUGS
 
 echo
 echo "== auditing =="
-node scripts/verify-ids.mjs --fix
+node scripts/verify-ids.mjs --fix $SLUGS
 
 echo
 echo "== rebuilding =="

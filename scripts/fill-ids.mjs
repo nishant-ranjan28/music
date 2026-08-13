@@ -28,6 +28,8 @@ if (!KEY) {
   process.exit(1);
 }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 const only = process.argv.slice(2);
 const slugs = readdirSync(SITES).filter((s) => !only.length || only.includes(s));
 
@@ -39,12 +41,25 @@ async function search(query) {
     "&key=" +
     KEY;
 
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`${res.status} ${res.statusText} — ${await res.text()}`);
+  /* The API rate-limits bursts long before the daily quota runs out, and
+     firing one search per track back to back trips it within a few calls.
+     rateLimitExceeded is transient, so back off and retry; quotaExceeded is
+     not, so let it through and stop the run. */
+  for (let attempt = 0; ; attempt++) {
+    const res = await fetch(url);
+    if (res.ok) {
+      const data = await res.json();
+      return data.items?.[0]?.id?.videoId ?? null;
+    }
+
+    const body = await res.text();
+    const reason = body.match(/"reason":\s*"([^"]+)"/)?.[1] || res.statusText;
+
+    if (reason !== "rateLimitExceeded" || attempt >= 4) {
+      throw new Error(`${res.status} ${reason}`);
+    }
+    await sleep(8000 * (attempt + 1));
   }
-  const data = await res.json();
-  return data.items?.[0]?.id?.videoId ?? null;
 }
 
 for (const slug of slugs) {
@@ -64,6 +79,7 @@ for (const slug of slugs) {
   for (const track of tracks) {
     if (track.yt) continue;
     try {
+      await sleep(1200); // stay under the burst limit
       track.yt = await search(track.q);
       if (track.yt) filled++;
       console.log(`  ${slug}/${track.title} → ${track.yt ?? "not found"}`);

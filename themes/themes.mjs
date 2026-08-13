@@ -13,6 +13,8 @@ export const themes = [
   {
     slug: "std-booth",
     kind: "place",
+    // Ishtar Music — 90s Bollywood sad/romantic, ~73 tracks
+    ytPlaylist: "PLO6WOx_nE9ULl-FgE0NPR4c6BSu-1-CPJ",
     name: "PCO",
     sign: "S T D · I S D · P C O",
     kicker: "local · national · international",
@@ -101,6 +103,8 @@ export const themes = [
   {
     slug: "auto-rickshaw",
     kind: "place",
+    // 90s Bollywood dance songs, ~62 tracks
+    ytPlaylist: "PLtohLwEsOFFuHg_mIFrwmGGEgL7sM6YBh",
     name: "Meter Down",
     sign: "M E T E R  D O W N",
     kicker: "3 sawari · no ac · full volume",
@@ -263,6 +267,8 @@ export const themes = [
   {
     slug: "baraat-band",
     kind: "place",
+    // Bollywood wedding songs, ~117 tracks
+    ytPlaylist: "PLYmK3JHhP4fdCl2NVP30MFIAQMFXVeBCG",
     name: "Baraat",
     sign: "B A N D  B A A J A",
     kicker: "brass · dhol · generator light",
@@ -342,6 +348,8 @@ export const themes = [
   {
     slug: "wedding-vhs",
     kind: "place",
+    // Shemaroo Filmi Gaane — 1990s superhit romantic, ~97 tracks
+    ytPlaylist: "PL4OqLl4qvLkfzpGEFUAPmppzBjcNbp09i",
     name: "VHS",
     sign: "▶ PLAY  SP",
     kicker: "cam 1 · tracking · sp mode",
@@ -678,6 +686,8 @@ export const themes = [
   {
     slug: "lofi",
     kind: "genre",
+    // Lofi Fruits Music — ~321 tracks
+    ytPlaylist: "PL6fhs6TSspZv0F0YgsG-p7Mn189CU2XKS",
     name: "Monsoon",
     sign: "l o f i   r a i n",
     kicker: "tape hiss · rain · no vocals",
@@ -843,6 +853,113 @@ export const themes = [
       ["Kun Faya Kun", "A. R. Rahman, Javed Ali, Mohit Chauhan", 2011],
       ["Arziyan", "Javed Ali, Kailash Kher", 2009],
       ["Piya Haji Ali", "A. R. Rahman, Srinivas", 2000]
+    ]
+  },
+
+  /* =============================================================== 11 */
+  {
+    slug: "garbh-sanskar",
+    kind: "genre",
+    // Chants and stotrams legitimately run long here, so the compilation
+    // ceiling is generous — an hour-long Vishnu Sahasranamam is the point.
+    maxSeconds: 3600,
+    name: "Garbh Sanskar",
+    sign: "G A R B H  S A N S K A R",
+    kicker: "bhajan · mantra · nine months",
+    tagline: "Bhajans for the nine months of waiting.",
+    gateTitle: "Aaram se baithiye",
+    gateCopy:
+      "A lamp lit at dusk, tulsi at the door, and the same few bhajans playing softly while the house waits.",
+    ogDesc: "Calm bhajans and mantras for pregnancy — garbh sanskar listening.",
+    glyph: "✿",
+    fonts: {
+      display: "Marcellus",
+      body: "Karla",
+      href: "https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Marcellus&display=swap"
+    },
+    tokens: {
+      "--bg": "#100d07",
+      "--bg-gradient":
+        "radial-gradient(70% 55% at 50% 105%, rgba(233,180,76,0.22), transparent 62%), radial-gradient(80% 60% at 50% 0%, rgba(134,160,111,0.10), transparent 60%)",
+      "--surface": "rgba(28,23,13,0.78)",
+      "--ink": "#f7efdf",
+      "--ink-dim": "#b09d84",
+      "--accent": "#e9b44c",
+      "--accent-2": "#86a06f",
+      "--on-accent": "#191204",
+      "--line": "rgba(233,180,76,0.22)",
+      "--sign-ink": "#e9b44c",
+      "--sign-tracking": "0.14em",
+      "--sign-shadow": "0 0 38px rgba(233,180,76,0.35)",
+      "--card-radius": "3px",
+      "--card-border": "1px solid rgba(233,180,76,0.26)",
+      "--grain-opacity": "0.05",
+      "--vignette":
+        "radial-gradient(115% 95% at 50% 55%, transparent 50%, rgba(0,0,0,0.55) 100%)"
+    },
+    scene: `
+      <svg class="mandala" viewBox="0 0 400 400" aria-hidden="true">
+        <g fill="none" stroke="#e9b44c" stroke-width="1">
+          <circle cx="200" cy="200" r="150" opacity=".18"/>
+          <circle cx="200" cy="200" r="120" opacity=".13"/>
+          <circle cx="200" cy="200" r="92" opacity=".1"/>
+        </g>
+        <g fill="none" stroke="#e9b44c" opacity=".14">
+          <path d="M200 50c34 42 34 108 0 150-34-42-34-108 0-150z"/>
+          <path d="M200 350c34-42 34-108 0-150-34 42-34 108 0 150z"/>
+          <path d="M50 200c42-34 108-34 150 0-42 34-108 34-150 0z"/>
+          <path d="M350 200c-42-34-108-34-150 0 42 34 108 34 150 0z"/>
+        </g>
+      </svg>
+      <svg class="diya" viewBox="0 0 200 120" aria-hidden="true">
+        <path d="M40 62h120c0 26-27 42-60 42S40 88 40 62z" fill="#5a3d18" stroke="#e9b44c66"/>
+        <path d="M34 60h132c0 5-6 8-12 8H46c-6 0-12-3-12-8z" fill="#7a5426"/>
+        <g class="flicker">
+          <path d="M100 14c14 16 20 26 20 34a20 20 0 0 1-40 0c0-8 6-18 20-34z"
+                fill="url(#fl)"/>
+        </g>
+        <defs>
+          <radialGradient id="fl" cx="50%" cy="75%" r="65%">
+            <stop offset="0%" stop-color="#fff6d0"/>
+            <stop offset="55%" stop-color="#ffb43c"/>
+            <stop offset="100%" stop-color="#ff8a00" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+      </svg>
+      <div class="petals" aria-hidden="true">
+        <b style="--x:16vw;--d:0s"></b><b style="--x:41vw;--d:4.5s"></b>
+        <b style="--x:68vw;--d:2.2s"></b><b style="--x:88vw;--d:6.4s"></b>
+      </div>`,
+    css: `
+      .mandala{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+        width:min(760px,105vw);opacity:.75;animation:turn 120s linear infinite}
+      @keyframes turn{to{transform:translate(-50%,-50%) rotate(360deg)}}
+      .diya{position:absolute;left:6vw;bottom:5vh;width:min(220px,26vw);opacity:.95;
+        filter:drop-shadow(0 -6px 46px rgba(255,180,60,.45))}
+      .petals b{position:absolute;top:-6vh;left:var(--x);width:11px;height:7px;
+        border-radius:60% 40%;background:#e9b44c55;
+        animation:fall2 16s linear infinite;animation-delay:var(--d)}
+      @keyframes fall2{to{transform:translate(24px,118vh) rotate(200deg);opacity:0}}
+      @media(max-width:640px){.mandala{opacity:.4}}`,
+    tracks: [
+      ["Gayatri Mantra", "Anuradha Paudwal"],
+      ["Vishnu Sahasranamam", "M. S. Subbulakshmi"],
+      ["Om Namah Shivaya Dhun", "Traditional"],
+      ["Achyutam Keshavam", "Traditional"],
+      ["Madhurashtakam", "Traditional (Vallabhacharya)"],
+      ["Hare Krishna Hare Rama Dhun", "Traditional"],
+      ["Santan Gopal Mantra", "Traditional"],
+      ["Ganesh Atharvashirsha", "Traditional"],
+      ["Shri Ram Chandra Kripalu", "Traditional (Tulsidas)"],
+      ["Bhagyada Lakshmi Baramma", "M. S. Subbulakshmi"],
+      ["Om Jai Jagdish Hare", "Traditional"],
+      ["Raghupati Raghav Raja Ram", "Traditional"],
+      ["Payoji Maine Ram Ratan Dhan Payo", "Lata Mangeshkar"],
+      ["Itni Shakti Hamein Dena Data", "Sushma Shreshtha, Pushpa Pagdhare", 1983],
+      ["Ae Malik Tere Bande Hum", "Vani Jairam", 1957],
+      ["Tu Pyar Ka Sagar Hai", "Manna Dey", 1959],
+      ["Sri Suktam", "Traditional"],
+      ["Vakratunda Mahakaya", "Traditional"]
     ]
   }
 ];

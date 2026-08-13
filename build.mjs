@@ -130,7 +130,7 @@ function indexHtml(theme) {
 
 <main class="stage">
   <header class="masthead">
-    <h1 class="sign">${esc(theme.sign)}<small>${esc(theme.kicker)}</small></h1>
+    <h1 class="sign">${esc(theme.sign).replace(/ {2}/g, "&nbsp;&nbsp;")}<small>${esc(theme.kicker)}</small></h1>
     <nav class="masthead-links">
       <a href="../../index.html">all stations</a>
     </nav>

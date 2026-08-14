@@ -6,21 +6,21 @@ window.PLAYLIST = [
     "artist": "Hariharan",
     "year": null,
     "q": "Hanuman Chalisa Hariharan",
-    "yt": null
+    "yt": "AETFvQonfV8"
   },
   {
     "title": "Shiv Tandav Stotram",
     "artist": "Traditional",
     "year": null,
     "q": "Shiv Tandav Stotram Traditional",
-    "yt": null
+    "yt": "hMBKmQEPNzI"
   },
   {
     "title": "Om Jai Jagdish Hare",
     "artist": "Traditional",
     "year": null,
     "q": "Om Jai Jagdish Hare Traditional",
-    "yt": null
+    "yt": "NE3SWh9_vR4"
   },
   {
     "title": "Sukhkarta Dukhharta",
@@ -48,7 +48,7 @@ window.PLAYLIST = [
     "artist": "Traditional",
     "year": null,
     "q": "Aarti Kunj Bihari Ki Traditional",
-    "yt": null
+    "yt": "FEMR5alT7CY"
   },
   {
     "title": "Achyutam Keshavam",
@@ -62,7 +62,7 @@ window.PLAYLIST = [
     "artist": "Traditional (Tulsidas)",
     "year": null,
     "q": "Shri Ram Chandra Kripalu Traditional (Tulsidas)",
-    "yt": null
+    "yt": "fkSmiW9D50w"
   },
   {
     "title": "Raghupati Raghav Raja Ram",
@@ -104,28 +104,28 @@ window.PLAYLIST = [
     "artist": "Traditional (Vallabhacharya)",
     "year": null,
     "q": "Madhurashtakam Traditional (Vallabhacharya)",
-    "yt": null
+    "yt": "XE1ANx0go6E"
   },
   {
     "title": "Payoji Maine Ram Ratan Dhan Payo",
     "artist": "Lata Mangeshkar",
     "year": null,
     "q": "Payoji Maine Ram Ratan Dhan Payo Lata Mangeshkar",
-    "yt": null
+    "yt": "GsItAp8ZPk4"
   },
   {
     "title": "Man Tarpat Hari Darshan Ko Aaj",
     "artist": "Mohammed Rafi",
     "year": 1952,
     "q": "Man Tarpat Hari Darshan Ko Aaj Mohammed Rafi",
-    "yt": null
+    "yt": "AczxIEZNb_o"
   },
   {
     "title": "Itni Shakti Hamein Dena Data",
     "artist": "Sushma Shreshtha, Pushpa Pagdhare",
     "year": 1983,
     "q": "Itni Shakti Hamein Dena Data Sushma Shreshtha, Pushpa Pagdhare",
-    "yt": null
+    "yt": "m1Ft4JdgrBE"
   },
   {
     "title": "Ae Malik Tere Bande Hum",

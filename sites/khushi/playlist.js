@@ -13,35 +13,35 @@ window.PLAYLIST = [
     "artist": "Vinod Rathod",
     "year": 1994,
     "q": "Ole Ole Vinod Rathod",
-    "yt": null
+    "yt": "hcCvSmjHwGY"
   },
   {
     "title": "Koi Mil Gaya",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Koi Mil Gaya Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "Foh01tG09Nk"
   },
   {
     "title": "Aati Kya Khandala",
     "artist": "Aamir Khan, Alka Yagnik",
     "year": 1998,
     "q": "Aati Kya Khandala Aamir Khan, Alka Yagnik",
-    "yt": null
+    "yt": "EENnVk1_suc"
   },
   {
     "title": "Kaho Naa Pyaar Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 2000,
     "q": "Kaho Naa Pyaar Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "-LESbtPT8uw"
   },
   {
     "title": "Bole Chudiyan",
     "artist": "Sonu Nigam, Alka Yagnik",
     "year": 2001,
     "q": "Bole Chudiyan Sonu Nigam, Alka Yagnik",
-    "yt": null
+    "yt": "IBvg3WeqP1U"
   },
   {
     "title": "It's The Time To Disco",
@@ -55,91 +55,91 @@ window.PLAYLIST = [
     "artist": "Sunidhi Chauhan",
     "year": 2004,
     "q": "Dhoom Machale Sunidhi Chauhan",
-    "yt": null
+    "yt": "2uUmHTgT65I"
   },
   {
     "title": "Kajra Re",
     "artist": "Alisha Chinai, Shankar Mahadevan",
     "year": 2005,
     "q": "Kajra Re Alisha Chinai, Shankar Mahadevan",
-    "yt": null
+    "yt": "4dsFQFCvVGU"
   },
   {
     "title": "Where's The Party Tonight",
     "artist": "Shaan, Vasundhara Das",
     "year": 2006,
     "q": "Where's The Party Tonight Shaan, Vasundhara Das",
-    "yt": null
+    "yt": "ifT-NS_E7EY"
   },
   {
     "title": "Desi Girl",
     "artist": "Vishal Dadlani, Sunidhi Chauhan",
     "year": 2008,
     "q": "Desi Girl Vishal Dadlani, Sunidhi Chauhan",
-    "yt": null
+    "yt": "wDIrpvH8MzE"
   },
   {
     "title": "Twist",
     "artist": "Neeraj Shridhar",
     "year": 2008,
     "q": "Twist Neeraj Shridhar",
-    "yt": null
+    "yt": "KgmeL_xuB0I"
   },
   {
     "title": "Ainvayi Ainvayi",
     "artist": "Salim Merchant, Sunidhi Chauhan",
     "year": 2010,
     "q": "Ainvayi Ainvayi Salim Merchant, Sunidhi Chauhan",
-    "yt": null
+    "yt": "pElk1ShPrcE"
   },
   {
     "title": "Senorita",
     "artist": "Farhan Akhtar, Hrithik Roshan, Abhay Deol",
     "year": 2011,
     "q": "Senorita Farhan Akhtar, Hrithik Roshan, Abhay Deol",
-    "yt": null
+    "yt": "2Z0Put0teCM"
   },
   {
     "title": "Ilahi",
     "artist": "Arijit Singh",
     "year": 2013,
     "q": "Ilahi Arijit Singh",
-    "yt": null
+    "yt": "fdubeMFwuGs"
   },
   {
     "title": "Balam Pichkari",
     "artist": "Vishal Dadlani, Shalmali Kholgade",
     "year": 2013,
     "q": "Balam Pichkari Vishal Dadlani, Shalmali Kholgade",
-    "yt": null
+    "yt": "0WtRNGubWGA"
   },
   {
     "title": "Badtameez Dil",
     "artist": "Benny Dayal",
     "year": 2013,
     "q": "Badtameez Dil Benny Dayal",
-    "yt": null
+    "yt": "II2EO3Nw4m0"
   },
   {
     "title": "Gallan Goodiyaan",
     "artist": "Various Artists",
     "year": 2015,
     "q": "Gallan Goodiyaan Various Artists",
-    "yt": null
+    "yt": "jCEdTq3j-0U"
   },
   {
     "title": "Sooraj Dooba Hain",
     "artist": "Arijit Singh, Aditi Singh Sharma",
     "year": 2015,
     "q": "Sooraj Dooba Hain Arijit Singh, Aditi Singh Sharma",
-    "yt": null
+    "yt": "nJZcbidTutE"
   },
   {
     "title": "Kar Gayi Chull",
     "artist": "Badshah, Fazilpuria, Neha Kakkar",
     "year": 2016,
     "q": "Kar Gayi Chull Badshah, Fazilpuria, Neha Kakkar",
-    "yt": null
+    "yt": "NTHz9ephYTw"
   }
 ];
 

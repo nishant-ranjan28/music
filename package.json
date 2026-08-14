@@ -1,0 +1,12 @@
+{
+  "name": "nostalgia-radio",
+  "version": "1.0.0",
+  "description": "Eleven single-page nostalgia radio stations",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}

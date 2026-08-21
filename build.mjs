@@ -5,7 +5,8 @@
    Run:  node build.mjs
    ============================================================ */
 
-import { mkdirSync, writeFileSync, existsSync, readFileSync, statSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { mkdirSync, writeFileSync, existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { themes, GRAIN } from "./themes/themes.mjs";
@@ -19,11 +20,14 @@ const ORIGIN = process.env.SITE_ORIGIN || "https://nostalgia.iamnishant.in";
 
 /* Cache-busting for shared assets: python http.server sends no cache
    headers, so browsers heuristically hold stale copies of base.css /
-   player.js after an edit. Versioning by file mtime makes every rebuild
-   produce fresh URLs without touching anything by hand. */
+   player.js after an edit. Versioned by content hash — identical files
+   always produce identical URLs, so checkouts and rebases cause no churn. */
 const assetV = (p) => {
   try {
-    return Math.floor(statSync(join(ROOT, p)).mtimeMs).toString(36);
+    return createHash("sha1")
+      .update(readFileSync(join(ROOT, p)))
+      .digest("hex")
+      .slice(0, 8);
   } catch {
     return "0";
   }

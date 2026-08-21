@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sonu Nigam — The voice you played on the rooftop while the whole colony slept.</title>
+<meta name="description" content="Sonu Nigam radio — Sandese Aate Hain to Kal Ho Naa Ho, under one night sky.">
+<meta name="theme-color" content="#0a0e23">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nostalgia.iamnishant.in/sites/sonu-nigam/">
+<meta property="og:title" content="Sonu Nigam">
+<meta property="og:description" content="Sonu Nigam radio — Sandese Aate Hain to Kal Ho Naa Ho, under one night sky.">
+<meta property="og:image" content="https://nostalgia.iamnishant.in/sites/sonu-nigam/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sonu Nigam">
+<meta name="twitter:description" content="Sonu Nigam radio — Sandese Aate Hain to Kal Ho Naa Ho, under one night sky.">
+<meta name="twitter:image" content="https://nostalgia.iamnishant.in/sites/sonu-nigam/og.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="mask-icon" href="favicon.svg" color="#ffcf87">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Philosopher:wght@700&display=swap" id="theme-fonts">
+<link rel="stylesheet" href="../../shared/base.css?v=mt362xfh">
+<link rel="stylesheet" href="theme.css" id="theme-css">
+</head>
+<body>
+
+<div class="scene"><svg class="moon" viewBox="0 0 160 160" aria-hidden="true">
+        <mask id="bite"><rect width="160" height="160" fill="#fff"/>
+          <circle cx="112" cy="58" r="52" fill="#000"/></mask>
+        <circle cx="80" cy="80" r="56" fill="#cdd6ff" mask="url(#bite)" opacity=".9"/>
+      </svg>
+      <div class="stars" aria-hidden="true">
+        <i style="--x:6vw;--y:12vh;--d:0s"></i><i style="--x:17vw;--y:28vh;--d:.9s"></i>
+        <i style="--x:31vw;--y:9vh;--d:1.7s"></i><i style="--x:44vw;--y:22vh;--d:.4s"></i>
+        <i style="--x:57vw;--y:7vh;--d:2.3s"></i><i style="--x:69vw;--y:31vh;--d:1.2s"></i>
+        <i style="--x:83vw;--y:14vh;--d:.6s"></i><i style="--x:93vw;--y:26vh;--d:2s"></i>
+        <i style="--x:12vw;--y:44vh;--d:2.8s"></i><i style="--x:51vw;--y:41vh;--d:1.5s"></i>
+        <i style="--x:88vw;--y:48vh;--d:.2s"></i>
+      </div>
+      <svg class="shoot" viewBox="0 0 220 60" aria-hidden="true">
+        <path d="M218 4L60 46" stroke="#e9edff" stroke-width="2" stroke-linecap="round"
+              opacity=".7" stroke-dasharray="150 170"/>
+        <circle cx="218" cy="4" r="3.4" fill="#ffcf87"/>
+      </svg>
+      <svg class="skyline" viewBox="0 0 800 90" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 90V64h34V40h26v24h30V52h40V28h14V16h12v12h12v24h34v20h44V44h36V24h16v-8h12v8h14v20h30v28h48V58h40V36h28V20h12v16h16v22h34v14h46V48h30V30h18v-6h12v6h14v18h28v24h52V56h38V38h26v18h34v16h40z"
+              fill="#05071a"/>
+      </svg></div>
+
+<main class="stage">
+  <header class="masthead">
+    <h1 class="sign">S I T A R A<small>sonu nigam · border se kal ho naa ho tak</small></h1>
+    <nav class="masthead-links">
+      <a href="../../index.html">all stations</a>
+    </nav>
+  </header>
+
+  <section class="center">
+    <div class="ambience" id="ambience" aria-hidden="true"></div>
+
+    <div class="card">
+      <div class="art" id="art"></div>
+
+      <div class="track">
+        <h2 class="track-title" id="track-title">—</h2>
+        <p class="track-meta" id="track-meta"></p>
+      </div>
+
+      <div class="ticker"><span id="ticker-text"></span></div>
+
+      <div class="progress">
+        <span class="time" id="time-cur">0:00</span>
+        <div class="bar" id="bar">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-knob" id="progress-knob"></div>
+        </div>
+        <span class="time" id="time-dur">&ndash;:&ndash;&ndash;</span>
+      </div>
+
+      <div class="transport">
+        <button class="tbtn" id="btn-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3 6l9 6V6z"/></svg>
+        </button>
+        <button class="tbtn tbtn--main" id="btn-play" aria-label="Play">
+          <svg viewBox="0 0 24 24"><path id="icon-play" d="M8 5v14l11-7z"/></svg>
+        </button>
+        <button class="tbtn" id="btn-next" aria-label="Next">
+          <svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l9-6-9-6z"/></svg>
+        </button>
+      </div>
+
+      <p class="status" id="status"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span id="count"></span>
+    <span id="counter" class="counter"></span>
+    <span>The voice you played on the rooftop while the whole colony slept.</span>
+  </footer>
+</main>
+
+<div class="gate" id="gate">
+  <div class="gate-inner">
+    <h2>Aankhein band karo</h2>
+    <p>Terrace cot, one thin blanket, a walkman balanced on your chest — and a voice that made even homesickness sound beautiful.</p>
+    <button class="gate-btn" id="gate-btn">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      play
+    </button>
+  </div>
+</div>
+
+<div id="yt-host"></div>
+
+<script src="../../shared/stations.js"></script>
+<script src="playlist.js"></script>
+<script src="../../shared/player.js?v=mt366a20"></script>
+<script src="../../shared/counter.js?v=msr8rqty" defer></script>
+
+</body>
+</html>

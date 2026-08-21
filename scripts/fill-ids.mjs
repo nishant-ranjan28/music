@@ -5,7 +5,7 @@
 
    Usage:
      YT_API_KEY=xxxx node scripts/fill-ids.mjs            # all stations
-     YT_API_KEY=xxxx node scripts/fill-ids.mjs ghazal lofi
+     YT_API_KEY=xxxx node scripts/fill-ids.mjs udit-narayan
 
    Quota: 100 units per search call, 10,000 units/day default —
    so roughly 100 tracks per day on a fresh key. Ids already

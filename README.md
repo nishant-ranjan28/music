@@ -1,4 +1,4 @@
-# Nostalgia radio — eleven stations
+# Nostalgia radio — four singers
 
 Live at <https://nostalgia.iamnishant.in>
 
@@ -7,17 +7,10 @@ design system and one player; each has its own palette, typography, scene and pl
 
 | Station | Slug | Kind | Sound |
 |---|---|---|---|
-| Pardesi | `std-booth` | place | Yellow-board PCO booth, 90s Bollywood longing |
-| Meter Down | `auto-rickshaw` | place | FM Rainbow-era hits at blown-speaker volume |
-| Baraat | `baraat-band` | place | Brass band Bollywood, dhol, marigold lights |
-| VHS | `wedding-vhs` | place | Wedding-video slow-mo love songs, scan lines |
-| Mehfil | `ghazal` | genre | Mehdi Hassan, Jagjit Singh, Ghulam Ali |
-| Cassette | `bollywood-90s` | genre | Kumar Sanu / Alka Yagnik cassette era |
-| Valve | `retro-rock` | genre | Classic rock through a valve amp |
-| Monsoon | `lofi` | genre | Lo-fi, rain, tape hiss |
-| Qawwali | `qawwali` | genre | Nusrat, Sabri Brothers, Abida Parveen |
-| Bhajan | `bhajan` | genre | Bhajans, aartis, chalisas, stotrams |
-| Khushi | `khushi` | genre | Feel-good Hindi hits, 90s through 2010s |
+| Sanam | `udit-narayan` | artist | Udit Narayan, the 90s romance king |
+| Sitara | `sonu-nigam` | artist | Sonu Nigam, Border to Kal Ho Naa Ho |
+| Raabta | `arijit-singh` | artist | Arijit Singh, late-night 2010s heartbreak |
+| Aashiqui | `kumar-sanu` | artist | Kumar Sanu, cassette-era melody |
 
 Every station streams a public YouTube playlist and keeps a curated track list as a
 fallback for when that playlist breaks.
@@ -56,7 +49,7 @@ Two YouTube IFrame API quirks are worth knowing if you touch this:
 ```
 shared/base.css        design system — all themes set the same token names
 shared/player.js       playlist controller (YouTube IFrame API, hidden iframe)
-themes/themes.mjs      ← the only file you normally edit: 10 theme configs
+themes/themes.mjs      ← the only file you normally edit: one config per station
 build.mjs              generates sites/ + the hub index.html
 scripts/fill-ids.mjs   resolves YouTube video ids via the Data API
 sites/<slug>/          generated: index.html, theme.css, playlist.js, og.svg, favicon.svg
@@ -133,7 +126,7 @@ Album art comes free once ids exist — the player uses
 
 ## Favicons
 
-Generated per station from the theme's `glyph` on its `--accent` tile, so ten open
+Generated per station from the theme's `glyph` on its `--accent` tile, so many open
 tabs stay tellable apart. Wired up as `icon`, `apple-touch-icon` and `mask-icon`.
 
 The glyph is drawn as text with `&#xFE0E;` (text presentation selector) and a

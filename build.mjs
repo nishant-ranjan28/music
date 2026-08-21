@@ -5,7 +5,7 @@
    Run:  node build.mjs
    ============================================================ */
 
-import { mkdirSync, writeFileSync, existsSync, readFileSync } from "node:fs";
+import { mkdirSync, writeFileSync, existsSync, readFileSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { themes, GRAIN } from "./themes/themes.mjs";
@@ -16,6 +16,21 @@ const SITES = join(ROOT, "sites");
 /** Public origin, used only for absolute og:/twitter: URLs. Set this to the
  *  real domain before launch — link previews need absolute URLs. */
 const ORIGIN = process.env.SITE_ORIGIN || "https://nostalgia.iamnishant.in";
+
+/* Cache-busting for shared assets: python http.server sends no cache
+   headers, so browsers heuristically hold stale copies of base.css /
+   player.js after an edit. Versioning by file mtime makes every rebuild
+   produce fresh URLs without touching anything by hand. */
+const assetV = (p) => {
+  try {
+    return Math.floor(statSync(join(ROOT, p)).mtimeMs).toString(36);
+  } catch {
+    return "0";
+  }
+};
+const V_BASE = assetV("shared/base.css");
+const V_PLAYER = assetV("shared/player.js");
+const V_COUNTER = assetV("shared/counter.js");
 
 /* ---------- helpers ------------------------------------------------- */
 
@@ -118,7 +133,7 @@ function indexHtml(theme) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${theme.fonts.href}" id="theme-fonts">
-<link rel="stylesheet" href="../../shared/base.css">
+<link rel="stylesheet" href="../../shared/base.css?v=${V_BASE}">
 <link rel="stylesheet" href="theme.css" id="theme-css">
 </head>
 <body>
@@ -134,6 +149,8 @@ function indexHtml(theme) {
   </header>
 
   <section class="center">
+    <div class="ambience" id="ambience" aria-hidden="true"></div>
+
     <div class="card">
       <div class="art" id="art"></div>
 
@@ -143,6 +160,15 @@ function indexHtml(theme) {
       </div>
 
       <div class="ticker"><span id="ticker-text"></span></div>
+
+      <div class="progress">
+        <span class="time" id="time-cur">0:00</span>
+        <div class="bar" id="bar">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-knob" id="progress-knob"></div>
+        </div>
+        <span class="time" id="time-dur">&ndash;:&ndash;&ndash;</span>
+      </div>
 
       <div class="transport">
         <button class="tbtn" id="btn-prev" aria-label="Previous">
@@ -154,11 +180,6 @@ function indexHtml(theme) {
         <button class="tbtn" id="btn-next" aria-label="Next">
           <svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l9-6-9-6z"/></svg>
         </button>
-      </div>
-
-      <div class="volume">
-        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>
-        <input type="range" id="volume" min="0" max="100" value="65" aria-label="Volume">
       </div>
 
       <p class="status" id="status"></p>
@@ -187,8 +208,8 @@ function indexHtml(theme) {
 
 <script src="../../shared/stations.js"></script>
 <script src="playlist.js"></script>
-<script src="../../shared/player.js"></script>
-<script src="../../shared/counter.js" defer></script>
+<script src="../../shared/player.js?v=${V_PLAYER}"></script>
+<script src="../../shared/counter.js?v=${V_COUNTER}" defer></script>
 ${theme.js ? `<script>${theme.js.trim()}</script>` : ""}
 </body>
 </html>
@@ -266,23 +287,38 @@ ${list.map(card).join("\n")}
 ${themes.filter((t) => t.kind === kind).map(card).join("\n")}
     </div>`;
 
+  const KIND_META = {
+    place: ["Places", "a specific room, at a specific time"],
+    genre: ["Genres", "the sound itself, in its own era"],
+    artist: ["Singers", "one voice, one era, all its moods"]
+  };
+
+  const sections = [
+    ...(featured.length
+      ? [rows(featured, "Recommended", "if you are not sure where to start")]
+      : []),
+    ...Object.entries(KIND_META)
+      .filter(([kind]) => themes.some((t) => t.kind === kind))
+      .map(([kind, [title, note]]) => group(kind, title, note))
+  ].join("\n\n");
+
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stations — nostalgia radio</title>
-<meta name="description" content="Eleven single-page nostalgia radio stations. One place or genre each, one song at a time.">
+<meta name="description" content="${themes.length} single-page nostalgia radio stations. One singer each, one song at a time.">
 <meta name="theme-color" content="#0b0b0d">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="${ORIGIN}/">
 <meta property="og:title" content="Nostalgia radio">
-<meta property="og:description" content="Eleven single-page stations. Each one is a place or a genre, one song at a time.">
+<meta property="og:description" content="${themes.length} single-page stations. Each one is one singer's voice in its era, one song at a time.">
 <meta property="og:image" content="${ORIGIN}/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Nostalgia radio">
-<meta name="twitter:description" content="Eleven single-page stations. Each one is a place or a genre, one song at a time.">
+<meta name="twitter:description" content="${themes.length} single-page stations. Each one is one singer's voice in its era, one song at a time.">
 <meta name="twitter:image" content="${ORIGIN}/og.png">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="favicon.svg">
@@ -340,14 +376,10 @@ ${themes.filter((t) => t.kind === kind).map(card).join("\n")}
 </head>
 <body>
   <h1>Nostalgia radio</h1>
-  <p class="lede">Eleven single-page stations. Each one is a place or a genre, one song at a time,
-     no accounts, no search. Pick a station and leave it playing.</p>
+  <p class="lede">${themes.length} single-page stations. Each one is one singer's voice in its era,
+     one song at a time, no accounts, no search. Pick a station and leave it playing.</p>
 
-${rows(featured, "Recommended", "if you are not sure where to start")}
-
-${group("place", "Places", "a specific room, at a specific time")}
-
-${group("genre", "Genres", "the sound itself, in its own era")}
+${sections}
 
   <footer>
     Audio streams through the official YouTube IFrame API — nothing is hosted here.
@@ -419,8 +451,6 @@ writeFileSync(
     ";\n"
 );
 
-/* Hub share card. The root URL is the one that actually gets posted, so
-   it needs a card as much as any station does. */
 writeFileSync(
   join(ROOT, "og.svg"),
   `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">

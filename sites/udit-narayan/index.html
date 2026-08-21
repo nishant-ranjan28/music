@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Udit Narayan — First love, second-hand bicycle, one voice that never aged.</title>
+<meta name="description" content="Udit Narayan radio — the 90s romance king, from Pehla Nasha to Kuch Kuch Hota Hai.">
+<meta name="theme-color" content="#1c0710">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nostalgia.iamnishant.in/sites/udit-narayan/">
+<meta property="og:title" content="Udit Narayan">
+<meta property="og:description" content="Udit Narayan radio — the 90s romance king, from Pehla Nasha to Kuch Kuch Hota Hai.">
+<meta property="og:image" content="https://nostalgia.iamnishant.in/sites/udit-narayan/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Udit Narayan">
+<meta name="twitter:description" content="Udit Narayan radio — the 90s romance king, from Pehla Nasha to Kuch Kuch Hota Hai.">
+<meta name="twitter:image" content="https://nostalgia.iamnishant.in/sites/udit-narayan/og.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="mask-icon" href="favicon.svg" color="#ff5d73">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&family=Rozha+One&display=swap" id="theme-fonts">
+<link rel="stylesheet" href="../../shared/base.css?v=mt362xfh">
+<link rel="stylesheet" href="theme.css" id="theme-css">
+</head>
+<body>
+
+<div class="scene"><div class="sun" aria-hidden="true"></div>
+      <svg class="bike" viewBox="0 0 260 150" aria-hidden="true">
+        <g fill="none" stroke="#ff8d6b" stroke-width="4" stroke-linecap="round" opacity=".8">
+          <circle cx="52" cy="108" r="34"/>
+          <circle cx="208" cy="108" r="34"/>
+          <path d="M52 108l44-56 54 0 26 56"/>
+          <path d="M96 52l32 56h-76"/>
+          <path d="M128 52l28 56"/>
+          <path d="M156 52l-8-16h20"/>
+          <path d="M186 108l-30-52"/>
+          <path d="M196 84l16 4"/>
+        </g>
+        <g fill="#ff8d6b" opacity=".8">
+          <circle cx="52" cy="108" r="5"/><circle cx="208" cy="108" r="5"/>
+        </g>
+      </svg>
+      <div class="petals" aria-hidden="true">
+        <b style="--x:10vw;--d:0s"></b><b style="--x:27vw;--d:3.2s"></b>
+        <b style="--x:49vw;--d:1.6s"></b><b style="--x:68vw;--d:4.8s"></b>
+        <b style="--x:86vw;--d:2.4s"></b>
+      </div></div>
+
+<main class="stage">
+  <header class="masthead">
+    <h1 class="sign">S A N A M<small>udit narayan · pehla nasha forever</small></h1>
+    <nav class="masthead-links">
+      <a href="../../index.html">all stations</a>
+    </nav>
+  </header>
+
+  <section class="center">
+    <div class="ambience" id="ambience" aria-hidden="true"></div>
+
+    <div class="card">
+      <div class="art" id="art"></div>
+
+      <div class="track">
+        <h2 class="track-title" id="track-title">—</h2>
+        <p class="track-meta" id="track-meta"></p>
+      </div>
+
+      <div class="ticker"><span id="ticker-text"></span></div>
+
+      <div class="progress">
+        <span class="time" id="time-cur">0:00</span>
+        <div class="bar" id="bar">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-knob" id="progress-knob"></div>
+        </div>
+        <span class="time" id="time-dur">&ndash;:&ndash;&ndash;</span>
+      </div>
+
+      <div class="transport">
+        <button class="tbtn" id="btn-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3 6l9 6V6z"/></svg>
+        </button>
+        <button class="tbtn tbtn--main" id="btn-play" aria-label="Play">
+          <svg viewBox="0 0 24 24"><path id="icon-play" d="M8 5v14l11-7z"/></svg>
+        </button>
+        <button class="tbtn" id="btn-next" aria-label="Next">
+          <svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l9-6-9-6z"/></svg>
+        </button>
+      </div>
+
+      <p class="status" id="status"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span id="count"></span>
+    <span id="counter" class="counter"></span>
+    <span>First love, second-hand bicycle, one voice that never aged.</span>
+  </footer>
+</main>
+
+<div class="gate" id="gate">
+  <div class="gate-inner">
+    <h2>Dil deewana ho gaya</h2>
+    <p>Sunset on the terrace, a red rose pressed inside a textbook, and the voice every 90s hero lip-synced to.</p>
+    <button class="gate-btn" id="gate-btn">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      play
+    </button>
+  </div>
+</div>
+
+<div id="yt-host"></div>
+
+<script src="../../shared/stations.js"></script>
+<script src="playlist.js"></script>
+<script src="../../shared/player.js?v=mt366a20"></script>
+<script src="../../shared/counter.js?v=msr8rqty" defer></script>
+
+</body>
+</html>

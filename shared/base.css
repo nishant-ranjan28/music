@@ -168,6 +168,8 @@ a {
 }
 
 .card {
+  position: relative;
+  z-index: 1;
   width: min(420px, 100%);
   background: var(--surface);
   border: var(--card-border, 1px solid var(--line));
@@ -176,6 +178,30 @@ a {
   padding: clamp(16px, 4vw, 24px);
   backdrop-filter: var(--card-blur, none);
   text-align: center;
+}
+
+/* ---------- ambient art glow -------------------------------------------
+   A blurred copy of the current album art behind the card (the player
+   sets its background-image). Fades in only while playing. */
+
+.ambience {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(440px, 88vw);
+  aspect-ratio: 1;
+  transform: translate(-50%, -54%);
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(58px) saturate(1.3);
+  opacity: 0;
+  transition: opacity 1.1s ease;
+  pointer-events: none;
+}
+
+body.playing .ambience {
+  opacity: 0.38;
 }
 
 .art {
@@ -262,6 +288,82 @@ a {
   }
 }
 
+/* ---------- progress / seek -------------------------------------------
+   Thin accent line under the ticker: elapsed / duration, click or drag
+   anywhere on the bar to seek. Hidden values until the player reports
+   a real duration (i.e. once something is actually loaded). */
+
+.progress {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.time {
+  flex: none;
+  min-width: 36px;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+.bar {
+  position: relative;
+  flex: 1;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 3px;
+  margin-top: -1.5px;
+  border-radius: 99px;
+  background: var(--line);
+}
+
+.progress-fill {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 3px;
+  margin-top: -1.5px;
+  border-radius: 99px;
+  background: var(--accent);
+  width: 0%;
+  pointer-events: none;
+}
+
+.progress-knob {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 60%, transparent);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.18s ease;
+  pointer-events: none;
+}
+
+.bar:hover .progress-knob,
+.bar.dragging .progress-knob {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /* ---------- transport ------------------------------------------------- */
 
 .transport {
@@ -315,50 +417,6 @@ a {
 .tbtn:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
-}
-
-.volume {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--ink-dim);
-}
-
-.volume svg {
-  width: 15px;
-  height: 15px;
-  fill: currentColor;
-  flex: none;
-}
-
-input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 3px;
-  border-radius: 2px;
-  background: var(--line);
-  outline: none;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: var(--accent);
-  cursor: pointer;
-}
-
-input[type="range"]::-moz-range-thumb {
-  width: 13px;
-  height: 13px;
-  border: 0;
-  border-radius: 50%;
-  background: var(--accent);
-  cursor: pointer;
 }
 
 /* ---------- footer ---------------------------------------------------- */
@@ -781,6 +839,45 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
+/* ---------- track-change choreography ----------------------------------
+   The player adds .swap to the card when the song changes; title, credit
+   and art rise in with a slight stagger instead of hard-swapping. */
+
+.card.swap .track-title {
+  animation: swap-in 0.55s cubic-bezier(0.22, 0.8, 0.3, 1) both;
+}
+
+.card.swap .track-meta {
+  animation: swap-in 0.55s 0.07s cubic-bezier(0.22, 0.8, 0.3, 1) both;
+}
+
+.card.swap .art img,
+.card.swap .art-fallback {
+  animation: swap-art 0.65s cubic-bezier(0.22, 0.8, 0.3, 1) both;
+}
+
+@keyframes swap-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes swap-art {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -915,6 +1012,19 @@ input[type="range"]::-moz-range-thumb {
     display: none;
   }
 
+  /* the glow hugs the artwork, which is the hero here */
+  .ambience {
+    width: min(130vw, 95dvh);
+  }
+
+  body.playing .ambience {
+    opacity: 0.5;
+  }
+
+  .progress {
+    margin-top: 18px;
+  }
+
   /* --- transport sits in thumb reach -------------------------------- */
   .transport {
     margin-top: 22px;
@@ -939,11 +1049,6 @@ input[type="range"]::-moz-range-thumb {
   .tbtn--main svg {
     width: 28px;
     height: 28px;
-  }
-
-  /* phones have hardware volume keys — the slider is just clutter */
-  .volume {
-    display: none;
   }
 
   .footer {

@@ -40,9 +40,15 @@
     playIcon: $("#icon-play"),
     prev: $("#btn-prev"),
     next: $("#btn-next"),
-    volume: $("#volume"),
     status: $("#status"),
-    count: $("#count")
+    count: $("#count"),
+    card: $(".card"),
+    ambience: $("#ambience"),
+    bar: $("#bar"),
+    fill: $("#progress-fill"),
+    knob: $("#progress-knob"),
+    tCur: $("#time-cur"),
+    tDur: $("#time-dur")
   };
 
   var reducedMotion =
@@ -55,6 +61,12 @@
   var skipTimer = null;
   var misses = 0; // consecutive tracks with no playable source
   var pendingShuffle = false;
+
+  // progress / seek state
+  var drag = null; // {frac} while the user is scrubbing
+  // track-change choreography state
+  var lastRenderedKey = null;
+  var swapTimer = null;
 
   function adoptStation(site, tracks) {
     SITE = site || {};
@@ -191,6 +203,11 @@
     return "https://www.youtube.com/results?search_query=" + encodeURIComponent(q);
   }
 
+  function fmtTime(s) {
+    s = Math.max(0, Math.floor(Number(s) || 0));
+    return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+  }
+
   // ---------- rendering ----------------------------------------------
   function renderTrack() {
     var track = current();
@@ -250,6 +267,29 @@
         '<div class="art-fallback">' + (SITE.glyph || "♫") + "</div>";
     }
 
+    // Ambient glow behind the card mirrors the artwork.
+    if (el.ambience) {
+      el.ambience.style.backgroundImage = track.yt
+        ? 'url("https://i.ytimg.com/vi/' + track.yt + '/hqdefault.jpg")'
+        : "";
+    }
+
+    // Choreograph the change only when the song actually changed — playlist
+    // mode re-renders on every CUED/BUFFERING state event.
+    var key = track.title + "|" + track.yt;
+    if (key !== lastRenderedKey && el.card) {
+      lastRenderedKey = key;
+      el.card.classList.remove("swap");
+      void el.card.offsetWidth; // restart the animation
+      el.card.classList.add("swap");
+      clearTimeout(swapTimer);
+      swapTimer = setTimeout(function () {
+        el.card.classList.remove("swap");
+      }, 900);
+    }
+
+    updateMediaSession(track);
+
     document.title = track.title + " · " + (SITE.name || "radio");
   }
 
@@ -265,6 +305,32 @@
     if (el.swIcon) el.swIcon.setAttribute("d", playing ? ICON_PAUSE : ICON_PLAY);
     if (el.play) el.play.setAttribute("aria-label", playing ? "Pause" : "Play");
     document.body.classList.toggle("paused", !playing);
+    document.body.classList.toggle("playing", playing);
+    if ("mediaSession" in navigator) {
+      try {
+        navigator.mediaSession.playbackState = playing ? "playing" : "paused";
+      } catch (err) { /* not supported */ }
+    }
+  }
+
+  /* Lock screen / hardware keys / OS media UI: real metadata plus artwork,
+     and play-pause-skip actions routed through the same code as the buttons. */
+  function updateMediaSession(track) {
+    if (!("mediaSession" in navigator) || !window.MediaMetadata) return;
+    try {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: track.title,
+        artist: track.artist || "",
+        album: SITE.name || "",
+        artwork: track.yt
+          ? [{
+              src: "https://i.ytimg.com/vi/" + track.yt + "/hqdefault.jpg",
+              sizes: "480x360",
+              type: "image/jpeg"
+            }]
+          : []
+      });
+    } catch (err) { /* no-op */ }
   }
 
   // ---------- playback ------------------------------------------------
@@ -408,10 +474,10 @@
 
   function onReady() {
     ready = true;
+    /* No volume UI — the OS/hardware keys own it now. Keep any level a
+       visitor set back when the slider existed, else the old default. */
     var stored = Number(localStorage.getItem("radio-volume"));
-    var vol = isFinite(stored) && stored > 0 ? stored : 65;
-    el.volume.value = vol;
-    player.setVolume(vol);
+    player.setVolume(isFinite(stored) && stored > 0 ? stored : 65);
     if (LIST_MODE) {
       startPlaylist();
       return;
@@ -526,11 +592,83 @@
     prev();
   });
 
-  el.volume.addEventListener("input", function () {
-    var v = Number(el.volume.value);
-    localStorage.setItem("radio-volume", String(v));
-    if (ready) player.setVolume(v);
-  });
+  // ---------- progress / seek --------------------------------------------
+  var hasBar = el.bar && el.fill && el.knob && el.tCur && el.tDur;
+
+  function setBar(frac, dur, cur) {
+    var pct = (frac * 100).toFixed(2) + "%";
+    el.fill.style.width = pct;
+    el.knob.style.left = pct;
+    el.tCur.textContent = fmtTime(cur);
+    el.tDur.textContent = fmtTime(dur);
+  }
+
+  if (hasBar) {
+    /* Poll rather than chase state events: getDuration() only becomes
+       finite once a video is actually loaded, and playlist mode changes
+       videos without telling us. Cheap enough at 400ms. */
+    setInterval(function () {
+      if (!ready || !player || !player.getDuration) return;
+      var d = Number(player.getDuration());
+      if (!(d > 0 && isFinite(d))) {
+        if (!drag) {
+          el.fill.style.width = "0%";
+          el.knob.style.left = "0%";
+          el.tDur.textContent = "\u2013:\u2013\u2013";
+        }
+        return;
+      }
+      if (drag) {
+        setBar(drag.frac, d, drag.frac * d);
+        return;
+      }
+      var c = Math.min(Math.max(Number(player.getCurrentTime()) || 0, 0), d);
+      setBar(c / d, d, c);
+    }, 400);
+
+    function fracFromEvent(e) {
+      var r = el.bar.getBoundingClientRect();
+      return Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
+    }
+
+    el.bar.addEventListener("pointerdown", function (e) {
+      if (!ready || !player || !player.getDuration) return;
+      e.preventDefault();
+      try { el.bar.setPointerCapture(e.pointerId); } catch (err) { /* ok */ }
+      drag = { frac: fracFromEvent(e) };
+      el.bar.classList.add("dragging");
+    });
+
+    el.bar.addEventListener("pointermove", function (e) {
+      if (drag) drag = { frac: fracFromEvent(e) };
+    });
+
+    ["pointerup", "pointercancel"].forEach(function (ev) {
+      el.bar.addEventListener(ev, function (e) {
+        if (!drag) return;
+        var frac = fracFromEvent(e);
+        drag = null;
+        el.bar.classList.remove("dragging");
+        var d = ready && player.getDuration ? Number(player.getDuration()) : 0;
+        if (d > 0 && isFinite(d) && player.seekTo) {
+          player.seekTo(frac * d, true);
+          setBar(frac, d, frac * d);
+        }
+      });
+    });
+  }
+
+  // ---------- media session actions ---------------------------------------
+  if ("mediaSession" in navigator) {
+    [
+      ["play", function () { if (ready) player.playVideo(); }],
+      ["pause", function () { if (ready) player.pauseVideo(); }],
+      ["previoustrack", function () { misses = 0; prev(); }],
+      ["nexttrack", function () { misses = 0; next(); }]
+    ].forEach(function (a) {
+      try { navigator.mediaSession.setActionHandler(a[0], a[1]); } catch (err) { /* unsupported */ }
+    });
+  }
 
   document.addEventListener("keydown", function (e) {
     if (e.target.tagName === "INPUT") return;

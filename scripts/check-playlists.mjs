@@ -9,7 +9,7 @@
 
    Usage:
      YT_API_KEY=xxx node scripts/check-playlists.mjs           # all
-     YT_API_KEY=xxx node scripts/check-playlists.mjs ghazal    # some
+      YT_API_KEY=xxx node scripts/check-playlists.mjs kumar-sanu  # one
 
    Exit code 1 if any station's playlist is missing or empty, so a
    scheduled run fails loudly instead of silently.

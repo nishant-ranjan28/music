@@ -7,7 +7,7 @@
 # the waiter was spending the very quota it was waiting for, roughly 3,600
 # units over a three hour wait.
 #
-#   ./scripts/wait-and-fill.sh khushi bhajan
+#   ./scripts/wait-and-fill.sh sonu-nigam kumar-sanu
 #   ./scripts/wait-and-fill.sh                  # every station
 
 set -uo pipefail

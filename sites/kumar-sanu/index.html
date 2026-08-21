@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kumar Sanu — Side A of a tape bought in 1990, still holding its pitch.</title>
+<meta name="description" content="Kumar Sanu radio — Aashiqui, Baazigar, Pardes — cassette-era melody king.">
+<meta name="theme-color" content="#17100a">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nostalgia.iamnishant.in/sites/kumar-sanu/">
+<meta property="og:title" content="Kumar Sanu">
+<meta property="og:description" content="Kumar Sanu radio — Aashiqui, Baazigar, Pardes — cassette-era melody king.">
+<meta property="og:image" content="https://nostalgia.iamnishant.in/sites/kumar-sanu/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kumar Sanu">
+<meta name="twitter:description" content="Kumar Sanu radio — Aashiqui, Baazigar, Pardes — cassette-era melody king.">
+<meta name="twitter:image" content="https://nostalgia.iamnishant.in/sites/kumar-sanu/og.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="mask-icon" href="favicon.svg" color="#e3b04b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500&family=Limelight&display=swap" id="theme-fonts">
+<link rel="stylesheet" href="../../shared/base.css?v=mt362xfh">
+<link rel="stylesheet" href="theme.css" id="theme-css">
+</head>
+<body>
+
+<div class="scene"><svg class="vinyl" viewBox="0 0 360 360" aria-hidden="true">
+        <g class="spin">
+          <circle cx="180" cy="180" r="168" fill="#0d0906" stroke="#e3b04b44" stroke-width="2"/>
+          <g fill="none" stroke="#e3b04b" opacity=".16">
+            <circle cx="180" cy="180" r="152"/><circle cx="180" cy="180" r="140"/>
+            <circle cx="180" cy="180" r="128"/><circle cx="180" cy="180" r="116"/>
+            <circle cx="180" cy="180" r="104"/>
+          </g>
+          <circle cx="180" cy="180" r="52" fill="#c96f4a" stroke="#e3b04b66" stroke-width="2"/>
+          <circle cx="180" cy="180" r="6" fill="#17100a" stroke="#e3b04b88"/>
+          <path d="M180 132a48 48 0 0 1 44 66" stroke="#f5ead8" stroke-width="3" fill="none" opacity=".35"/>
+        </g>
+      </svg>
+      <div class="glow" aria-hidden="true"></div>
+      <div class="motes" aria-hidden="true">
+        <b style="--x:12vw;--d:0s"></b><b style="--x:31vw;--d:4.2s"></b>
+        <b style="--x:58vw;--d:2.1s"></b><b style="--x:79vw;--d:6s"></b>
+        <b style="--x:91vw;--d:3.4s"></b>
+      </div></div>
+
+<main class="stage">
+  <header class="masthead">
+    <h1 class="sign">A A S H I Q U I<small>kumar sanu · the melody king</small></h1>
+    <nav class="masthead-links">
+      <a href="../../index.html">all stations</a>
+    </nav>
+  </header>
+
+  <section class="center">
+    <div class="ambience" id="ambience" aria-hidden="true"></div>
+
+    <div class="card">
+      <div class="art" id="art"></div>
+
+      <div class="track">
+        <h2 class="track-title" id="track-title">—</h2>
+        <p class="track-meta" id="track-meta"></p>
+      </div>
+
+      <div class="ticker"><span id="ticker-text"></span></div>
+
+      <div class="progress">
+        <span class="time" id="time-cur">0:00</span>
+        <div class="bar" id="bar">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-knob" id="progress-knob"></div>
+        </div>
+        <span class="time" id="time-dur">&ndash;:&ndash;&ndash;</span>
+      </div>
+
+      <div class="transport">
+        <button class="tbtn" id="btn-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3 6l9 6V6z"/></svg>
+        </button>
+        <button class="tbtn tbtn--main" id="btn-play" aria-label="Play">
+          <svg viewBox="0 0 24 24"><path id="icon-play" d="M8 5v14l11-7z"/></svg>
+        </button>
+        <button class="tbtn" id="btn-next" aria-label="Next">
+          <svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l9-6-9-6z"/></svg>
+        </button>
+      </div>
+
+      <p class="status" id="status"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span id="count"></span>
+    <span id="counter" class="counter"></span>
+    <span>Side A of a tape bought in 1990, still holding its pitch.</span>
+  </footer>
+</main>
+
+<div class="gate" id="gate">
+  <div class="gate-inner">
+    <h2>Rewind karo</h2>
+    <p>A pencil to wind the tape, a lamp with an orange shade, and the most nasal, most beloved voice the 90s ever produced.</p>
+    <button class="gate-btn" id="gate-btn">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      play
+    </button>
+  </div>
+</div>
+
+<div id="yt-host"></div>
+
+<script src="../../shared/stations.js"></script>
+<script src="playlist.js"></script>
+<script src="../../shared/player.js?v=mt366a20"></script>
+<script src="../../shared/counter.js?v=msr8rqty" defer></script>
+
+</body>
+</html>

@@ -11,8 +11,8 @@
    against it — so the playlist supplies ids, not the tracklist.
 
    Usage:
-     YT_API_KEY=xxx node scripts/harvest-ids.mjs            # all stations
-     YT_API_KEY=xxx node scripts/harvest-ids.mjs ghazal lofi
+      YT_API_KEY=xxx node scripts/harvest-ids.mjs            # all stations
+      YT_API_KEY=xxx node scripts/harvest-ids.mjs arijit-singh
 
    Anything left unmatched can be topped up with fill-ids.mjs, which
    is exact but expensive. Run this first, that second.
@@ -34,16 +34,10 @@ if (!KEY) {
 /* Search terms aimed at big, well-maintained playlists for each station.
    Tune these — a better playlist means more of the curated list resolves. */
 const QUERIES = {
-  "std-booth": "90s bollywood sad romantic songs jukebox",
-  "auto-rickshaw": "90s bollywood dance hits jukebox",
-  "kirana-store": "70s 80s bollywood hits jukebox kishore rafi",
-  "baraat-band": "bollywood wedding shaadi songs jukebox",
-  "wedding-vhs": "90s bollywood romantic songs jukebox",
-  ghazal: "best ghazals jagjit singh mehdi hassan ghulam ali jukebox",
-  "bollywood-90s": "90s bollywood hits kumar sanu alka yagnik jukebox",
-  "retro-rock": "classic rock greatest hits 70s 80s playlist",
-  lofi: "lofi hip hop nujabes jinsang chillhop mix playlist",
-  qawwali: "qawwali nusrat fateh ali khan sabri brothers jukebox"
+  "udit-narayan": "udit narayan superhit songs collection playlist",
+  "sonu-nigam": "sonu nigam superhit songs collection playlist",
+  "arijit-singh": "arijit singh songs collection playlist",
+  "kumar-sanu": "kumar sanu 90s hits collection playlist"
 };
 
 const PLAYLISTS_PER_STATION = 5;

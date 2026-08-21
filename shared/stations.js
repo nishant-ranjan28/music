@@ -1,507 +1,205 @@
 window.STATIONS = [
  {
-  "slug": "std-booth",
-  "kind": "place",
+  "slug": "udit-narayan",
+  "kind": "artist",
   "featured": null,
-  "name": "Pardesi",
-  "signHtml": "S T D · I S D · P C O",
-  "kicker": "local · national · international",
-  "tagline": "The songs that played while you waited for the meter to stop.",
-  "glyph": "☎",
-  "accent": "#f7c948",
-  "bg": "#120e07",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap",
-  "scene": "<div class=\"meter\" aria-hidden=\"true\">\n        <em>PULSE</em><b id=\"pulse\">0 0 7</b>\n      </div>\n      <svg class=\"phone\" viewBox=\"0 0 200 140\" aria-hidden=\"true\">\n        <rect x=\"26\" y=\"66\" width=\"148\" height=\"58\" rx=\"9\" fill=\"#33260f\" stroke=\"#f7c94877\"/>\n        <g fill=\"#f7c94855\">\n          <circle cx=\"60\" cy=\"86\" r=\"7\"/><circle cx=\"84\" cy=\"86\" r=\"7\"/><circle cx=\"108\" cy=\"86\" r=\"7\"/>\n          <circle cx=\"60\" cy=\"106\" r=\"7\"/><circle cx=\"84\" cy=\"106\" r=\"7\"/><circle cx=\"108\" cy=\"106\" r=\"7\"/>\n        </g>\n        <rect x=\"132\" y=\"78\" width=\"30\" height=\"36\" rx=\"4\" fill=\"#f7c94840\"/>\n        <path d=\"M34 44h132a14 14 0 0 1 14 14v6H20v-6a14 14 0 0 1 14-14z\" fill=\"#4a3517\" stroke=\"#f7c94877\"/>\n      </svg>",
+  "name": "Udit Narayan",
+  "signHtml": "S A N A M",
+  "kicker": "udit narayan · pehla nasha forever",
+  "tagline": "First love, second-hand bicycle, one voice that never aged.",
+  "glyph": "♥",
+  "accent": "#ff5d73",
+  "bg": "#1c0710",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&family=Rozha+One&display=swap",
+  "scene": "<div class=\"sun\" aria-hidden=\"true\"></div>\n      <svg class=\"bike\" viewBox=\"0 0 260 150\" aria-hidden=\"true\">\n        <g fill=\"none\" stroke=\"#ff8d6b\" stroke-width=\"4\" stroke-linecap=\"round\" opacity=\".8\">\n          <circle cx=\"52\" cy=\"108\" r=\"34\"/>\n          <circle cx=\"208\" cy=\"108\" r=\"34\"/>\n          <path d=\"M52 108l44-56 54 0 26 56\"/>\n          <path d=\"M96 52l32 56h-76\"/>\n          <path d=\"M128 52l28 56\"/>\n          <path d=\"M156 52l-8-16h20\"/>\n          <path d=\"M186 108l-30-52\"/>\n          <path d=\"M196 84l16 4\"/>\n        </g>\n        <g fill=\"#ff8d6b\" opacity=\".8\">\n          <circle cx=\"52\" cy=\"108\" r=\"5\"/><circle cx=\"208\" cy=\"108\" r=\"5\"/>\n        </g>\n      </svg>\n      <div class=\"petals\" aria-hidden=\"true\">\n        <b style=\"--x:10vw;--d:0s\"></b><b style=\"--x:27vw;--d:3.2s\"></b>\n        <b style=\"--x:49vw;--d:1.6s\"></b><b style=\"--x:68vw;--d:4.8s\"></b>\n        <b style=\"--x:86vw;--d:2.4s\"></b>\n      </div>",
   "site": {
-   "name": "Pardesi",
-   "tagline": "The songs that played while you waited for the meter to stop.",
-   "glyph": "☎",
+   "name": "Udit Narayan",
+   "tagline": "First love, second-hand bicycle, one voice that never aged.",
+   "glyph": "♥",
    "shuffle": true,
    "searchFallback": true,
-   "ytPlaylist": "PLO6WOx_nE9ULl-FgE0NPR4c6BSu-1-CPJ",
+   "ytPlaylist": "PLHNOeF1Yw3i0Swt9LUXe5azHLMDn7V-ng",
    "maxSeconds": null
   },
   "tracks": [
    {
-    "title": "Pardesi Pardesi",
-    "artist": "Udit Narayan, Alka Yagnik",
-    "year": 1996,
-    "q": "Pardesi Pardesi Udit Narayan, Alka Yagnik",
-    "yt": "Swlik5Hfu-A"
-   },
-   {
-    "title": "Chithi Aayi Hai",
-    "artist": "Pankaj Udhas",
-    "year": 1986,
-    "q": "Chithi Aayi Hai Pankaj Udhas",
-    "yt": "v0_IRIFYC0k"
+    "title": "Papa Kehte Hain",
+    "artist": "Udit Narayan",
+    "year": 1988,
+    "q": "Papa Kehte Hain Udit Narayan",
+    "yt": "ngBEVUKnhgY"
    },
    {
     "title": "Ae Mere Humsafar",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1988,
     "q": "Ae Mere Humsafar Udit Narayan, Alka Yagnik",
-    "yt": "sWqjZpBtcxc"
-   },
-   {
-    "title": "Tujhe Dekha To",
-    "artist": "Kumar Sanu, Lata Mangeshkar",
-    "year": 1995,
-    "q": "Tujhe Dekha To Kumar Sanu, Lata Mangeshkar",
-    "yt": "cNV5hLSa9H8"
-   },
-   {
-    "title": "Sochenge Tumhe Pyar",
-    "artist": "Kumar Sanu",
-    "year": 1992,
-    "q": "Sochenge Tumhe Pyar Kumar Sanu",
-    "yt": "x5eYr7voNiY"
-   },
-   {
-    "title": "Dil Hai Ke Manta Nahin",
-    "artist": "Kumar Sanu, Anuradha Paudwal",
-    "year": 1991,
-    "q": "Dil Hai Ke Manta Nahin Kumar Sanu, Anuradha Paudwal",
-    "yt": "C9efe0rjDlE"
-   },
-   {
-    "title": "Tumse Milne Ki Tamanna",
-    "artist": "S. P. Balasubrahmanyam",
-    "year": 1991,
-    "q": "Tumse Milne Ki Tamanna S. P. Balasubrahmanyam",
-    "yt": "thjRNwjmAdQ"
-   },
-   {
-    "title": "Dekha Hai Pehli Baar",
-    "artist": "S. P. Balasubrahmanyam, Alka Yagnik",
-    "year": 1991,
-    "q": "Dekha Hai Pehli Baar S. P. Balasubrahmanyam, Alka Yagnik",
-    "yt": "bBjVLCAAM1A"
-   },
-   {
-    "title": "Jaadu Teri Nazar",
-    "artist": "Udit Narayan",
-    "year": 1993,
-    "q": "Jaadu Teri Nazar Udit Narayan",
-    "yt": "n_oP9Onj0r0"
-   },
-   {
-    "title": "Chura Ke Dil Mera",
-    "artist": "Kumar Sanu, Alka Yagnik",
-    "year": 1994,
-    "q": "Chura Ke Dil Mera Kumar Sanu, Alka Yagnik",
-    "yt": "Yqj1_V90KJo"
-   },
-   {
-    "title": "Meri Mehbooba",
-    "artist": "Kumar Sanu, Alka Yagnik",
-    "year": 1997,
-    "q": "Meri Mehbooba Kumar Sanu, Alka Yagnik",
     "yt": null
-   },
-   {
-    "title": "Kuch Na Kaho",
-    "artist": "Kumar Sanu",
-    "year": 1994,
-    "q": "Kuch Na Kaho Kumar Sanu",
-    "yt": "Kidtrrn4aUM"
-   },
-   {
-    "title": "Jab Koi Baat Bigad Jaye",
-    "artist": "Kumar Sanu, Sadhana Sargam",
-    "year": 1990,
-    "q": "Jab Koi Baat Bigad Jaye Kumar Sanu, Sadhana Sargam",
-    "yt": "mNSYPtzpfd4"
-   },
-   {
-    "title": "Yeh Kahan Aa Gaye Hum",
-    "artist": "Lata Mangeshkar, Amitabh Bachchan",
-    "year": 1981,
-    "q": "Yeh Kahan Aa Gaye Hum Lata Mangeshkar, Amitabh Bachchan",
-    "yt": "43wT0xhvfsA"
-   },
-   {
-    "title": "Kabhi Alvida Na Kehna",
-    "artist": "Kishore Kumar",
-    "year": 1976,
-    "q": "Kabhi Alvida Na Kehna Kishore Kumar",
-    "yt": "gRbcUA8jH2Y"
-   },
-   {
-    "title": "Ek Ajnabee Haseena Se",
-    "artist": "Kishore Kumar",
-    "year": 1974,
-    "q": "Ek Ajnabee Haseena Se Kishore Kumar",
-    "yt": "vS_JXshiu68"
-   },
-   {
-    "title": "Aankhon Mein Base Ho Tum",
-    "artist": "Kumar Sanu, Alka Yagnik",
-    "year": 1995,
-    "q": "Aankhon Mein Base Ho Tum Kumar Sanu, Alka Yagnik",
-    "yt": "0zeA_aR7TkA"
-   },
-   {
-    "title": "Bahut Pyar Karte Hain",
-    "artist": "Anuradha Paudwal",
-    "year": 1991,
-    "q": "Bahut Pyar Karte Hain Anuradha Paudwal",
-    "yt": "ycj1FwxiZwc"
-   }
-  ]
- },
- {
-  "slug": "auto-rickshaw",
-  "kind": "place",
-  "featured": null,
-  "name": "Meter Down",
-  "signHtml": "M E T E R&nbsp;&nbsp;D O W N",
-  "kicker": "3 sawari · no ac · full volume",
-  "tagline": "FM Rainbow hits at 4x volume through one blown speaker.",
-  "glyph": "◍",
-  "accent": "#ffd400",
-  "bg": "#08120c",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700;800&family=Inter:wght@400;600&display=swap",
-  "scene": "<svg class=\"trinket\" viewBox=\"0 0 80 220\" aria-hidden=\"true\">\n        <g class=\"sway\">\n          <line x1=\"40\" y1=\"0\" x2=\"40\" y2=\"70\" stroke=\"#ffd400aa\" stroke-width=\"3\"/>\n          <circle cx=\"40\" cy=\"86\" r=\"17\" fill=\"#ffd40055\" stroke=\"#ffd400ee\" stroke-width=\"3\"/>\n          <path d=\"M40 104v42\" stroke=\"#ff8a0088\" stroke-width=\"3\"/>\n          <path d=\"M28 146h24l-12 34z\" fill=\"#e4572ecc\"/>\n        </g>\n      </svg>\n      <div class=\"stripe\" aria-hidden=\"true\"></div>\n      <div class=\"fare\" aria-hidden=\"true\">₹ 2 5 . 0 0</div>",
-  "site": {
-   "name": "Meter Down",
-   "tagline": "FM Rainbow hits at 4x volume through one blown speaker.",
-   "glyph": "◍",
-   "shuffle": true,
-   "searchFallback": true,
-   "ytPlaylist": "PLtohLwEsOFFuHg_mIFrwmGGEgL7sM6YBh",
-   "maxSeconds": null
-  },
-  "tracks": [
-   {
-    "title": "Ole Ole",
-    "artist": "Vinod Rathod",
-    "year": 1994,
-    "q": "Ole Ole Vinod Rathod",
-    "yt": "hcCvSmjHwGY"
-   },
-   {
-    "title": "Tu Cheez Badi Hai Mast",
-    "artist": "Udit Narayan, Kavita Krishnamurthy",
-    "year": 1994,
-    "q": "Tu Cheez Badi Hai Mast Udit Narayan, Kavita Krishnamurthy",
-    "yt": "ZFZMPjMbvtU"
-   },
-   {
-    "title": "Didi Tera Devar Deewana",
-    "artist": "Lata Mangeshkar, S. P. Balasubrahmanyam",
-    "year": 1994,
-    "q": "Didi Tera Devar Deewana Lata Mangeshkar, S. P. Balasubrahmanyam",
-    "yt": "tEKi6vnPApI"
-   },
-   {
-    "title": "Sona Kitna Sona Hai",
-    "artist": "Poornima, Vinod Rathod",
-    "year": 1997,
-    "q": "Sona Kitna Sona Hai Poornima, Vinod Rathod",
-    "yt": "4pIV63BLA6A"
-   },
-   {
-    "title": "Aati Kya Khandala",
-    "artist": "Aamir Khan, Alka Yagnik",
-    "year": 1998,
-    "q": "Aati Kya Khandala Aamir Khan, Alka Yagnik",
-    "yt": "EENnVk1_suc"
-   },
-   {
-    "title": "Chaiyya Chaiyya",
-    "artist": "Sukhwinder Singh, Sapna Awasthi",
-    "year": 1998,
-    "q": "Chaiyya Chaiyya Sukhwinder Singh, Sapna Awasthi",
-    "yt": "AtcZ3Pu0joY"
-   },
-   {
-    "title": "Muqabla",
-    "artist": "Mano, Swarnalatha",
-    "year": 1994,
-    "q": "Muqabla Mano, Swarnalatha",
-    "yt": "1IuQaLxgVB0"
-   },
-   {
-    "title": "Urvashi Urvashi",
-    "artist": "A. R. Rahman, Suresh Peters",
-    "year": 1994,
-    "q": "Urvashi Urvashi A. R. Rahman, Suresh Peters",
-    "yt": "M7ebX_7ay6o"
-   },
-   {
-    "title": "Rangeela Re",
-    "artist": "Asha Bhosle",
-    "year": 1995,
-    "q": "Rangeela Re Asha Bhosle",
-    "yt": "i65HIFzIfec"
-   },
-   {
-    "title": "Ek Do Teen",
-    "artist": "Alka Yagnik",
-    "year": 1988,
-    "q": "Ek Do Teen Alka Yagnik",
-    "yt": "hv1-_7ZH34Q"
-   },
-   {
-    "title": "Dhak Dhak Karne Laga",
-    "artist": "Anuradha Paudwal, Udit Narayan",
-    "year": 1992,
-    "q": "Dhak Dhak Karne Laga Anuradha Paudwal, Udit Narayan",
-    "yt": "P7i0Z4yDKNM"
-   },
-   {
-    "title": "Jhanjhariya",
-    "artist": "Kumar Sanu, Alka Yagnik",
-    "year": 1996,
-    "q": "Jhanjhariya Kumar Sanu, Alka Yagnik",
-    "yt": "yRsRKYcAqcc"
-   },
-   {
-    "title": "Oonchi Hai Building",
-    "artist": "Poornima, Abhijeet",
-    "year": 1997,
-    "q": "Oonchi Hai Building Poornima, Abhijeet",
-    "yt": "FBUeXHfYCZw"
-   },
-   {
-    "title": "Chunari Chunari",
-    "artist": "Abhijeet, Anuradha Sriram",
-    "year": 1999,
-    "q": "Chunari Chunari Abhijeet, Anuradha Sriram",
-    "yt": "6z1U-kJ3xJE"
-   },
-   {
-    "title": "Tunak Tunak Tun",
-    "artist": "Daler Mehndi",
-    "year": 1998,
-    "q": "Tunak Tunak Tun Daler Mehndi",
-    "yt": "92ydUdqWE1g"
-   },
-   {
-    "title": "Bolo Ta Ra Ra",
-    "artist": "Daler Mehndi",
-    "year": 1995,
-    "q": "Bolo Ta Ra Ra Daler Mehndi",
-    "yt": "lhVceZE1lf4"
-   },
-   {
-    "title": "Main Nikla Gaddi Leke",
-    "artist": "Udit Narayan",
-    "year": 2001,
-    "q": "Main Nikla Gaddi Leke Udit Narayan",
-    "yt": "OovAARJxt5E"
-   },
-   {
-    "title": "Kaho Naa Pyaar Hai",
-    "artist": "Udit Narayan, Alka Yagnik",
-    "year": 2000,
-    "q": "Kaho Naa Pyaar Hai Udit Narayan, Alka Yagnik",
-    "yt": "-LESbtPT8uw"
-   }
-  ]
- },
- {
-  "slug": "baraat-band",
-  "kind": "place",
-  "featured": 3,
-  "name": "Baraat",
-  "signHtml": "B A N D&nbsp;&nbsp;B A A J A",
-  "kicker": "brass · dhol · generator light",
-  "tagline": "Nine men, brass instruments, and one film song murdered beautifully.",
-  "glyph": "✺",
-  "accent": "#ff8a00",
-  "bg": "#170509",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=Yatra+One&family=Inter:wght@400;600&display=swap",
-  "scene": "<div class=\"lights\" aria-hidden=\"true\">\n        <i style=\"--d:0s\"></i><i style=\"--d:.3s\"></i><i style=\"--d:.7s\"></i><i style=\"--d:1.1s\"></i>\n        <i style=\"--d:1.5s\"></i><i style=\"--d:1.9s\"></i><i style=\"--d:2.3s\"></i><i style=\"--d:2.7s\"></i>\n        <i style=\"--d:3.1s\"></i><i style=\"--d:3.5s\"></i><i style=\"--d:3.9s\"></i><i style=\"--d:4.3s\"></i>\n      </div>\n      <svg class=\"dhol\" viewBox=\"0 0 200 120\" aria-hidden=\"true\">\n        <ellipse cx=\"40\" cy=\"60\" rx=\"22\" ry=\"44\" fill=\"#ffd96622\" stroke=\"#ffd96666\" stroke-width=\"2\"/>\n        <ellipse cx=\"160\" cy=\"60\" rx=\"22\" ry=\"44\" fill=\"#ffd96622\" stroke=\"#ffd96666\" stroke-width=\"2\"/>\n        <rect x=\"40\" y=\"16\" width=\"120\" height=\"88\" fill=\"#ff8a0018\" stroke=\"#ffd96644\"/>\n        <g stroke=\"#ffd96633\"><path d=\"M46 24l108 72\"/><path d=\"M46 96l108-72\"/></g>\n      </svg>",
-  "site": {
-   "name": "Baraat",
-   "tagline": "Nine men, brass instruments, and one film song murdered beautifully.",
-   "glyph": "✺",
-   "shuffle": true,
-   "searchFallback": true,
-   "ytPlaylist": "PLYmK3JHhP4fdCl2NVP30MFIAQMFXVeBCG",
-   "maxSeconds": null
-  },
-  "tracks": [
-   {
-    "title": "Aaj Mere Yaar Ki Shaadi Hai",
-    "artist": "Mohammed Rafi",
-    "year": 1977,
-    "q": "Aaj Mere Yaar Ki Shaadi Hai Mohammed Rafi",
-    "yt": "FnxvgVlN45g"
-   },
-   {
-    "title": "Mehndi Laga Ke Rakhna",
-    "artist": "Udit Narayan, Lata Mangeshkar",
-    "year": 1995,
-    "q": "Mehndi Laga Ke Rakhna Udit Narayan, Lata Mangeshkar",
-    "yt": "-bNwqXvMuB8"
-   },
-   {
-    "title": "Dulhe Ka Sehra",
-    "artist": "Nusrat Fateh Ali Khan",
-    "year": 2000,
-    "q": "Dulhe Ka Sehra Nusrat Fateh Ali Khan",
-    "yt": "iZAv9zDeFSc"
-   },
-   {
-    "title": "Wah Wah Ramji",
-    "artist": "Lata Mangeshkar, S. P. Balasubrahmanyam",
-    "year": 1994,
-    "q": "Wah Wah Ramji Lata Mangeshkar, S. P. Balasubrahmanyam",
-    "yt": "o1tIvfplhHc"
-   },
-   {
-    "title": "Joote Do Paise Lo",
-    "artist": "Lata Mangeshkar, S. P. Balasubrahmanyam",
-    "year": 1994,
-    "q": "Joote Do Paise Lo Lata Mangeshkar, S. P. Balasubrahmanyam",
-    "yt": "cTfqLSmsxt0"
-   },
-   {
-    "title": "Chhote Chhote Bhaiyon Ke",
-    "artist": "S. P. Balasubrahmanyam, Lata Mangeshkar",
-    "year": 1994,
-    "q": "Chhote Chhote Bhaiyon Ke S. P. Balasubrahmanyam, Lata Mangeshkar",
-    "yt": "JtKjcyc5wh0"
-   },
-   {
-    "title": "Le Jayenge Le Jayenge",
-    "artist": "Kishore Kumar, Asha Bhosle",
-    "year": 1974,
-    "q": "Le Jayenge Le Jayenge Kishore Kumar, Asha Bhosle",
-    "yt": "Bx9NL1edwjs"
-   },
-   {
-    "title": "Aaya Sawan Jhoom Ke",
-    "artist": "Mohammed Rafi",
-    "year": 1969,
-    "q": "Aaya Sawan Jhoom Ke Mohammed Rafi",
-    "yt": null
-   },
-   {
-    "title": "Saajanji Ghar Aaye",
-    "artist": "Kumar Sanu, Alka Yagnik",
-    "year": 1998,
-    "q": "Saajanji Ghar Aaye Kumar Sanu, Alka Yagnik",
-    "yt": "8XtXLVylOoU"
-   },
-   {
-    "title": "Kajra Re",
-    "artist": "Alisha Chinai, Shankar Mahadevan",
-    "year": 2005,
-    "q": "Kajra Re Alisha Chinai, Shankar Mahadevan",
-    "yt": "4dsFQFCvVGU"
-   },
-   {
-    "title": "Nagada Sang Dhol",
-    "artist": "Shreya Ghoshal, Osman Mir",
-    "year": 2013,
-    "q": "Nagada Sang Dhol Shreya Ghoshal, Osman Mir",
-    "yt": "3X7x4Ye-tqo"
-   },
-   {
-    "title": "Gud Naal Ishq Mitha",
-    "artist": "Malkit Singh",
-    "year": 1998,
-    "q": "Gud Naal Ishq Mitha Malkit Singh",
-    "yt": "_rGz16v3CUM"
-   },
-   {
-    "title": "Sadi Gali",
-    "artist": "Lehmber Hussainpuri",
-    "year": 2011,
-    "q": "Sadi Gali Lehmber Hussainpuri",
-    "yt": "w_HaezV0DqI"
-   },
-   {
-    "title": "Mauja Hi Mauja",
-    "artist": "Mika Singh",
-    "year": 2007,
-    "q": "Mauja Hi Mauja Mika Singh",
-    "yt": "PaDaoNnOQaM"
-   },
-   {
-    "title": "Bole Chudiyan",
-    "artist": "Sonu Nigam, Alka Yagnik",
-    "year": 2001,
-    "q": "Bole Chudiyan Sonu Nigam, Alka Yagnik",
-    "yt": "5NBocxJV1g4"
-   },
-   {
-    "title": "London Thumakda",
-    "artist": "Labh Janjua, Sonu Kakkar",
-    "year": 2014,
-    "q": "London Thumakda Labh Janjua, Sonu Kakkar",
-    "yt": "udra3Mfw2oo"
-   },
-   {
-    "title": "Balle Balle",
-    "artist": "Daler Mehndi",
-    "year": 1998,
-    "q": "Balle Balle Daler Mehndi",
-    "yt": "KTE6S-Pmhpw"
-   },
-   {
-    "title": "Aaj Hai Sagai",
-    "artist": "Sonu Nigam, Alka Yagnik",
-    "year": 2002,
-    "q": "Aaj Hai Sagai Sonu Nigam, Alka Yagnik",
-    "yt": "BsjCHGfYNwk"
-   }
-  ]
- },
- {
-  "slug": "wedding-vhs",
-  "kind": "place",
-  "featured": null,
-  "name": "VHS",
-  "signHtml": "▶ PLAY&nbsp;&nbsp;SP",
-  "kicker": "cam 1 · tracking · sp mode",
-  "tagline": "Slow-motion garland exchange, date stamp burned into the corner.",
-  "glyph": "▣",
-  "accent": "#35e0f0",
-  "bg": "#04060c",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=VT323&display=swap",
-  "scene": "<div class=\"scan\" aria-hidden=\"true\"></div>\n      <div class=\"track-bar\" aria-hidden=\"true\"></div>\n      <div class=\"rec\" aria-hidden=\"true\"><b></b>REC</div>\n      <div class=\"stamp\" aria-hidden=\"true\">12 05 1997<br><small>SP  0:14:32</small></div>",
-  "site": {
-   "name": "VHS",
-   "tagline": "Slow-motion garland exchange, date stamp burned into the corner.",
-   "glyph": "▣",
-   "shuffle": true,
-   "searchFallback": true,
-   "ytPlaylist": "PL4OqLl4qvLkfzpGEFUAPmppzBjcNbp09i",
-   "maxSeconds": null
-  },
-  "tracks": [
-   {
-    "title": "Tujhe Dekha To",
-    "artist": "Kumar Sanu, Lata Mangeshkar",
-    "year": 1995,
-    "q": "Tujhe Dekha To Kumar Sanu, Lata Mangeshkar",
-    "yt": "cNV5hLSa9H8"
    },
    {
     "title": "Pehla Nasha",
     "artist": "Udit Narayan, Sadhana Sargam",
     "year": 1992,
     "q": "Pehla Nasha Udit Narayan, Sadhana Sargam",
-    "yt": "SBfPs-PMGTA"
+    "yt": null
    },
    {
-    "title": "Tum Paas Aaye",
+    "title": "Dhak Dhak Karne Laga",
+    "artist": "Anuradha Paudwal, Udit Narayan",
+    "year": 1992,
+    "q": "Dhak Dhak Karne Laga Anuradha Paudwal, Udit Narayan",
+    "yt": null
+   },
+   {
+    "title": "Jaadu Teri Nazar",
+    "artist": "Udit Narayan",
+    "year": 1993,
+    "q": "Jaadu Teri Nazar Udit Narayan",
+    "yt": null
+   },
+   {
+    "title": "Tu Cheez Badi Hai Mast",
+    "artist": "Udit Narayan, Kavita Krishnamurthy",
+    "year": 1994,
+    "q": "Tu Cheez Badi Hai Mast Udit Narayan, Kavita Krishnamurthy",
+    "yt": null
+   },
+   {
+    "title": "Ho Gaya Hai Tujhko To Pyar Hai",
+    "artist": "Udit Narayan, Lata Mangeshkar",
+    "year": 1995,
+    "q": "Ho Gaya Hai Tujhko To Pyar Hai Udit Narayan, Lata Mangeshkar",
+    "yt": null
+   },
+   {
+    "title": "Mehndi Laga Ke Rakhna",
+    "artist": "Udit Narayan, Lata Mangeshkar",
+    "year": 1995,
+    "q": "Mehndi Laga Ke Rakhna Udit Narayan, Lata Mangeshkar",
+    "yt": null
+   },
+   {
+    "title": "Ruk Ja O Dil Deewane",
+    "artist": "Udit Narayan",
+    "year": 1995,
+    "q": "Ruk Ja O Dil Deewane Udit Narayan",
+    "yt": null
+   },
+   {
+    "title": "Pardesi Pardesi",
     "artist": "Udit Narayan, Alka Yagnik",
-    "year": 1998,
-    "q": "Tum Paas Aaye Udit Narayan, Alka Yagnik",
-    "yt": "bKZTnnFU9HA"
+    "year": 1996,
+    "q": "Pardesi Pardesi Udit Narayan, Alka Yagnik",
+    "yt": null
    },
    {
     "title": "Kuch Kuch Hota Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Kuch Kuch Hota Hai Udit Narayan, Alka Yagnik",
-    "yt": "bKZTnnFU9HA"
+    "yt": null
+   },
+   {
+    "title": "Ladki Badi Anjani Hai",
+    "artist": "Udit Narayan, Alka Yagnik",
+    "year": 1998,
+    "q": "Ladki Badi Anjani Hai Udit Narayan, Alka Yagnik",
+    "yt": null
+   },
+   {
+    "title": "Chand Chhupa Badal Mein",
+    "artist": "Udit Narayan, Alka Yagnik",
+    "year": 1999,
+    "q": "Chand Chhupa Badal Mein Udit Narayan, Alka Yagnik",
+    "yt": "lqYUYuw0b1k"
+   },
+   {
+    "title": "Kaho Naa Pyaar Hai",
+    "artist": "Udit Narayan, Alka Yagnik",
+    "year": 2000,
+    "q": "Kaho Naa Pyaar Hai Udit Narayan, Alka Yagnik",
+    "yt": null
+   },
+   {
+    "title": "Main Nikla Gaddi Leke",
+    "artist": "Udit Narayan",
+    "year": 2001,
+    "q": "Main Nikla Gaddi Leke Udit Narayan",
+    "yt": null
+   },
+   {
+    "title": "Udja Kale Kawan",
+    "artist": "Udit Narayan",
+    "year": 2001,
+    "q": "Udja Kale Kawan Udit Narayan",
+    "yt": null
+   },
+   {
+    "title": "Idhar Chala Main Udhar Chala",
+    "artist": "Udit Narayan, Alka Yagnik",
+    "year": 2003,
+    "q": "Idhar Chala Main Udhar Chala Udit Narayan, Alka Yagnik",
+    "yt": null
+   },
+   {
+    "title": "Main Yahaan Hoon",
+    "artist": "Udit Narayan",
+    "year": 2004,
+    "q": "Main Yahaan Hoon Udit Narayan",
+    "yt": "yqtGt2IjyKg"
+   }
+  ]
+ },
+ {
+  "slug": "sonu-nigam",
+  "kind": "artist",
+  "featured": null,
+  "name": "Sonu Nigam",
+  "signHtml": "S I T A R A",
+  "kicker": "sonu nigam · border se kal ho naa ho tak",
+  "tagline": "The voice you played on the rooftop while the whole colony slept.",
+  "glyph": "☾",
+  "accent": "#ffcf87",
+  "bg": "#0a0e23",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Philosopher:wght@700&display=swap",
+  "scene": "<svg class=\"moon\" viewBox=\"0 0 160 160\" aria-hidden=\"true\">\n        <mask id=\"bite\"><rect width=\"160\" height=\"160\" fill=\"#fff\"/>\n          <circle cx=\"112\" cy=\"58\" r=\"52\" fill=\"#000\"/></mask>\n        <circle cx=\"80\" cy=\"80\" r=\"56\" fill=\"#cdd6ff\" mask=\"url(#bite)\" opacity=\".9\"/>\n      </svg>\n      <div class=\"stars\" aria-hidden=\"true\">\n        <i style=\"--x:6vw;--y:12vh;--d:0s\"></i><i style=\"--x:17vw;--y:28vh;--d:.9s\"></i>\n        <i style=\"--x:31vw;--y:9vh;--d:1.7s\"></i><i style=\"--x:44vw;--y:22vh;--d:.4s\"></i>\n        <i style=\"--x:57vw;--y:7vh;--d:2.3s\"></i><i style=\"--x:69vw;--y:31vh;--d:1.2s\"></i>\n        <i style=\"--x:83vw;--y:14vh;--d:.6s\"></i><i style=\"--x:93vw;--y:26vh;--d:2s\"></i>\n        <i style=\"--x:12vw;--y:44vh;--d:2.8s\"></i><i style=\"--x:51vw;--y:41vh;--d:1.5s\"></i>\n        <i style=\"--x:88vw;--y:48vh;--d:.2s\"></i>\n      </div>\n      <svg class=\"shoot\" viewBox=\"0 0 220 60\" aria-hidden=\"true\">\n        <path d=\"M218 4L60 46\" stroke=\"#e9edff\" stroke-width=\"2\" stroke-linecap=\"round\"\n              opacity=\".7\" stroke-dasharray=\"150 170\"/>\n        <circle cx=\"218\" cy=\"4\" r=\"3.4\" fill=\"#ffcf87\"/>\n      </svg>\n      <svg class=\"skyline\" viewBox=\"0 0 800 90\" preserveAspectRatio=\"none\" aria-hidden=\"true\">\n        <path d=\"M0 90V64h34V40h26v24h30V52h40V28h14V16h12v12h12v24h34v20h44V44h36V24h16v-8h12v8h14v20h30v28h48V58h40V36h28V20h12v16h16v22h34v14h46V48h30V30h18v-6h12v6h14v18h28v24h52V56h38V38h26v18h34v16h40z\"\n              fill=\"#05071a\"/>\n      </svg>",
+  "site": {
+   "name": "Sonu Nigam",
+   "tagline": "The voice you played on the rooftop while the whole colony slept.",
+   "glyph": "☾",
+   "shuffle": true,
+   "searchFallback": true,
+   "ytPlaylist": "PLoN8qntcwH4itUYa8LT1H8YKGLhLYdtWd",
+   "maxSeconds": null
+  },
+  "tracks": [
+   {
+    "title": "Sandese Aate Hain",
+    "artist": "Sonu Nigam, Roop Kumar Rathod",
+    "year": 1997,
+    "q": "Sandese Aate Hain Sonu Nigam, Roop Kumar Rathod",
+    "yt": null
+   },
+   {
+    "title": "Yeh Dil Deewana",
+    "artist": "Sonu Nigam",
+    "year": 1997,
+    "q": "Yeh Dil Deewana Sonu Nigam",
+    "yt": "_4Ft9UIKzwk"
+   },
+   {
+    "title": "Deewana Tera",
+    "artist": "Sonu Nigam",
+    "year": 1999,
+    "q": "Deewana Tera Sonu Nigam",
+    "yt": null
+   },
+   {
+    "title": "Satrangi Re",
+    "artist": "Sonu Nigam, Kavita Krishnamurthy",
+    "year": 1998,
+    "q": "Satrangi Re Sonu Nigam, Kavita Krishnamurthy",
+    "yt": null
    },
    {
     "title": "Suraj Hua Maddham",
@@ -511,341 +209,369 @@ window.STATIONS = [
     "yt": "iqNS2Qe4pp0"
    },
    {
-    "title": "Tere Liye",
-    "artist": "Lata Mangeshkar, Roop Kumar Rathod",
+    "title": "Tanhayee",
+    "artist": "Sonu Nigam",
+    "year": 2001,
+    "q": "Tanhayee Sonu Nigam",
+    "yt": "ikZp7S19-eo"
+   },
+   {
+    "title": "Saathiya",
+    "artist": "Sonu Nigam",
+    "year": 2002,
+    "q": "Saathiya Sonu Nigam",
+    "yt": "6vMEtXqLh1A"
+   },
+   {
+    "title": "Kal Ho Naa Ho",
+    "artist": "Sonu Nigam",
+    "year": 2003,
+    "q": "Kal Ho Naa Ho Sonu Nigam",
+    "yt": "g0eO74UmRBs"
+   },
+   {
+    "title": "Har Ghadi Badal Rahi Hai",
+    "artist": "Sonu Nigam",
+    "year": 2003,
+    "q": "Har Ghadi Badal Rahi Hai Sonu Nigam",
+    "yt": null
+   },
+   {
+    "title": "Maahi Ve",
+    "artist": "Sonu Nigam, Sadhana Sargam",
+    "year": 2003,
+    "q": "Maahi Ve Sonu Nigam, Sadhana Sargam",
+    "yt": null
+   },
+   {
+    "title": "Main Hoon Na",
+    "artist": "Sonu Nigam",
     "year": 2004,
-    "q": "Tere Liye Lata Mangeshkar, Roop Kumar Rathod",
-    "yt": "jo6iAkSoraY"
+    "q": "Main Hoon Na Sonu Nigam",
+    "yt": "Op_UWVBWj3c"
    },
    {
-    "title": "Bahon Ke Darmiyan",
-    "artist": "Kumar Sanu, Kavita Krishnamurthy",
-    "year": 1996,
-    "q": "Bahon Ke Darmiyan Kumar Sanu, Kavita Krishnamurthy",
-    "yt": "kHYYfKAQdHA"
-   },
-   {
-    "title": "Aankhon Ki Gustakhiyan",
-    "artist": "Kumar Sanu, Kavita Krishnamurthy",
-    "year": 1999,
-    "q": "Aankhon Ki Gustakhiyan Kumar Sanu, Kavita Krishnamurthy",
-    "yt": "xgMMfm1h_Go"
-   },
-   {
-    "title": "Tadap Tadap",
-    "artist": "K. K.",
-    "year": 1999,
-    "q": "Tadap Tadap K. K.",
-    "yt": "YXKVgsfU_xw"
-   },
-   {
-    "title": "Chand Chhupa Badal Mein",
-    "artist": "Udit Narayan, Alka Yagnik",
-    "year": 1999,
-    "q": "Chand Chhupa Badal Mein Udit Narayan, Alka Yagnik",
+    "title": "Do Pal",
+    "artist": "Sonu Nigam, Lata Mangeshkar",
+    "year": 2004,
+    "q": "Do Pal Sonu Nigam, Lata Mangeshkar",
     "yt": null
    },
    {
-    "title": "Zara Sa Jhoom Loon Main",
-    "artist": "Abhijeet, Asha Bhosle",
-    "year": 1995,
-    "q": "Zara Sa Jhoom Loon Main Abhijeet, Asha Bhosle",
-    "yt": "96YVQBjrtWE"
+    "title": "Sau Dard",
+    "artist": "Sonu Nigam",
+    "year": 2006,
+    "q": "Sau Dard Sonu Nigam",
+    "yt": "6tFtRnkhSe4"
    },
    {
-    "title": "Ho Gaya Hai Tujhko",
-    "artist": "Udit Narayan, Lata Mangeshkar",
-    "year": 1995,
-    "q": "Ho Gaya Hai Tujhko Udit Narayan, Lata Mangeshkar",
-    "yt": "hw_HpTI_Wkw"
+    "title": "Kabhi Alvida Naa Kehna",
+    "artist": "Sonu Nigam",
+    "year": 2006,
+    "q": "Kabhi Alvida Naa Kehna Sonu Nigam",
+    "yt": "nmTp_esz_Q8"
    },
    {
-    "title": "Dil To Pagal Hai",
-    "artist": "Lata Mangeshkar, Udit Narayan",
-    "year": 1997,
-    "q": "Dil To Pagal Hai Lata Mangeshkar, Udit Narayan",
-    "yt": "-NCdeldQLFc"
+    "title": "In Lamhon Ke Daaman Mein",
+    "artist": "Sonu Nigam, Madhushree",
+    "year": 2008,
+    "q": "In Lamhon Ke Daaman Mein Sonu Nigam, Madhushree",
+    "yt": null
    },
    {
-    "title": "Are Re Are",
-    "artist": "Udit Narayan, Lata Mangeshkar",
-    "year": 1997,
-    "q": "Are Re Are Udit Narayan, Lata Mangeshkar",
-    "yt": "_0iRYwdj2Cc"
+    "title": "Guzarish",
+    "artist": "Sonu Nigam, Javed Ali",
+    "year": 2008,
+    "q": "Guzarish Sonu Nigam, Javed Ali",
+    "yt": null
    },
    {
-    "title": "Koi Mil Gaya",
-    "artist": "Udit Narayan, Alka Yagnik",
-    "year": 1998,
-    "q": "Koi Mil Gaya Udit Narayan, Alka Yagnik",
-    "yt": "Foh01tG09Nk"
+    "title": "Abhi Mujh Mein Kahin",
+    "artist": "Sonu Nigam",
+    "year": 2012,
+    "q": "Abhi Mujh Mein Kahin Sonu Nigam",
+    "yt": "oWKgpB2zpgw"
    },
    {
-    "title": "Sandese Aate Hain",
-    "artist": "Sonu Nigam, Roop Kumar Rathod",
-    "year": 1997,
-    "q": "Sandese Aate Hain Sonu Nigam, Roop Kumar Rathod",
-    "yt": "yccGxvIydKg"
-   },
-   {
-    "title": "Pyar Hua Chupke Se",
-    "artist": "Kavita Krishnamurthy",
-    "year": 1994,
-    "q": "Pyar Hua Chupke Se Kavita Krishnamurthy",
-    "yt": "iQMmyhezfg4"
-   },
-   {
-    "title": "Ae Ajnabi",
-    "artist": "Udit Narayan, Mahalaxmi Iyer",
-    "year": 1998,
-    "q": "Ae Ajnabi Udit Narayan, Mahalaxmi Iyer",
-    "yt": "TdUu05Svkl8"
+    "title": "Suno Na Sangemarmar",
+    "artist": "Sonu Nigam",
+    "year": 2014,
+    "q": "Suno Na Sangemarmar Sonu Nigam",
+    "yt": null
    }
   ]
  },
  {
-  "slug": "ghazal",
-  "kind": "genre",
+  "slug": "arijit-singh",
+  "kind": "artist",
   "featured": null,
-  "name": "Mehfil",
-  "signHtml": "M E H F I L",
-  "kicker": "ghazal · nazm · shair",
-  "tagline": "Wine-dark room, one harmonium, and a couplet that ruins you.",
-  "glyph": "۞",
-  "accent": "#c9a227",
-  "bg": "#120609",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap",
-  "scene": "<svg class=\"arch\" viewBox=\"0 0 400 520\" aria-hidden=\"true\">\n        <path d=\"M200 12c78 0 138 62 138 140v356H62V152C62 74 122 12 200 12z\"\n              fill=\"none\" stroke=\"#c9a22733\" stroke-width=\"2\"/>\n        <path d=\"M200 52c56 0 100 46 100 104v340H100V156c0-58 44-104 100-104z\"\n              fill=\"none\" stroke=\"#c9a22722\" stroke-width=\"1.5\"/>\n      </svg>\n      <div class=\"candle\" aria-hidden=\"true\"><span class=\"flame flicker\"></span></div>\n      <div class=\"smoke\" aria-hidden=\"true\"></div>",
+  "name": "Arijit Singh",
+  "signHtml": "R A A B T A",
+  "kicker": "arijit singh · late night · earphones in",
+  "tagline": "One unread chat, city rain, and a voice that reads it out loud.",
+  "glyph": "☂",
+  "accent": "#8f7bff",
+  "bg": "#06070d",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&family=Syne:wght@700&display=swap",
+  "scene": "<div class=\"glass\" aria-hidden=\"true\"></div>\n      <div class=\"rain\" aria-hidden=\"true\">\n        <i style=\"--x:9vw;--d:0s;--s:2.6s\"></i><i style=\"--x:21vw;--d:1.1s;--s:3.1s\"></i>\n        <i style=\"--x:34vw;--d:.5s;--s:2.4s\"></i><i style=\"--x:47vw;--d:1.7s;--s:2.9s\"></i>\n        <i style=\"--x:61vw;--d:.9s;--s:3.3s\"></i><i style=\"--x:74vw;--d:.2s;--s:2.5s\"></i>\n        <i style=\"--x:88vw;--d:1.4s;--s:3s\"></i>\n      </div>\n      <div class=\"bokeh\" aria-hidden=\"true\">\n        <b style=\"--x:14vw;--y:64vh;--c:#45e0c8\"></b><b style=\"--x:29vw;--y:74vh;--c:#8f7bff\"></b>\n        <b style=\"--x:52vw;--y:68vh;--c:#ff7bac\"></b><b style=\"--x:67vw;--y:78vh;--c:#45e0c8\"></b>\n        <b style=\"--x:84vw;--y:62vh;--c:#8f7bff\"></b>\n      </div>",
   "site": {
-   "name": "Mehfil",
-   "tagline": "Wine-dark room, one harmonium, and a couplet that ruins you.",
-   "glyph": "۞",
+   "name": "Arijit Singh",
+   "tagline": "One unread chat, city rain, and a voice that reads it out loud.",
+   "glyph": "☂",
    "shuffle": true,
    "searchFallback": true,
-   "ytPlaylist": "PLJeNQvgQ4Sl-WJX41V39pPd3oQxKNc7EA",
-   "maxSeconds": 1800
-  },
-  "tracks": [
-   {
-    "title": "Ranjish Hi Sahi",
-    "artist": "Mehdi Hassan",
-    "year": null,
-    "q": "Ranjish Hi Sahi Mehdi Hassan",
-    "yt": "dOtqwZdhBkc"
-   },
-   {
-    "title": "Rafta Rafta Woh Meri",
-    "artist": "Mehdi Hassan",
-    "year": null,
-    "q": "Rafta Rafta Woh Meri Mehdi Hassan",
-    "yt": "Y01l7QTtIoE"
-   },
-   {
-    "title": "Mujhe Tum Nazar Se",
-    "artist": "Mehdi Hassan",
-    "year": null,
-    "q": "Mujhe Tum Nazar Se Mehdi Hassan",
-    "yt": "6sMEV_Hvv-g"
-   },
-   {
-    "title": "Ab Ke Hum Bichhde",
-    "artist": "Mehdi Hassan",
-    "year": null,
-    "q": "Ab Ke Hum Bichhde Mehdi Hassan",
-    "yt": null
-   },
-   {
-    "title": "Chupke Chupke Raat Din",
-    "artist": "Ghulam Ali",
-    "year": null,
-    "q": "Chupke Chupke Raat Din Ghulam Ali",
-    "yt": "MWjaK_nW72E"
-   },
-   {
-    "title": "Hungama Hai Kyon Barpa",
-    "artist": "Ghulam Ali",
-    "year": null,
-    "q": "Hungama Hai Kyon Barpa Ghulam Ali",
-    "yt": "xQsMn1kmJs4"
-   },
-   {
-    "title": "Aawargi",
-    "artist": "Ghulam Ali",
-    "year": null,
-    "q": "Aawargi Ghulam Ali",
-    "yt": "pZWqn3BC17Q"
-   },
-   {
-    "title": "Tum Itna Jo Muskura Rahe Ho",
-    "artist": "Jagjit Singh",
-    "year": 1982,
-    "q": "Tum Itna Jo Muskura Rahe Ho Jagjit Singh",
-    "yt": "In3yneec2hk"
-   },
-   {
-    "title": "Ahista Ahista",
-    "artist": "Jagjit Singh",
-    "year": null,
-    "q": "Ahista Ahista Jagjit Singh",
-    "yt": "vukyvBndFR8"
-   },
-   {
-    "title": "Woh Kagaz Ki Kashti",
-    "artist": "Jagjit Singh",
-    "year": null,
-    "q": "Woh Kagaz Ki Kashti Jagjit Singh",
-    "yt": "tB0hmrY_s0U"
-   },
-   {
-    "title": "Baat Niklegi To Phir",
-    "artist": "Jagjit Singh",
-    "year": null,
-    "q": "Baat Niklegi To Phir Jagjit Singh",
-    "yt": "LUIeuo2PJPA"
-   },
-   {
-    "title": "Tere Aane Ki Jab Khabar Mehke",
-    "artist": "Jagjit Singh",
-    "year": null,
-    "q": "Tere Aane Ki Jab Khabar Mehke Jagjit Singh",
-    "yt": "-G_Xi_x4g1s"
-   },
-   {
-    "title": "Hoshwalon Ko Khabar Kya",
-    "artist": "Jagjit Singh",
-    "year": 1999,
-    "q": "Hoshwalon Ko Khabar Kya Jagjit Singh",
-    "yt": "hZuwe72Rtcc"
-   },
-   {
-    "title": "Chithi Na Koi Sandesh",
-    "artist": "Jagjit Singh",
-    "year": 1998,
-    "q": "Chithi Na Koi Sandesh Jagjit Singh",
-    "yt": "sBBzwoSngGg"
-   },
-   {
-    "title": "Aaj Jaane Ki Zid Na Karo",
-    "artist": "Farida Khanum",
-    "year": null,
-    "q": "Aaj Jaane Ki Zid Na Karo Farida Khanum",
-    "yt": "CfUDuYAasjE"
-   },
-   {
-    "title": "Dil Cheez Kya Hai",
-    "artist": "Asha Bhosle",
-    "year": 1981,
-    "q": "Dil Cheez Kya Hai Asha Bhosle",
-    "yt": "eFcs3p1moMA"
-   },
-   {
-    "title": "In Aankhon Ki Masti",
-    "artist": "Asha Bhosle",
-    "year": 1981,
-    "q": "In Aankhon Ki Masti Asha Bhosle",
-    "yt": "yjYE41bYnUM"
-   },
-   {
-    "title": "Chandi Jaisa Rang",
-    "artist": "Pankaj Udhas",
-    "year": null,
-    "q": "Chandi Jaisa Rang Pankaj Udhas",
-    "yt": "G4NAKKy5k0g"
-   },
-   {
-    "title": "Kabhi Kisi Ko Muqammal",
-    "artist": "Bhupinder Singh",
-    "year": 1982,
-    "q": "Kabhi Kisi Ko Muqammal Bhupinder Singh",
-    "yt": null
-   },
-   {
-    "title": "Yeh Dhuan Sa Kahan Se Uthta Hai",
-    "artist": "Jagjit Singh",
-    "year": null,
-    "q": "Yeh Dhuan Sa Kahan Se Uthta Hai Jagjit Singh",
-    "yt": "thOylhHN-Bc"
-   }
-  ]
- },
- {
-  "slug": "bollywood-90s",
-  "kind": "genre",
-  "featured": 2,
-  "name": "Cassette",
-  "signHtml": "T-SERIES&nbsp;&nbsp;90s",
-  "kicker": "side a · dolby · rewind with a pencil",
-  "tagline": "One cassette, both sides, played until the tape stretched.",
-  "glyph": "▤",
-  "accent": "#ff2e88",
-  "bg": "#0a0514",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=Monoton&family=Space+Grotesk:wght@400;600&display=swap",
-  "scene": "<svg class=\"tape\" viewBox=\"0 0 320 200\" aria-hidden=\"true\">\n        <rect x=\"6\" y=\"6\" width=\"308\" height=\"188\" rx=\"10\" fill=\"#ffffff10\" stroke=\"#ff2e88aa\"/>\n        <rect x=\"30\" y=\"26\" width=\"260\" height=\"66\" rx=\"4\" fill=\"#22d3ee12\" stroke=\"#22d3ee33\"/>\n        <g class=\"spin\" style=\"transform-origin:100px 138px\">\n          <circle cx=\"100\" cy=\"138\" r=\"34\" fill=\"none\" stroke=\"#ff2e8866\" stroke-width=\"3\"/>\n          <g stroke=\"#ff2e8899\" stroke-width=\"4\">\n            <path d=\"M100 108v14\"/><path d=\"M100 154v14\"/><path d=\"M70 138h14\"/><path d=\"M116 138h14\"/>\n          </g>\n        </g>\n        <g class=\"spin\" style=\"transform-origin:220px 138px\">\n          <circle cx=\"220\" cy=\"138\" r=\"34\" fill=\"none\" stroke=\"#22d3ee66\" stroke-width=\"3\"/>\n          <g stroke=\"#22d3ee99\" stroke-width=\"4\">\n            <path d=\"M220 108v14\"/><path d=\"M220 154v14\"/><path d=\"M190 138h14\"/><path d=\"M236 138h14\"/>\n          </g>\n        </g>\n        <rect x=\"128\" y=\"120\" width=\"64\" height=\"36\" fill=\"#00000055\" stroke=\"#ffffff22\"/>\n      </svg>\n      <div class=\"grid\" aria-hidden=\"true\"></div>",
-  "site": {
-   "name": "Cassette",
-   "tagline": "One cassette, both sides, played until the tape stretched.",
-   "glyph": "▤",
-   "shuffle": true,
-   "searchFallback": true,
-   "ytPlaylist": "PLinVjP-aRmlukMwFfIb5u0xA-M_Be3nC5",
+   "ytPlaylist": "PLizEqzsgQvPp8kTHGV9o6bjkz6t0TJtjm",
    "maxSeconds": null
   },
   "tracks": [
    {
-    "title": "Ae Mere Humsafar",
-    "artist": "Udit Narayan, Alka Yagnik",
-    "year": 1988,
-    "q": "Ae Mere Humsafar Udit Narayan, Alka Yagnik",
-    "yt": "sWqjZpBtcxc"
+    "title": "Phir Mohabbat",
+    "artist": "Arijit Singh, Mithoon",
+    "year": 2011,
+    "q": "Phir Mohabbat Arijit Singh, Mithoon",
+    "yt": null
    },
    {
-    "title": "Papa Kehte Hain",
-    "artist": "Udit Narayan",
-    "year": 1988,
-    "q": "Papa Kehte Hain Udit Narayan",
-    "yt": "FEvBiayarlc"
+    "title": "Duaa",
+    "artist": "Arijit Singh, Nandini Srikar",
+    "year": 2012,
+    "q": "Duaa Arijit Singh, Nandini Srikar",
+    "yt": null
    },
    {
-    "title": "Tumse Milne Ki Tamanna",
-    "artist": "S. P. Balasubrahmanyam",
+    "title": "Raabta",
+    "artist": "Arijit Singh, Hamsika Iyer",
+    "year": 2012,
+    "q": "Raabta Arijit Singh, Hamsika Iyer",
+    "yt": "piUHBTXsoiY"
+   },
+   {
+    "title": "Tum Hi Ho",
+    "artist": "Arijit Singh",
+    "year": 2013,
+    "q": "Tum Hi Ho Arijit Singh",
+    "yt": "fsiPzT50ZiM"
+   },
+   {
+    "title": "Chahun Main Ya Naa",
+    "artist": "Arijit Singh, Palak Muchhal",
+    "year": 2013,
+    "q": "Chahun Main Ya Naa Arijit Singh, Palak Muchhal",
+    "yt": null
+   },
+   {
+    "title": "Ilahi",
+    "artist": "Arijit Singh",
+    "year": 2013,
+    "q": "Ilahi Arijit Singh",
+    "yt": null
+   },
+   {
+    "title": "Muskurane",
+    "artist": "Arijit Singh",
+    "year": 2014,
+    "q": "Muskurane Arijit Singh",
+    "yt": null
+   },
+   {
+    "title": "Samjhawan",
+    "artist": "Arijit Singh, Shreya Ghoshal",
+    "year": 2014,
+    "q": "Samjhawan Arijit Singh, Shreya Ghoshal",
+    "yt": null
+   },
+   {
+    "title": "Manwa Laage",
+    "artist": "Arijit Singh, Shreya Ghoshal",
+    "year": 2014,
+    "q": "Manwa Laage Arijit Singh, Shreya Ghoshal",
+    "yt": null
+   },
+   {
+    "title": "Sooraj Dooba Hain",
+    "artist": "Arijit Singh, Aditi Singh Sharma",
+    "year": 2015,
+    "q": "Sooraj Dooba Hain Arijit Singh, Aditi Singh Sharma",
+    "yt": null
+   },
+   {
+    "title": "Gerua",
+    "artist": "Arijit Singh, Antara Mitra",
+    "year": 2015,
+    "q": "Gerua Arijit Singh, Antara Mitra",
+    "yt": null
+   },
+   {
+    "title": "Janam Janam",
+    "artist": "Arijit Singh, Antara Mitra",
+    "year": 2015,
+    "q": "Janam Janam Arijit Singh, Antara Mitra",
+    "yt": null
+   },
+   {
+    "title": "Ae Dil Hai Mushkil",
+    "artist": "Arijit Singh",
+    "year": 2016,
+    "q": "Ae Dil Hai Mushkil Arijit Singh",
+    "yt": "wx89ZdkwtS8"
+   },
+   {
+    "title": "Channa Mereya",
+    "artist": "Arijit Singh",
+    "year": 2016,
+    "q": "Channa Mereya Arijit Singh",
+    "yt": "FO9rBogdRRQ"
+   },
+   {
+    "title": "Enna Sona",
+    "artist": "Arijit Singh, Shreya Ghoshal",
+    "year": 2017,
+    "q": "Enna Sona Arijit Singh, Shreya Ghoshal",
+    "yt": null
+   },
+   {
+    "title": "Zaalima",
+    "artist": "Arijit Singh, Harshdeep Kaur",
+    "year": 2017,
+    "q": "Zaalima Arijit Singh, Harshdeep Kaur",
+    "yt": "eXkHvT--DBU"
+   },
+   {
+    "title": "Hawayein",
+    "artist": "Arijit Singh",
+    "year": 2017,
+    "q": "Hawayein Arijit Singh",
+    "yt": null
+   },
+   {
+    "title": "Tera Yaar Hoon Main",
+    "artist": "Arijit Singh",
+    "year": 2018,
+    "q": "Tera Yaar Hoon Main Arijit Singh",
+    "yt": null
+   },
+   {
+    "title": "Khairiyat",
+    "artist": "Arijit Singh",
+    "year": 2019,
+    "q": "Khairiyat Arijit Singh",
+    "yt": "qTAegUy7mo4"
+   },
+   {
+    "title": "Kesariya",
+    "artist": "Arijit Singh",
+    "year": 2022,
+    "q": "Kesariya Arijit Singh",
+    "yt": "6mr4cYJ7yew"
+   }
+  ]
+ },
+ {
+  "slug": "kumar-sanu",
+  "kind": "artist",
+  "featured": null,
+  "name": "Kumar Sanu",
+  "signHtml": "A A S H I Q U I",
+  "kicker": "kumar sanu · the melody king",
+  "tagline": "Side A of a tape bought in 1990, still holding its pitch.",
+  "glyph": "♪",
+  "accent": "#e3b04b",
+  "bg": "#17100a",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=Jost:wght@300;500&family=Limelight&display=swap",
+  "scene": "<svg class=\"vinyl\" viewBox=\"0 0 360 360\" aria-hidden=\"true\">\n        <g class=\"spin\">\n          <circle cx=\"180\" cy=\"180\" r=\"168\" fill=\"#0d0906\" stroke=\"#e3b04b44\" stroke-width=\"2\"/>\n          <g fill=\"none\" stroke=\"#e3b04b\" opacity=\".16\">\n            <circle cx=\"180\" cy=\"180\" r=\"152\"/><circle cx=\"180\" cy=\"180\" r=\"140\"/>\n            <circle cx=\"180\" cy=\"180\" r=\"128\"/><circle cx=\"180\" cy=\"180\" r=\"116\"/>\n            <circle cx=\"180\" cy=\"180\" r=\"104\"/>\n          </g>\n          <circle cx=\"180\" cy=\"180\" r=\"52\" fill=\"#c96f4a\" stroke=\"#e3b04b66\" stroke-width=\"2\"/>\n          <circle cx=\"180\" cy=\"180\" r=\"6\" fill=\"#17100a\" stroke=\"#e3b04b88\"/>\n          <path d=\"M180 132a48 48 0 0 1 44 66\" stroke=\"#f5ead8\" stroke-width=\"3\" fill=\"none\" opacity=\".35\"/>\n        </g>\n      </svg>\n      <div class=\"glow\" aria-hidden=\"true\"></div>\n      <div class=\"motes\" aria-hidden=\"true\">\n        <b style=\"--x:12vw;--d:0s\"></b><b style=\"--x:31vw;--d:4.2s\"></b>\n        <b style=\"--x:58vw;--d:2.1s\"></b><b style=\"--x:79vw;--d:6s\"></b>\n        <b style=\"--x:91vw;--d:3.4s\"></b>\n      </div>",
+  "site": {
+   "name": "Kumar Sanu",
+   "tagline": "Side A of a tape bought in 1990, still holding its pitch.",
+   "glyph": "♪",
+   "shuffle": true,
+   "searchFallback": true,
+   "ytPlaylist": "PLinVjP-aRmluiFicvkJtzUsm18L556cpK",
+   "maxSeconds": null
+  },
+  "tracks": [
+   {
+    "title": "Ab Tere Bin Ji Lenge Hum",
+    "artist": "Kumar Sanu",
+    "year": 1990,
+    "q": "Ab Tere Bin Ji Lenge Hum Kumar Sanu",
+    "yt": null
+   },
+   {
+    "title": "Dheere Dheere Se Meri Zindagi",
+    "artist": "Kumar Sanu, Anuradha Paudwal",
+    "year": 1990,
+    "q": "Dheere Dheere Se Meri Zindagi Kumar Sanu, Anuradha Paudwal",
+    "yt": null
+   },
+   {
+    "title": "Bas Ek Sanam Chahiye",
+    "artist": "Kumar Sanu",
+    "year": 1990,
+    "q": "Bas Ek Sanam Chahiye Kumar Sanu",
+    "yt": null
+   },
+   {
+    "title": "Saanson Ki Zaroorat Hai Jaise",
+    "artist": "Kumar Sanu",
+    "year": 1990,
+    "q": "Saanson Ki Zaroorat Hai Jaise Kumar Sanu",
+    "yt": null
+   },
+   {
+    "title": "Mera Dil Bhi Kitna Pagal Hai",
+    "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1991,
-    "q": "Tumse Milne Ki Tamanna S. P. Balasubrahmanyam",
-    "yt": "thjRNwjmAdQ"
+    "q": "Mera Dil Bhi Kitna Pagal Hai Kumar Sanu, Alka Yagnik",
+    "yt": "DIvHIjOYq3U"
    },
    {
-    "title": "Bahut Pyar Karte Hain",
-    "artist": "Anuradha Paudwal",
+    "title": "Dil Hai Ke Manta Nahin",
+    "artist": "Kumar Sanu, Anuradha Paudwal",
     "year": 1991,
-    "q": "Bahut Pyar Karte Hain Anuradha Paudwal",
-    "yt": "ycj1FwxiZwc"
+    "q": "Dil Hai Ke Manta Nahin Kumar Sanu, Anuradha Paudwal",
+    "yt": "U0qBRoeQa-g"
    },
    {
-    "title": "Jaadu Teri Nazar",
-    "artist": "Udit Narayan",
-    "year": 1993,
-    "q": "Jaadu Teri Nazar Udit Narayan",
-    "yt": "n_oP9Onj0r0"
+    "title": "Sochenge Tumhe Pyar",
+    "artist": "Kumar Sanu",
+    "year": 1992,
+    "q": "Sochenge Tumhe Pyar Kumar Sanu",
+    "yt": null
    },
    {
-    "title": "Tu Mere Samne",
-    "artist": "Lata Mangeshkar, Udit Narayan",
-    "year": 1993,
-    "q": "Tu Mere Samne Lata Mangeshkar, Udit Narayan",
-    "yt": "0-7RHSbyZGw"
+    "title": "Aisi Deewangi",
+    "artist": "Kumar Sanu, Vinod Rathod",
+    "year": 1992,
+    "q": "Aisi Deewangi Kumar Sanu, Vinod Rathod",
+    "yt": null
+   },
+   {
+    "title": "Wada Raha Sanam",
+    "artist": "Kumar Sanu",
+    "year": 1992,
+    "q": "Wada Raha Sanam Kumar Sanu",
+    "yt": null
    },
    {
     "title": "Baazigar O Baazigar",
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1993,
     "q": "Baazigar O Baazigar Kumar Sanu, Alka Yagnik",
-    "yt": "PUO7_Gi6ipg"
+    "yt": "dPElPtPAz7Y"
    },
    {
-    "title": "Yeh Kaali Kaali Aankhen",
-    "artist": "Kumar Sanu, Anu Malik",
+    "title": "Yeh Kaali Kaali Aankhein",
+    "artist": "Kumar Sanu",
     "year": 1993,
-    "q": "Yeh Kaali Kaali Aankhen Kumar Sanu, Anu Malik",
-    "yt": "KC-DuX51NY0"
+    "q": "Yeh Kaali Kaali Aankhein Kumar Sanu",
+    "yt": null
+   },
+   {
+    "title": "Kitabein Bahut Si",
+    "artist": "Kumar Sanu, Asha Bhosle",
+    "year": 1993,
+    "q": "Kitabein Bahut Si Kumar Sanu, Asha Bhosle",
+    "yt": null
    },
    {
     "title": "Chura Ke Dil Mera",
@@ -855,67 +581,32 @@ window.STATIONS = [
     "yt": "Yqj1_V90KJo"
    },
    {
-    "title": "Aisi Deewangi",
-    "artist": "Kumar Sanu, Vinod Rathod",
-    "year": 1992,
-    "q": "Aisi Deewangi Kumar Sanu, Vinod Rathod",
-    "yt": "GwpqME_Cmpc"
-   },
-   {
-    "title": "Sochenge Tumhe Pyar",
+    "title": "Ek Ladki Ko Dekha",
     "artist": "Kumar Sanu",
-    "year": 1992,
-    "q": "Sochenge Tumhe Pyar Kumar Sanu",
-    "yt": "lFdSi01tpYM"
+    "year": 1994,
+    "q": "Ek Ladki Ko Dekha Kumar Sanu",
+    "yt": "fTauOK8J-U8"
    },
    {
-    "title": "Dil Hai Ke Manta Nahin",
-    "artist": "Kumar Sanu, Anuradha Paudwal",
-    "year": 1991,
-    "q": "Dil Hai Ke Manta Nahin Kumar Sanu, Anuradha Paudwal",
-    "yt": "C9efe0rjDlE"
+    "title": "Kuch Na Kaho",
+    "artist": "Kumar Sanu",
+    "year": 1994,
+    "q": "Kuch Na Kaho Kumar Sanu",
+    "yt": null
    },
    {
-    "title": "Pehla Nasha",
-    "artist": "Udit Narayan, Sadhana Sargam",
-    "year": 1992,
-    "q": "Pehla Nasha Udit Narayan, Sadhana Sargam",
-    "yt": "SBfPs-PMGTA"
-   },
-   {
-    "title": "Tujhe Dekha To",
-    "artist": "Kumar Sanu, Lata Mangeshkar",
-    "year": 1995,
-    "q": "Tujhe Dekha To Kumar Sanu, Lata Mangeshkar",
-    "yt": "cNV5hLSa9H8"
-   },
-   {
-    "title": "Rangeela Re",
-    "artist": "Asha Bhosle",
-    "year": 1995,
-    "q": "Rangeela Re Asha Bhosle",
-    "yt": "i65HIFzIfec"
-   },
-   {
-    "title": "Pardesi Pardesi",
-    "artist": "Udit Narayan, Alka Yagnik",
+    "title": "Bahon Ke Darmiyan",
+    "artist": "Kumar Sanu, Kavita Krishnamurthy",
     "year": 1996,
-    "q": "Pardesi Pardesi Udit Narayan, Alka Yagnik",
-    "yt": "Swlik5Hfu-A"
+    "q": "Bahon Ke Darmiyan Kumar Sanu, Kavita Krishnamurthy",
+    "yt": null
    },
    {
-    "title": "Kuch Kuch Hota Hai",
-    "artist": "Udit Narayan, Alka Yagnik",
-    "year": 1998,
-    "q": "Kuch Kuch Hota Hai Udit Narayan, Alka Yagnik",
-    "yt": "bKZTnnFU9HA"
-   },
-   {
-    "title": "Akele Hain To Kya Gham Hai",
-    "artist": "Udit Narayan, Alka Yagnik",
-    "year": 1988,
-    "q": "Akele Hain To Kya Gham Hai Udit Narayan, Alka Yagnik",
-    "yt": "QxpPkGSmCqY"
+    "title": "Do Dil Mil Rahe Hain",
+    "artist": "Kumar Sanu",
+    "year": 1997,
+    "q": "Do Dil Mil Rahe Hain Kumar Sanu",
+    "yt": "eKIpHujNdX0"
    },
    {
     "title": "Meri Mehbooba",
@@ -925,808 +616,18 @@ window.STATIONS = [
     "yt": null
    },
    {
-    "title": "Kuch Na Kaho",
+    "title": "Ek Din Aap Yun Humko Mil Jayenge",
+    "artist": "Kumar Sanu, Alka Yagnik",
+    "year": 1997,
+    "q": "Ek Din Aap Yun Humko Mil Jayenge Kumar Sanu, Alka Yagnik",
+    "yt": null
+   },
+   {
+    "title": "Tumhe Jo Maine Dekha",
     "artist": "Kumar Sanu",
-    "year": 1994,
-    "q": "Kuch Na Kaho Kumar Sanu",
-    "yt": "Kidtrrn4aUM"
-   }
-  ]
- },
- {
-  "slug": "retro-rock",
-  "kind": "genre",
-  "featured": null,
-  "name": "Valve",
-  "signHtml": "VALVE&nbsp;&nbsp;RADIO",
-  "kicker": "tolex · tubes · vu meter",
-  "tagline": "One amp, warm glass tubes, and the riffs your father still air-guitars.",
-  "glyph": "⚡",
-  "accent": "#e8b33c",
-  "bg": "#0c0b09",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;500&display=swap",
-  "scene": "<div class=\"grille\" aria-hidden=\"true\"></div>\n      <div class=\"glow\" aria-hidden=\"true\"></div>\n      <svg class=\"vu\" viewBox=\"0 0 240 130\" aria-hidden=\"true\">\n        <rect x=\"2\" y=\"2\" width=\"236\" height=\"126\" rx=\"6\" fill=\"#e8b33c0e\" stroke=\"#e8b33c44\"/>\n        <path d=\"M28 104a92 92 0 0 1 184 0\" fill=\"none\" stroke=\"#e8b33c55\" stroke-width=\"2\"/>\n        <path d=\"M186 40l22-14\" stroke=\"#c0392b88\" stroke-width=\"2\"/>\n        <g class=\"needle\"><path d=\"M120 104V34\" stroke=\"#f0e7d6\" stroke-width=\"2.5\"/></g>\n        <circle cx=\"120\" cy=\"104\" r=\"6\" fill=\"#e8b33c\"/>\n      </svg>",
-  "site": {
-   "name": "Valve",
-   "tagline": "One amp, warm glass tubes, and the riffs your father still air-guitars.",
-   "glyph": "⚡",
-   "shuffle": true,
-   "searchFallback": true,
-   "ytPlaylist": "PL9xheEG-eSrSzt05VVCLfNRBjnNmRZtbx",
-   "maxSeconds": null
-  },
-  "tracks": [
-   {
-    "title": "Hotel California",
-    "artist": "Eagles",
-    "year": 1976,
-    "q": "Hotel California Eagles",
-    "yt": "09839DpTctU"
-   },
-   {
-    "title": "Stairway to Heaven",
-    "artist": "Led Zeppelin",
-    "year": 1971,
-    "q": "Stairway to Heaven Led Zeppelin",
-    "yt": "QkF3oxziUI4"
-   },
-   {
-    "title": "Whole Lotta Love",
-    "artist": "Led Zeppelin",
-    "year": 1969,
-    "q": "Whole Lotta Love Led Zeppelin",
-    "yt": "HQmmM_qwG4k"
-   },
-   {
-    "title": "Comfortably Numb",
-    "artist": "Pink Floyd",
-    "year": 1979,
-    "q": "Comfortably Numb Pink Floyd",
-    "yt": "_FrOQC-zEog"
-   },
-   {
-    "title": "Wish You Were Here",
-    "artist": "Pink Floyd",
-    "year": 1975,
-    "q": "Wish You Were Here Pink Floyd",
-    "yt": "hjpF8ukSrvk"
-   },
-   {
-    "title": "Bohemian Rhapsody",
-    "artist": "Queen",
-    "year": 1975,
-    "q": "Bohemian Rhapsody Queen",
-    "yt": "fJ9rUzIMcZQ"
-   },
-   {
-    "title": "Sweet Child O' Mine",
-    "artist": "Guns N' Roses",
-    "year": 1987,
-    "q": "Sweet Child O' Mine Guns N' Roses",
-    "yt": "1w7OgIMMRc4"
-   },
-   {
-    "title": "Smoke on the Water",
-    "artist": "Deep Purple",
-    "year": 1972,
-    "q": "Smoke on the Water Deep Purple",
-    "yt": "Q2FzZSBD5LE"
-   },
-   {
-    "title": "Highway to Hell",
-    "artist": "AC/DC",
-    "year": 1979,
-    "q": "Highway to Hell AC/DC",
-    "yt": "l482T0yNkeo"
-   },
-   {
-    "title": "Back in Black",
-    "artist": "AC/DC",
-    "year": 1980,
-    "q": "Back in Black AC/DC",
-    "yt": "pAgnJDJN4VA"
-   },
-   {
-    "title": "Paint It, Black",
-    "artist": "The Rolling Stones",
-    "year": 1966,
-    "q": "Paint It, Black The Rolling Stones",
-    "yt": "170sceOWWXc"
-   },
-   {
-    "title": "Layla",
-    "artist": "Derek and the Dominos",
-    "year": 1970,
-    "q": "Layla Derek and the Dominos",
-    "yt": "TngViNw2pOo"
-   },
-   {
-    "title": "Born to Be Wild",
-    "artist": "Steppenwolf",
-    "year": 1968,
-    "q": "Born to Be Wild Steppenwolf",
-    "yt": "igvP806798U"
-   },
-   {
-    "title": "More Than a Feeling",
-    "artist": "Boston",
-    "year": 1976,
-    "q": "More Than a Feeling Boston",
-    "yt": "oR4uKcvQbGQ"
-   },
-   {
-    "title": "Dream On",
-    "artist": "Aerosmith",
-    "year": 1973,
-    "q": "Dream On Aerosmith",
-    "yt": "sZfZ8uWaOFI"
-   },
-   {
-    "title": "Free Bird",
-    "artist": "Lynyrd Skynyrd",
-    "year": 1973,
-    "q": "Free Bird Lynyrd Skynyrd",
-    "yt": "MQNRKX8GwPo"
-   },
-   {
-    "title": "Fortunate Son",
-    "artist": "Creedence Clearwater Revival",
-    "year": 1969,
-    "q": "Fortunate Son Creedence Clearwater Revival",
-    "yt": "ec0XKhAHR5I"
-   },
-   {
-    "title": "Barracuda",
-    "artist": "Heart",
-    "year": 1977,
-    "q": "Barracuda Heart",
-    "yt": "VdOkQ6THDVw"
-   },
-   {
-    "title": "Rock You Like a Hurricane",
-    "artist": "Scorpions",
-    "year": 1984,
-    "q": "Rock You Like a Hurricane Scorpions",
-    "yt": "6yP1tcy9a10"
-   },
-   {
-    "title": "Summer of '69",
-    "artist": "Bryan Adams",
-    "year": 1984,
-    "q": "Summer of '69 Bryan Adams",
-    "yt": "9f06QZCVUHg"
-   }
-  ]
- },
- {
-  "slug": "lofi",
-  "kind": "genre",
-  "featured": 4,
-  "name": "Monsoon",
-  "signHtml": "l o f i&nbsp;&nbsp; r a i n",
-  "kicker": "tape hiss · rain · no vocals",
-  "tagline": "Rain on the window, a tape loop, and homework you never finished.",
-  "glyph": "❍",
-  "accent": "#b7a6e8",
-  "bg": "#12111b",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap",
-  "scene": "<div class=\"window\" aria-hidden=\"true\"></div>\n      <div class=\"rain\" aria-hidden=\"true\">\n        <i style=\"--x:8vw;--d:0s;--s:.9s\"></i><i style=\"--x:19vw;--d:.4s;--s:1.1s\"></i>\n        <i style=\"--x:31vw;--d:.15s;--s:.8s\"></i><i style=\"--x:44vw;--d:.7s;--s:1.2s\"></i>\n        <i style=\"--x:58vw;--d:.25s;--s:.95s\"></i><i style=\"--x:69vw;--d:.55s;--s:1.05s\"></i>\n        <i style=\"--x:81vw;--d:.1s;--s:.85s\"></i><i style=\"--x:92vw;--d:.65s;--s:1.15s\"></i>\n      </div>",
-  "site": {
-   "name": "Monsoon",
-   "tagline": "Rain on the window, a tape loop, and homework you never finished.",
-   "glyph": "❍",
-   "shuffle": true,
-   "searchFallback": true,
-   "ytPlaylist": "PL6fhs6TSspZv0F0YgsG-p7Mn189CU2XKS",
-   "maxSeconds": null
-  },
-  "tracks": [
-   {
-    "title": "Feather",
-    "artist": "Nujabes",
-    "year": null,
-    "q": "Feather Nujabes",
-    "yt": "4yX8ZUgraOo"
-   },
-   {
-    "title": "Aruarian Dance",
-    "artist": "Nujabes",
-    "year": null,
-    "q": "Aruarian Dance Nujabes",
-    "yt": "qYcoJpqCha4"
-   },
-   {
-    "title": "Luv (sic) Pt. 3",
-    "artist": "Nujabes",
-    "year": null,
-    "q": "Luv (sic) Pt. 3 Nujabes",
-    "yt": "JC2q7kRqhig"
-   },
-   {
-    "title": "Counting Stars",
-    "artist": "Nujabes",
-    "year": null,
-    "q": "Counting Stars Nujabes",
-    "yt": "Z-tTmSY4m4M"
-   },
-   {
-    "title": "Snowman",
-    "artist": "WYS",
-    "year": null,
-    "q": "Snowman WYS",
-    "yt": null
-   },
-   {
-    "title": "Affection",
-    "artist": "Jinsang",
-    "year": null,
-    "q": "Affection Jinsang",
-    "yt": "6jGPypPNEg4"
-   },
-   {
-    "title": "Summer's Day",
-    "artist": "Jinsang",
-    "year": null,
-    "q": "Summer's Day Jinsang",
-    "yt": "vNZA0RQ54p4"
-   },
-   {
-    "title": "Controlla",
-    "artist": "Idealism",
-    "year": null,
-    "q": "Controlla Idealism",
-    "yt": "LkhPi6J5Xg0"
-   },
-   {
-    "title": "Both of Us",
-    "artist": "Idealism",
-    "year": null,
-    "q": "Both of Us Idealism",
-    "yt": "Djz-AXDO27Q"
-   },
-   {
-    "title": "Harbor",
-    "artist": "Tomppabeats",
-    "year": null,
-    "q": "Harbor Tomppabeats",
-    "yt": null
-   },
-   {
-    "title": "Owls of the Night",
-    "artist": "Kupla",
-    "year": null,
-    "q": "Owls of the Night Kupla",
-    "yt": "bmxt4B_5_K8"
-   },
-   {
-    "title": "Staying There",
-    "artist": "L'indécis",
-    "year": null,
-    "q": "Staying There L'indécis",
-    "yt": "buqsSywAlmA"
-   },
-   {
-    "title": "Soulful",
-    "artist": "L'indécis",
-    "year": null,
-    "q": "Soulful L'indécis",
-    "yt": "7ZguAEoNpZw"
-   },
-   {
-    "title": "just friends",
-    "artist": "potsu",
-    "year": null,
-    "q": "just friends potsu",
-    "yt": "qOif_ni_9zc"
-   },
-   {
-    "title": "Seasons",
-    "artist": "Aso",
-    "year": null,
-    "q": "Seasons Aso",
-    "yt": "Xo3ez6LThQ4"
-   },
-   {
-    "title": "Pathway",
-    "artist": "eevee",
-    "year": null,
-    "q": "Pathway eevee",
-    "yt": "YWN2aaE6OP0"
-   },
-   {
-    "title": "Lucid",
-    "artist": "Philanthrope",
-    "year": null,
-    "q": "Lucid Philanthrope",
-    "yt": "FhylZiUAJwo"
-   },
-   {
-    "title": "Under Water",
-    "artist": "Sleepy Fish",
-    "year": null,
-    "q": "Under Water Sleepy Fish",
-    "yt": null
-   }
-  ]
- },
- {
-  "slug": "qawwali",
-  "kind": "genre",
-  "featured": null,
-  "name": "Qawwali",
-  "signHtml": "Q A W W A L I",
-  "kicker": "harmonium · taali · chorus",
-  "tagline": "Thursday night at the dargah, hands clapping on the offbeat.",
-  "glyph": "❋",
-  "accent": "#d4af37",
-  "bg": "#04120b",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,400&family=Cormorant+Garamond:wght@400;600&display=swap",
-  "scene": "<svg class=\"jali\" viewBox=\"0 0 420 420\" aria-hidden=\"true\">\n        <defs>\n          <pattern id=\"j\" width=\"60\" height=\"60\" patternUnits=\"userSpaceOnUse\">\n            <path d=\"M30 2 58 30 30 58 2 30z\" fill=\"none\" stroke=\"#d4af3733\"/>\n            <circle cx=\"30\" cy=\"30\" r=\"9\" fill=\"none\" stroke=\"#d4af3722\"/>\n          </pattern>\n        </defs>\n        <rect width=\"420\" height=\"420\" fill=\"url(#j)\"/>\n      </svg>\n      <div class=\"chandelier\" aria-hidden=\"true\">\n        <i style=\"--d:0s\"></i><i style=\"--d:.5s\"></i><i style=\"--d:1s\"></i>\n        <i style=\"--d:1.5s\"></i><i style=\"--d:2s\"></i>\n      </div>\n      <div class=\"petals\" aria-hidden=\"true\">\n        <b style=\"--x:14vw;--d:0s\"></b><b style=\"--x:37vw;--d:2.6s\"></b>\n        <b style=\"--x:62vw;--d:1.3s\"></b><b style=\"--x:86vw;--d:3.9s\"></b>\n      </div>",
-  "site": {
-   "name": "Qawwali",
-   "tagline": "Thursday night at the dargah, hands clapping on the offbeat.",
-   "glyph": "❋",
-   "shuffle": true,
-   "searchFallback": true,
-   "ytPlaylist": "PLeHcbwsMVRm4RVm8cm9gbgCuivb_HKcar",
-   "maxSeconds": 1800
-  },
-  "tracks": [
-   {
-    "title": "Dam Mast Qalandar",
-    "artist": "Nusrat Fateh Ali Khan",
-    "year": null,
-    "q": "Dam Mast Qalandar Nusrat Fateh Ali Khan",
-    "yt": "94QB7xfOkqM"
-   },
-   {
-    "title": "Allah Hoo",
-    "artist": "Nusrat Fateh Ali Khan",
-    "year": null,
-    "q": "Allah Hoo Nusrat Fateh Ali Khan",
-    "yt": "lCDMR7TEFew"
-   },
-   {
-    "title": "Tumhe Dillagi",
-    "artist": "Nusrat Fateh Ali Khan",
-    "year": null,
-    "q": "Tumhe Dillagi Nusrat Fateh Ali Khan",
-    "yt": null
-   },
-   {
-    "title": "Afreen Afreen",
-    "artist": "Nusrat Fateh Ali Khan",
-    "year": 1996,
-    "q": "Afreen Afreen Nusrat Fateh Ali Khan",
-    "yt": "2F7G9bOIwlk"
-   },
-   {
-    "title": "Sanson Ki Mala",
-    "artist": "Nusrat Fateh Ali Khan",
-    "year": null,
-    "q": "Sanson Ki Mala Nusrat Fateh Ali Khan",
-    "yt": "eYSaHXXFIBU"
-   },
-   {
-    "title": "Mera Piya Ghar Aaya",
-    "artist": "Nusrat Fateh Ali Khan",
-    "year": null,
-    "q": "Mera Piya Ghar Aaya Nusrat Fateh Ali Khan",
-    "yt": "ctOgc7cgay0"
-   },
-   {
-    "title": "Yeh Jo Halka Halka Suroor",
-    "artist": "Nusrat Fateh Ali Khan",
-    "year": null,
-    "q": "Yeh Jo Halka Halka Suroor Nusrat Fateh Ali Khan",
-    "yt": null
-   },
-   {
-    "title": "Kinna Sohna",
-    "artist": "Nusrat Fateh Ali Khan",
-    "year": null,
-    "q": "Kinna Sohna Nusrat Fateh Ali Khan",
-    "yt": "L5bD5pGhk6E"
-   },
-   {
-    "title": "Tajdar-e-Haram",
-    "artist": "Sabri Brothers",
-    "year": null,
-    "q": "Tajdar-e-Haram Sabri Brothers",
-    "yt": "nB-epINHDHA"
-   },
-   {
-    "title": "Bhar Do Jholi Meri",
-    "artist": "Sabri Brothers",
-    "year": null,
-    "q": "Bhar Do Jholi Meri Sabri Brothers",
-    "yt": null
-   },
-   {
-    "title": "Chaap Tilak",
-    "artist": "Abida Parveen",
-    "year": null,
-    "q": "Chaap Tilak Abida Parveen",
-    "yt": "f3dnF-GmscM"
-   },
-   {
-    "title": "Tere Ishq Nachaya",
-    "artist": "Abida Parveen",
-    "year": null,
-    "q": "Tere Ishq Nachaya Abida Parveen",
-    "yt": "pGaWRdyZQNE"
-   },
-   {
-    "title": "Damadam Mast Qalandar",
-    "artist": "Abida Parveen",
-    "year": null,
-    "q": "Damadam Mast Qalandar Abida Parveen",
-    "yt": "-tyvWdq2pyc"
-   },
-   {
-    "title": "Aaj Rang Hai",
-    "artist": "Traditional (Amir Khusrau)",
-    "year": null,
-    "q": "Aaj Rang Hai Traditional (Amir Khusrau)",
-    "yt": null
-   },
-   {
-    "title": "Khwaja Mere Khwaja",
-    "artist": "A. R. Rahman",
-    "year": 2008,
-    "q": "Khwaja Mere Khwaja A. R. Rahman",
-    "yt": "4YbAaRFk70o"
-   },
-   {
-    "title": "Kun Faya Kun",
-    "artist": "A. R. Rahman, Javed Ali, Mohit Chauhan",
-    "year": 2011,
-    "q": "Kun Faya Kun A. R. Rahman, Javed Ali, Mohit Chauhan",
-    "yt": "T94PHkuydcw"
-   },
-   {
-    "title": "Arziyan",
-    "artist": "Javed Ali, Kailash Kher",
-    "year": 2009,
-    "q": "Arziyan Javed Ali, Kailash Kher",
-    "yt": "dXdD1_AGBZg"
-   },
-   {
-    "title": "Piya Haji Ali",
-    "artist": "A. R. Rahman, Srinivas",
-    "year": 2000,
-    "q": "Piya Haji Ali A. R. Rahman, Srinivas",
-    "yt": "c4uYjMpE1l8"
-   }
-  ]
- },
- {
-  "slug": "bhajan",
-  "kind": "genre",
-  "featured": null,
-  "name": "Bhajan",
-  "signHtml": "B H A J A N",
-  "kicker": "aarti · chalisa · dhun",
-  "tagline": "Evening aarti, the Chalisa, and whatever plays after.",
-  "glyph": "✿",
-  "accent": "#e9b44c",
-  "bg": "#100d07",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Marcellus&display=swap",
-  "scene": "<svg class=\"mandala\" viewBox=\"0 0 400 400\" aria-hidden=\"true\">\n        <g fill=\"none\" stroke=\"#e9b44c\" stroke-width=\"1\">\n          <circle cx=\"200\" cy=\"200\" r=\"150\" opacity=\".18\"/>\n          <circle cx=\"200\" cy=\"200\" r=\"120\" opacity=\".13\"/>\n          <circle cx=\"200\" cy=\"200\" r=\"92\" opacity=\".1\"/>\n        </g>\n        <g fill=\"none\" stroke=\"#e9b44c\" opacity=\".14\">\n          <path d=\"M200 50c34 42 34 108 0 150-34-42-34-108 0-150z\"/>\n          <path d=\"M200 350c34-42 34-108 0-150-34 42-34 108 0 150z\"/>\n          <path d=\"M50 200c42-34 108-34 150 0-42 34-108 34-150 0z\"/>\n          <path d=\"M350 200c-42-34-108-34-150 0 42 34 108 34 150 0z\"/>\n        </g>\n      </svg>\n      <svg class=\"diya\" viewBox=\"0 0 200 120\" aria-hidden=\"true\">\n        <path d=\"M40 62h120c0 26-27 42-60 42S40 88 40 62z\" fill=\"#5a3d18\" stroke=\"#e9b44c66\"/>\n        <path d=\"M34 60h132c0 5-6 8-12 8H46c-6 0-12-3-12-8z\" fill=\"#7a5426\"/>\n        <g class=\"flicker\">\n          <path d=\"M100 14c14 16 20 26 20 34a20 20 0 0 1-40 0c0-8 6-18 20-34z\"\n                fill=\"url(#fl)\"/>\n        </g>\n        <defs>\n          <radialGradient id=\"fl\" cx=\"50%\" cy=\"75%\" r=\"65%\">\n            <stop offset=\"0%\" stop-color=\"#fff6d0\"/>\n            <stop offset=\"55%\" stop-color=\"#ffb43c\"/>\n            <stop offset=\"100%\" stop-color=\"#ff8a00\" stop-opacity=\"0\"/>\n          </radialGradient>\n        </defs>\n      </svg>\n      <div class=\"petals\" aria-hidden=\"true\">\n        <b style=\"--x:16vw;--d:0s\"></b><b style=\"--x:41vw;--d:4.5s\"></b>\n        <b style=\"--x:68vw;--d:2.2s\"></b><b style=\"--x:88vw;--d:6.4s\"></b>\n      </div>",
-  "site": {
-   "name": "Bhajan",
-   "tagline": "Evening aarti, the Chalisa, and whatever plays after.",
-   "glyph": "✿",
-   "shuffle": true,
-   "searchFallback": true,
-   "ytPlaylist": "PLQCEIlUXozCw",
-   "maxSeconds": 3600
-  },
-  "tracks": [
-   {
-    "title": "Hanuman Chalisa",
-    "artist": "Hariharan",
-    "year": null,
-    "q": "Hanuman Chalisa Hariharan",
-    "yt": "AETFvQonfV8"
-   },
-   {
-    "title": "Shiv Tandav Stotram",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Shiv Tandav Stotram Traditional",
-    "yt": "hMBKmQEPNzI"
-   },
-   {
-    "title": "Om Jai Jagdish Hare",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Om Jai Jagdish Hare Traditional",
-    "yt": "NE3SWh9_vR4"
-   },
-   {
-    "title": "Sukhkarta Dukhharta",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Sukhkarta Dukhharta Traditional",
-    "yt": null
-   },
-   {
-    "title": "Jai Ambe Gauri",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Jai Ambe Gauri Traditional",
-    "yt": null
-   },
-   {
-    "title": "Om Jai Shiv Omkara",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Om Jai Shiv Omkara Traditional",
-    "yt": null
-   },
-   {
-    "title": "Aarti Kunj Bihari Ki",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Aarti Kunj Bihari Ki Traditional",
-    "yt": "FEMR5alT7CY"
-   },
-   {
-    "title": "Achyutam Keshavam",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Achyutam Keshavam Traditional",
-    "yt": "3yczGKnskts"
-   },
-   {
-    "title": "Shri Ram Chandra Kripalu",
-    "artist": "Traditional (Tulsidas)",
-    "year": null,
-    "q": "Shri Ram Chandra Kripalu Traditional (Tulsidas)",
-    "yt": "fkSmiW9D50w"
-   },
-   {
-    "title": "Raghupati Raghav Raja Ram",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Raghupati Raghav Raja Ram Traditional",
-    "yt": null
-   },
-   {
-    "title": "Gayatri Mantra",
-    "artist": "Anuradha Paudwal",
-    "year": null,
-    "q": "Gayatri Mantra Anuradha Paudwal",
-    "yt": null
-   },
-   {
-    "title": "Mahamrityunjaya Mantra",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Mahamrityunjaya Mantra Traditional",
-    "yt": null
-   },
-   {
-    "title": "Vishnu Sahasranamam",
-    "artist": "M. S. Subbulakshmi",
-    "year": null,
-    "q": "Vishnu Sahasranamam M. S. Subbulakshmi",
-    "yt": null
-   },
-   {
-    "title": "Ganapati Atharvashirsha",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Ganapati Atharvashirsha Traditional",
-    "yt": null
-   },
-   {
-    "title": "Madhurashtakam",
-    "artist": "Traditional (Vallabhacharya)",
-    "year": null,
-    "q": "Madhurashtakam Traditional (Vallabhacharya)",
-    "yt": "XE1ANx0go6E"
-   },
-   {
-    "title": "Payoji Maine Ram Ratan Dhan Payo",
-    "artist": "Lata Mangeshkar",
-    "year": null,
-    "q": "Payoji Maine Ram Ratan Dhan Payo Lata Mangeshkar",
-    "yt": "GsItAp8ZPk4"
-   },
-   {
-    "title": "Man Tarpat Hari Darshan Ko Aaj",
-    "artist": "Mohammed Rafi",
-    "year": 1952,
-    "q": "Man Tarpat Hari Darshan Ko Aaj Mohammed Rafi",
-    "yt": "AczxIEZNb_o"
-   },
-   {
-    "title": "Itni Shakti Hamein Dena Data",
-    "artist": "Sushma Shreshtha, Pushpa Pagdhare",
-    "year": 1983,
-    "q": "Itni Shakti Hamein Dena Data Sushma Shreshtha, Pushpa Pagdhare",
-    "yt": "m1Ft4JdgrBE"
-   },
-   {
-    "title": "Ae Malik Tere Bande Hum",
-    "artist": "Vani Jairam",
-    "year": 1957,
-    "q": "Ae Malik Tere Bande Hum Vani Jairam",
-    "yt": null
-   },
-   {
-    "title": "Tu Pyar Ka Sagar Hai",
-    "artist": "Manna Dey",
-    "year": 1959,
-    "q": "Tu Pyar Ka Sagar Hai Manna Dey",
-    "yt": null
-   }
-  ]
- },
- {
-  "slug": "khushi",
-  "kind": "genre",
-  "featured": 1,
-  "name": "Khushi",
-  "signHtml": "K H U S H I",
-  "kicker": "90s · 00s · 10s · sing-along",
-  "tagline": "The ones everybody still knows every word of.",
-  "glyph": "☀",
-  "accent": "#ffb020",
-  "bg": "#150f07",
-  "fontsHref": "https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Inter:wght@400;600&display=swap",
-  "scene": "<svg class=\"sun\" viewBox=\"0 0 300 300\" aria-hidden=\"true\">\n        <circle cx=\"150\" cy=\"150\" r=\"52\" fill=\"#ffb02033\" stroke=\"#ffb02088\" stroke-width=\"2\"/>\n        <g class=\"rays\" stroke=\"#ffb02055\" stroke-width=\"7\" stroke-linecap=\"round\">\n          <path d=\"M150 18v40\"/><path d=\"M150 242v40\"/>\n          <path d=\"M18 150h40\"/><path d=\"M242 150h40\"/>\n          <path d=\"M57 57l28 28\"/><path d=\"M215 215l28 28\"/>\n          <path d=\"M243 57l-28 28\"/><path d=\"M85 215l-28 28\"/>\n        </g>\n      </svg>\n      <div class=\"motes\" aria-hidden=\"true\">\n        <b style=\"--x:12vw;--d:0s\"></b><b style=\"--x:29vw;--d:3.4s\"></b>\n        <b style=\"--x:47vw;--d:1.7s\"></b><b style=\"--x:66vw;--d:5.1s\"></b>\n        <b style=\"--x:84vw;--d:2.6s\"></b><b style=\"--x:94vw;--d:6.2s\"></b>\n      </div>",
-  "site": {
-   "name": "Khushi",
-   "tagline": "The ones everybody still knows every word of.",
-   "glyph": "☀",
-   "shuffle": true,
-   "searchFallback": true,
-   "ytPlaylist": "PLGpLqaMxppFrVsjOt_yA45AaF9j1u6cbC",
-   "maxSeconds": null
-  },
-  "tracks": [
-   {
-    "title": "Pehla Nasha",
-    "artist": "Udit Narayan, Sadhana Sargam",
-    "year": 1992,
-    "q": "Pehla Nasha Udit Narayan, Sadhana Sargam",
-    "yt": "SBfPs-PMGTA"
-   },
-   {
-    "title": "Ole Ole",
-    "artist": "Vinod Rathod",
-    "year": 1994,
-    "q": "Ole Ole Vinod Rathod",
-    "yt": "hcCvSmjHwGY"
-   },
-   {
-    "title": "Koi Mil Gaya",
-    "artist": "Udit Narayan, Alka Yagnik",
-    "year": 1998,
-    "q": "Koi Mil Gaya Udit Narayan, Alka Yagnik",
-    "yt": "Foh01tG09Nk"
-   },
-   {
-    "title": "Aati Kya Khandala",
-    "artist": "Aamir Khan, Alka Yagnik",
-    "year": 1998,
-    "q": "Aati Kya Khandala Aamir Khan, Alka Yagnik",
-    "yt": "EENnVk1_suc"
-   },
-   {
-    "title": "Kaho Naa Pyaar Hai",
-    "artist": "Udit Narayan, Alka Yagnik",
-    "year": 2000,
-    "q": "Kaho Naa Pyaar Hai Udit Narayan, Alka Yagnik",
-    "yt": "-LESbtPT8uw"
-   },
-   {
-    "title": "Bole Chudiyan",
-    "artist": "Sonu Nigam, Alka Yagnik",
-    "year": 2001,
-    "q": "Bole Chudiyan Sonu Nigam, Alka Yagnik",
-    "yt": "IBvg3WeqP1U"
-   },
-   {
-    "title": "It's The Time To Disco",
-    "artist": "Shaan, Vasundhara Das",
-    "year": 2003,
-    "q": "It's The Time To Disco Shaan, Vasundhara Das",
-    "yt": null
-   },
-   {
-    "title": "Dhoom Machale",
-    "artist": "Sunidhi Chauhan",
     "year": 2004,
-    "q": "Dhoom Machale Sunidhi Chauhan",
-    "yt": "2uUmHTgT65I"
-   },
-   {
-    "title": "Kajra Re",
-    "artist": "Alisha Chinai, Shankar Mahadevan",
-    "year": 2005,
-    "q": "Kajra Re Alisha Chinai, Shankar Mahadevan",
-    "yt": "4dsFQFCvVGU"
-   },
-   {
-    "title": "Where's The Party Tonight",
-    "artist": "Shaan, Vasundhara Das",
-    "year": 2006,
-    "q": "Where's The Party Tonight Shaan, Vasundhara Das",
-    "yt": "ifT-NS_E7EY"
-   },
-   {
-    "title": "Desi Girl",
-    "artist": "Vishal Dadlani, Sunidhi Chauhan",
-    "year": 2008,
-    "q": "Desi Girl Vishal Dadlani, Sunidhi Chauhan",
-    "yt": "wDIrpvH8MzE"
-   },
-   {
-    "title": "Twist",
-    "artist": "Neeraj Shridhar",
-    "year": 2008,
-    "q": "Twist Neeraj Shridhar",
-    "yt": "KgmeL_xuB0I"
-   },
-   {
-    "title": "Ainvayi Ainvayi",
-    "artist": "Salim Merchant, Sunidhi Chauhan",
-    "year": 2010,
-    "q": "Ainvayi Ainvayi Salim Merchant, Sunidhi Chauhan",
-    "yt": "pElk1ShPrcE"
-   },
-   {
-    "title": "Senorita",
-    "artist": "Farhan Akhtar, Hrithik Roshan, Abhay Deol",
-    "year": 2011,
-    "q": "Senorita Farhan Akhtar, Hrithik Roshan, Abhay Deol",
-    "yt": "2Z0Put0teCM"
-   },
-   {
-    "title": "Ilahi",
-    "artist": "Arijit Singh",
-    "year": 2013,
-    "q": "Ilahi Arijit Singh",
-    "yt": "fdubeMFwuGs"
-   },
-   {
-    "title": "Balam Pichkari",
-    "artist": "Vishal Dadlani, Shalmali Kholgade",
-    "year": 2013,
-    "q": "Balam Pichkari Vishal Dadlani, Shalmali Kholgade",
-    "yt": "0WtRNGubWGA"
-   },
-   {
-    "title": "Badtameez Dil",
-    "artist": "Benny Dayal",
-    "year": 2013,
-    "q": "Badtameez Dil Benny Dayal",
-    "yt": "II2EO3Nw4m0"
-   },
-   {
-    "title": "Gallan Goodiyaan",
-    "artist": "Various Artists",
-    "year": 2015,
-    "q": "Gallan Goodiyaan Various Artists",
-    "yt": "jCEdTq3j-0U"
-   },
-   {
-    "title": "Sooraj Dooba Hain",
-    "artist": "Arijit Singh, Aditi Singh Sharma",
-    "year": 2015,
-    "q": "Sooraj Dooba Hain Arijit Singh, Aditi Singh Sharma",
-    "yt": "nJZcbidTutE"
-   },
-   {
-    "title": "Kar Gayi Chull",
-    "artist": "Badshah, Fazilpuria, Neha Kakkar",
-    "year": 2016,
-    "q": "Kar Gayi Chull Badshah, Fazilpuria, Neha Kakkar",
-    "yt": "NTHz9ephYTw"
+    "q": "Tumhe Jo Maine Dekha Kumar Sanu",
+    "yt": null
    }
   ]
  }

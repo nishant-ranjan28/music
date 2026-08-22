@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chhath — Waist-deep in the river, offering the last light to the sun.</title>
+<meta name="description" content="Chhath Puja radio — geet for the setting and rising sun, straight from the ghat.">
+<meta name="theme-color" content="#150c05">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nostalgia.iamnishant.in/sites/chhath-puja/">
+<meta property="og:title" content="Chhath">
+<meta property="og:description" content="Chhath Puja radio — geet for the setting and rising sun, straight from the ghat.">
+<meta property="og:image" content="https://nostalgia.iamnishant.in/sites/chhath-puja/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chhath">
+<meta name="twitter:description" content="Chhath Puja radio — geet for the setting and rising sun, straight from the ghat.">
+<meta name="twitter:image" content="https://nostalgia.iamnishant.in/sites/chhath-puja/og.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="mask-icon" href="favicon.svg" color="#ff8c1a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Yatra+One&display=swap" id="theme-fonts">
+<link rel="stylesheet" href="../../shared/base.css?v=1df576b9">
+<link rel="stylesheet" href="theme.css" id="theme-css">
+</head>
+<body>
+
+<div class="scene"><div class="ghat-sun" aria-hidden="true"></div>
+      <div class="horizon" aria-hidden="true"></div>
+      <div class="water-shimmer" aria-hidden="true"></div>
+      <div class="diyas" aria-hidden="true">
+        <b style="--x:18vw;--d:0s"></b><b style="--x:36vw;--d:2.8s"></b>
+        <b style="--x:54vw;--d:1.4s"></b><b style="--x:72vw;--d:4.2s"></b>
+        <b style="--x:86vw;--d:5.6s"></b>
+      </div></div>
+
+<main class="stage">
+  <header class="masthead">
+    <h1 class="sign">C H H A T H<small>soop · thekua · arghya to the sun</small></h1>
+    <nav class="masthead-links">
+      <a href="../../index.html">all stations</a>
+    </nav>
+  </header>
+
+  <section class="center">
+    <div class="ambience" id="ambience" aria-hidden="true"></div>
+
+    <div class="card">
+      <div class="art" id="art"></div>
+
+      <div class="track">
+        <h2 class="track-title" id="track-title">—</h2>
+        <p class="track-meta" id="track-meta"></p>
+      </div>
+
+      <div class="ticker"><span id="ticker-text"></span></div>
+
+      <div class="progress">
+        <span class="time" id="time-cur">0:00</span>
+        <div class="bar" id="bar">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-knob" id="progress-knob"></div>
+        </div>
+        <span class="time" id="time-dur">&ndash;:&ndash;&ndash;</span>
+      </div>
+
+      <div class="transport">
+        <button class="tbtn" id="btn-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3 6l9 6V6z"/></svg>
+        </button>
+        <button class="tbtn tbtn--main" id="btn-play" aria-label="Play">
+          <svg viewBox="0 0 24 24"><path id="icon-play" d="M8 5v14l11-7z"/></svg>
+        </button>
+        <button class="tbtn" id="btn-next" aria-label="Next">
+          <svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l9-6-9-6z"/></svg>
+        </button>
+      </div>
+
+      <p class="status" id="status"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span id="count"></span>
+    <span id="counter" class="counter"></span>
+    <span>Waist-deep in the river, offering the last light to the sun.</span>
+  </footer>
+</main>
+
+<div class="gate" id="gate">
+  <div class="gate-inner">
+    <h2>Suraj ko arghya</h2>
+    <p>Standing at the ghat as the sun goes down, a bamboo soop of thekua held steady, water still warm from the day.</p>
+    <button class="gate-btn" id="gate-btn">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      play
+    </button>
+  </div>
+</div>
+
+<div id="yt-host"></div>
+
+<script src="../../shared/stations.js"></script>
+<script src="playlist.js"></script>
+<script src="../../shared/player.js?v=ae5892d3"></script>
+<script src="../../shared/counter.js?v=dfdbc854" defer></script>
+
+</body>
+</html>

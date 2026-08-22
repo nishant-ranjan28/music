@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#ff2d55" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#120608" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="#120608"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <text x="600" y="290" text-anchor="middle" font-family="Russo One, Georgia, serif"
+        font-size="96" fill="#ff2d55">S U R R O O R</text>
+  <text x="600" y="356" text-anchor="middle" font-family="Hind, sans-serif"
+        font-size="27" letter-spacing="7" fill="#b08a90">HIMESH RESHAMMIYA · CAP · HIGH NOTE</text>
+  <text x="600" y="452" text-anchor="middle" font-family="Hind, sans-serif"
+        font-size="34" fill="#ffffff" opacity="0.9">One cap, one nasal high note, a thousand ringtone hits.</text>
+  <text x="600" y="566" text-anchor="middle" font-family="Hind, sans-serif"
+        font-size="24" letter-spacing="10" fill="#ff2d55" opacity="0.8">HIMESH RESHAMMIYA</text>
+  <rect width="1200" height="630" filter="url(#n)" opacity="0.06"/>
+</svg>

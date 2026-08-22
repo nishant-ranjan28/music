@@ -3,14 +3,19 @@
     <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/></filter>
   </defs>
   <rect width="1200" height="630" fill="#0b0b0d"/>
-  <rect x="0" y="0" width="300" height="630" fill="#ff5d73" opacity="0.13"/>
-  <rect x="300" y="0" width="300" height="630" fill="#ffcf87" opacity="0.13"/>
-  <rect x="600" y="0" width="300" height="630" fill="#8f7bff" opacity="0.13"/>
-  <rect x="900" y="0" width="300" height="630" fill="#e3b04b" opacity="0.13"/>
+  <rect x="0" y="0" width="133.33333333333334" height="630" fill="#ff5d73" opacity="0.13"/>
+  <rect x="133.33333333333334" y="0" width="133.33333333333334" height="630" fill="#ffcf87" opacity="0.13"/>
+  <rect x="266.6666666666667" y="0" width="133.33333333333334" height="630" fill="#8f7bff" opacity="0.13"/>
+  <rect x="400" y="0" width="133.33333333333334" height="630" fill="#e3b04b" opacity="0.13"/>
+  <rect x="533.3333333333334" y="0" width="133.33333333333334" height="630" fill="#ff2d55" opacity="0.13"/>
+  <rect x="666.6666666666667" y="0" width="133.33333333333334" height="630" fill="#e9b44c" opacity="0.13"/>
+  <rect x="800" y="0" width="133.33333333333334" height="630" fill="#ff8c1a" opacity="0.13"/>
+  <rect x="933.3333333333334" y="0" width="133.33333333333334" height="630" fill="#ffc93c" opacity="0.13"/>
+  <rect x="1066.6666666666667" y="0" width="133.33333333333334" height="630" fill="#ff3d6e" opacity="0.13"/>
   <text x="600" y="286" text-anchor="middle" font-family="Anton, Impact, sans-serif"
         font-size="104" fill="#f2efe9">Nostalgia radio</text>
   <text x="600" y="352" text-anchor="middle" font-family="Inter, sans-serif"
-        font-size="27" letter-spacing="6" fill="#8f8a82">4 STATIONS · ONE SONG AT A TIME</text>
+        font-size="27" letter-spacing="6" fill="#8f8a82">9 STATIONS · ONE SONG AT A TIME</text>
   <text x="600" y="452" text-anchor="middle" font-family="Inter, sans-serif"
         font-size="32" fill="#ffffff" opacity="0.9"></text>
   <rect width="1200" height="630" filter="url(#n)" opacity="0.06"/>

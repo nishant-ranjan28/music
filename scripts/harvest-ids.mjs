@@ -37,7 +37,12 @@ const QUERIES = {
   "udit-narayan": "udit narayan superhit songs collection playlist",
   "sonu-nigam": "sonu nigam superhit songs collection playlist",
   "arijit-singh": "arijit singh songs collection playlist",
-  "kumar-sanu": "kumar sanu 90s hits collection playlist"
+  "kumar-sanu": "kumar sanu 90s hits collection playlist",
+  "himesh-reshammiya": "himesh reshammiya superhit songs collection playlist",
+  bhajan: "bhajan chalisa aarti collection playlist",
+  "chhath-puja": "chhath puja songs playlist",
+  punjabi: "punjabi hits collection playlist",
+  bhojpuri: "bhojpuri hit songs collection playlist"
 };
 
 const PLAYLISTS_PER_STATION = 5;

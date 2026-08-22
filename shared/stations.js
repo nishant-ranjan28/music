@@ -630,5 +630,634 @@ window.STATIONS = [
     "yt": null
    }
   ]
+ },
+ {
+  "slug": "himesh-reshammiya",
+  "kind": "artist",
+  "featured": null,
+  "name": "Himesh Reshammiya",
+  "signHtml": "S U R R O O R",
+  "kicker": "himesh reshammiya · cap · high note",
+  "tagline": "One cap, one nasal high note, a thousand ringtone hits.",
+  "glyph": "♫",
+  "accent": "#ff2d55",
+  "bg": "#120608",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Russo+One&display=swap",
+  "scene": "<div class=\"beam b1\" aria-hidden=\"true\"></div>\n      <div class=\"beam b2\" aria-hidden=\"true\"></div>\n      <div class=\"sparks\" aria-hidden=\"true\">\n        <b style=\"--x:14vw;--d:0s\"></b><b style=\"--x:32vw;--d:2.2s\"></b>\n        <b style=\"--x:58vw;--d:1.1s\"></b><b style=\"--x:79vw;--d:3.4s\"></b>\n        <b style=\"--x:91vw;--d:1.8s\"></b>\n      </div>",
+  "site": {
+   "name": "Himesh Reshammiya",
+   "tagline": "One cap, one nasal high note, a thousand ringtone hits.",
+   "glyph": "♫",
+   "shuffle": true,
+   "searchFallback": true,
+   "ytPlaylist": "PLEOiStG7CxDKEx0W4AMsDlEDk2qrlns0I",
+   "maxSeconds": null
+  },
+  "tracks": [
+   {
+    "title": "Aashiq Banaya Aapne",
+    "artist": "Himesh Reshammiya, Shreya Ghoshal",
+    "year": 2005,
+    "q": "Aashiq Banaya Aapne Himesh Reshammiya, Shreya Ghoshal",
+    "yt": "al1Rlto5o6E"
+   },
+   {
+    "title": "Jhalak Dikhla Ja",
+    "artist": "Himesh Reshammiya",
+    "year": 2006,
+    "q": "Jhalak Dikhla Ja Himesh Reshammiya",
+    "yt": "vnlk8V-q0oU"
+   },
+   {
+    "title": "Tera Surroor",
+    "artist": "Himesh Reshammiya",
+    "year": 2006,
+    "q": "Tera Surroor Himesh Reshammiya",
+    "yt": "Oqe_2fs5RIQ"
+   },
+   {
+    "title": "Afsana",
+    "artist": "Himesh Reshammiya",
+    "year": 2006,
+    "q": "Afsana Himesh Reshammiya",
+    "yt": null
+   },
+   {
+    "title": "Naam Hai Tera",
+    "artist": "Himesh Reshammiya",
+    "year": 2006,
+    "q": "Naam Hai Tera Himesh Reshammiya",
+    "yt": "DULrvDVqyXI"
+   },
+   {
+    "title": "Tum Saanson Mein",
+    "artist": "Himesh Reshammiya, Tulsi Kumar",
+    "year": 2007,
+    "q": "Tum Saanson Mein Himesh Reshammiya, Tulsi Kumar",
+    "yt": "x9RSKCfUnhg"
+   },
+   {
+    "title": "Soniye",
+    "artist": "Himesh Reshammiya",
+    "year": 2006,
+    "q": "Soniye Himesh Reshammiya",
+    "yt": null
+   },
+   {
+    "title": "Main Jahan Rahoon",
+    "artist": "Himesh Reshammiya",
+    "year": 2007,
+    "q": "Main Jahan Rahoon Himesh Reshammiya",
+    "yt": null
+   },
+   {
+    "title": "Teri Meri",
+    "artist": "Himesh Reshammiya, Shreya Ghoshal",
+    "year": 2011,
+    "q": "Teri Meri Himesh Reshammiya, Shreya Ghoshal",
+    "yt": "VCTk-IUNnpc"
+   },
+   {
+    "title": "Hookah Bar",
+    "artist": "Himesh Reshammiya, Vineet Singh, Aman Trikha",
+    "year": 2012,
+    "q": "Hookah Bar Himesh Reshammiya, Vineet Singh, Aman Trikha",
+    "yt": null
+   },
+   {
+    "title": "Long Drive",
+    "artist": "Himesh Reshammiya",
+    "year": 2012,
+    "q": "Long Drive Himesh Reshammiya",
+    "yt": null
+   },
+   {
+    "title": "Balma",
+    "artist": "Himesh Reshammiya, Shreya Ghoshal",
+    "year": 2012,
+    "q": "Balma Himesh Reshammiya, Shreya Ghoshal",
+    "yt": null
+   },
+   {
+    "title": "Chalao Na Naino Se",
+    "artist": "Himesh Reshammiya, Shreya Ghoshal",
+    "year": 2012,
+    "q": "Chalao Na Naino Se Himesh Reshammiya, Shreya Ghoshal",
+    "yt": "z-2ObrQ2Ct0"
+   },
+   {
+    "title": "Jumme Ki Raat",
+    "artist": "Himesh Reshammiya, Palak Muchhal",
+    "year": 2014,
+    "q": "Jumme Ki Raat Himesh Reshammiya, Palak Muchhal",
+    "yt": null
+   },
+   {
+    "title": "Tu Hi Tu",
+    "artist": "Himesh Reshammiya",
+    "year": 2014,
+    "q": "Tu Hi Tu Himesh Reshammiya",
+    "yt": null
+   },
+   {
+    "title": "Ice Cream Khaungi",
+    "artist": "Himesh Reshammiya, Palak Muchhal",
+    "year": 2014,
+    "q": "Ice Cream Khaungi Himesh Reshammiya, Palak Muchhal",
+    "yt": null
+   },
+   {
+    "title": "Hangover",
+    "artist": "Himesh Reshammiya, Shreya Ghoshal",
+    "year": 2014,
+    "q": "Hangover Himesh Reshammiya, Shreya Ghoshal",
+    "yt": null
+   },
+   {
+    "title": "Dard Dilo Ke",
+    "artist": "Himesh Reshammiya",
+    "year": 2014,
+    "q": "Dard Dilo Ke Himesh Reshammiya",
+    "yt": "CExS4CBufng"
+   }
+  ]
+ },
+ {
+  "slug": "bhajan",
+  "kind": "genre",
+  "featured": null,
+  "name": "Bhajan",
+  "signHtml": "B H A J A N",
+  "kicker": "chalisa · aarti · dhun",
+  "tagline": "Evening aarti, the Chalisa, and whatever plays after.",
+  "glyph": "✿",
+  "accent": "#e9b44c",
+  "bg": "#100d07",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Marcellus&display=swap",
+  "scene": "<svg class=\"mandala\" viewBox=\"0 0 400 400\" aria-hidden=\"true\">\n        <g fill=\"none\" stroke=\"#e9b44c\" stroke-width=\"1\">\n          <circle cx=\"200\" cy=\"200\" r=\"150\" opacity=\".18\"/>\n          <circle cx=\"200\" cy=\"200\" r=\"120\" opacity=\".13\"/>\n          <circle cx=\"200\" cy=\"200\" r=\"92\" opacity=\".1\"/>\n        </g>\n        <g fill=\"none\" stroke=\"#e9b44c\" opacity=\".14\">\n          <path d=\"M200 50c34 42 34 108 0 150-34-42-34-108 0-150z\"/>\n          <path d=\"M200 350c34-42 34-108 0-150-34 42-34 108 0 150z\"/>\n          <path d=\"M50 200c42-34 108-34 150 0-42 34-108 34-150 0z\"/>\n          <path d=\"M350 200c-42-34-108-34-150 0 42 34 108 34 150 0z\"/>\n        </g>\n      </svg>\n      <svg class=\"diya\" viewBox=\"0 0 200 120\" aria-hidden=\"true\">\n        <path d=\"M40 62h120c0 26-27 42-60 42S40 88 40 62z\" fill=\"#5a3d18\" stroke=\"#e9b44c66\"/>\n        <path d=\"M34 60h132c0 5-6 8-12 8H46c-6 0-12-3-12-8z\" fill=\"#7a5426\"/>\n        <g class=\"flicker\">\n          <path d=\"M100 14c14 16 20 26 20 34a20 20 0 0 1-40 0c0-8 6-18 20-34z\"\n                fill=\"url(#fl)\"/>\n        </g>\n        <defs>\n          <radialGradient id=\"fl\" cx=\"50%\" cy=\"75%\" r=\"65%\">\n            <stop offset=\"0%\" stop-color=\"#fff6d0\"/>\n            <stop offset=\"55%\" stop-color=\"#ffb43c\"/>\n            <stop offset=\"100%\" stop-color=\"#ff8a00\" stop-opacity=\"0\"/>\n          </radialGradient>\n        </defs>\n      </svg>\n      <div class=\"petals\" aria-hidden=\"true\">\n        <b style=\"--x:16vw;--d:0s\"></b><b style=\"--x:41vw;--d:4.5s\"></b>\n        <b style=\"--x:68vw;--d:2.2s\"></b><b style=\"--x:88vw;--d:6.4s\"></b>\n      </div>",
+  "site": {
+   "name": "Bhajan",
+   "tagline": "Evening aarti, the Chalisa, and whatever plays after.",
+   "glyph": "✿",
+   "shuffle": true,
+   "searchFallback": true,
+   "ytPlaylist": "PLNfE7hS9WuZUOBZgQIL-X8R-Jy1kXIjWY",
+   "maxSeconds": 3600
+  },
+  "tracks": [
+   {
+    "title": "Hanuman Chalisa",
+    "artist": "Hariharan",
+    "year": null,
+    "q": "Hanuman Chalisa Hariharan",
+    "yt": "w5Hw58_LcI8"
+   },
+   {
+    "title": "Shiv Tandav Stotram",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Shiv Tandav Stotram Traditional",
+    "yt": null
+   },
+   {
+    "title": "Om Jai Jagdish Hare",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Om Jai Jagdish Hare Traditional",
+    "yt": "3ucCEjXS9n8"
+   },
+   {
+    "title": "Sukhkarta Dukhharta",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Sukhkarta Dukhharta Traditional",
+    "yt": null
+   },
+   {
+    "title": "Jai Ambe Gauri",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Jai Ambe Gauri Traditional",
+    "yt": "jsYWCRJq3CY"
+   },
+   {
+    "title": "Om Jai Shiv Omkara",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Om Jai Shiv Omkara Traditional",
+    "yt": null
+   },
+   {
+    "title": "Aarti Kunj Bihari Ki",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Aarti Kunj Bihari Ki Traditional",
+    "yt": "Eek4v1dsqQk"
+   },
+   {
+    "title": "Achyutam Keshavam",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Achyutam Keshavam Traditional",
+    "yt": null
+   },
+   {
+    "title": "Shri Ram Chandra Kripalu",
+    "artist": "Traditional (Tulsidas)",
+    "year": null,
+    "q": "Shri Ram Chandra Kripalu Traditional (Tulsidas)",
+    "yt": "3imBcsF8Vi8"
+   },
+   {
+    "title": "Raghupati Raghav Raja Ram",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Raghupati Raghav Raja Ram Traditional",
+    "yt": null
+   },
+   {
+    "title": "Gayatri Mantra",
+    "artist": "Anuradha Paudwal",
+    "year": null,
+    "q": "Gayatri Mantra Anuradha Paudwal",
+    "yt": "nAapw6s2s-k"
+   },
+   {
+    "title": "Mahamrityunjaya Mantra",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Mahamrityunjaya Mantra Traditional",
+    "yt": null
+   },
+   {
+    "title": "Vishnu Sahasranamam",
+    "artist": "M. S. Subbulakshmi",
+    "year": null,
+    "q": "Vishnu Sahasranamam M. S. Subbulakshmi",
+    "yt": null
+   },
+   {
+    "title": "Ganapati Atharvashirsha",
+    "artist": "Traditional",
+    "year": null,
+    "q": "Ganapati Atharvashirsha Traditional",
+    "yt": null
+   },
+   {
+    "title": "Madhurashtakam",
+    "artist": "Traditional (Vallabhacharya)",
+    "year": null,
+    "q": "Madhurashtakam Traditional (Vallabhacharya)",
+    "yt": null
+   },
+   {
+    "title": "Payoji Maine Ram Ratan Dhan Payo",
+    "artist": "Lata Mangeshkar",
+    "year": null,
+    "q": "Payoji Maine Ram Ratan Dhan Payo Lata Mangeshkar",
+    "yt": null
+   },
+   {
+    "title": "Man Tarpat Hari Darshan Ko Aaj",
+    "artist": "Mohammed Rafi",
+    "year": 1952,
+    "q": "Man Tarpat Hari Darshan Ko Aaj Mohammed Rafi",
+    "yt": null
+   },
+   {
+    "title": "Itni Shakti Hamein Dena Data",
+    "artist": "Sushma Shreshtha, Pushpa Pagdhare",
+    "year": 1983,
+    "q": "Itni Shakti Hamein Dena Data Sushma Shreshtha, Pushpa Pagdhare",
+    "yt": null
+   },
+   {
+    "title": "Ae Malik Tere Bande Hum",
+    "artist": "Vani Jairam",
+    "year": 1957,
+    "q": "Ae Malik Tere Bande Hum Vani Jairam",
+    "yt": null
+   },
+   {
+    "title": "Tu Pyar Ka Sagar Hai",
+    "artist": "Manna Dey",
+    "year": 1959,
+    "q": "Tu Pyar Ka Sagar Hai Manna Dey",
+    "yt": null
+   }
+  ]
+ },
+ {
+  "slug": "chhath-puja",
+  "kind": "place",
+  "featured": null,
+  "name": "Chhath",
+  "signHtml": "C H H A T H",
+  "kicker": "soop · thekua · arghya to the sun",
+  "tagline": "Waist-deep in the river, offering the last light to the sun.",
+  "glyph": "☀",
+  "accent": "#ff8c1a",
+  "bg": "#150c05",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Yatra+One&display=swap",
+  "scene": "<div class=\"ghat-sun\" aria-hidden=\"true\"></div>\n      <div class=\"horizon\" aria-hidden=\"true\"></div>\n      <div class=\"water-shimmer\" aria-hidden=\"true\"></div>\n      <div class=\"diyas\" aria-hidden=\"true\">\n        <b style=\"--x:18vw;--d:0s\"></b><b style=\"--x:36vw;--d:2.8s\"></b>\n        <b style=\"--x:54vw;--d:1.4s\"></b><b style=\"--x:72vw;--d:4.2s\"></b>\n        <b style=\"--x:86vw;--d:5.6s\"></b>\n      </div>",
+  "site": {
+   "name": "Chhath",
+   "tagline": "Waist-deep in the river, offering the last light to the sun.",
+   "glyph": "☀",
+   "shuffle": true,
+   "searchFallback": true,
+   "ytPlaylist": "PLyXHXSHxLqKy7hxvVopat1bvXLiyZS4Ga",
+   "maxSeconds": null
+  },
+  "tracks": [
+   {
+    "title": "Kelwa Ke Paat Par",
+    "artist": "Sharda Sinha",
+    "year": null,
+    "q": "Kelwa Ke Paat Par Sharda Sinha",
+    "yt": "zdT3FCqpG0s"
+   },
+   {
+    "title": "Pahile Pahil",
+    "artist": "Sharda Sinha",
+    "year": null,
+    "q": "Pahile Pahil Sharda Sinha",
+    "yt": null
+   },
+   {
+    "title": "Bahangi Laga Ke",
+    "artist": "Sharda Sinha",
+    "year": null,
+    "q": "Bahangi Laga Ke Sharda Sinha",
+    "yt": null
+   },
+   {
+    "title": "Supawo Naa Mile Maahi",
+    "artist": "Sharda Sinha",
+    "year": null,
+    "q": "Supawo Naa Mile Maahi Sharda Sinha",
+    "yt": null
+   },
+   {
+    "title": "Uga Hai Suraj Dev",
+    "artist": "Anuradha Paudwal",
+    "year": null,
+    "q": "Uga Hai Suraj Dev Anuradha Paudwal",
+    "yt": "6e6Hp6R5SVU"
+   },
+   {
+    "title": "Hey Chhathi Maiya",
+    "artist": "Narendra Chanchal",
+    "year": null,
+    "q": "Hey Chhathi Maiya Narendra Chanchal",
+    "yt": null
+   },
+   {
+    "title": "Saat Samundar Paar",
+    "artist": "Pawan Singh",
+    "year": null,
+    "q": "Saat Samundar Paar Pawan Singh",
+    "yt": null
+   },
+   {
+    "title": "Jai Chhathi Maiya",
+    "artist": "Kalpana Patowary",
+    "year": null,
+    "q": "Jai Chhathi Maiya Kalpana Patowary",
+    "yt": null
+   }
+  ]
+ },
+ {
+  "slug": "punjabi",
+  "kind": "genre",
+  "featured": null,
+  "name": "Punjabi",
+  "signHtml": "P U N J A B",
+  "kicker": "bhangra · sufi · full volume",
+  "tagline": "Sarson fields, a dhol that won't quit, swag inherited not bought.",
+  "glyph": "✺",
+  "accent": "#ffc93c",
+  "bg": "#141003",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Rubik:wght@400;600&display=swap",
+  "scene": "<svg class=\"field\" viewBox=\"0 0 800 120\" preserveAspectRatio=\"none\" aria-hidden=\"true\">\n        <path d=\"M0 80Q200 20 400 80T800 80V120H0z\" fill=\"#7cb34233\"/>\n        <path d=\"M0 96Q200 44 400 96T800 96V120H0z\" fill=\"#ffc93c22\"/>\n      </svg>\n      <svg class=\"dhol\" viewBox=\"0 0 200 110\" aria-hidden=\"true\">\n        <ellipse cx=\"46\" cy=\"55\" rx=\"22\" ry=\"42\" fill=\"#ffc93c22\" stroke=\"#ffc93c66\" stroke-width=\"2\"/>\n        <ellipse cx=\"154\" cy=\"55\" rx=\"22\" ry=\"42\" fill=\"#ffc93c22\" stroke=\"#ffc93c66\" stroke-width=\"2\"/>\n        <rect x=\"46\" y=\"14\" width=\"108\" height=\"82\" fill=\"#7cb34218\" stroke=\"#ffc93c44\"/>\n        <g stroke=\"#ffc93c33\"><path d=\"M52 22l96 66\"/><path d=\"M52 88l96-66\"/></g>\n      </svg>\n      <div class=\"pollen\" aria-hidden=\"true\">\n        <b style=\"--x:12vw;--d:0s\"></b><b style=\"--x:31vw;--d:2s\"></b>\n        <b style=\"--x:58vw;--d:1s\"></b><b style=\"--x:79vw;--d:3s\"></b>\n        <b style=\"--x:91vw;--d:1.6s\"></b>\n      </div>",
+  "site": {
+   "name": "Punjabi",
+   "tagline": "Sarson fields, a dhol that won't quit, swag inherited not bought.",
+   "glyph": "✺",
+   "shuffle": true,
+   "searchFallback": true,
+   "ytPlaylist": "PLtzd6aavJNLgGx3tivZKYKHZQpfdi3Lw4",
+   "maxSeconds": null
+  },
+  "tracks": [
+   {
+    "title": "Tunak Tunak Tun",
+    "artist": "Daler Mehndi",
+    "year": 1998,
+    "q": "Tunak Tunak Tun Daler Mehndi",
+    "yt": null
+   },
+   {
+    "title": "Bolo Ta Ra Ra",
+    "artist": "Daler Mehndi",
+    "year": 1995,
+    "q": "Bolo Ta Ra Ra Daler Mehndi",
+    "yt": null
+   },
+   {
+    "title": "Mundian To Bach Ke",
+    "artist": "Panjabi MC",
+    "year": 1998,
+    "q": "Mundian To Bach Ke Panjabi MC",
+    "yt": null
+   },
+   {
+    "title": "Gur Nalo Ishq Mitha",
+    "artist": "Malkit Singh",
+    "year": 1998,
+    "q": "Gur Nalo Ishq Mitha Malkit Singh",
+    "yt": null
+   },
+   {
+    "title": "Jugni",
+    "artist": "Arif Lohar, Meesha Shafi",
+    "year": 2010,
+    "q": "Jugni Arif Lohar, Meesha Shafi",
+    "yt": null
+   },
+   {
+    "title": "Ki Banu Duniya Da",
+    "artist": "Gurdas Maan",
+    "year": 1987,
+    "q": "Ki Banu Duniya Da Gurdas Maan",
+    "yt": null
+   },
+   {
+    "title": "3 Peg",
+    "artist": "Sharry Mann",
+    "year": 2016,
+    "q": "3 Peg Sharry Mann",
+    "yt": null
+   },
+   {
+    "title": "Suit Suit",
+    "artist": "Guru Randhawa",
+    "year": 2017,
+    "q": "Suit Suit Guru Randhawa",
+    "yt": null
+   },
+   {
+    "title": "High Rated Gabru",
+    "artist": "Guru Randhawa",
+    "year": 2017,
+    "q": "High Rated Gabru Guru Randhawa",
+    "yt": "hjWf8A0YNSE"
+   },
+   {
+    "title": "Lahore",
+    "artist": "Guru Randhawa",
+    "year": 2018,
+    "q": "Lahore Guru Randhawa",
+    "yt": null
+   },
+   {
+    "title": "Laembadgini",
+    "artist": "Diljit Dosanjh",
+    "year": 2016,
+    "q": "Laembadgini Diljit Dosanjh",
+    "yt": "15Sjjl_24x0"
+   },
+   {
+    "title": "5 Taara",
+    "artist": "Diljit Dosanjh",
+    "year": 2017,
+    "q": "5 Taara Diljit Dosanjh",
+    "yt": null
+   },
+   {
+    "title": "Proper Patola",
+    "artist": "Diljit Dosanjh",
+    "year": 2013,
+    "q": "Proper Patola Diljit Dosanjh",
+    "yt": null
+   },
+   {
+    "title": "Wakhra Swag",
+    "artist": "Navraj Hans",
+    "year": 2015,
+    "q": "Wakhra Swag Navraj Hans",
+    "yt": null
+   },
+   {
+    "title": "Brown Munde",
+    "artist": "AP Dhillon",
+    "year": 2020,
+    "q": "Brown Munde AP Dhillon",
+    "yt": "VNs_cCtdbPc"
+   },
+   {
+    "title": "Excuses",
+    "artist": "AP Dhillon",
+    "year": 2020,
+    "q": "Excuses AP Dhillon",
+    "yt": null
+   },
+   {
+    "title": "Pasoori",
+    "artist": "Ali Sethi, Shae Gill",
+    "year": 2022,
+    "q": "Pasoori Ali Sethi, Shae Gill",
+    "yt": null
+   },
+   {
+    "title": "Lehenga",
+    "artist": "Jass Manak",
+    "year": 2019,
+    "q": "Lehenga Jass Manak",
+    "yt": null
+   }
+  ]
+ },
+ {
+  "slug": "bhojpuri",
+  "kind": "genre",
+  "featured": null,
+  "name": "Bhojpuri",
+  "signHtml": "B H O J P U R I",
+  "kicker": "pawan singh · khesari lal · nirahua",
+  "tagline": "Sequin disco, loud speakers, and songs your landlord also knows.",
+  "glyph": "★",
+  "accent": "#ff3d6e",
+  "bg": "#170309",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@400;600&display=swap",
+  "scene": "<div class=\"sequins\" aria-hidden=\"true\"></div>\n      <div class=\"rays\" aria-hidden=\"true\"></div>\n      <div class=\"glitter\" aria-hidden=\"true\">\n        <b style=\"--x:10vw;--d:0s\"></b><b style=\"--x:29vw;--d:1.6s\"></b>\n        <b style=\"--x:51vw;--d:.8s\"></b><b style=\"--x:68vw;--d:2.4s\"></b>\n        <b style=\"--x:88vw;--d:1.2s\"></b>\n      </div>",
+  "site": {
+   "name": "Bhojpuri",
+   "tagline": "Sequin disco, loud speakers, and songs your landlord also knows.",
+   "glyph": "★",
+   "shuffle": true,
+   "searchFallback": true,
+   "ytPlaylist": "PLGqUOt0CNckJib_vLMdgWzmIRd2X7dG5Z",
+   "maxSeconds": null
+  },
+  "tracks": [
+   {
+    "title": "Lollipop Lagelu",
+    "artist": "Dinesh Lal Yadav (Nirahua)",
+    "year": 2008,
+    "q": "Lollipop Lagelu Dinesh Lal Yadav (Nirahua)",
+    "yt": null
+   },
+   {
+    "title": "Chhalakata Hamro Jawaniya",
+    "artist": "Pawan Singh",
+    "year": 2017,
+    "q": "Chhalakata Hamro Jawaniya Pawan Singh",
+    "yt": "c4JD7rEtIj8"
+   },
+   {
+    "title": "Kamariya Hila Rahi Hai",
+    "artist": "Ritesh Pandey",
+    "year": 2019,
+    "q": "Kamariya Hila Rahi Hai Ritesh Pandey",
+    "yt": null
+   },
+   {
+    "title": "Hello Kaun",
+    "artist": "Pawan Singh",
+    "year": 2018,
+    "q": "Hello Kaun Pawan Singh",
+    "yt": null
+   },
+   {
+    "title": "Jila Top",
+    "artist": "Khesari Lal Yadav",
+    "year": 2019,
+    "q": "Jila Top Khesari Lal Yadav",
+    "yt": null
+   },
+   {
+    "title": "Balam Ji Love You",
+    "artist": "Pawan Singh",
+    "year": 2018,
+    "q": "Balam Ji Love You Pawan Singh",
+    "yt": null
+   },
+   {
+    "title": "Saiyan Arab Gail Na",
+    "artist": "Kalpana",
+    "year": 1990,
+    "q": "Saiyan Arab Gail Na Kalpana",
+    "yt": null
+   },
+   {
+    "title": "Saiyaan Ji Sarkave",
+    "artist": "Shilpi Raj",
+    "year": 2022,
+    "q": "Saiyaan Ji Sarkave Shilpi Raj",
+    "yt": null
+   }
+  ]
  }
 ];

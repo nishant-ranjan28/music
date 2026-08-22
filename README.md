@@ -1,4 +1,4 @@
-# Nostalgia radio — four singers
+# Nostalgia radio — nine stations
 
 Live at <https://nostalgia.iamnishant.in>
 
@@ -11,6 +11,11 @@ design system and one player; each has its own palette, typography, scene and pl
 | Sitara | `sonu-nigam` | artist | Sonu Nigam, Border to Kal Ho Naa Ho |
 | Raabta | `arijit-singh` | artist | Arijit Singh, late-night 2010s heartbreak |
 | Aashiqui | `kumar-sanu` | artist | Kumar Sanu, cassette-era melody |
+| Surroor | `himesh-reshammiya` | artist | Himesh Reshammiya, 2000s ringtone surroor |
+| Bhajan | `bhajan` | genre | Hanuman Chalisa, Shiv Tandav, aartis |
+| Chhath | `chhath-puja` | place | Chhath geet at the ghat, arghya to the sun |
+| Punjabi | `punjabi` | genre | Daler to AP Dhillon, bhangra + sufi |
+| Bhojpuri | `bhojpuri` | genre | Pawan Singh, Khesari Lal, Nirahua |
 
 Every station streams a public YouTube playlist and keeps a curated track list as a
 fallback for when that playlist breaks.

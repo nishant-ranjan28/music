@@ -890,34 +890,6 @@ window.STATIONS = [
     "yt": null
    },
    {
-    "title": "Vishnu Sahasranamam",
-    "artist": "M. S. Subbulakshmi",
-    "year": null,
-    "q": "Vishnu Sahasranamam M. S. Subbulakshmi",
-    "yt": null
-   },
-   {
-    "title": "Ganapati Atharvashirsha",
-    "artist": "Traditional",
-    "year": null,
-    "q": "Ganapati Atharvashirsha Traditional",
-    "yt": null
-   },
-   {
-    "title": "Madhurashtakam",
-    "artist": "Traditional (Vallabhacharya)",
-    "year": null,
-    "q": "Madhurashtakam Traditional (Vallabhacharya)",
-    "yt": null
-   },
-   {
-    "title": "Payoji Maine Ram Ratan Dhan Payo",
-    "artist": "Lata Mangeshkar",
-    "year": null,
-    "q": "Payoji Maine Ram Ratan Dhan Payo Lata Mangeshkar",
-    "yt": null
-   },
-   {
     "title": "Man Tarpat Hari Darshan Ko Aaj",
     "artist": "Mohammed Rafi",
     "year": 1952,

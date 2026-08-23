@@ -1014,11 +1014,12 @@ body.playing .ambience {
 
   /* the glow hugs the artwork, which is the hero here */
   .ambience {
-    width: min(130vw, 95dvh);
+    width: min(88vw, 52dvh);
+    filter: blur(42px) saturate(1.3);
   }
 
   body.playing .ambience {
-    opacity: 0.5;
+    opacity: 0.42;
   }
 
   .progress {

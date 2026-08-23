@@ -777,11 +777,21 @@ export const themes = [
     tracks: [
       ["Lollipop Lagelu", "Dinesh Lal Yadav (Nirahua)", 2008],
       ["Chhalakata Hamro Jawaniya", "Pawan Singh", 2017],
-      ["Kamariya Hila Rahi Hai", "Ritesh Pandey", 2019],
       ["Hello Kaun", "Pawan Singh", 2018],
-      ["Jila Top", "Khesari Lal Yadav", 2019],
       ["Balam Ji Love You", "Pawan Singh", 2018],
-      ["Saiyan Arab Gail Na", "Kalpana", 1990],
+      ["Kala Odhani", "Pawan Singh, Shilpi Raj", 2024],
+      ["Lal Ghaghra", "Pawan Singh, Shilpi Raj", 2024],
+      ["Rajaji Ke Dilwa", "Pawan Singh, Shivani Singh", 2024],
+      ["Jila Top", "Khesari Lal Yadav", 2019],
+      ["Palang Sagwan Ke", "Khesari Lal Yadav", 2021],
+      ["Nathuniya", "Khesari Lal Yadav, Priyanka Singh", 2023],
+      ["Lehenga Lucknowwa", "Khesari Lal Yadav", 2023],
+      ["Payal", "Khesari Lal Yadav, Shilpi Raj", 2024],
+      ["Pagli Dekhave Agarbatti", "Neelkamal Singh", 2024],
+      ["Maja Milela Na Pura", "Neelkamal Singh", 2024],
+      ["Saiyan Ji Dilwa Mangele Gamcha Bichai Ke", "Neelkamal Singh", 2022],
+      ["Chulhi Me Jhok Di", "Shilpi Raj", 2024],
+      ["Nadi Biche Naiya Dole", "Shilpi Raj, Rani", 2024],
       ["Saiyaan Ji Sarkave", "Shilpi Raj", 2022]
     ]
   }

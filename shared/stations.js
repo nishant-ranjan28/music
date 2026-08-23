@@ -1217,24 +1217,10 @@ window.STATIONS = [
     "yt": "c4JD7rEtIj8"
    },
    {
-    "title": "Kamariya Hila Rahi Hai",
-    "artist": "Ritesh Pandey",
-    "year": 2019,
-    "q": "Kamariya Hila Rahi Hai Ritesh Pandey",
-    "yt": null
-   },
-   {
     "title": "Hello Kaun",
     "artist": "Pawan Singh",
     "year": 2018,
     "q": "Hello Kaun Pawan Singh",
-    "yt": null
-   },
-   {
-    "title": "Jila Top",
-    "artist": "Khesari Lal Yadav",
-    "year": 2019,
-    "q": "Jila Top Khesari Lal Yadav",
     "yt": null
    },
    {
@@ -1245,11 +1231,95 @@ window.STATIONS = [
     "yt": null
    },
    {
-    "title": "Saiyan Arab Gail Na",
-    "artist": "Kalpana",
-    "year": 1990,
-    "q": "Saiyan Arab Gail Na Kalpana",
+    "title": "Kala Odhani",
+    "artist": "Pawan Singh, Shilpi Raj",
+    "year": 2024,
+    "q": "Kala Odhani Pawan Singh, Shilpi Raj",
+    "yt": "mOu_zBiFi5U"
+   },
+   {
+    "title": "Lal Ghaghra",
+    "artist": "Pawan Singh, Shilpi Raj",
+    "year": 2024,
+    "q": "Lal Ghaghra Pawan Singh, Shilpi Raj",
+    "yt": "qZId59qml_4"
+   },
+   {
+    "title": "Rajaji Ke Dilwa",
+    "artist": "Pawan Singh, Shivani Singh",
+    "year": 2024,
+    "q": "Rajaji Ke Dilwa Pawan Singh, Shivani Singh",
+    "yt": "mmpibVMv0AA"
+   },
+   {
+    "title": "Jila Top",
+    "artist": "Khesari Lal Yadav",
+    "year": 2019,
+    "q": "Jila Top Khesari Lal Yadav",
     "yt": null
+   },
+   {
+    "title": "Palang Sagwan Ke",
+    "artist": "Khesari Lal Yadav",
+    "year": 2021,
+    "q": "Palang Sagwan Ke Khesari Lal Yadav",
+    "yt": "BdMTcZwCokI"
+   },
+   {
+    "title": "Nathuniya",
+    "artist": "Khesari Lal Yadav, Priyanka Singh",
+    "year": 2023,
+    "q": "Nathuniya Khesari Lal Yadav, Priyanka Singh",
+    "yt": "iYRqAc10Ii8"
+   },
+   {
+    "title": "Lehenga Lucknowwa",
+    "artist": "Khesari Lal Yadav",
+    "year": 2023,
+    "q": "Lehenga Lucknowwa Khesari Lal Yadav",
+    "yt": null
+   },
+   {
+    "title": "Payal",
+    "artist": "Khesari Lal Yadav, Shilpi Raj",
+    "year": 2024,
+    "q": "Payal Khesari Lal Yadav, Shilpi Raj",
+    "yt": null
+   },
+   {
+    "title": "Pagli Dekhave Agarbatti",
+    "artist": "Neelkamal Singh",
+    "year": 2024,
+    "q": "Pagli Dekhave Agarbatti Neelkamal Singh",
+    "yt": "YAtgKpugpQ4"
+   },
+   {
+    "title": "Maja Milela Na Pura",
+    "artist": "Neelkamal Singh",
+    "year": 2024,
+    "q": "Maja Milela Na Pura Neelkamal Singh",
+    "yt": "oxhdCm1ZGX8"
+   },
+   {
+    "title": "Saiyan Ji Dilwa Mangele Gamcha Bichai Ke",
+    "artist": "Neelkamal Singh",
+    "year": 2022,
+    "q": "Saiyan Ji Dilwa Mangele Gamcha Bichai Ke Neelkamal Singh",
+    "yt": "5IjA5rfllC0"
+   },
+   {
+    "title": "Chulhi Me Jhok Di",
+    "artist": "Shilpi Raj",
+    "year": 2024,
+    "q": "Chulhi Me Jhok Di Shilpi Raj",
+    "yt": "uUzSniB8tLk"
+   },
+   {
+    "title": "Nadi Biche Naiya Dole",
+    "artist": "Shilpi Raj, Rani",
+    "year": 2024,
+    "q": "Nadi Biche Naiya Dole Shilpi Raj, Rani",
+    "yt": "BRQ-n5OYUuM"
    },
    {
     "title": "Saiyaan Ji Sarkave",

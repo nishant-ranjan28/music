@@ -493,7 +493,7 @@
   /* Public playlists are padded with hour-long "Video Jukebox" compilations
      and lofi/bass-boosted remixes. Both break the one-song-at-a-time premise,
      so skip them the moment we can see what loaded. */
-  var JUNK = /jukebox|non ?stop|nonstop|mashup|medley|all songs|full album|lofi|lo-fi|slowed|reverb|bass boosted|remix|mix\b/i;
+  var JUNK = /jukebox|non ?stop|nonstop|mashup|medley|all songs|full album|lofi|lo-fi|slowed|reverb|bass boosted|remix|mix\b|#shorts|\bshorts?\b/i;
 
 
   function isJunk() {

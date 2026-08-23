@@ -43,7 +43,7 @@ async function api(path, params, tries = 4) {
   }
 }
 
-const JUNK = /jukebox|non ?stop|nonstop|mashup|medley|all songs|full album|top \d+/i;
+const JUNK = /jukebox|non ?stop|nonstop|mashup|medley|all songs|full album|top \d+|#shorts|\bshorts?\b/i;
 
 const found = await api("search", {
   part: "snippet",

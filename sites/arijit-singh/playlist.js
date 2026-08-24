@@ -6,14 +6,14 @@ window.PLAYLIST = [
     "artist": "Arijit Singh, Mithoon",
     "year": 2011,
     "q": "Phir Mohabbat Arijit Singh, Mithoon",
-    "yt": null
+    "yt": "m1rcse8INWk"
   },
   {
     "title": "Duaa",
     "artist": "Arijit Singh, Nandini Srikar",
     "year": 2012,
     "q": "Duaa Arijit Singh, Nandini Srikar",
-    "yt": null
+    "yt": "j3BiIJKBlYE"
   },
   {
     "title": "Raabta",
@@ -34,56 +34,56 @@ window.PLAYLIST = [
     "artist": "Arijit Singh, Palak Muchhal",
     "year": 2013,
     "q": "Chahun Main Ya Naa Arijit Singh, Palak Muchhal",
-    "yt": null
+    "yt": "Q4F7MF5Vzt0"
   },
   {
     "title": "Ilahi",
     "artist": "Arijit Singh",
     "year": 2013,
     "q": "Ilahi Arijit Singh",
-    "yt": null
+    "yt": "fdubeMFwuGs"
   },
   {
     "title": "Muskurane",
     "artist": "Arijit Singh",
     "year": 2014,
     "q": "Muskurane Arijit Singh",
-    "yt": null
+    "yt": "2ltGXfmI6mk"
   },
   {
     "title": "Samjhawan",
     "artist": "Arijit Singh, Shreya Ghoshal",
     "year": 2014,
     "q": "Samjhawan Arijit Singh, Shreya Ghoshal",
-    "yt": null
+    "yt": "yQ6d627OZig"
   },
   {
     "title": "Manwa Laage",
     "artist": "Arijit Singh, Shreya Ghoshal",
     "year": 2014,
     "q": "Manwa Laage Arijit Singh, Shreya Ghoshal",
-    "yt": null
+    "yt": "d8IT-16kA8M"
   },
   {
     "title": "Sooraj Dooba Hain",
     "artist": "Arijit Singh, Aditi Singh Sharma",
     "year": 2015,
     "q": "Sooraj Dooba Hain Arijit Singh, Aditi Singh Sharma",
-    "yt": null
+    "yt": "nJZcbidTutE"
   },
   {
     "title": "Gerua",
     "artist": "Arijit Singh, Antara Mitra",
     "year": 2015,
     "q": "Gerua Arijit Singh, Antara Mitra",
-    "yt": null
+    "yt": "AEIVhBS6baE"
   },
   {
     "title": "Janam Janam",
     "artist": "Arijit Singh, Antara Mitra",
     "year": 2015,
     "q": "Janam Janam Arijit Singh, Antara Mitra",
-    "yt": null
+    "yt": "g44iifQIFyM"
   },
   {
     "title": "Ae Dil Hai Mushkil",
@@ -104,7 +104,7 @@ window.PLAYLIST = [
     "artist": "Arijit Singh, Shreya Ghoshal",
     "year": 2017,
     "q": "Enna Sona Arijit Singh, Shreya Ghoshal",
-    "yt": null
+    "yt": "mrdRHsIkK_c"
   },
   {
     "title": "Zaalima",
@@ -118,14 +118,14 @@ window.PLAYLIST = [
     "artist": "Arijit Singh",
     "year": 2017,
     "q": "Hawayein Arijit Singh",
-    "yt": null
+    "yt": "cYOB941gyXI"
   },
   {
     "title": "Tera Yaar Hoon Main",
     "artist": "Arijit Singh",
     "year": 2018,
     "q": "Tera Yaar Hoon Main Arijit Singh",
-    "yt": null
+    "yt": "EatzcaVJRMs"
   },
   {
     "title": "Khairiyat",

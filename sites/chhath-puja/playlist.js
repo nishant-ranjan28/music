@@ -6,28 +6,28 @@ window.PLAYLIST = [
     "artist": "Sharda Sinha",
     "year": null,
     "q": "Kelwa Ke Paat Par Sharda Sinha",
-    "yt": "zdT3FCqpG0s"
+    "yt": null
   },
   {
     "title": "Pahile Pahil",
     "artist": "Sharda Sinha",
     "year": null,
     "q": "Pahile Pahil Sharda Sinha",
-    "yt": null
+    "yt": "6nPhZkZF4kk"
   },
   {
     "title": "Bahangi Laga Ke",
     "artist": "Sharda Sinha",
     "year": null,
     "q": "Bahangi Laga Ke Sharda Sinha",
-    "yt": null
+    "yt": "MEnyozGodAU"
   },
   {
     "title": "Supawo Naa Mile Maahi",
     "artist": "Sharda Sinha",
     "year": null,
     "q": "Supawo Naa Mile Maahi Sharda Sinha",
-    "yt": null
+    "yt": "BC5I-33GNDA"
   },
   {
     "title": "Uga Hai Suraj Dev",
@@ -41,21 +41,21 @@ window.PLAYLIST = [
     "artist": "Narendra Chanchal",
     "year": null,
     "q": "Hey Chhathi Maiya Narendra Chanchal",
-    "yt": null
+    "yt": "fHk5SieXZtw"
   },
   {
     "title": "Saat Samundar Paar",
     "artist": "Pawan Singh",
     "year": null,
     "q": "Saat Samundar Paar Pawan Singh",
-    "yt": null
+    "yt": "84B0-P9qcNs"
   },
   {
     "title": "Jai Chhathi Maiya",
     "artist": "Kalpana Patowary",
     "year": null,
     "q": "Jai Chhathi Maiya Kalpana Patowary",
-    "yt": null
+    "yt": "GRC19OaLLUo"
   }
 ];
 

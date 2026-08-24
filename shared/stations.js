@@ -329,14 +329,14 @@ window.STATIONS = [
     "artist": "Arijit Singh, Mithoon",
     "year": 2011,
     "q": "Phir Mohabbat Arijit Singh, Mithoon",
-    "yt": null
+    "yt": "m1rcse8INWk"
    },
    {
     "title": "Duaa",
     "artist": "Arijit Singh, Nandini Srikar",
     "year": 2012,
     "q": "Duaa Arijit Singh, Nandini Srikar",
-    "yt": null
+    "yt": "j3BiIJKBlYE"
    },
    {
     "title": "Raabta",
@@ -357,56 +357,56 @@ window.STATIONS = [
     "artist": "Arijit Singh, Palak Muchhal",
     "year": 2013,
     "q": "Chahun Main Ya Naa Arijit Singh, Palak Muchhal",
-    "yt": null
+    "yt": "Q4F7MF5Vzt0"
    },
    {
     "title": "Ilahi",
     "artist": "Arijit Singh",
     "year": 2013,
     "q": "Ilahi Arijit Singh",
-    "yt": null
+    "yt": "fdubeMFwuGs"
    },
    {
     "title": "Muskurane",
     "artist": "Arijit Singh",
     "year": 2014,
     "q": "Muskurane Arijit Singh",
-    "yt": null
+    "yt": "2ltGXfmI6mk"
    },
    {
     "title": "Samjhawan",
     "artist": "Arijit Singh, Shreya Ghoshal",
     "year": 2014,
     "q": "Samjhawan Arijit Singh, Shreya Ghoshal",
-    "yt": null
+    "yt": "yQ6d627OZig"
    },
    {
     "title": "Manwa Laage",
     "artist": "Arijit Singh, Shreya Ghoshal",
     "year": 2014,
     "q": "Manwa Laage Arijit Singh, Shreya Ghoshal",
-    "yt": null
+    "yt": "d8IT-16kA8M"
    },
    {
     "title": "Sooraj Dooba Hain",
     "artist": "Arijit Singh, Aditi Singh Sharma",
     "year": 2015,
     "q": "Sooraj Dooba Hain Arijit Singh, Aditi Singh Sharma",
-    "yt": null
+    "yt": "nJZcbidTutE"
    },
    {
     "title": "Gerua",
     "artist": "Arijit Singh, Antara Mitra",
     "year": 2015,
     "q": "Gerua Arijit Singh, Antara Mitra",
-    "yt": null
+    "yt": "AEIVhBS6baE"
    },
    {
     "title": "Janam Janam",
     "artist": "Arijit Singh, Antara Mitra",
     "year": 2015,
     "q": "Janam Janam Arijit Singh, Antara Mitra",
-    "yt": null
+    "yt": "g44iifQIFyM"
    },
    {
     "title": "Ae Dil Hai Mushkil",
@@ -427,7 +427,7 @@ window.STATIONS = [
     "artist": "Arijit Singh, Shreya Ghoshal",
     "year": 2017,
     "q": "Enna Sona Arijit Singh, Shreya Ghoshal",
-    "yt": null
+    "yt": "mrdRHsIkK_c"
    },
    {
     "title": "Zaalima",
@@ -441,14 +441,14 @@ window.STATIONS = [
     "artist": "Arijit Singh",
     "year": 2017,
     "q": "Hawayein Arijit Singh",
-    "yt": null
+    "yt": "cYOB941gyXI"
    },
    {
     "title": "Tera Yaar Hoon Main",
     "artist": "Arijit Singh",
     "year": 2018,
     "q": "Tera Yaar Hoon Main Arijit Singh",
-    "yt": null
+    "yt": "EatzcaVJRMs"
    },
    {
     "title": "Khairiyat",
@@ -947,28 +947,28 @@ window.STATIONS = [
     "artist": "Sharda Sinha",
     "year": null,
     "q": "Kelwa Ke Paat Par Sharda Sinha",
-    "yt": "zdT3FCqpG0s"
+    "yt": null
    },
    {
     "title": "Pahile Pahil",
     "artist": "Sharda Sinha",
     "year": null,
     "q": "Pahile Pahil Sharda Sinha",
-    "yt": null
+    "yt": "6nPhZkZF4kk"
    },
    {
     "title": "Bahangi Laga Ke",
     "artist": "Sharda Sinha",
     "year": null,
     "q": "Bahangi Laga Ke Sharda Sinha",
-    "yt": null
+    "yt": "MEnyozGodAU"
    },
    {
     "title": "Supawo Naa Mile Maahi",
     "artist": "Sharda Sinha",
     "year": null,
     "q": "Supawo Naa Mile Maahi Sharda Sinha",
-    "yt": null
+    "yt": "BC5I-33GNDA"
    },
    {
     "title": "Uga Hai Suraj Dev",
@@ -982,21 +982,21 @@ window.STATIONS = [
     "artist": "Narendra Chanchal",
     "year": null,
     "q": "Hey Chhathi Maiya Narendra Chanchal",
-    "yt": null
+    "yt": "fHk5SieXZtw"
    },
    {
     "title": "Saat Samundar Paar",
     "artist": "Pawan Singh",
     "year": null,
     "q": "Saat Samundar Paar Pawan Singh",
-    "yt": null
+    "yt": "84B0-P9qcNs"
    },
    {
     "title": "Jai Chhathi Maiya",
     "artist": "Kalpana Patowary",
     "year": null,
     "q": "Jai Chhathi Maiya Kalpana Patowary",
-    "yt": null
+    "yt": "GRC19OaLLUo"
    }
   ]
  },
@@ -1028,56 +1028,56 @@ window.STATIONS = [
     "artist": "Daler Mehndi",
     "year": 1998,
     "q": "Tunak Tunak Tun Daler Mehndi",
-    "yt": null
+    "yt": "92ydUdqWE1g"
    },
    {
     "title": "Bolo Ta Ra Ra",
     "artist": "Daler Mehndi",
     "year": 1995,
     "q": "Bolo Ta Ra Ra Daler Mehndi",
-    "yt": null
+    "yt": "h6Ze5Hqa1wA"
    },
    {
     "title": "Mundian To Bach Ke",
     "artist": "Panjabi MC",
     "year": 1998,
     "q": "Mundian To Bach Ke Panjabi MC",
-    "yt": null
+    "yt": "x9WO2ieJMYk"
    },
    {
     "title": "Gur Nalo Ishq Mitha",
     "artist": "Malkit Singh",
     "year": 1998,
     "q": "Gur Nalo Ishq Mitha Malkit Singh",
-    "yt": null
+    "yt": "_rGz16v3CUM"
    },
    {
     "title": "Jugni",
     "artist": "Arif Lohar, Meesha Shafi",
     "year": 2010,
     "q": "Jugni Arif Lohar, Meesha Shafi",
-    "yt": null
+    "yt": "gjaH2iuoYWE"
    },
    {
     "title": "Ki Banu Duniya Da",
     "artist": "Gurdas Maan",
     "year": 1987,
     "q": "Ki Banu Duniya Da Gurdas Maan",
-    "yt": null
+    "yt": "pjQyBF2gwjQ"
    },
    {
     "title": "3 Peg",
     "artist": "Sharry Mann",
     "year": 2016,
     "q": "3 Peg Sharry Mann",
-    "yt": null
+    "yt": "hzTg4zPBtDU"
    },
    {
     "title": "Suit Suit",
     "artist": "Guru Randhawa",
     "year": 2017,
     "q": "Suit Suit Guru Randhawa",
-    "yt": null
+    "yt": "uQ763VvqiEM"
    },
    {
     "title": "High Rated Gabru",
@@ -1091,7 +1091,7 @@ window.STATIONS = [
     "artist": "Guru Randhawa",
     "year": 2018,
     "q": "Lahore Guru Randhawa",
-    "yt": null
+    "yt": "dZ0fwJojhrs"
    },
    {
     "title": "Laembadgini",
@@ -1105,14 +1105,14 @@ window.STATIONS = [
     "artist": "Diljit Dosanjh",
     "year": 2017,
     "q": "5 Taara Diljit Dosanjh",
-    "yt": null
+    "yt": "MsTW5cyWKj4"
    },
    {
     "title": "Proper Patola",
     "artist": "Diljit Dosanjh",
     "year": 2013,
     "q": "Proper Patola Diljit Dosanjh",
-    "yt": null
+    "yt": "GVhmynWOPoM"
    },
    {
     "title": "Wakhra Swag",
@@ -1133,21 +1133,21 @@ window.STATIONS = [
     "artist": "AP Dhillon",
     "year": 2020,
     "q": "Excuses AP Dhillon",
-    "yt": null
+    "yt": "vX2cDW8LUWk"
    },
    {
     "title": "Pasoori",
     "artist": "Ali Sethi, Shae Gill",
     "year": 2022,
     "q": "Pasoori Ali Sethi, Shae Gill",
-    "yt": null
+    "yt": "5Eqb_-j3FDA"
    },
    {
     "title": "Lehenga",
     "artist": "Jass Manak",
     "year": 2019,
     "q": "Lehenga Jass Manak",
-    "yt": null
+    "yt": "RKioDWlajvo"
    }
   ]
  },

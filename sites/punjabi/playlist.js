@@ -6,56 +6,56 @@ window.PLAYLIST = [
     "artist": "Daler Mehndi",
     "year": 1998,
     "q": "Tunak Tunak Tun Daler Mehndi",
-    "yt": null
+    "yt": "92ydUdqWE1g"
   },
   {
     "title": "Bolo Ta Ra Ra",
     "artist": "Daler Mehndi",
     "year": 1995,
     "q": "Bolo Ta Ra Ra Daler Mehndi",
-    "yt": null
+    "yt": "h6Ze5Hqa1wA"
   },
   {
     "title": "Mundian To Bach Ke",
     "artist": "Panjabi MC",
     "year": 1998,
     "q": "Mundian To Bach Ke Panjabi MC",
-    "yt": null
+    "yt": "x9WO2ieJMYk"
   },
   {
     "title": "Gur Nalo Ishq Mitha",
     "artist": "Malkit Singh",
     "year": 1998,
     "q": "Gur Nalo Ishq Mitha Malkit Singh",
-    "yt": null
+    "yt": "_rGz16v3CUM"
   },
   {
     "title": "Jugni",
     "artist": "Arif Lohar, Meesha Shafi",
     "year": 2010,
     "q": "Jugni Arif Lohar, Meesha Shafi",
-    "yt": null
+    "yt": "gjaH2iuoYWE"
   },
   {
     "title": "Ki Banu Duniya Da",
     "artist": "Gurdas Maan",
     "year": 1987,
     "q": "Ki Banu Duniya Da Gurdas Maan",
-    "yt": null
+    "yt": "pjQyBF2gwjQ"
   },
   {
     "title": "3 Peg",
     "artist": "Sharry Mann",
     "year": 2016,
     "q": "3 Peg Sharry Mann",
-    "yt": null
+    "yt": "hzTg4zPBtDU"
   },
   {
     "title": "Suit Suit",
     "artist": "Guru Randhawa",
     "year": 2017,
     "q": "Suit Suit Guru Randhawa",
-    "yt": null
+    "yt": "uQ763VvqiEM"
   },
   {
     "title": "High Rated Gabru",
@@ -69,7 +69,7 @@ window.PLAYLIST = [
     "artist": "Guru Randhawa",
     "year": 2018,
     "q": "Lahore Guru Randhawa",
-    "yt": null
+    "yt": "dZ0fwJojhrs"
   },
   {
     "title": "Laembadgini",
@@ -83,14 +83,14 @@ window.PLAYLIST = [
     "artist": "Diljit Dosanjh",
     "year": 2017,
     "q": "5 Taara Diljit Dosanjh",
-    "yt": null
+    "yt": "MsTW5cyWKj4"
   },
   {
     "title": "Proper Patola",
     "artist": "Diljit Dosanjh",
     "year": 2013,
     "q": "Proper Patola Diljit Dosanjh",
-    "yt": null
+    "yt": "GVhmynWOPoM"
   },
   {
     "title": "Wakhra Swag",
@@ -111,21 +111,21 @@ window.PLAYLIST = [
     "artist": "AP Dhillon",
     "year": 2020,
     "q": "Excuses AP Dhillon",
-    "yt": null
+    "yt": "vX2cDW8LUWk"
   },
   {
     "title": "Pasoori",
     "artist": "Ali Sethi, Shae Gill",
     "year": 2022,
     "q": "Pasoori Ali Sethi, Shae Gill",
-    "yt": null
+    "yt": "5Eqb_-j3FDA"
   },
   {
     "title": "Lehenga",
     "artist": "Jass Manak",
     "year": 2019,
     "q": "Lehenga Jass Manak",
-    "yt": null
+    "yt": "RKioDWlajvo"
   }
 ];
 

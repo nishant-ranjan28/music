@@ -110,13 +110,61 @@
   var TITLE_NOISE =
     /\b(full\s+)?(video\s+)?song\b|\bfull\s+video\b|\blyrical\b|\bwith\s+lyrics\b|\blyrics\b|\bofficial\s+(music\s+)?video\b|\bofficial\s+audio\b|\baudio\b|\bhd\b|\b4k\b|\bremastered\b|\bhq\b/gi;
 
+  /* Uploader hashtag junk: "#Video", "#Shorts", "#Bhojpuri" are noise, but
+     "#Pawan Singh" carries the singer's name — so drop junk tags whole and
+     keep the rest as plain words. */
+  var JUNK_TAG = /^#(video|shorts?|song|new|trending|viral|bhojpuri|punjabi|hindi|dance|live|fullvideo|lyrical|status|reels|music)\b/i;
+
   function tidy(s) {
     return (s || "")
+      .split(/\s+/)
+      .filter(function (w) { return !JUNK_TAG.test(w); })
+      .join(" ")
+      .replace(/#/g, " ")
       .replace(/\([^)]*\)|\[[^\]]*\]/g, " ") // "(Official Video)", "[HD]"
       .replace(TITLE_NOISE, " ")
       .replace(/\s*[-–—:]\s*$/, "")
       .replace(/\s{2,}/g, " ")
       .trim();
+  }
+
+  var DEVANAGARI = /[\u0900-\u097F]/;
+
+  function isShouty(s) {
+    return /^[^a-z]*$/.test(s) && /[A-Z]{2}/.test(s); // ALL CAPS
+  }
+
+  /* Pick the song title from the surviving segments. Uploaders use several
+     layouts and the first segment is often the singer, not the song:
+       "#Video | कलम चवास | KHESARI LAL YADAV"      → song is Devanagari
+       "#Pawan Singh | राजा जी | Raja Ji"            → singer first, song native
+       "SHARDA SINHA | शारदा सिन्हा | Kelwa Ke Paat"  → singer twice, song third
+       "Neelkamal Singh | Pagli Dekhave Agarbatti"   → singer, longer song
+     So: prefer the first Devanagari segment (unless it just echoes an
+     ALL-CAPS singer), then the first Latin segment that isn't ALL CAPS
+     or a short artist-style name ahead of a longer title. */
+  function pickTitle(parts) {
+    if (!parts.length) return null;
+    for (var i = 0; i < parts.length; i++) {
+      if (DEVANAGARI.test(parts[i])) {
+        if (!(i > 0 && isShouty(parts[i - 1]))) return parts[i];
+        break;
+      }
+    }
+    for (var j = 0; j < parts.length; j++) {
+      var p = parts[j];
+      if (DEVANAGARI.test(p) || isShouty(p)) continue;
+      var next = parts[j + 1];
+      if (
+        next &&
+        p.split(/\s+/).length === 2 &&
+        next.split(/\s+/).length > 2 &&
+        !isShouty(next)
+      )
+        continue;
+      return p;
+    }
+    return parts[0];
   }
 
   function fromVideoData() {
@@ -159,13 +207,10 @@
       return !(author && k.length > 3 && (k === author || author.indexOf(k) === 0));
     });
 
-    // Prefer a Latin-script segment for the headline: the display faces carry
-    // no Devanagari or Nastaliq, so those fall back to a system font and break
-    // the type. The native-script version stays available in the subtitle.
-    var latin = parts.filter(function (s) {
-      return /[a-z]/i.test(s);
-    });
-    var title = (latin[0] || parts[0] || d.title || "—").slice(0, 64);
+    /* The pipe convention on these uploads is not fixed — see pickTitle.
+       The channel-drop above removes artist-first Western uploads when the
+       channel names the artist; pickTitle handles the rest. */
+    var title = (pickTitle(parts) || d.title || "—").slice(0, 64);
 
     var rest = parts.filter(function (s) {
       return s !== title;

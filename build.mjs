@@ -214,6 +214,7 @@ function indexHtml(theme) {
 <script src="playlist.js"></script>
 <script src="../../shared/player.js?v=${V_PLAYER}"></script>
 <script src="../../shared/counter.js?v=${V_COUNTER}" defer></script>
+<script defer src="/_vercel/insights/script.js"></script>
 ${theme.js ? `<script>${theme.js.trim()}</script>` : ""}
 </body>
 </html>
@@ -389,8 +390,9 @@ ${sections}
     Audio streams through the official YouTube IFrame API — nothing is hosted here.
     <span id="counter" class="counter"></span>
   </footer>
-  <script src="shared/counter.js" defer></script>
-</body>
+    <script src="shared/counter.js" defer></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </body>
 </html>
 `;
 }

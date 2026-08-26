@@ -6,7 +6,7 @@ window.PLAYLIST = [
     "artist": "Sonu Nigam, Roop Kumar Rathod",
     "year": 1997,
     "q": "Sandese Aate Hain Sonu Nigam, Roop Kumar Rathod",
-    "yt": null
+    "yt": "yccGxvIydKg"
   },
   {
     "title": "Yeh Dil Deewana",
@@ -20,14 +20,14 @@ window.PLAYLIST = [
     "artist": "Sonu Nigam",
     "year": 1999,
     "q": "Deewana Tera Sonu Nigam",
-    "yt": null
+    "yt": "J8zlroVMYeM"
   },
   {
     "title": "Satrangi Re",
     "artist": "Sonu Nigam, Kavita Krishnamurthy",
     "year": 1998,
     "q": "Satrangi Re Sonu Nigam, Kavita Krishnamurthy",
-    "yt": null
+    "yt": "OClXVLsI4jM"
   },
   {
     "title": "Suraj Hua Maddham",
@@ -62,14 +62,14 @@ window.PLAYLIST = [
     "artist": "Sonu Nigam",
     "year": 2003,
     "q": "Har Ghadi Badal Rahi Hai Sonu Nigam",
-    "yt": null
+    "yt": "g0eO74UmRBs"
   },
   {
     "title": "Maahi Ve",
     "artist": "Sonu Nigam, Sadhana Sargam",
     "year": 2003,
     "q": "Maahi Ve Sonu Nigam, Sadhana Sargam",
-    "yt": null
+    "yt": "1BWdglekty0"
   },
   {
     "title": "Main Hoon Na",
@@ -83,7 +83,7 @@ window.PLAYLIST = [
     "artist": "Sonu Nigam, Lata Mangeshkar",
     "year": 2004,
     "q": "Do Pal Sonu Nigam, Lata Mangeshkar",
-    "yt": null
+    "yt": "HPsxxBhv9kc"
   },
   {
     "title": "Sau Dard",
@@ -104,14 +104,14 @@ window.PLAYLIST = [
     "artist": "Sonu Nigam, Madhushree",
     "year": 2008,
     "q": "In Lamhon Ke Daaman Mein Sonu Nigam, Madhushree",
-    "yt": null
+    "yt": "iJtVLgLFtOw"
   },
   {
     "title": "Guzarish",
     "artist": "Sonu Nigam, Javed Ali",
     "year": 2008,
     "q": "Guzarish Sonu Nigam, Javed Ali",
-    "yt": null
+    "yt": "ztPa6vkM-yY"
   },
   {
     "title": "Abhi Mujh Mein Kahin",
@@ -125,7 +125,7 @@ window.PLAYLIST = [
     "artist": "Sonu Nigam",
     "year": 2014,
     "q": "Suno Na Sangemarmar Sonu Nigam",
-    "yt": null
+    "yt": "83pr5QLz6Bc"
   }
 ];
 

@@ -178,7 +178,7 @@ window.STATIONS = [
     "artist": "Sonu Nigam, Roop Kumar Rathod",
     "year": 1997,
     "q": "Sandese Aate Hain Sonu Nigam, Roop Kumar Rathod",
-    "yt": null
+    "yt": "yccGxvIydKg"
    },
    {
     "title": "Yeh Dil Deewana",
@@ -192,14 +192,14 @@ window.STATIONS = [
     "artist": "Sonu Nigam",
     "year": 1999,
     "q": "Deewana Tera Sonu Nigam",
-    "yt": null
+    "yt": "J8zlroVMYeM"
    },
    {
     "title": "Satrangi Re",
     "artist": "Sonu Nigam, Kavita Krishnamurthy",
     "year": 1998,
     "q": "Satrangi Re Sonu Nigam, Kavita Krishnamurthy",
-    "yt": null
+    "yt": "OClXVLsI4jM"
    },
    {
     "title": "Suraj Hua Maddham",
@@ -234,14 +234,14 @@ window.STATIONS = [
     "artist": "Sonu Nigam",
     "year": 2003,
     "q": "Har Ghadi Badal Rahi Hai Sonu Nigam",
-    "yt": null
+    "yt": "g0eO74UmRBs"
    },
    {
     "title": "Maahi Ve",
     "artist": "Sonu Nigam, Sadhana Sargam",
     "year": 2003,
     "q": "Maahi Ve Sonu Nigam, Sadhana Sargam",
-    "yt": null
+    "yt": "1BWdglekty0"
    },
    {
     "title": "Main Hoon Na",
@@ -255,7 +255,7 @@ window.STATIONS = [
     "artist": "Sonu Nigam, Lata Mangeshkar",
     "year": 2004,
     "q": "Do Pal Sonu Nigam, Lata Mangeshkar",
-    "yt": null
+    "yt": "HPsxxBhv9kc"
    },
    {
     "title": "Sau Dard",
@@ -276,14 +276,14 @@ window.STATIONS = [
     "artist": "Sonu Nigam, Madhushree",
     "year": 2008,
     "q": "In Lamhon Ke Daaman Mein Sonu Nigam, Madhushree",
-    "yt": null
+    "yt": "iJtVLgLFtOw"
    },
    {
     "title": "Guzarish",
     "artist": "Sonu Nigam, Javed Ali",
     "year": 2008,
     "q": "Guzarish Sonu Nigam, Javed Ali",
-    "yt": null
+    "yt": "ztPa6vkM-yY"
    },
    {
     "title": "Abhi Mujh Mein Kahin",
@@ -297,7 +297,7 @@ window.STATIONS = [
     "artist": "Sonu Nigam",
     "year": 2014,
     "q": "Suno Na Sangemarmar Sonu Nigam",
-    "yt": null
+    "yt": "83pr5QLz6Bc"
    }
   ]
  },
@@ -680,7 +680,7 @@ window.STATIONS = [
     "artist": "Himesh Reshammiya",
     "year": 2006,
     "q": "Afsana Himesh Reshammiya",
-    "yt": null
+    "yt": "psaBpso9BG4"
    },
    {
     "title": "Naam Hai Tera",
@@ -701,14 +701,14 @@ window.STATIONS = [
     "artist": "Himesh Reshammiya",
     "year": 2006,
     "q": "Soniye Himesh Reshammiya",
-    "yt": null
+    "yt": "RE46-BjrhNQ"
    },
    {
     "title": "Main Jahan Rahoon",
     "artist": "Himesh Reshammiya",
     "year": 2007,
     "q": "Main Jahan Rahoon Himesh Reshammiya",
-    "yt": null
+    "yt": "ZQlH0D_GPiE"
    },
    {
     "title": "Teri Meri",
@@ -722,21 +722,21 @@ window.STATIONS = [
     "artist": "Himesh Reshammiya, Vineet Singh, Aman Trikha",
     "year": 2012,
     "q": "Hookah Bar Himesh Reshammiya, Vineet Singh, Aman Trikha",
-    "yt": null
+    "yt": "EvMKzUCifiU"
    },
    {
     "title": "Long Drive",
     "artist": "Himesh Reshammiya",
     "year": 2012,
     "q": "Long Drive Himesh Reshammiya",
-    "yt": null
+    "yt": "TCOlBJOo5Zw"
    },
    {
     "title": "Balma",
     "artist": "Himesh Reshammiya, Shreya Ghoshal",
     "year": 2012,
     "q": "Balma Himesh Reshammiya, Shreya Ghoshal",
-    "yt": null
+    "yt": "kPmAJPUVY8I"
    },
    {
     "title": "Chalao Na Naino Se",
@@ -750,28 +750,28 @@ window.STATIONS = [
     "artist": "Himesh Reshammiya, Palak Muchhal",
     "year": 2014,
     "q": "Jumme Ki Raat Himesh Reshammiya, Palak Muchhal",
-    "yt": null
+    "yt": "y8w8-T7AoSo"
    },
    {
     "title": "Tu Hi Tu",
     "artist": "Himesh Reshammiya",
     "year": 2014,
     "q": "Tu Hi Tu Himesh Reshammiya",
-    "yt": null
+    "yt": "DULrvDVqyXI"
    },
    {
     "title": "Ice Cream Khaungi",
     "artist": "Himesh Reshammiya, Palak Muchhal",
     "year": 2014,
     "q": "Ice Cream Khaungi Himesh Reshammiya, Palak Muchhal",
-    "yt": null
+    "yt": "bsBQFYQCH-o"
    },
    {
     "title": "Hangover",
     "artist": "Himesh Reshammiya, Shreya Ghoshal",
     "year": 2014,
     "q": "Hangover Himesh Reshammiya, Shreya Ghoshal",
-    "yt": null
+    "yt": "1gqBb4Y7LJA"
    },
    {
     "title": "Dard Dilo Ke",
@@ -810,7 +810,7 @@ window.STATIONS = [
     "artist": "Hariharan",
     "year": null,
     "q": "Hanuman Chalisa Hariharan",
-    "yt": "w5Hw58_LcI8"
+    "yt": null
    },
    {
     "title": "Shiv Tandav Stotram",
@@ -880,7 +880,7 @@ window.STATIONS = [
     "artist": "Anuradha Paudwal",
     "year": null,
     "q": "Gayatri Mantra Anuradha Paudwal",
-    "yt": "nAapw6s2s-k"
+    "yt": null
    },
    {
     "title": "Mahamrityunjaya Mantra",
@@ -894,14 +894,14 @@ window.STATIONS = [
     "artist": "Mohammed Rafi",
     "year": 1952,
     "q": "Man Tarpat Hari Darshan Ko Aaj Mohammed Rafi",
-    "yt": null
+    "yt": "AczxIEZNb_o"
    },
    {
     "title": "Itni Shakti Hamein Dena Data",
     "artist": "Sushma Shreshtha, Pushpa Pagdhare",
     "year": 1983,
     "q": "Itni Shakti Hamein Dena Data Sushma Shreshtha, Pushpa Pagdhare",
-    "yt": null
+    "yt": "m1Ft4JdgrBE"
    },
    {
     "title": "Ae Malik Tere Bande Hum",

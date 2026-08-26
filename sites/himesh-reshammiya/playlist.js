@@ -27,7 +27,7 @@ window.PLAYLIST = [
     "artist": "Himesh Reshammiya",
     "year": 2006,
     "q": "Afsana Himesh Reshammiya",
-    "yt": null
+    "yt": "psaBpso9BG4"
   },
   {
     "title": "Naam Hai Tera",
@@ -48,14 +48,14 @@ window.PLAYLIST = [
     "artist": "Himesh Reshammiya",
     "year": 2006,
     "q": "Soniye Himesh Reshammiya",
-    "yt": null
+    "yt": "RE46-BjrhNQ"
   },
   {
     "title": "Main Jahan Rahoon",
     "artist": "Himesh Reshammiya",
     "year": 2007,
     "q": "Main Jahan Rahoon Himesh Reshammiya",
-    "yt": null
+    "yt": "ZQlH0D_GPiE"
   },
   {
     "title": "Teri Meri",
@@ -69,21 +69,21 @@ window.PLAYLIST = [
     "artist": "Himesh Reshammiya, Vineet Singh, Aman Trikha",
     "year": 2012,
     "q": "Hookah Bar Himesh Reshammiya, Vineet Singh, Aman Trikha",
-    "yt": null
+    "yt": "EvMKzUCifiU"
   },
   {
     "title": "Long Drive",
     "artist": "Himesh Reshammiya",
     "year": 2012,
     "q": "Long Drive Himesh Reshammiya",
-    "yt": null
+    "yt": "TCOlBJOo5Zw"
   },
   {
     "title": "Balma",
     "artist": "Himesh Reshammiya, Shreya Ghoshal",
     "year": 2012,
     "q": "Balma Himesh Reshammiya, Shreya Ghoshal",
-    "yt": null
+    "yt": "kPmAJPUVY8I"
   },
   {
     "title": "Chalao Na Naino Se",
@@ -97,28 +97,28 @@ window.PLAYLIST = [
     "artist": "Himesh Reshammiya, Palak Muchhal",
     "year": 2014,
     "q": "Jumme Ki Raat Himesh Reshammiya, Palak Muchhal",
-    "yt": null
+    "yt": "y8w8-T7AoSo"
   },
   {
     "title": "Tu Hi Tu",
     "artist": "Himesh Reshammiya",
     "year": 2014,
     "q": "Tu Hi Tu Himesh Reshammiya",
-    "yt": null
+    "yt": "DULrvDVqyXI"
   },
   {
     "title": "Ice Cream Khaungi",
     "artist": "Himesh Reshammiya, Palak Muchhal",
     "year": 2014,
     "q": "Ice Cream Khaungi Himesh Reshammiya, Palak Muchhal",
-    "yt": null
+    "yt": "bsBQFYQCH-o"
   },
   {
     "title": "Hangover",
     "artist": "Himesh Reshammiya, Shreya Ghoshal",
     "year": 2014,
     "q": "Hangover Himesh Reshammiya, Shreya Ghoshal",
-    "yt": null
+    "yt": "1gqBb4Y7LJA"
   },
   {
     "title": "Dard Dilo Ke",

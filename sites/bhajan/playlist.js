@@ -6,7 +6,7 @@ window.PLAYLIST = [
     "artist": "Hariharan",
     "year": null,
     "q": "Hanuman Chalisa Hariharan",
-    "yt": "w5Hw58_LcI8"
+    "yt": null
   },
   {
     "title": "Shiv Tandav Stotram",
@@ -76,7 +76,7 @@ window.PLAYLIST = [
     "artist": "Anuradha Paudwal",
     "year": null,
     "q": "Gayatri Mantra Anuradha Paudwal",
-    "yt": "nAapw6s2s-k"
+    "yt": null
   },
   {
     "title": "Mahamrityunjaya Mantra",
@@ -90,14 +90,14 @@ window.PLAYLIST = [
     "artist": "Mohammed Rafi",
     "year": 1952,
     "q": "Man Tarpat Hari Darshan Ko Aaj Mohammed Rafi",
-    "yt": null
+    "yt": "AczxIEZNb_o"
   },
   {
     "title": "Itni Shakti Hamein Dena Data",
     "artist": "Sushma Shreshtha, Pushpa Pagdhare",
     "year": 1983,
     "q": "Itni Shakti Hamein Dena Data Sushma Shreshtha, Pushpa Pagdhare",
-    "yt": null
+    "yt": "m1Ft4JdgrBE"
   },
   {
     "title": "Ae Malik Tere Bande Hum",

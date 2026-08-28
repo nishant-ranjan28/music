@@ -34,77 +34,77 @@ window.STATIONS = [
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1988,
     "q": "Ae Mere Humsafar Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "sWqjZpBtcxc"
    },
    {
     "title": "Pehla Nasha",
     "artist": "Udit Narayan, Sadhana Sargam",
     "year": 1992,
     "q": "Pehla Nasha Udit Narayan, Sadhana Sargam",
-    "yt": null
+    "yt": "SBfPs-PMGTA"
    },
    {
     "title": "Dhak Dhak Karne Laga",
     "artist": "Anuradha Paudwal, Udit Narayan",
     "year": 1992,
     "q": "Dhak Dhak Karne Laga Anuradha Paudwal, Udit Narayan",
-    "yt": null
+    "yt": "P7i0Z4yDKNM"
    },
    {
     "title": "Jaadu Teri Nazar",
     "artist": "Udit Narayan",
     "year": 1993,
     "q": "Jaadu Teri Nazar Udit Narayan",
-    "yt": null
+    "yt": "n_oP9Onj0r0"
    },
    {
     "title": "Tu Cheez Badi Hai Mast",
     "artist": "Udit Narayan, Kavita Krishnamurthy",
     "year": 1994,
     "q": "Tu Cheez Badi Hai Mast Udit Narayan, Kavita Krishnamurthy",
-    "yt": null
+    "yt": "ZFZMPjMbvtU"
    },
    {
     "title": "Ho Gaya Hai Tujhko To Pyar Hai",
     "artist": "Udit Narayan, Lata Mangeshkar",
     "year": 1995,
     "q": "Ho Gaya Hai Tujhko To Pyar Hai Udit Narayan, Lata Mangeshkar",
-    "yt": null
+    "yt": "hw_HpTI_Wkw"
    },
    {
     "title": "Mehndi Laga Ke Rakhna",
     "artist": "Udit Narayan, Lata Mangeshkar",
     "year": 1995,
     "q": "Mehndi Laga Ke Rakhna Udit Narayan, Lata Mangeshkar",
-    "yt": null
+    "yt": "-bNwqXvMuB8"
    },
    {
     "title": "Ruk Ja O Dil Deewane",
     "artist": "Udit Narayan",
     "year": 1995,
     "q": "Ruk Ja O Dil Deewane Udit Narayan",
-    "yt": null
+    "yt": "jBpRItrod-Q"
    },
    {
     "title": "Pardesi Pardesi",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1996,
     "q": "Pardesi Pardesi Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "Swlik5Hfu-A"
    },
    {
     "title": "Kuch Kuch Hota Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Kuch Kuch Hota Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "bKZTnnFU9HA"
    },
    {
     "title": "Ladki Badi Anjani Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Ladki Badi Anjani Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "oJcE_QPFAng"
    },
    {
     "title": "Chand Chhupa Badal Mein",
@@ -118,28 +118,28 @@ window.STATIONS = [
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 2000,
     "q": "Kaho Naa Pyaar Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "-LESbtPT8uw"
    },
    {
     "title": "Main Nikla Gaddi Leke",
     "artist": "Udit Narayan",
     "year": 2001,
     "q": "Main Nikla Gaddi Leke Udit Narayan",
-    "yt": null
+    "yt": "IJNR_UVLDhs"
    },
    {
     "title": "Udja Kale Kawan",
     "artist": "Udit Narayan",
     "year": 2001,
     "q": "Udja Kale Kawan Udit Narayan",
-    "yt": null
+    "yt": "dOd7mmzCzpI"
    },
    {
     "title": "Idhar Chala Main Udhar Chala",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 2003,
     "q": "Idhar Chala Main Udhar Chala Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "iQPg7ht5aHU"
    },
    {
     "title": "Main Yahaan Hoon",
@@ -494,28 +494,28 @@ window.STATIONS = [
     "artist": "Kumar Sanu",
     "year": 1990,
     "q": "Ab Tere Bin Ji Lenge Hum Kumar Sanu",
-    "yt": null
+    "yt": "rXHY4Cv9cA8"
    },
    {
     "title": "Dheere Dheere Se Meri Zindagi",
     "artist": "Kumar Sanu, Anuradha Paudwal",
     "year": 1990,
     "q": "Dheere Dheere Se Meri Zindagi Kumar Sanu, Anuradha Paudwal",
-    "yt": null
+    "yt": "KeyfUuXPOcY"
    },
    {
     "title": "Bas Ek Sanam Chahiye",
     "artist": "Kumar Sanu",
     "year": 1990,
     "q": "Bas Ek Sanam Chahiye Kumar Sanu",
-    "yt": null
+    "yt": "fBylcT-TWZw"
    },
    {
     "title": "Saanson Ki Zaroorat Hai Jaise",
     "artist": "Kumar Sanu",
     "year": 1990,
     "q": "Saanson Ki Zaroorat Hai Jaise Kumar Sanu",
-    "yt": null
+    "yt": "YCuhzjK11iA"
    },
    {
     "title": "Mera Dil Bhi Kitna Pagal Hai",
@@ -536,21 +536,21 @@ window.STATIONS = [
     "artist": "Kumar Sanu",
     "year": 1992,
     "q": "Sochenge Tumhe Pyar Kumar Sanu",
-    "yt": null
+    "yt": "lFdSi01tpYM"
    },
    {
     "title": "Aisi Deewangi",
     "artist": "Kumar Sanu, Vinod Rathod",
     "year": 1992,
     "q": "Aisi Deewangi Kumar Sanu, Vinod Rathod",
-    "yt": null
+    "yt": "EvVE4qdxkmU"
    },
    {
     "title": "Wada Raha Sanam",
     "artist": "Kumar Sanu",
     "year": 1992,
     "q": "Wada Raha Sanam Kumar Sanu",
-    "yt": null
+    "yt": "9b0iydtDZLU"
    },
    {
     "title": "Baazigar O Baazigar",
@@ -564,14 +564,14 @@ window.STATIONS = [
     "artist": "Kumar Sanu",
     "year": 1993,
     "q": "Yeh Kaali Kaali Aankhein Kumar Sanu",
-    "yt": null
+    "yt": "KC-DuX51NY0"
    },
    {
     "title": "Kitabein Bahut Si",
     "artist": "Kumar Sanu, Asha Bhosle",
     "year": 1993,
     "q": "Kitabein Bahut Si Kumar Sanu, Asha Bhosle",
-    "yt": null
+    "yt": "ieu6xnwJxdA"
    },
    {
     "title": "Chura Ke Dil Mera",
@@ -585,21 +585,21 @@ window.STATIONS = [
     "artist": "Kumar Sanu",
     "year": 1994,
     "q": "Ek Ladki Ko Dekha Kumar Sanu",
-    "yt": "fTauOK8J-U8"
+    "yt": null
    },
    {
     "title": "Kuch Na Kaho",
     "artist": "Kumar Sanu",
     "year": 1994,
     "q": "Kuch Na Kaho Kumar Sanu",
-    "yt": null
+    "yt": "Kidtrrn4aUM"
    },
    {
     "title": "Bahon Ke Darmiyan",
     "artist": "Kumar Sanu, Kavita Krishnamurthy",
     "year": 1996,
     "q": "Bahon Ke Darmiyan Kumar Sanu, Kavita Krishnamurthy",
-    "yt": null
+    "yt": "kHYYfKAQdHA"
    },
    {
     "title": "Do Dil Mil Rahe Hain",
@@ -620,14 +620,14 @@ window.STATIONS = [
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1997,
     "q": "Ek Din Aap Yun Humko Mil Jayenge Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "90Q5bMN6u2w"
    },
    {
     "title": "Tumhe Jo Maine Dekha",
     "artist": "Kumar Sanu",
     "year": 2004,
     "q": "Tumhe Jo Maine Dekha Kumar Sanu",
-    "yt": null
+    "yt": "84TjXsRHf6Q"
    }
   ]
  },
@@ -1179,7 +1179,7 @@ window.STATIONS = [
     "artist": "Dinesh Lal Yadav (Nirahua)",
     "year": 2008,
     "q": "Lollipop Lagelu Dinesh Lal Yadav (Nirahua)",
-    "yt": null
+    "yt": "vWBPUOj92FM"
    },
    {
     "title": "Chhalakata Hamro Jawaniya",
@@ -1193,14 +1193,14 @@ window.STATIONS = [
     "artist": "Pawan Singh",
     "year": 2018,
     "q": "Hello Kaun Pawan Singh",
-    "yt": null
+    "yt": "0hGGaVCCqPk"
    },
    {
     "title": "Balam Ji Love You",
     "artist": "Pawan Singh",
     "year": 2018,
     "q": "Balam Ji Love You Pawan Singh",
-    "yt": null
+    "yt": "dGi_-PhjRqY"
    },
    {
     "title": "Kala Odhani",
@@ -1249,14 +1249,14 @@ window.STATIONS = [
     "artist": "Khesari Lal Yadav",
     "year": 2023,
     "q": "Lehenga Lucknowwa Khesari Lal Yadav",
-    "yt": null
+    "yt": "VtoeHGD2fnw"
    },
    {
     "title": "Payal",
     "artist": "Khesari Lal Yadav, Shilpi Raj",
     "year": 2024,
     "q": "Payal Khesari Lal Yadav, Shilpi Raj",
-    "yt": null
+    "yt": "cd6_A6MEL1o"
    },
    {
     "title": "Pagli Dekhave Agarbatti",
@@ -1298,7 +1298,7 @@ window.STATIONS = [
     "artist": "Shilpi Raj",
     "year": 2022,
     "q": "Saiyaan Ji Sarkave Shilpi Raj",
-    "yt": null
+    "yt": "8Mu4D_kpchQ"
    }
   ]
  }

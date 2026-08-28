@@ -6,28 +6,28 @@ window.PLAYLIST = [
     "artist": "Kumar Sanu",
     "year": 1990,
     "q": "Ab Tere Bin Ji Lenge Hum Kumar Sanu",
-    "yt": null
+    "yt": "rXHY4Cv9cA8"
   },
   {
     "title": "Dheere Dheere Se Meri Zindagi",
     "artist": "Kumar Sanu, Anuradha Paudwal",
     "year": 1990,
     "q": "Dheere Dheere Se Meri Zindagi Kumar Sanu, Anuradha Paudwal",
-    "yt": null
+    "yt": "KeyfUuXPOcY"
   },
   {
     "title": "Bas Ek Sanam Chahiye",
     "artist": "Kumar Sanu",
     "year": 1990,
     "q": "Bas Ek Sanam Chahiye Kumar Sanu",
-    "yt": null
+    "yt": "fBylcT-TWZw"
   },
   {
     "title": "Saanson Ki Zaroorat Hai Jaise",
     "artist": "Kumar Sanu",
     "year": 1990,
     "q": "Saanson Ki Zaroorat Hai Jaise Kumar Sanu",
-    "yt": null
+    "yt": "YCuhzjK11iA"
   },
   {
     "title": "Mera Dil Bhi Kitna Pagal Hai",
@@ -48,21 +48,21 @@ window.PLAYLIST = [
     "artist": "Kumar Sanu",
     "year": 1992,
     "q": "Sochenge Tumhe Pyar Kumar Sanu",
-    "yt": null
+    "yt": "lFdSi01tpYM"
   },
   {
     "title": "Aisi Deewangi",
     "artist": "Kumar Sanu, Vinod Rathod",
     "year": 1992,
     "q": "Aisi Deewangi Kumar Sanu, Vinod Rathod",
-    "yt": null
+    "yt": "EvVE4qdxkmU"
   },
   {
     "title": "Wada Raha Sanam",
     "artist": "Kumar Sanu",
     "year": 1992,
     "q": "Wada Raha Sanam Kumar Sanu",
-    "yt": null
+    "yt": "9b0iydtDZLU"
   },
   {
     "title": "Baazigar O Baazigar",
@@ -76,14 +76,14 @@ window.PLAYLIST = [
     "artist": "Kumar Sanu",
     "year": 1993,
     "q": "Yeh Kaali Kaali Aankhein Kumar Sanu",
-    "yt": null
+    "yt": "KC-DuX51NY0"
   },
   {
     "title": "Kitabein Bahut Si",
     "artist": "Kumar Sanu, Asha Bhosle",
     "year": 1993,
     "q": "Kitabein Bahut Si Kumar Sanu, Asha Bhosle",
-    "yt": null
+    "yt": "ieu6xnwJxdA"
   },
   {
     "title": "Chura Ke Dil Mera",
@@ -97,21 +97,21 @@ window.PLAYLIST = [
     "artist": "Kumar Sanu",
     "year": 1994,
     "q": "Ek Ladki Ko Dekha Kumar Sanu",
-    "yt": "fTauOK8J-U8"
+    "yt": null
   },
   {
     "title": "Kuch Na Kaho",
     "artist": "Kumar Sanu",
     "year": 1994,
     "q": "Kuch Na Kaho Kumar Sanu",
-    "yt": null
+    "yt": "Kidtrrn4aUM"
   },
   {
     "title": "Bahon Ke Darmiyan",
     "artist": "Kumar Sanu, Kavita Krishnamurthy",
     "year": 1996,
     "q": "Bahon Ke Darmiyan Kumar Sanu, Kavita Krishnamurthy",
-    "yt": null
+    "yt": "kHYYfKAQdHA"
   },
   {
     "title": "Do Dil Mil Rahe Hain",
@@ -132,14 +132,14 @@ window.PLAYLIST = [
     "artist": "Kumar Sanu, Alka Yagnik",
     "year": 1997,
     "q": "Ek Din Aap Yun Humko Mil Jayenge Kumar Sanu, Alka Yagnik",
-    "yt": null
+    "yt": "90Q5bMN6u2w"
   },
   {
     "title": "Tumhe Jo Maine Dekha",
     "artist": "Kumar Sanu",
     "year": 2004,
     "q": "Tumhe Jo Maine Dekha Kumar Sanu",
-    "yt": null
+    "yt": "84TjXsRHf6Q"
   }
 ];
 

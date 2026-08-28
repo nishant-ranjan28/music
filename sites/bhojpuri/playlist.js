@@ -6,7 +6,7 @@ window.PLAYLIST = [
     "artist": "Dinesh Lal Yadav (Nirahua)",
     "year": 2008,
     "q": "Lollipop Lagelu Dinesh Lal Yadav (Nirahua)",
-    "yt": null
+    "yt": "vWBPUOj92FM"
   },
   {
     "title": "Chhalakata Hamro Jawaniya",
@@ -20,14 +20,14 @@ window.PLAYLIST = [
     "artist": "Pawan Singh",
     "year": 2018,
     "q": "Hello Kaun Pawan Singh",
-    "yt": null
+    "yt": "0hGGaVCCqPk"
   },
   {
     "title": "Balam Ji Love You",
     "artist": "Pawan Singh",
     "year": 2018,
     "q": "Balam Ji Love You Pawan Singh",
-    "yt": null
+    "yt": "dGi_-PhjRqY"
   },
   {
     "title": "Kala Odhani",
@@ -76,14 +76,14 @@ window.PLAYLIST = [
     "artist": "Khesari Lal Yadav",
     "year": 2023,
     "q": "Lehenga Lucknowwa Khesari Lal Yadav",
-    "yt": null
+    "yt": "VtoeHGD2fnw"
   },
   {
     "title": "Payal",
     "artist": "Khesari Lal Yadav, Shilpi Raj",
     "year": 2024,
     "q": "Payal Khesari Lal Yadav, Shilpi Raj",
-    "yt": null
+    "yt": "cd6_A6MEL1o"
   },
   {
     "title": "Pagli Dekhave Agarbatti",
@@ -125,7 +125,7 @@ window.PLAYLIST = [
     "artist": "Shilpi Raj",
     "year": 2022,
     "q": "Saiyaan Ji Sarkave Shilpi Raj",
-    "yt": null
+    "yt": "8Mu4D_kpchQ"
   }
 ];
 

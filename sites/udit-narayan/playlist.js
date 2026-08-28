@@ -13,77 +13,77 @@ window.PLAYLIST = [
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1988,
     "q": "Ae Mere Humsafar Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "sWqjZpBtcxc"
   },
   {
     "title": "Pehla Nasha",
     "artist": "Udit Narayan, Sadhana Sargam",
     "year": 1992,
     "q": "Pehla Nasha Udit Narayan, Sadhana Sargam",
-    "yt": null
+    "yt": "SBfPs-PMGTA"
   },
   {
     "title": "Dhak Dhak Karne Laga",
     "artist": "Anuradha Paudwal, Udit Narayan",
     "year": 1992,
     "q": "Dhak Dhak Karne Laga Anuradha Paudwal, Udit Narayan",
-    "yt": null
+    "yt": "P7i0Z4yDKNM"
   },
   {
     "title": "Jaadu Teri Nazar",
     "artist": "Udit Narayan",
     "year": 1993,
     "q": "Jaadu Teri Nazar Udit Narayan",
-    "yt": null
+    "yt": "n_oP9Onj0r0"
   },
   {
     "title": "Tu Cheez Badi Hai Mast",
     "artist": "Udit Narayan, Kavita Krishnamurthy",
     "year": 1994,
     "q": "Tu Cheez Badi Hai Mast Udit Narayan, Kavita Krishnamurthy",
-    "yt": null
+    "yt": "ZFZMPjMbvtU"
   },
   {
     "title": "Ho Gaya Hai Tujhko To Pyar Hai",
     "artist": "Udit Narayan, Lata Mangeshkar",
     "year": 1995,
     "q": "Ho Gaya Hai Tujhko To Pyar Hai Udit Narayan, Lata Mangeshkar",
-    "yt": null
+    "yt": "hw_HpTI_Wkw"
   },
   {
     "title": "Mehndi Laga Ke Rakhna",
     "artist": "Udit Narayan, Lata Mangeshkar",
     "year": 1995,
     "q": "Mehndi Laga Ke Rakhna Udit Narayan, Lata Mangeshkar",
-    "yt": null
+    "yt": "-bNwqXvMuB8"
   },
   {
     "title": "Ruk Ja O Dil Deewane",
     "artist": "Udit Narayan",
     "year": 1995,
     "q": "Ruk Ja O Dil Deewane Udit Narayan",
-    "yt": null
+    "yt": "jBpRItrod-Q"
   },
   {
     "title": "Pardesi Pardesi",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1996,
     "q": "Pardesi Pardesi Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "Swlik5Hfu-A"
   },
   {
     "title": "Kuch Kuch Hota Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Kuch Kuch Hota Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "bKZTnnFU9HA"
   },
   {
     "title": "Ladki Badi Anjani Hai",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 1998,
     "q": "Ladki Badi Anjani Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "oJcE_QPFAng"
   },
   {
     "title": "Chand Chhupa Badal Mein",
@@ -97,28 +97,28 @@ window.PLAYLIST = [
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 2000,
     "q": "Kaho Naa Pyaar Hai Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "-LESbtPT8uw"
   },
   {
     "title": "Main Nikla Gaddi Leke",
     "artist": "Udit Narayan",
     "year": 2001,
     "q": "Main Nikla Gaddi Leke Udit Narayan",
-    "yt": null
+    "yt": "IJNR_UVLDhs"
   },
   {
     "title": "Udja Kale Kawan",
     "artist": "Udit Narayan",
     "year": 2001,
     "q": "Udja Kale Kawan Udit Narayan",
-    "yt": null
+    "yt": "dOd7mmzCzpI"
   },
   {
     "title": "Idhar Chala Main Udhar Chala",
     "artist": "Udit Narayan, Alka Yagnik",
     "year": 2003,
     "q": "Idhar Chala Main Udhar Chala Udit Narayan, Alka Yagnik",
-    "yt": null
+    "yt": "iQPg7ht5aHU"
   },
   {
     "title": "Main Yahaan Hoon",

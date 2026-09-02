@@ -6,14 +6,14 @@ window.PLAYLIST = [
     "artist": "Hariharan",
     "year": null,
     "q": "Hanuman Chalisa Hariharan",
-    "yt": null
+    "yt": "Rrh1T9odzkI"
   },
   {
     "title": "Shiv Tandav Stotram",
     "artist": "Traditional",
     "year": null,
     "q": "Shiv Tandav Stotram Traditional",
-    "yt": null
+    "yt": "hMBKmQEPNzI"
   },
   {
     "title": "Om Jai Jagdish Hare",
@@ -27,7 +27,7 @@ window.PLAYLIST = [
     "artist": "Traditional",
     "year": null,
     "q": "Sukhkarta Dukhharta Traditional",
-    "yt": null
+    "yt": "0iTb6b8F5to"
   },
   {
     "title": "Jai Ambe Gauri",

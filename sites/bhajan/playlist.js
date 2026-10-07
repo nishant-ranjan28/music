@@ -41,7 +41,7 @@ window.PLAYLIST = [
     "artist": "Traditional",
     "year": null,
     "q": "Om Jai Shiv Omkara Traditional",
-    "yt": null
+    "yt": "BhwOproElxU"
   },
   {
     "title": "Aarti Kunj Bihari Ki",
